@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/dark_color_272a3f_ffffff">
+
+            <ImageView
+                android:id="@+id/iv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/dark_icon_market_hk" />
+
+            <TextView
+                android:id="@+id/tv_stock_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/skin_title_color"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/iv_type"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="騰訊控股" />
+
+            <TextView
+                android:id="@+id/tv_stock_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/dark_main_text_7c7fa2"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tv_stock_name"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="007012" />
+
+            <TextView
+                android:id="@+id/tv_current_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/dark_color_20bf7c"
+                android:textSize="@dimen/text_size_small_12sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_stock_name"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:text="-1.09%" />
+
+            <TextView
+                android:id="@+id/tv_current_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/dark_color_20bf7c"
+                android:textSize="@dimen/text_size_small_12sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_stock_name"
+                app:layout_constraintRight_toLeftOf="@id/tv_current_rate"
+                tools:text="9.56" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dark_half_color_454860" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/dark_color_272a3f_ffffff">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/activity_stock_warn_up"
+                android:textColor="@color/skin_title_color"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <com.linktech.gft.view.WatchInputEditText
+                android:id="@+id/et_top_price"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/shape_bg_transparent_border_454860_d8dcdf_radius_3dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/skin_title_color"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv1"
+                app:layout_constraintLeft_toRightOf="@id/tv1"
+                app:layout_constraintRight_toLeftOf="@id/tv_top_money_unit" />
+
+            <TextView
+                android:id="@+id/tv_top_money_unit"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/dark_color_f85d5a"
+                android:textSize="@dimen/text_size_title_15sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv1"
+                app:layout_constraintHorizontal_bias="0.72"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:text="港元" />
+
+            <ImageView
+                android:id="@+id/iv_top_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/view_padding_margin_16dp"
+                android:src="@drawable/dark_transition_close_open"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dark_half_color_454860" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/dark_color_272a3f_ffffff">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/activity_stock_warn_down"
+                android:textColor="@color/skin_title_color"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.linktech.gft.view.WatchInputEditText
+                android:id="@+id/et_lower_price"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/shape_bg_transparent_border_454860_d8dcdf_radius_3dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/skin_title_color"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv2"
+                app:layout_constraintLeft_toRightOf="@id/tv2"
+                app:layout_constraintRight_toLeftOf="@id/tv_lower_money_unit" />
+
+            <TextView
+                android:id="@+id/tv_lower_money_unit"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:textColor="@color/dark_color_20bf7c"
+                android:textSize="@dimen/text_size_title_15sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv2"
+                app:layout_constraintHorizontal_bias="0.72"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:text="港元" />
+
+            <ImageView
+                android:id="@+id/iv_lower_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/view_padding_margin_16dp"
+                android:src="@drawable/dark_transition_close_open"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dark_half_color_454860" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/dark_color_272a3f_ffffff">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/activity_stock_warn_day_up"
+                android:textColor="@color/skin_title_color"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.linktech.gft.view.WatchInputEditText
+                android:id="@+id/et_top_rate"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/shape_bg_transparent_border_454860_d8dcdf_radius_3dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/skin_title_color"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv3"
+                app:layout_constraintLeft_toRightOf="@id/tv3"
+                app:layout_constraintRight_toLeftOf="@id/tv_percent" />
+
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="%"
+                android:textColor="@color/dark_color_f85d5a"
+                android:textSize="@dimen/text_size_title_15sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv3"
+                app:layout_constraintHorizontal_bias="0.72"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_top_rate_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/view_padding_margin_16dp"
+                android:src="@drawable/dark_transition_close_open"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dark_half_color_454860" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/dark_color_272a3f_ffffff">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/activity_stock_warn_day_down"
+                android:textColor="@color/skin_title_color"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.linktech.gft.view.WatchInputEditText
+                android:id="@+id/et_lower_rate"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/shape_bg_transparent_border_454860_d8dcdf_radius_3dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/skin_title_color"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv4"
+                app:layout_constraintLeft_toRightOf="@id/tv4"
+                app:layout_constraintRight_toLeftOf="@id/tv_lower_percent" />
+
+            <TextView
+                android:id="@+id/tv_lower_percent"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="%"
+                android:textColor="@color/dark_color_20bf7c"
+                android:textSize="@dimen/text_size_title_15sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv4"
+                app:layout_constraintHorizontal_bias="0.72"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_lower_rate_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/view_padding_margin_16dp"
+                android:src="@drawable/dark_transition_close_open"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/dark_color_272a3f_ffffff"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:LineMenuView_brief_text_color="@color/dark_main_text_666986"
+            app:LineMenuView_brief_text_size="@dimen/text_size_title_15sp"
+            app:LineMenuView_menu="@string/activity_stock_warn_remind_rate"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+            app:LineMenuView_navigation="@drawable/icon_arrow_right"
+            app:LineMenuView_plugin="text"
+            tools:LineMenuView_brief="提醒一次" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/activity_stock_warn_hint"
+            android:textColor="@color/dark_color_666986_b8b9c1"
+            android:textSize="@dimen/text_size_title_15sp" />
+
+        <include layout="@layout/layout_common_dark_function_button" />
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

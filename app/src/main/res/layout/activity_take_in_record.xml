@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/prefer_view_height_48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_16dp"
+            android:layout_weight="1.5"
+            android:gravity="start"
+            android:text="@string/activity_take_in_create_time"
+            android:textColor="@color/black_text_cc3a4254"
+            android:textSize="@dimen/text_size_normal_14sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/activity_take_in_account_number"
+            android:textColor="@color/black_text_cc3a4254"
+            android:textSize="@dimen/text_size_normal_14sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/view_padding_margin_32dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:text="@string/activity_take_in_state"
+            android:textColor="@color/black_text_cc3a4254"
+            android:textSize="@dimen/text_size_normal_14sp"/>
+    </LinearLayout>
+
+    <!--记录-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color_white">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/srl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            app:srlAccentColor="?attr/colorAccent"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+            app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+            app:srlPrimaryColor="?attr/colorPrimary">
+            <!--列表-->
+            <com.linktech.gft.view.RecyclerViewWithEmptyView
+                android:id="@+id/xrv_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_color_white"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <!--空-->
+        <com.linktech.gft.view.RecyclerEmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

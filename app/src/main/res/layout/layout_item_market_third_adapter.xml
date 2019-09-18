@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linktech.gft.skin.MyLineMenuView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/TextViewStandard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:LineMenuView_menu="--"
+    app:LineMenuView_menu_text_color="@color/dark_color_ffffff_1d2037"
+    app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+    app:LineMenuView_navigation="@drawable/dark_icon_arrow_right"
+    app:LineMenuView_plugin="text" />

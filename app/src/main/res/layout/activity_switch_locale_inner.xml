@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="always"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    android:id="@+id/lmv_auto"
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                    android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+                    android:visibility="gone"
+                    app:LineMenuView_for_calculation="on"
+                    app:LineMenuView_menu_text_color="@color/skin_title_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                    app:LineMenuView_plugin="select"
+                    tools:LineMenuView_menu="跟随系统" />
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    android:id="@+id/lmv_zh_cn"
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                    android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+                    app:LineMenuView_for_calculation="on"
+                    app:LineMenuView_menu="中文简体"
+                    app:LineMenuView_menu_text_color="@color/skin_title_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                    app:LineMenuView_plugin="select" />
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    android:id="@+id/lmv_zh_tw"
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+                    app:LineMenuView_for_calculation="on"
+                    android:visibility="gone"
+                    app:LineMenuView_menu="繁體中文&#160;(臺灣)"
+                    app:LineMenuView_menu_text_color="@color/skin_title_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                    app:LineMenuView_plugin="select" />
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    android:id="@+id/lmv_zh_hk"
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_color_272a3f_ffffff"
+                    app:LineMenuView_for_calculation="on"
+                    app:LineMenuView_menu="繁體中文&#160;(香港)"
+                    app:LineMenuView_menu_text_color="@color/skin_title_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                    app:LineMenuView_plugin="select" />
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    android:id="@+id/lmv_en"
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@color/dark_color_272a3f_ffffff"
+                    app:LineMenuView_for_calculation="on"
+                    app:LineMenuView_menu="English"
+                    app:LineMenuView_menu_text_color="@color/skin_title_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                    app:LineMenuView_plugin="select" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

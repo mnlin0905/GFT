@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_white_bottom_divider_1dp"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/prefer_view_height_48dp"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/view_padding_margin_12dp"
+    android:paddingEnd="@dimen/view_padding_margin_16dp"
+    android:paddingStart="@dimen/view_padding_margin_16dp"
+    android:paddingTop="@dimen/view_padding_margin_12dp">
+
+    <!--币种图标-->
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/view_height_26dp"
+        android:layout_height="@dimen/view_height_26dp"
+        tools:src="@drawable/default_head_img"/>
+
+    <!--币种信息-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_12dp"
+        android:layout_weight="1"
+        android:gravity="start|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_currency_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_text_171a3f"
+            android:textSize="@dimen/text_size_title_15sp"
+            android:textStyle="normal"
+            tools:text="USDP"/>
+
+        <TextView
+            android:id="@+id/tv_platform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_4dp"
+            android:singleLine="true"
+            android:textColor="@color/black_text_9c9fa6"
+            android:textSize="@dimen/text_size_small_12sp"
+            tools:text="Finance Trust Chain Tok\nen"/>
+
+        <TextView
+            android:id="@+id/tv_gateway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_4dp"
+            android:singleLine="true"
+            android:textColor="@color/black_text_9c9fa6"
+            android:textSize="@dimen/text_size_small_12sp"
+            tools:text="Finance Trust Chain Tok\nen"/>
+
+    </LinearLayout>
+
+    <!--切换显示-->
+    <TextView
+        android:textColor="@color/selector_text_color_9c9fa6_7541ee"
+        android:id="@+id/tv_control"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/text_size_title_15sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+        android:paddingTop="@dimen/view_padding_margin_8dp"
+        android:paddingBottom="@dimen/view_padding_margin_8dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:background="@drawable/selector_bg_transparent_border_5f4b8b_radius_6dp"
+        tools:text="添加"/>
+</LinearLayout>

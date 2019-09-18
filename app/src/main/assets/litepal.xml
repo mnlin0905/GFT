@@ -1,0 +1,31 @@
+<litepal>
+    <!--数据库名称-->
+    <dbname value="litepal_usdp" />
+    <!--数据库版本号，升级数据库时候需要累加-->
+    <version value="1" />
+    <!--创建表-->
+    <list>
+        <!--表对应的实体对象-->
+
+        <!--钱包存储的字段-->
+<!--        <mapping class="com.linktech.gft.bean.WalletBean" />
+        <mapping class="com.linktech.gft.bean.WalletBean$CryptoBean" />
+        <mapping class="com.linktech.gft.bean.WalletBean$CurrencyBean" />
+        <mapping class="com.linktech.gft.bean.ContactBean" />-->
+
+        <!--股票模块所需内容-->
+<!--        <mapping class="com.linktech.gft.bean.CustomSharesBean" />-->
+
+        <!--股票交易规则-->
+        <mapping class="com.linktech.gft.bean.StockRulesBean"/>
+    </list>
+    <!--keep表示按照类和字段名大小写作为表名和列名-->
+    <!--upper表示将所有的类和字段名称以大写的方式作为表名和列名-->
+    <!--lower表示将所有的类和字段名称以小写的方式作为表名和列名-->
+    <cases value="keep" />
+    <!--internal表示将数据库放到/data/data/包名/databases下，external表示存储在/storage/sdcard1/Android/包名/files/databases下-->
+    <storage value="internal" />
+
+    <!--version-->
+    <version-old value="1">交易规则信息</version-old>
+</litepal>

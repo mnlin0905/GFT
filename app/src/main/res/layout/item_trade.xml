@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="A"
+        android:textColor="@color/dark_color_765ed4"
+        android:textSize="@dimen/text_size_small_12sp" />
+
+    <com.linktech.gft.view.DividerView
+        android:id="@+id/dv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_color_272a3f_ffffff"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+        <com.linktech.gft.view.FitSrcImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/view_height_36dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:src="@drawable/bank_zhong_logo"
+            android:text="爱建证券"
+            android:textColor="@color/skin_title_color"
+            android:textSize="@dimen/text_size_title_15sp" />
+
+        <TextView
+            android:id="@+id/tv_trade"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="爱建证券"
+            android:textColor="@color/skin_title_color"
+            android:textSize="@dimen/text_size_title_15sp" />
+    </LinearLayout>
+</LinearLayout>

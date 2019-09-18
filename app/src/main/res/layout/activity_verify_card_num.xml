@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/main_color_white"
+        android:gravity="center"
+        tools:text="填写*斌的证件号码验证身份"
+        android:textColor="@color/black_text_171a3f" />
+
+    <EditText
+        android:id="@+id/et_card_number"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/main_color_white"
+        android:hint="@string/activity_begin_certification_card_number"
+        android:inputType="text"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:textColorHint="@color/black_text_663a4254"
+        android:textSize="@dimen/text_size_normal_14sp" />
+
+    <include layout="@layout/layout_common_dark_function_button" />
+</LinearLayout>

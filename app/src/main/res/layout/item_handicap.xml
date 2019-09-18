@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linktech.gft.view.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="start"
+        android:lines="1"
+        tools:text="買1"
+        android:textColor="@color/dark_color_a9acbf"
+        android:textSize="@dimen/text_size_small_12sp"
+        tools:ignore="UnusedIds" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="3"
+        android:gravity="end"
+        android:lines="1"
+        android:text="5555.66"
+        android:textColor="@color/dark_color_20bf7c"
+        android:textSize="@dimen/text_size_small_12sp" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:gravity="end"
+        android:lines="1"
+        android:text="0.359"
+        android:textColor="@color/dark_color_a9acbf"
+        android:textSize="@dimen/text_size_small_12sp" />
+</com.linktech.gft.view.AutoLinearLayout>

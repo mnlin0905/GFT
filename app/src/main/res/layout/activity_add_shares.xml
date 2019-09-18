@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+
+        <com.linktech.gft.skin.MyTitleCenterToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ToolbarTheme_menu_text_white"
+            android:transitionName="@string/transition_name_toolbar"
+            app:contentInsetEnd="@dimen/view_padding_margin_16dp"
+            app:contentInsetStart="@dimen/view_padding_margin_16dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll|snap"
+            app:popupTheme="@style/PopupThemeLight"
+            app:titleMarginStart="0dp"
+            app:titleTextColor="@color/main_color_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <!--搜索工鞥呢-->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/dark_color_cc1d2037_f4f4f4"
+                    app:cardCornerRadius="@dimen/drawable_shape_normal_radius_4dp">
+
+                    <com.linktech.gft.view.ClearEditText
+                        android:id="@+id/et_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:drawableEnd="@drawable/dark_icon_clear_text"
+                        android:hint="@string/activity_add_shares_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/view_padding_margin_10dp"
+                        android:paddingTop="@dimen/view_padding_margin_8dp"
+                        android:paddingEnd="@dimen/view_padding_margin_10dp"
+                        android:paddingBottom="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/skin_title_color"
+                        android:textColorHint="@color/dark_color_7c7fa2_b8b9c1"
+                        android:textSize="@dimen/text_size_13sp" />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:text="@string/function_cancel"
+                    android:textColor="@color/skin_body1_color"
+                    android:textSize="@dimen/text_size_13sp" />
+            </LinearLayout>
+        </com.linktech.gft.skin.MyTitleCenterToolbar>
+
+        <!--內容佈局-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/view_padding_margin_64dp">
+
+                <TextView
+                    style="@style/TextViewStandard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/view_height_36dp"
+                    android:text="@string/activity_add_shares_label"
+                    android:textColor="@color/dark_main_text_666986"
+                    android:textSize="@dimen/text_size_small_12sp" />
+
+                <!--列表-->
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    android:id="@+id/srl_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srlAccentColor="?attr/colorAccent"
+                    app:srlEnablePreviewInEditMode="true"
+                    app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+                    app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+                    app:srlPrimaryColor="?attr/colorPrimary">
+                    <!--列表-->
+                    <com.linktech.gft.view.RecyclerViewWithEmptyView
+                        android:id="@+id/xrv_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/prefer_view_height_48dp" />
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+                <com.linktech.gft.view.RecyclerEmptyView
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <!---->
+                <TextView
+                    style="@style/TextViewStandard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/view_height_36dp"
+                    android:text="@string/activity_add_shares_alert"
+                    android:textColor="@color/dark_main_text_666986"
+                    android:textSize="@dimen/text_size_small_12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

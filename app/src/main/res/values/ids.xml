@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--特殊用途的id-->
+
+    <!--webview容器,FrameLayout类型-->
+    <item name="id_fl_webview_container" type="id"/>
+
+    <!--含有record列表的activity-->
+
+    <!--标记 IncludeDialogViewGroup 布局的id-->
+    <item name="id_include_dialog_view_group" type="id" />
+</resources>

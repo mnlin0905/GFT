@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--K线界面 选择区间-->
+    <string-array name="array_k_line_tab">
+        <item>分时</item>
+        <item>日K</item>
+        <item>周K</item>
+        <item>月K</item>
+    </string-array>
+
+    <!--K线界面 新闻消息-->
+    <string-array name="array_k_line_news">
+        <item>新闻</item>
+        <item>F10</item>
+    </string-array>
+
+    <!--K线界面 新闻消息-->
+    <string-array name="array_k_line_component_news">
+        <item>成分股</item>
+        <item>相关新闻</item>
+    </string-array>
+
+    <!--委托查询,时间过滤-->
+    <string-array name="entrust_search_time_block">
+        <item>今日</item>
+        <item>一周内</item>
+        <item>一月内</item>
+        <item>更多</item>
+    </string-array>
+
+    <!--委托查询,成功列表头-->
+    <string-array name="entrust_search_time_success_header">
+        <item>买卖标志</item>
+        <item>成交价格</item>
+        <item>成交数量</item>
+        <item>成交金额</item>
+        <item>成交编号</item>
+        <item>成交时间</item>
+    </string-array>
+
+    <!--委托查询,委托列表头-->
+    <string-array name="entrust_search_time_wait_header">
+        <item>买卖标志</item>
+        <item>委托价格</item>
+        <item>委托数量</item>
+        <item>成交价格</item>
+        <item>成交数量</item>
+        <item>状态说明</item>
+        <item>委托时间</item>
+        <item>委托编号</item>
+        <item>报价方式</item>
+    </string-array>
+
+    <!--资讯界面-->
+    <string-array name="information_type">
+        <item>要闻</item>
+        <item>港股</item>
+        <item>美股</item>
+        <item>7*24小时</item>
+    </string-array>
+
+    <!--涡轮-->
+    <string-array name="turbine_header">
+        <item>涡轮名称</item>
+        <item>最新价</item>
+        <item>涨跌幅</item>
+        <item>成交量</item>
+        <item>到期日</item>
+        <item>街货比</item>
+        <item>溢价</item>
+        <item>引伸波幅</item>
+        <item>换股比率</item>
+        <item>有效杠杆</item>
+    </string-array>
+
+    <!--牛熊证-->
+    <string-array name="bull_bear_syndrome_header">
+        <item>最新价</item>
+        <item>涨跌幅</item>
+        <item>成交量</item>
+        <item>到期日</item>
+        <item>街货比</item>
+        <item>溢价</item>
+        <item>收回价</item>
+        <item>换股比率</item>
+        <item>杠杆比率</item>
+    </string-array>
+
+    <!--区间涨跌幅-->
+    <string-array name="section_change_rate_header">
+        <item>涨跌幅</item>
+        <item>最新价</item>
+        <item>涨跌幅</item>
+        <item>涨跌额</item>
+        <item>市盈率</item>
+        <item>市值</item>
+        <item>5分钟涨跌幅</item>
+        <item>5日涨跌幅</item>
+        <item>10日涨跌幅</item>
+        <item>20日涨跌幅</item>
+        <item>60日涨跌幅</item>
+        <item>120日涨跌幅</item>
+        <item>250日涨跌幅</item>
+        <item>年初至今</item>
+    </string-array>
+
+    <!--牛熊证-->
+    <string-array name="all_market_stocks_header">
+        <item>价格</item>
+        <item>涨跌幅</item>
+        <item>涨跌额</item>
+        <item>成交量</item>
+        <item>成交额</item>
+        <item>换手率</item>
+        <item>市盈率</item>
+        <item>振幅</item>
+        <item>市值</item>
+        <item>量比</item>
+        <item>委比</item>
+    </string-array>
+
+    <!--学历 1：中学或以下 2：大专 3：本科 4：硕士或以上-->
+    <string-array name="all_education_options">
+        <item>中学或以下</item>
+        <item>大专</item>
+        <item>本科</item>
+        <item>硕士或以上</item>
+    </string-array>
+
+    <!--就业 1：受雇 2：自雇 3：退休 4：自由投资人-->
+    <string-array name="all_employment_options">
+        <item>受雇</item>
+        <item>自雇</item>
+        <item>退休</item>
+        <item>自由投资人</item>
+    </string-array>
+
+    <!--行业 1：计算机/互联网/通信/电子技术 2：生产制造/物流运输 3：销售/贸易 3：金融/银行/保险 4：医药/化工 5：餐饮/娱乐/美容 6：广告公关/媒体/艺术文化 7：教育/法律 8：建筑/房地产 9：政府/事业机构 10：其他-->
+    <string-array name="all_industry_options">
+        <item>计算机/互联网/通信/电子技术</item>
+        <item>生产制造/物流运输</item>
+        <item>销售/贸易</item>
+        <item>金融/银行/保险</item>
+        <item>医药/化工</item>
+        <item>餐饮/娱乐/美容</item>
+        <item>广告公关/媒体/艺术文化</item>
+        <item>教育/法律</item>
+        <item>建筑/房地产</item>
+        <item>政府/事业机构</item>
+        <item>其他</item>
+    </string-array>
+
+    <!--职务 1：高管 2：中层 3：普通员工-->
+    <string-array name="all_duties_options">
+        <item>高管</item>
+        <item>中层</item>
+        <item>普通员工</item>
+    </string-array>
+</resources>

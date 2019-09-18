@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:transitionName="iv_logo"
+        android:layout_width="@dimen/view_height_70dp"
+        android:layout_height="@dimen/view_height_70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/view_padding_margin_24dp"
+        tools:src="@drawable/icon_usdp"/>
+
+    <!--地址-->
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:transitionName="tv_address"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/view_padding_margin_32dp"
+        android:layout_marginStart="@dimen/view_padding_margin_32dp"
+        android:layout_marginTop="@dimen/view_padding_margin_20dp"
+        android:gravity="start"
+        android:textColor="@color/black_text_181717"
+        android:textSize="@dimen/text_size_title_15sp"
+        tools:text="dh23834hdhsi8374hf203jd0dh0dgh23834hdhsi8374hf203jd0dh0dg"/>
+
+    <!--默认的金额-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/view_padding_margin_20dp"
+        android:hint="@string/activity_show_address_qr_hint"
+        android:visibility="gone"
+        app:hintTextAppearance="@style/TextInputLayout_HintTextAppearance">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_name"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_16dp"
+            android:layout_marginTop="@dimen/view_padding_margin_10dp"
+            android:background="@color/main_color_white"
+            android:imeOptions="actionNext"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColorHint="@color/black_text_993a4254"
+            android:textSize="@dimen/text_size_title_15sp"
+            tools:text="11"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!--二维码-->
+    <ImageView
+        android:id="@+id/iv_address_qr"
+        android:layout_width="@dimen/view_height_150dp"
+        android:layout_height="@dimen/view_height_150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/view_padding_margin_40dp"
+        android:layout_marginTop="@dimen/view_padding_margin_24dp"
+        tools:src="@color/toolbar_second_color_primary"/>
+
+    <include layout="@layout/layout_common_dark_function_button"/>
+</LinearLayout>

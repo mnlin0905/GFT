@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <!--聊天資訊-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_messages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/view_padding_margin_10dp"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            tools:ignore="UnusedIds" />
+
+        <!--輸入法-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_272a3f_ffffff"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/prefer_view_height_48dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/view_padding_margin_12dp"
+            android:paddingTop="@dimen/view_padding_margin_8dp"
+            android:paddingEnd="@dimen/view_padding_margin_12dp"
+            android:paddingBottom="@dimen/view_padding_margin_8dp">
+            <!--文本框-->
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="請輸入您遇到的問題"
+                android:imeOptions="actionDone"
+                android:paddingStart="@dimen/view_padding_margin_16dp"
+                android:paddingTop="@dimen/view_padding_margin_8dp"
+                android:paddingEnd="@dimen/view_padding_margin_16dp"
+                android:paddingBottom="@dimen/view_padding_margin_8dp"
+                android:singleLine="true"
+                android:textColor="@color/skin_title_color"
+                android:textColorHint="@color/dark_main_text_666986"
+                android:textSize="@dimen/text_size_small_12sp"
+                tools:background="@color/transparent"
+                tools:ignore="UnusedIds" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                android:src="@drawable/dark_icon_chat_face" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_12dp"
+                android:src="@drawable/dark_icon_chat_more" />
+        </LinearLayout>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

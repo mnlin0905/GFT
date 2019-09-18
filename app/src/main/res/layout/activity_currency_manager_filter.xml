@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/toolbar_color_primary"
+        style="@style/NoSpaceActionBarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:theme="@style/ToolbarTheme_menu_text_white"
+        app:contentInsetEnd="0dp"
+        android:transitionName="@string/transition_name_toolbar"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="@drawable/ic_arrow_back_white">
+
+        <com.linktech.gft.view.WatchInputEditText
+            android:id="@+id/et_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar_hint_color_primary"
+            android:drawablePadding="@dimen/view_padding_margin_8dp"
+            android:drawableStart="@drawable/icon_search_white"
+            android:hint="@string/activity_currency_manager_filter_hint"
+            android:inputType="text"
+            android:paddingBottom="@dimen/view_padding_margin_8dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingTop="@dimen/view_padding_margin_8dp"
+            android:textCursorDrawable="@drawable/shape_cursor_2dp_white"
+            android:singleLine="true"
+            android:textColor="@color/main_color_white"
+            android:textColorHint="@color/main_color_white_80ffffff"
+            android:textSize="@dimen/text_size_13sp"
+            tools:text="EOS"/>
+    </android.support.v7.widget.Toolbar>
+
+    <!--币种控制-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/srl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            app:srlAccentColor="?attr/colorAccent"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+            app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+            app:srlPrimaryColor="?attr/colorPrimary">
+            <!--列表-->
+            <com.linktech.gft.view.RecyclerViewWithEmptyView
+                android:id="@+id/xrv_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_color_white"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <!--空-->
+        <ImageView
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/view_padding_margin_64dp"
+            android:src="@drawable/icon_empty_view"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

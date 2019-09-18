@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <com.linktech.gft.view.DisallowClickTabLayout
+        android:id="@+id/tl_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/toolbar_second_color_primary"
+        app:tabIndicatorHeight="@dimen/tab_layout_indicator_height_2dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/toolbar_second_color_primary"
+        app:tabTextAppearance="@style/TextViewTabLayout"
+        app:tabTextColor="#9aa0ae" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        app:srlAccentColor="?attr/colorAccent"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+        app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+        app:srlPrimaryColor="?attr/colorPrimary">
+        <!--列表-->
+        <com.linktech.gft.view.SlideRecyclerView
+            android:id="@+id/xrv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/mc_window_background_gray_f5f5fb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_765ed4">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginTop="@dimen/view_padding_margin_64dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                android:layout_marginBottom="@dimen/view_padding_margin_8dp"
+                android:paddingTop="@dimen/view_padding_margin_4dp"
+                android:src="@drawable/icon_water_money_center" />
+
+            <!--文字-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/view_padding_margin_28dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/activity_money_center_title"
+                    android:textColor="@color/main_color_white_f5f5fb"
+                    android:textSize="@dimen/text_size_20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:singleLine="true"
+                    android:text="@string/activity_money_center_sub"
+                    android:textColor="@color/main_color_white_f5f5fb"
+                    android:textSize="@dimen/text_size_16sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!---->
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/srl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlAccentColor="?attr/colorAccent"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+            app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+            app:srlPrimaryColor="?attr/colorPrimary">
+            <!--列表-->
+            <com.linktech.gft.view.RecyclerViewWithEmptyView
+                android:paddingTop="@dimen/view_padding_margin_28dp"
+                android:id="@+id/xrv_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/prefer_view_height_48dp" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <com.linktech.gft.view.RecyclerEmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

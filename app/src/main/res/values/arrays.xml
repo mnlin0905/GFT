@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--证件类型-->
+    <string-array name="array_person_card_type">
+        <item>身份证</item>
+        <item>护照</item>
+        <item>其他</item>
+    </string-array>
+
+    <!--实名认证状态说明-->
+    <string-array name="array_certification_label_status">
+        <item>您的实名认证正在审核中</item>
+        <item>您的实名认证已通过</item>
+        <item>您的实名认证审核不成功</item>
+    </string-array>
+
+    <!--实名认证状态-->
+    <string-array name="array_certification_status">
+        <item>未认证</item>
+        <item>已认证</item>
+        <item>认证失败</item>
+        <item>审核中</item>
+    </string-array>
+
+    <!--转账状态-->
+    <string-array name="array_take_out_status">
+        <item>处理中</item>
+        <item>处理中</item>
+        <item>处理中</item>
+        <item>已转出</item>
+        <item>已成功</item>
+        <item>已失败</item>
+        <item>已撤销</item>
+    </string-array>
+
+    <!--导入钱包方式-->
+    <string-array name="array_import_wallet_types">
+        <item>官方钱包</item>
+        <item>私钥</item>
+    </string-array>
+
+    <!--导出keystore方式-->
+    <string-array name="array_export_keystore_types">
+        <item>Keystore文件</item>
+        <item>二维码</item>
+    </string-array>
+
+    <!--实名认证状态:简要信息-->
+    <string-array name="array_certification_label_status_brief">
+        <item>审核中</item>
+        <item>已通过</item>
+        <item>未通过</item>
+        <item>未认证</item>
+    </string-array>
+
+    <!--用户需要的权限限定-->
+    <string-array name="array_arouter_permissions">
+        <item>登录</item>
+        <item>已开始了实名认证</item>
+        <item>绑定手机</item>
+        <item>绑定邮箱</item>
+        <item>设置交易密码</item>
+        <item>红色通道</item> <!--若目标此flag设定,则表示禁止跳转-->
+        <item>wifi</item>
+        <item>手机网络</item>
+        <item>栈单例模式</item>
+        <item>清除栈顶模式</item>
+        <item>实名认证已成功</item>
+    </string-array>
+
+    <!--系统默认的语言环境-->
+    <string-array name="array_locale_language">
+        <item>跟随系统</item>
+        <item>简体中文</item>
+        <item>繁體中文&#160;(臺灣)</item>
+        <item>繁體中文&#160;(香港)</item>
+        <item>English</item>
+    </string-array>
+</resources>

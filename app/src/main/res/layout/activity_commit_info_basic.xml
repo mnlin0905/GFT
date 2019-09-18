@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingBottom="@dimen/view_padding_margin_48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/skin_scaffold_deep_background_color"
+                    android:minHeight="@dimen/view_height_36dp"
+                    app:LineMenuView_for_calculation="off"
+                    app:LineMenuView_menu="請確認并完善您的身份信息，如有錯誤請更正"
+                    app:LineMenuView_menu_text_color="@color/skin_display1_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp" />
+
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:background="@drawable/dark_layer_trans_bottom_divider_1dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/view_padding_margin_10dp"
+                        android:paddingBottom="@dimen/view_padding_margin_10dp"
+                        android:singleLine="true"
+                        android:text="姓名"
+                        android:textColor="@color/skin_body1_color"
+                        android:textSize="@dimen/text_size_normal_14sp" />
+
+                    <com.linktech.gft.view.WatchInputEditText
+                        android:id="@+id/wiet_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                        android:background="@color/transparent"
+                        android:gravity="end"
+                        android:hint="請輸入您的姓名"
+                        android:singleLine="true"
+                        android:textColorHint="@color/skin_hint_color" />
+                </LinearLayout>
+
+                <!--姓 拼音-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:background="@drawable/dark_layer_trans_bottom_divider_1dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/view_padding_margin_10dp"
+                        android:paddingBottom="@dimen/view_padding_margin_10dp"
+                        android:singleLine="true"
+                        android:text="姓的拼音"
+                        android:textColor="@color/skin_body1_color"
+                        android:textSize="@dimen/text_size_normal_14sp" />
+
+                    <com.linktech.gft.view.WatchInputEditText
+                        android:id="@+id/wiet_py_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                        android:background="@color/transparent"
+                        android:gravity="end"
+                        android:hint="請輸入您姓的拼音"
+                        android:singleLine="true"
+                        android:textColorHint="@color/skin_hint_color" />
+                </LinearLayout>
+
+                <!--名的拼音-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:background="@drawable/dark_layer_trans_bottom_divider_1dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/view_padding_margin_10dp"
+                        android:paddingBottom="@dimen/view_padding_margin_10dp"
+                        android:singleLine="true"
+                        android:text="名的拼音"
+                        android:textColor="@color/skin_body1_color"
+                        android:textSize="@dimen/text_size_normal_14sp" />
+
+                    <com.linktech.gft.view.WatchInputEditText
+                        android:id="@+id/wiet_py_last"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                        android:background="@color/transparent"
+                        android:gravity="end"
+                        android:hint="請輸入您名的拼音"
+                        android:singleLine="true"
+                        android:textColorHint="@color/skin_hint_color" />
+                </LinearLayout>
+
+                <!--性别-->
+                <com.linktech.gft.skin.MyLineMenuView
+                    android:id="@+id/lmv_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:background="@drawable/dark_layer_trans_bottom_divider_1dp"
+                    android:minHeight="@dimen/view_height_36dp"
+                    android:paddingTop="@dimen/view_padding_margin_10dp"
+                    android:paddingBottom="@dimen/view_padding_margin_10dp"
+                    app:LineMenuView_brief="未選擇"
+                    app:LineMenuView_brief_text_color="@color/skin_body1_color"
+                    app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+                    app:LineMenuView_menu="@string/activity_person_information_sex"
+                    app:LineMenuView_menu_text_color="@color/skin_body1_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+                    app:LineMenuView_navigation="@drawable/icon_arrow_right"
+                    app:LineMenuView_plugin="text" />
+
+                <!--地址-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:background="@drawable/dark_layer_trans_bottom_divider_1dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/view_padding_margin_10dp"
+                        android:paddingBottom="@dimen/view_padding_margin_10dp"
+                        android:singleLine="true"
+                        android:text="地址"
+                        android:textColor="@color/skin_body1_color"
+                        android:textSize="@dimen/text_size_normal_14sp" />
+
+                    <com.linktech.gft.view.WatchInputEditText
+                        android:id="@+id/wiet_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                        android:background="@color/transparent"
+                        android:gravity="end"
+                        android:hint="請填寫身份證上的地址信息"
+                        android:singleLine="true"
+                        android:textColorHint="@color/skin_hint_color" />
+                </LinearLayout>
+
+                <!--身份证号-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:background="@drawable/dark_layer_trans_bottom_divider_1dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/view_padding_margin_10dp"
+                        android:paddingBottom="@dimen/view_padding_margin_10dp"
+                        android:singleLine="true"
+                        android:text="身份證號"
+                        android:textColor="@color/skin_body1_color"
+                        android:textSize="@dimen/text_size_normal_14sp" />
+
+                    <com.linktech.gft.view.WatchInputEditText
+                        android:id="@+id/wiet_id_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                        android:background="@color/transparent"
+                        android:gravity="end"
+                        android:hint="請輸入您的身份證號碼"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColorHint="@color/skin_hint_color" />
+                </LinearLayout>
+
+                <!--出生日期-->
+                <com.linktech.gft.skin.MyLineMenuView
+                    android:id="@+id/lmv_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:layout_marginBottom="@dimen/view_padding_margin_48dp"
+                    android:background="@drawable/dark_layer_trans_bottom_divider_1dp"
+                    android:minHeight="@dimen/view_height_36dp"
+                    android:paddingTop="@dimen/view_padding_margin_10dp"
+                    android:paddingBottom="@dimen/view_padding_margin_10dp"
+                    app:LineMenuView_brief="未選擇"
+                    app:LineMenuView_brief_text_color="@color/skin_body1_color"
+                    app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+                    app:LineMenuView_menu="出生日期"
+                    app:LineMenuView_menu_text_color="@color/skin_body1_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+                    app:LineMenuView_navigation="@drawable/icon_arrow_right"
+                    app:LineMenuView_plugin="text" />
+
+                <!---->
+                <include layout="@layout/layout_common_dark_function_button" />
+
+                <!---->
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:drawableStart="@drawable/ic_establish_phone"
+                    android:drawablePadding="@dimen/view_padding_margin_10dp"
+                    android:textColor="@color/skin_accent_color"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:text="@string/establish_server_phone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

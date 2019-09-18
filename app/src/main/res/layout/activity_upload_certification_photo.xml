@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/skin_scaffold_background_color"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/view_padding_margin_12dp"
+            android:paddingBottom="@dimen/view_padding_margin_48dp">
+            <!---->
+            <include layout="@layout/layout_upload_picture" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                android:text="@string/activity_upload_certification_photo_label"
+                android:textColor="@color/skin_display1_color"
+                android:textSize="@dimen/text_size_small_12sp" />
+
+            <!--声明-->
+            <com.linktech.gft.view.FormatDoubleTextView
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                android:layout_marginBottom="@dimen/view_padding_margin_42dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/activity_upload_certification_photo_info"
+                android:textColor="@color/skin_display1_color"
+                android:textSize="@dimen/text_size_small_12sp" />
+
+            <!---->
+            <include layout="@layout/layout_common_dark_function_button" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

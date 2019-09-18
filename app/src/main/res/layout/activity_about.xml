@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_second_color_primary"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/view_padding_margin_32dp">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <!--头部-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/view_padding_margin_54dp"
+            android:src="@drawable/bg_splash_logo" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/black_text_99ffffff"
+            android:textSize="@dimen/text_size_13sp"
+            tools:text="V1.0版本" />
+    </LinearLayout>
+
+    <!---->
+    <com.linktech.gft.skin.MyLineMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        app:LineMenuView_for_calculation="on"
+        app:LineMenuView_menu="@string/activity_about_service"
+        app:LineMenuView_menu_text_color="@color/black_text_171a3f"
+        app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+        app:LineMenuView_navigation="@drawable/icon_arrow_right"
+        app:LineMenuView_plugin="text" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp" />
+
+    <com.linktech.gft.skin.MyLineMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        app:LineMenuView_for_calculation="on"
+        app:LineMenuView_menu="@string/activity_about_copyright"
+        app:LineMenuView_menu_text_color="@color/black_text_171a3f"
+        app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+        app:LineMenuView_navigation="@drawable/icon_arrow_right"
+        app:LineMenuView_plugin="text" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp" />
+
+    <com.linktech.gft.skin.MyLineMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        app:LineMenuView_menu="@string/activity_about_check_version"
+        app:LineMenuView_menu_text_color="@color/black_text_171a3f"
+        app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+        app:LineMenuView_navigation="@drawable/icon_arrow_right"
+        app:LineMenuView_plugin="text" />
+</LinearLayout>

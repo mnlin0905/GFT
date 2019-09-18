@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_color_1d2037_f4f4f4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.linktech.gft.skin.MyTitleCenterToolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarTheme_menu_text_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:minHeight="?attr/actionBarSize"
+        android:transitionName="@string/transition_name_toolbar"
+        app:contentInsetEnd="@dimen/view_padding_margin_16dp"
+        app:contentInsetStart="@dimen/view_padding_margin_16dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_scrollFlags="exitUntilCollapsed|scroll"
+        app:popupTheme="@style/PopupThemeLight"
+        app:titleMarginStart="0dp"
+        app:titleTextColor="@color/skin_title_color" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="?attr/colorAccent"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+        app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+        app:srlPrimaryColor="?attr/colorPrimary">
+        <!--列表-->
+        <com.linktech.gft.view.RecyclerViewWithEmptyView
+            android:id="@+id/xrv_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="@dimen/prefer_view_height_48dp" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.linktech.gft.view.RecyclerEmptyView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/view_padding_margin_10dp"
+        android:visibility="gone" />
+</LinearLayout>

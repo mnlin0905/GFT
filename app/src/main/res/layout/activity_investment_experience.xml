@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/view_padding_margin_48dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_14dp"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp"
+                    android:text="證券投資經驗" />
+
+                <RadioGroup
+                    android:id="@+id/rg_zq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_zq_one"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="0-1年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_zq_two"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="1-3年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_zq_three"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="3-5年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_zq_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="5年以上" />
+                </RadioGroup>
+
+                <com.linktech.gft.view.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_line_width_1dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_14dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp" />
+
+                <!--基金投資經驗-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp"
+                    android:text="基金投資經驗" />
+
+                <RadioGroup
+                    android:id="@+id/rg_jj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_jj_one"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="0-1年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_jj_two"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="1-3年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_jj_three"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="3-5年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_jj_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="5年以上" />
+                </RadioGroup>
+
+                <com.linktech.gft.view.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_line_width_1dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_14dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp" />
+
+
+                <!--外匯投資經驗-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp"
+                    android:text="外匯投資經驗" />
+
+                <RadioGroup
+                    android:id="@+id/rg_wh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_wh_one"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="0-1年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_wh_two"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="1-3年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_wh_three"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="3-5年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_wh_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="5年以上" />
+                </RadioGroup>
+
+                <com.linktech.gft.view.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_line_width_1dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_14dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp" />
+
+                <!--固定收益產品-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp"
+                    android:text="固定收益產品" />
+
+                <RadioGroup
+                    android:id="@+id/rg_gd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_gd_one"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="0-1年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_gd_two"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="1-3年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_gd_three"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="3-5年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_gd_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="5年以上" />
+                </RadioGroup>
+
+                <com.linktech.gft.view.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_line_width_1dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_14dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp" />
+
+                <!--其他-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp"
+                    android:text="其他" />
+
+                <RadioGroup
+                    android:id="@+id/rg_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_other_one"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="0-1年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_other_two"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="1-3年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_other_three"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="3-5年" />
+
+                    <RadioButton
+                        android:id="@+id/rb_other_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_radio_checked"
+                        android:paddingStart="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="5年以上" />
+                </RadioGroup>
+
+                <com.linktech.gft.view.DividerView
+                    android:layout_marginBottom="@dimen/view_padding_margin_48dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_line_width_1dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_14dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp" />
+
+                <!---->
+                <include layout="@layout/layout_common_dark_function_button" />
+
+                <!---->
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:drawableStart="@drawable/ic_establish_phone"
+                    android:drawablePadding="@dimen/view_padding_margin_10dp"
+                    android:textColor="@color/skin_accent_color"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:text="@string/establish_server_phone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

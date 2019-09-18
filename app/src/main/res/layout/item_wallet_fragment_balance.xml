@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layer_top_line_ripple_blue_borderless"
+    android:paddingBottom="@dimen/view_padding_margin_16dp"
+    android:paddingEnd="@dimen/view_padding_margin_20dp"
+    android:paddingStart="@dimen/view_padding_margin_20dp"
+    android:paddingTop="@dimen/view_padding_margin_16dp">
+
+    <!--币种类型-->
+    <ImageView
+        android:id="@+id/iv_currency"
+        android:layout_width="@dimen/view_height_26dp"
+        android:layout_height="@dimen/view_height_26dp"
+        android:scaleType="fitCenter"
+        android:transitionName="@string/transition_name_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/icon_currency_dac"/>
+
+    <!--名称:简称-->
+    <TextView
+        android:id="@+id/tv_currency_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_10dp"
+        android:src="@drawable/default_head_img"
+        android:textColor="@color/black_text_37416b"
+        android:textSize="@dimen/text_size_17sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@id/iv_currency"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="DAC"/>
+
+    <!--名称-->
+    <TextView
+        android:id="@+id/tv_currency_name_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_4dp"
+        android:src="@drawable/default_head_img"
+        android:textColor="@color/black_text_9ba0b5"
+        android:textSize="@dimen/text_size_10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_currency_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_currency_name"
+        tools:text="DAC-sssss"/>
+
+    <!--资产-->
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="@color/black_text_37416b"
+        android:textSize="@dimen/text_size_large_18sp"
+        android:textStyle="normal"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_currency_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="123.222378"/>
+
+    <!--资产:折合-->
+    <TextView
+        android:id="@+id/tv_balance_convent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/default_head_img"
+        android:textColor="@color/black_text_9ba0b5"
+        android:textSize="@dimen/text_size_10sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_currency_name_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="≈￥0.00"/>
+</android.support.constraint.ConstraintLayout>

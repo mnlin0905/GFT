@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginTop="@dimen/view_padding_margin_176dp"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/view_padding_margin_12dp"
+    android:paddingEnd="@dimen/view_padding_margin_12dp"
+    android:paddingBottom="@dimen/view_padding_margin_8dp">
+
+    <!--上部按钮-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/skin_dialog_background_color"
+        app:cardCornerRadius="@dimen/drawable_shape_normal_radius_12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.linktech.gft.view.FormatDoubleTextView
+                android:id="@+id/tv_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/view_padding_margin_10dp"
+                android:paddingBottom="@dimen/view_padding_margin_10dp"
+                android:text="@string/dialog_fragment_change_sex_title"
+                android:textColor="@color/skin_display1_color"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <!---->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_dialog_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--取消-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_8dp"
+        app:cardBackgroundColor="@color/skin_dialog_background_color"
+        app:cardCornerRadius="@dimen/drawable_shape_normal_radius_12dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/view_padding_margin_16dp"
+            android:paddingBottom="@dimen/view_padding_margin_16dp"
+            android:text="@string/function_cancel"
+            android:textColor="@color/skin_body1_color"
+            android:textSize="@dimen/text_size_large_19sp" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

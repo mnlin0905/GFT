@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_woman"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="@dimen/view_padding_margin_16dp"
+    android:paddingBottom="@dimen/view_padding_margin_16dp"
+    android:textSize="@dimen/text_size_17sp"
+    tools:background="@color/skin_dialog_background_color"
+    tools:text="内容" />

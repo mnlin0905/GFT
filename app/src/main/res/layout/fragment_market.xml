@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_color_272a3f_f4f4f4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--切換國家;tab-group;搜索;otc-多功能-->
+    <com.linktech.gft.skin.MyTitleCenterToolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarTheme_menu_text_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:minHeight="?attr/actionBarSize"
+        android:transitionName="@string/transition_name_toolbar"
+        app:contentInsetEnd="@dimen/view_padding_margin_16dp"
+        app:contentInsetStart="@dimen/view_padding_margin_16dp"
+        app:layout_scrollFlags="exitUntilCollapsed|scroll"
+        app:popupTheme="@style/PopupThemeLight"
+        app:titleMarginStart="0dp">
+
+        <!--tab-group-->
+        <RadioGroup
+            android:id="@+id/rg_custom_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center|center_vertical"
+            android:background="@drawable/skin_shape_bg_market_tab_radius_3dp"
+            android:checkedButton="@id/rb_custom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UnusedIds">
+
+            <RadioButton
+                android:id="@+id/rb_custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_fragment_market"
+                android:button="@null"
+                android:ellipsize="start"
+                android:minHeight="@dimen/view_height_30dp"
+                android:paddingStart="@dimen/view_padding_margin_12dp"
+                android:paddingEnd="@dimen/view_padding_margin_12dp"
+                android:singleLine="true"
+                android:text="@string/fragment_market_custom"
+                android:textColor="@color/selector_normal_checked_market_fragment"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <RadioButton
+                android:id="@+id/rb_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_fragment_market"
+                android:button="@null"
+                android:ellipsize="start"
+                android:minHeight="@dimen/view_height_30dp"
+                android:paddingStart="@dimen/view_padding_margin_12dp"
+                android:paddingEnd="@dimen/view_padding_margin_12dp"
+                android:singleLine="true"
+                android:text="@string/fragment_market_market"
+                android:textColor="@color/selector_normal_checked_market_fragment"
+                android:textSize="@dimen/text_size_17sp" />
+        </RadioGroup>
+
+        <skin.support.widget.SkinCompatImageView
+            android:id="@+id/tv_search"
+            android:layout_gravity="end"
+            android:src="@drawable/skin_menu_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.linktech.gft.skin.MyTitleCenterToolbar>
+
+    <com.linktech.gft.view.TabPagerCombineLayout
+        android:id="@+id/tpcl_record"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout="@layout/dark_layout_tab_pager_combine_market"
+        tools:ignore="UnusedIds" />
+
+    <!--HSI-->
+    <LinearLayout
+        android:id="@+id/ll_hs_index"
+        style="@style/TextViewStandard"
+        android:paddingEnd="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_index_bg"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/view_height_36dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fragment_market_item_custom"
+            android:textColor="@color/dark_color_index_name"
+            android:textSize="@dimen/text_size_small_12sp" />
+
+        <com.linktech.gft.skin.MyStockColorTextView
+            android:id="@+id/tv_hs_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_8dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="--"
+            android:textColor="@color/dark_color_f85d5a"
+            android:textSize="@dimen/text_size_small_12sp" />
+
+        <com.linktech.gft.skin.MyStockColorTextView
+            android:id="@+id/tv_hs_change_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="@color/dark_color_f85d5a"
+            android:textSize="@dimen/text_size_small_12sp" />
+
+        <com.linktech.gft.skin.MyStockColorTextView
+            android:id="@+id/tv_hs_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_8dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="--%"
+            android:textColor="@color/dark_color_f85d5a"
+            android:textSize="@dimen/text_size_small_12sp" />
+
+        <ImageView
+            android:id="@+id/iv_exponent_expand"
+            android:paddingStart="@dimen/view_padding_margin_10dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/view_padding_margin_10dp"
+            android:src="@drawable/dark_arrow_bottom" />
+    </LinearLayout>
+</LinearLayout>

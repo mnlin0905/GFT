@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin_scaffold_background_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <!--列表組-->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srlAccentColor="?attr/colorAccent"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+        app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+        app:srlPrimaryColor="?attr/colorPrimary">
+        <!--列表-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!---->
+            <TextView
+                android:id="@+id/tv_message_at_once"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/skin_scaffold_deep_background_color"
+                android:gravity="center"
+                android:paddingTop="@dimen/view_padding_margin_4dp"
+                android:paddingBottom="@dimen/view_padding_margin_4dp"
+                android:text="港股行情至少延时15分钟"
+                android:textColor="@color/skin_display1_color"
+                android:textSize="@dimen/text_size_small_12sp"
+                android:visibility="gone" />
+
+            <!--搜索-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                app:cardBackgroundColor="@color/skin_scaffold_deep_background_color"
+                app:cardCornerRadius="@dimen/drawable_shape_normal_radius_8dp">
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/skin_menu_search"
+                    android:drawablePadding="@dimen/view_padding_margin_12dp"
+                    android:hint="输入股票代码/名称/全拼"
+                    android:paddingStart="@dimen/view_padding_margin_12dp"
+                    android:paddingTop="@dimen/view_padding_margin_10dp"
+                    android:paddingEnd="@dimen/view_padding_margin_12dp"
+                    android:paddingBottom="@dimen/view_padding_margin_10dp"
+                    android:textSize="@dimen/text_size_13sp" />
+            </android.support.v7.widget.CardView>
+
+            <!---->
+            <RadioGroup
+                android:id="@+id/rg_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                android:background="@drawable/skin_shape_bg_market_tab_radius_3dp"
+                android:checkedButton="@id/rb_one"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_fragment_market"
+                    android:button="@null"
+                    android:ellipsize="start"
+                    android:minHeight="@dimen/view_height_30dp"
+                    android:paddingStart="@dimen/view_padding_margin_12dp"
+                    android:paddingEnd="@dimen/view_padding_margin_12dp"
+                    android:singleLine="true"
+                    android:text="牛证"
+                    android:textColor="@color/selector_normal_checked_market_fragment" />
+
+                <RadioButton
+                    android:id="@+id/rb_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_fragment_market"
+                    android:button="@null"
+                    android:ellipsize="start"
+                    android:minHeight="@dimen/view_height_30dp"
+                    android:paddingStart="@dimen/view_padding_margin_12dp"
+                    android:paddingEnd="@dimen/view_padding_margin_12dp"
+                    android:singleLine="true"
+                    android:text="熊证"
+                    android:textColor="@color/selector_normal_checked_market_fragment" />
+            </RadioGroup>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/view_padding_margin_10dp">
+
+                <!---->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <!--表頭-->
+                        <LinearLayout
+                            android:id="@+id/ll_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/dark_color_2e3146_ebe8ef"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <!--TODO 代碼主動添加不同佈局,控制單個長度為1/4-->
+                        </LinearLayout>
+
+                        <!--資料項目-->
+                        <com.linktech.gft.view.RecyclerViewWithEmptyView
+                            android:id="@+id/xrv_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <com.linktech.gft.view.RecyclerEmptyView
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!---->
+    <LinearLayout
+        android:id="@+id/ll_alert"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prefer_view_height_48dp"
+        android:background="@color/skin_scaffold_deep_background_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+        <TextView
+            android:id="@+id/tv_jump"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="涡轮风险较大，点此了解如何正确投资涡轮"
+            android:textColor="@color/skin_body1_color"
+            android:textSize="@dimen/text_size_normal_14sp" />
+
+        <com.linktech.gft.view.RectImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/view_height_20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_turbine_close" />
+    </LinearLayout>
+</LinearLayout>

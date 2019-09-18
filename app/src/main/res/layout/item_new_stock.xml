@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_color_272a3f_ffffff">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        tools:text="中国建设"
+        android:textColor="@color/skin_title_color"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        tools:text="013445.HK"
+        android:textColor="@color/dark_main_text_666986"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+        app:layout_constraintLeft_toRightOf="@id/tv_name" />
+
+    <View
+        android:id="@+id/dv"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_d8dcdf"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tv_one_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        tools:text="3.7455~4.9832"
+        android:textColor="@color/skin_title_color"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dv" />
+
+    <TextView
+        android:id="@+id/tv_one_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        tools:text="招股价"
+        android:textColor="@color/dark_main_text_666986"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tv_one_value"
+        app:layout_constraintTop_toBottomOf="@id/tv_one_value" />
+
+    <TextView
+        android:id="@+id/tv_two_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="3435.21"
+        android:textColor="@color/skin_title_color"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_one_value"
+        app:layout_constraintLeft_toLeftOf="@id/gl"
+        app:layout_constraintRight_toRightOf="@id/gl" />
+
+    <TextView
+        android:id="@+id/tv_two_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        tools:text="最低认购价"
+        android:textColor="@color/dark_main_text_666986"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_one_text"
+        app:layout_constraintLeft_toLeftOf="@id/gl"
+        app:layout_constraintRight_toRightOf="@id/gl" />
+
+    <TextView
+        android:id="@+id/tv_three_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        tools:text="3435.21"
+        android:textColor="@color/skin_title_color"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_one_value"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_three_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        tools:text="认购截止時間"
+        android:textColor="@color/dark_main_text_666986"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_one_text"
+        app:layout_constraintRight_toRightOf="@id/tv_three_value" />
+
+</android.support.constraint.ConstraintLayout>

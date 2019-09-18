@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/view_padding_margin_12dp"
+    android:foreground="@drawable/rp_main_blue_no_border"
+    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/main_color_white"
+    app:cardCornerRadius="@dimen/drawable_shape_normal_radius_10dp"
+    app:cardElevation="@dimen/float_action_tab_elevation_1px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/view_padding_margin_20dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingTop="@dimen/view_padding_margin_24dp">
+        <!--圖示-->
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/view_height_32dp"
+            android:layout_height="@dimen/view_height_32dp"
+            tools:src="@drawable/icon_test_ecology"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_12dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.linktech.gft.view.MarqueeTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="@color/black_text_37416b"
+                android:textSize="@dimen/text_size_16sp"
+                tools:text="萌寵鎮遊戲"/>
+
+            <com.linktech.gft.view.MarqueeTextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_padding_margin_4dp"
+                android:singleLine="true"
+                android:textColor="@color/black_text_9ba0b5"
+                android:textSize="@dimen/text_size_smallest_11sp"
+                tools:text="Petopia Game"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_16dp"
+            android:src="@drawable/icon_arrow_tip_right_black"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

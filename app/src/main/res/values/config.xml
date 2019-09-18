@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!--"￥"-->
+    <string name="target_legal_currency">USD</string>
+
+    <string name="application_main_currency">USDP</string>
+
+    <string name="application_main_currency_full_name">USD Plus</string>
+
+    <string name="system_currency">DAC</string>
+
+    <!--开户时联系的客服电话-->
+    <string name="establish_server_phone">199-2546-6387</string>
+
+    <!--fileProvider权限-->
+    <string name="file_provider">com.linktech.gft.fileprovider</string>
+
+    <!--文件图片存储目录-->
+    <string name="common_picture_directory">/gft/common_picture</string>
+    <string name="common_secret_directory">/gft/common_secret</string>
+    <string name="common_keystore_directory">/gft/common_keystore</string>
+
+    <!--尊嘉测试环境-->
+    <string name="base_test_zj_address">http://1.119.141.149:8094/</string>
+    <!--我们测试环境-->
+    <string name="base_test_we_address">http://192.169.1.211:8007/</string>
+    <!--测试socket-->
+    <string name="base_test_web_socket_address">ws://192.169.1.211:8007/websocket</string>
+    <!--测试入金，本地-->
+    <string name="base_test_golden_address">http://192.169.1.186:8888/#/home</string>
+    <!--测试协议地址-->
+    <string name="base_test_protocol_address">http://192.169.1.186:8888/#/</string>
+
+    <!--尊嘉正式环境-->
+    <string name="base_zj_address">https://adapter.investassistant.com/</string>
+    <!--我们正式环境-->
+    <string name="base_we_address">http://106.14.50.60:3100/</string>
+    <!--正式socket-->
+    <string name="base_web_socket_address">ws://106.14.50.60:3100/websocket</string>
+    <!--正式入金-->
+    <string name="base_golden_address">http://106.14.50.60:3100/index.html/home</string>
+    <!--协议地址-->
+    <string name="base_protocol_address">http://106.14.50.60:3100/gft_zh_tw/</string>
+
+    <!--共享元素-->
+    <string name="transition_name_logo">iv_logo</string>
+    <string name="transition_name_toolbar">toolbar</string>
+    <string name="transition_name_type">type</string>
+    <string name="transition_name_time">time</string>
+    <string name="transition_name_amount">amount</string>
+    <string name="transition_name_kline">fl_chart_multiply</string>
+
+    <!--editText限制输入的信息内容-->
+
+    <!--++++++++++++++++++++++++++++++++++++++++-->
+    <!--+++++++++++当前应用控制器+++++++++++++++++-->
+    <!--++++++++++++++++++++++++++++++++++++++++-->
+    <bool name="switch_open_log">false</bool>
+    <bool name="switch_open_todo">false</bool>
+    <bool name="switch_official_mode">true</bool>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TextViewStandard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_color_white">
+
+    <com.linktech.gft.view.MarqueeTextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="start|center_vertical"
+        tools:text="推荐用户名"
+        android:textSize="@dimen/text_size_normal_14sp"/>
+
+    <TextView
+        android:id="@+id/tv_boolean"
+        tools:text="是否实名"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_normal_14sp"/>
+
+    <TextView
+        android:ellipsize="end"
+        android:id="@+id/tv_register_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        tools:text="注册时间"
+        android:textSize="@dimen/text_size_normal_14sp"/>
+</LinearLayout>

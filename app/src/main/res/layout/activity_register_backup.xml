@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:keep="@layout/activity_register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/view_padding_margin_90dp"
+            android:paddingBottom="@dimen/view_padding_margin_32dp">
+
+            <!--tab-layout-->
+            <com.linktech.gft.view.DisallowClickTabLayout
+                android:id="@+id/tl_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginStart="@dimen/view_padding_margin_54dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_54dp"
+                android:theme="@style/ToolbarTheme_menu_text_white"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/skin_indicator_color"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/skin_accent_color"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabTextColor="@color/skin_body1_color" />
+
+            <!--手机号注册-->
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--国家地区-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_32dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                    android:text="@string/activity_bind_mobile_country"
+                    android:textColor="@color/skin_body1_color"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_country"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="@dimen/view_padding_margin_12dp"
+                        android:hint="@string/nike_name_email_phone"
+                        android:paddingTop="@dimen/view_padding_margin_12dp"
+                        android:paddingBottom="@dimen/view_padding_margin_10dp"
+                        android:singleLine="true"
+                        android:text="@string/activity_bind_mobile_china"
+                        android:textColor="@color/skin_body1_color"
+                        android:textColorHint="@color/skin_hint_color"
+                        android:textSize="@dimen/text_size_normal_14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="@dimen/view_padding_margin_16dp"
+                        android:paddingEnd="0dp"
+                        android:src="@drawable/icon_arrow_right" />
+                </LinearLayout>
+
+                <com.linktech.gft.view.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_line_width_1dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                    tools:background="@android:color/white" />
+
+                <!--手机号码-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                    android:text="@string/activity_login_phone_num"
+                    android:textColor="@color/skin_body1_color"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:textStyle="bold" />
+
+                <com.linktech.gft.view.WatchInputEditText
+                    android:id="@+id/wiet_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                    android:background="@color/transparent"
+                    android:drawablePadding="@dimen/view_padding_margin_12dp"
+                    android:hint="@string/activity_bind_email_activity_bind_mobile_hint_phone"
+                    android:imeOptions="actionNext"
+                    android:paddingTop="@dimen/view_padding_margin_12dp"
+                    android:paddingBottom="@dimen/view_padding_margin_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/skin_body1_color"
+                    android:textColorHint="@color/skin_hint_color"
+                    android:textSize="@dimen/text_size_normal_14sp" />
+            </LinearLayout>
+
+            <!--邮箱注册-->
+            <LinearLayout
+                android:id="@+id/ll_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <!--电子邮箱-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                    android:text="@string/activity_register_email_el"
+                    android:textColor="@color/skin_body1_color"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:textStyle="bold" />
+
+                <com.linktech.gft.view.WatchInputEditText
+                    android:id="@+id/wiet_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                    android:background="@color/transparent"
+                    android:drawablePadding="@dimen/view_padding_margin_12dp"
+                    android:hint="@string/activity_register_hint_email"
+                    android:imeOptions="actionNext"
+                    android:paddingTop="@dimen/view_padding_margin_12dp"
+                    android:paddingBottom="@dimen/view_padding_margin_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/skin_body1_color"
+                    android:textColorHint="@color/skin_hint_color"
+                    android:textSize="@dimen/text_size_normal_14sp" />
+            </LinearLayout>
+
+            <com.linktech.gft.view.DividerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_width_1dp"
+                android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                tools:background="@android:color/white" />
+
+            <!--验证码-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                android:text="@string/activity_login_random_num"
+                android:textColor="@color/skin_body1_color"
+                android:textSize="@dimen/text_size_normal_14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                android:orientation="horizontal">
+
+                <com.linktech.gft.view.WatchInputEditText
+                    android:id="@+id/et_random_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:drawablePadding="@dimen/view_padding_margin_16dp"
+                    android:hint="@string/activity_login_please_input_code"
+                    android:imeActionLabel="@string/function_submit"
+                    android:imeOptions="actionGo"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingStart="0dp"
+                    android:paddingTop="@dimen/view_padding_margin_12dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="@dimen/view_padding_margin_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/skin_body1_color"
+                    android:textColorHint="@color/skin_hint_color"
+                    android:textSize="@dimen/text_size_normal_14sp" />
+
+                <com.linktech.gft.view.RandomCodeTextView
+                    android:id="@+id/rctv_random_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/view_padding_margin_8dp"
+                    android:paddingTop="@dimen/view_padding_margin_4dp"
+                    android:paddingEnd="@dimen/view_padding_margin_8dp"
+                    android:paddingBottom="@dimen/view_padding_margin_4dp" />
+            </LinearLayout>
+
+            <com.linktech.gft.view.DividerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_width_1dp"
+                android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                tools:background="@android:color/white" />
+
+            <!--登录密码-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                android:text="@string/activity_register_login_pwd"
+                android:textColor="@color/skin_body1_color"
+                android:textSize="@dimen/text_size_normal_14sp"
+                android:textStyle="bold" />
+
+            <com.linktech.gft.view.WatchInputEditText
+                android:id="@+id/et_password_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                android:background="@color/transparent"
+                android:drawablePadding="@dimen/view_padding_margin_12dp"
+                android:hint="@string/activity_register_hint_pwd"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingTop="@dimen/view_padding_margin_12dp"
+                android:paddingBottom="@dimen/view_padding_margin_10dp"
+                android:singleLine="true"
+                android:textColor="@color/skin_body1_color"
+                android:textColorHint="@color/skin_hint_color"
+                android:textSize="@dimen/text_size_normal_14sp" />
+
+            <com.linktech.gft.view.DividerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_width_1dp"
+                android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                tools:background="@android:color/white" />
+
+            <!--确认登录密码-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                android:text="@string/activity_register_confirm_login_pwd"
+                android:textColor="@color/skin_body1_color"
+                android:textSize="@dimen/text_size_normal_14sp"
+                android:textStyle="bold" />
+
+            <com.linktech.gft.view.WatchInputEditText
+                android:id="@+id/et_password_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                android:background="@color/transparent"
+                android:drawablePadding="@dimen/view_padding_margin_12dp"
+                android:hint="@string/activity_register_hint_confirm_pwd"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingTop="@dimen/view_padding_margin_12dp"
+                android:paddingBottom="@dimen/view_padding_margin_10dp"
+                android:singleLine="true"
+                android:textColor="@color/skin_body1_color"
+                android:textColorHint="@color/skin_hint_color"
+                android:textSize="@dimen/text_size_normal_14sp" />
+
+            <com.linktech.gft.view.DividerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_width_1dp"
+                android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                tools:background="@android:color/white" />
+
+            <!--协议-->
+            <CheckBox
+                android:id="@+id/cb_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                android:layout_marginTop="@dimen/view_padding_margin_24dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                android:layout_marginBottom="@dimen/view_padding_margin_24dp"
+                android:textColor="@color/skin_display1_color"
+                android:textSize="@dimen/text_size_small_12sp"
+                tools:checked="true"
+                tools:text="我已仔细阅读并同意服务协议" />
+
+            <!---->
+            <include layout="@layout/layout_common_dark_function_button" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

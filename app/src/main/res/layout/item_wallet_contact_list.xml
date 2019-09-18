@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TextViewStandard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_color_white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:scaleType="center"
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/view_height_36dp"
+        android:layout_height="@dimen/view_height_36dp"
+        android:background="@drawable/shape_bg_circle_blue_6a38ed"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_8dp"
+        android:textSize="@dimen/text_size_title_15sp"
+        tools:text="Astam"/>
+</LinearLayout>

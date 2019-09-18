@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:orderInCategory="0"
+        android:id="@+id/financing_navigation_market"
+        android:icon="@drawable/dark_selector_financing_market"
+        android:title="@string/action_financing_market"/>
+
+    <item
+        android:orderInCategory="1"
+        android:id="@+id/financing_navigation_information"
+        android:icon="@drawable/dark_selector_financing_information"
+        android:title="@string/action_financing_information"/>
+
+    <item
+        android:orderInCategory="2"
+        android:id="@+id/financing_navigation_exchange"
+        android:icon="@drawable/dark_selector_financing_exchange"
+        android:title="@string/action_financing_exchange"/>
+
+    <item
+        android:orderInCategory="3"
+        android:id="@+id/financing_navigation_assets"
+        android:icon="@drawable/dark_selector_financing_assets"
+        android:title="@string/action_financing_assets"/>
+
+    <item
+        android:orderInCategory="4"
+        android:id="@+id/financing_navigation_person"
+        android:icon="@drawable/dark_selector_financing_person"
+        android:title="@string/action_financing_person"/>
+</menu>

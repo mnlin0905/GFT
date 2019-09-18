@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <!--内容-->
+    <TextView
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.5"
+        android:text="@string/activity_bind_email_activity_bind_mobile_label_mobile"
+        android:textColor="@color/black_text_663a4254"
+        android:textSize="@dimen/text_size_13sp" />
+
+    <com.linktech.gft.skin.MyLineMenuView
+        android:id="@+id/lmv_country"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/main_color_white"
+        app:LineMenuView_brief_text_color="@color/black_text_171a3f"
+        app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+        app:LineMenuView_menu="@string/activity_bind_mobile_country"
+        app:LineMenuView_menu_text_color="@color/black_text_171a3f"
+        app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+        app:LineMenuView_navigation="@drawable/icon_arrow_right"
+        app:LineMenuView_plugin="text"
+        tools:LineMenuView_brief="中国大陆" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:divider="@drawable/divider_line_gray_vertical_333"
+        android:dividerPadding="@dimen/view_padding_margin_16dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tv_add_num"
+            style="@style/TextViewStandard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/view_padding_margin_8dp"
+            android:text="+86"
+            android:textColorHint="@color/black_text_663a4254"
+            android:textSize="@dimen/text_size_title_15sp" />
+
+        <com.linktech.gft.view.WatchInputEditText
+            android:id="@+id/et_phone"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:hint="@string/activity_bind_email_activity_bind_mobile_hint_phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingStart="@dimen/view_padding_margin_8dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:textColorHint="@color/black_text_663a4254"
+            android:textSize="@dimen/text_size_title_15sp" />
+    </LinearLayout>
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_padding_margin_40dp"
+        android:background="@color/main_color_white"
+        android:divider="@drawable/divider_line_gray_vertical_e3e3e3"
+        android:dividerPadding="@dimen/view_padding_margin_12dp"
+        android:orientation="horizontal">
+
+        <com.linktech.gft.view.WatchInputEditText
+            android:id="@+id/et_image_code"
+            style="@style/TextViewStandard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="@string/activity_bind_email_activity_bind_mobile_picture_random_code"
+            android:inputType="text"
+            android:maxLength="6"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:singleLine="true"
+            android:textColorHint="@color/black_text_663a4254"
+            android:textSize="@dimen/text_size_title_15sp" />
+
+        <ImageView
+            android:id="@+id/iv_code"
+            android:layout_width="104dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/pic_yzm" />
+    </LinearLayout>
+
+    <!--按钮-->
+    <include layout="@layout/layout_common_dark_function_button" />
+</LinearLayout>

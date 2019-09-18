@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+    tools:background="@android:color/white"
+    tools:paddingTop="@dimen/view_padding_margin_48dp">
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        tools:background="#FFFFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_dialog_switch"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        tools:background="@android:color/white"
+        android:layout_height="wrap_content"
+        android:background="@color/skin_scaffold_background_color"
+        android:gravity="center"
+        android:text="切换券商"
+        android:textColor="@color/skin_body1_color"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        tools:background="@android:color/white"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:background="@color/skin_scaffold_background_color"
+        android:paddingStart="@dimen/view_padding_margin_24dp"
+        android:paddingEnd="@dimen/view_padding_margin_24dp"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_exit"
+        style="@style/TextViewStandard"
+        tools:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/skin_scaffold_background_color"
+        android:gravity="center"
+        android:text="安全退出"
+        android:textColor="@color/skin_body1_color"
+        android:textSize="@dimen/text_size_16sp" />
+</LinearLayout>

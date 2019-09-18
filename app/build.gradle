@@ -1,0 +1,501 @@
+//android  应用类型
+apply plugin: 'com.android.application'
+
+//dokka注释
+apply plugin: "org.jetbrains.dokka"
+
+//kotlin - dagger
+apply plugin: "kotlin-kapt"
+
+//kotlin依赖
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+//res混淆
+apply plugin: 'AndResGuard'
+
+//arouter-register
+apply plugin: 'com.alibaba.arouter'
+
+/**
+ * 版本
+ */
+def version_code = 300
+def version_name = "3.0.0"
+
+android {
+    compileSdkVersion 28
+
+    /**
+     * .9图编辑检测
+     */
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+    /**
+     * lint检查
+     */
+    lintOptions {
+        // true--关闭lint报告的分析进度
+        quiet true
+        // true--错误发生后停止gradle构建
+        abortOnError false
+        // true--只报告error
+        ignoreWarnings true
+        // true--忽略有错误的文件的全/绝对路径(默认是true)
+        absolutePaths true
+        // true--检查所有问题点，包含其他默认关闭项
+        checkAllWarnings true
+        // true--所有warning当做error
+        warningsAsErrors true
+        // 关闭指定问题检查
+        disable 'TypographyFractions', 'TypographyQuotes'
+        // 打开指定问题检查
+        enable 'RtlHardcoded', 'RtlCompat', 'RtlEnabled'
+        // 仅检查指定问题
+        check 'NewApi', 'InlinedApi'
+        // true--error输出文件不包含源码行号
+        noLines true
+        // true--显示错误的所有发生位置，不截取
+        showAll true
+        // 回退lint设置(默认规则)
+        lintConfig file("lint.xml")
+        // true--生成txt格式报告(默认false)
+        textReport true
+        // 重定向输出；可以是文件或'stdout'
+        textOutput 'stdout'
+        // true--生成XML格式报告
+        xmlReport false
+        // 指定xml报告文档(默认lint-results.xml)
+        xmlOutput file("lint-report.xml")
+        // true--生成HTML报告(带问题解释，源码位置，等)
+        htmlReport true
+        // html报告可选路径(构建器默认是lint-results.html )
+        htmlOutput file("lint-report.html")
+        //  true--所有正式版构建执行规则生成崩溃的lint检查，如果有崩溃问题将停止构建
+        checkReleaseBuilds true
+        // 在发布版本编译时检查(即使不包含lint目标)，指定问题的规则生成崩溃
+        fatal 'NewApi', 'InlineApi'
+        // 指定问题的规则生成错误
+        error 'Wakelock', 'TextViewEdits'
+        // 指定问题的规则生成警告
+        warning 'ResourceAsColor'
+        // 忽略指定问题的规则(同关闭检查)
+        ignore 'TypographyQuotes'
+    }
+
+    defaultConfig {
+        applicationId "com.linktech.gft"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode version_code
+        multiDexEnabled true
+        versionName version_name
+
+        //支持svg图形
+        vectorDrawables.useSupportLibrary = true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+                arguments = [moduleName: project.getName()]
+            }
+        }
+        vectorDrawables.useSupportLibrary = true
+
+        ndk {
+            abiFilters "armebi-v7a", "armeabi", "x86", "arm64-v8a"
+        }
+    }
+
+    kapt {
+        arguments {
+            arg("moduleName", project.getName())
+        }
+    }
+
+    /**
+     * 输出文件名
+     */
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "GFT_v${defaultConfig.versionName}_${releaseTime()}.apk"
+        }
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias 'acchain'
+            keyPassword 'password1'
+            storeFile file('/gft.jks')
+            storePassword 'password1'
+        }
+    }
+    buildTypes {
+        release {
+            buildConfigField('boolean', 'INJECT', 'false')
+            signingConfig signingConfigs.release
+            shrinkResources false
+            zipAlignEnabled true
+            minifyEnabled false
+            ndk {
+                abiFilters "armeabi-v7a"
+            }
+        }
+        debug {
+            signingConfig signingConfigs.release
+            pseudoLocalesEnabled true
+            buildConfigField('boolean', 'INJECT', 'false')
+            minifyEnabled false
+            ndk {
+                abiFilters "armeabi-v7a"
+            }
+        }
+    }
+
+    compileOptions {
+        encoding "UTF-8"
+        incremental true
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions {
+        //使用增量模式构建
+        //incremental = true
+
+        //最大堆内存
+        javaMaxHeapSize = "8g"
+        //是否支持大工程模式
+        jumboMode = true
+        //预编译
+        preDexLibraries = true
+        //线程数
+        threadCount = 8
+    }
+}
+
+/**
+ * resource文件混淆
+ */
+andResGuard {
+    // mappingFile = file("./resource_mapping.txt")
+    mappingFile = null
+    use7zip = true
+    useSign = true
+    // it will keep the origin path of your resources when it's true
+    keepRoot = false
+
+    whiteList = [
+            //友盟
+            "R.anim.umeng*",
+            "R.string.umeng*",
+            "R.string.UM*",
+            "R.string.tb_*",
+            "R.layout.umeng*",
+            "R.layout.socialize_*",
+            "R.layout.*messager*",
+            "R.layout.tb_*",
+            "R.color.umeng*",
+            "R.color.tb_*",
+            "R.style.*UM*",
+            "R.style.umeng*",
+            "R.drawable.umeng*",
+            "R.drawable.tb_*",
+            "R.drawable.sina*",
+            "R.drawable.qq_*",
+            "R.drawable.tb_*",
+            "R.id.umeng*",
+            "R.id.*messager*",
+            "R.id.progress_bar_parent",
+            "R.id.socialize_*",
+            "R.id.webView",
+
+            //LineMenuView
+            "R.id.R.id.LINE_MENU_VIEW_TAG_POSITION",
+            "R.layout.layout_line_menu"
+    ]
+    compressFilePattern = [
+            "*.png",
+            "*.jpg",
+            "*.jpeg",
+            "*.gif",
+    ]
+    sevenzip {
+        artifact = 'com.tencent.mm:SevenZip:1.2.13'
+        //path = "/c/Program Files/7-Zip"
+    }
+
+    /**
+     * Optional: if finalApkBackupPath is null, AndResGuard will overwrite final apk
+     * to the path which assemble[Task] write to
+     **/
+    finalApkBackupPath = "${project.rootDir}/app/release/GFT_v${version_name}_${releaseTime()}_7z.apk"
+
+    /**
+     * Optional: Specifies the name of the message digest algorithm to user when digesting the entries of JAR file
+     * Only works in V1signing, default value is "SHA-1"
+     **/
+    // digestalg = "SHA-256"
+}
+
+static def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:palette-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+
+    //multidex:dex分包
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //litepal,数据库框架,通过在assets中创建xml文件来配置
+    implementation 'org.litepal.android:core:1.6.0'
+
+    //Dagger:基础包,dagger编译器,Javax标注
+    implementation 'com.google.dagger:dagger:2.11'
+    kapt 'com.google.dagger:dagger-compiler:2.11'
+
+    //RxJava与RxAndroid
+    implementation('io.reactivex.rxjava2:rxjava:2.1.3') {
+        force = true
+    }
+    implementation('io.reactivex.rxjava2:rxandroid:2.0.1') {
+        force = true
+    }
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:support-v13:27.1.1'
+
+    //retrofit;
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+
+    //使用GSON库将http返回的数据转换为对象
+    implementation('com.squareup.retrofit2:converter-gson:2.3.0') {
+        exclude group: 'com.google.code.gson'
+        exclude group: 'com.squareup.okhttp3'
+    }
+
+    //使用RxJava将返回的数据对象转为Observable(T);
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+
+    //引入OkHttp框架
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    //okhttp打印日志
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+
+    //用于使用chrome调试应用
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    kapt 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //AndroidUtilCode
+    implementation 'com.blankj:utilcode:1.12.1'
+
+    //内存泄漏 监视工具
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+    //Logger
+    implementation 'com.orhanobut:logger:2.1.1'
+
+    //二维码
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+
+    //圆形图片
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+    //图片选择
+    implementation('com.darsh.multipleimageselect:multipleimageselect:1.0.5') {
+
+    }
+    implementation('com.jph.takephoto:takephoto_library:4.0.3') {
+        exclude group: 'io.reactivex', module: 'rxandroid'
+        exclude group: 'io.reactivex', module: 'rxjava'
+        transitive = false
+    }
+
+    //statubarutil,状态栏控制器
+    implementation 'com.jaeger.statusbaruitl:library:1.3.6'
+
+    //时间,城市等选择器
+    implementation 'com.contrarywind:Android-PickerView:3.2.6'
+
+    //权限请求框架
+    implementation('com.github.hotchemi:permissionsdispatcher:3.2.0') {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: "support-v13"
+    }
+    kapt "com.github.hotchemi:permissionsdispatcher-processor:3.2.0"
+
+    //activity路由跳转
+    implementation 'com.knowledge.mnlin:arouter-api:1.2.0'
+    kapt 'com.knowledge.mnlin:arouter-compiler:1.2.0'
+
+    //友盟统计
+    implementation 'com.umeng.analytics:analytics:6.1.4'
+
+    //tag布局
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+
+    //XRecycleView
+    implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
+
+    //sweet-alert-dialog
+    implementation 'cn.pedant.sweetalert:library:1.3'
+
+    //banner图
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+
+    //底部导航栏
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:1.2.4'
+
+    //圆角头像,可包含边框
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //密码框
+    implementation 'com.jungly:gridPasswordView:0.3'
+
+    //角标库
+    implementation 'com.github.nekocode:Badge:2.0'
+
+    //download
+    implementation 'zlc.season:rxdownload3:1.2.6'
+
+    /*微信支付*/
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.4'
+
+    //解决webview加载html适配问题
+    implementation 'org.jsoup:jsoup:1.10.2'
+
+    //单行菜单文本
+    implementation 'com.knowledge.mnlin:linemenuview:2.0.6'
+
+    //kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    //anko
+    implementation "org.jetbrains.anko:anko:$anko_version"
+
+    // Anko Commons
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
+
+    // Anko Layouts
+    implementation "org.jetbrains.anko:anko-sdk25:$anko_version"
+
+    // sdk15, sdk19, sdk21, sdk23 are also available
+
+    // Appcompat-v7 (only Anko Commons)
+    implementation "org.jetbrains.anko:anko-appcompat-v7-commons:$anko_version"
+
+    // Appcompat-v7 (Anko Layouts)
+    implementation "org.jetbrains.anko:anko-appcompat-v7:$anko_version"
+    implementation "org.jetbrains.anko:anko-coroutines:$anko_version"
+
+    // CardView-v7
+    implementation "org.jetbrains.anko:anko-cardview-v7:$anko_version"
+
+    // Design
+    implementation "org.jetbrains.anko:anko-design:$anko_version"
+    implementation "org.jetbrains.anko:anko-design-coroutines:$anko_version"
+
+    // GridLayout-v7
+    implementation "org.jetbrains.anko:anko-gridlayout-v7:$anko_version"
+
+    // Percent
+    implementation "org.jetbrains.anko:anko-percent:$anko_version"
+
+    // RecyclerView-v7
+    implementation "org.jetbrains.anko:anko-recyclerview-v7:$anko_version"
+    implementation "org.jetbrains.anko:anko-recyclerview-v7-coroutines:$anko_version"
+
+    // Support-v4 (only Anko Commons)
+    implementation "org.jetbrains.anko:anko-support-v4-commons:$anko_version"
+
+    // Support-v4 (Anko Layouts)
+    implementation "org.jetbrains.anko:anko-support-v4:$anko_version"
+
+    // ConstraintLayout
+    implementation "org.jetbrains.anko:anko-constraint-layout:$anko_version"
+
+    //短信监听器
+    implementation 'com.knowledge.mnlin:rregister:1.0.0'
+
+    // calendar 控件
+    implementation 'com.haibin:calendarview:3.3.1'
+
+    //smartRefresh
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-12'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-12'
+
+    //没有使用特殊Header，可以不加这行
+
+    //gif播放
+    implementation 'com.github.Cutta:GifView:1.1'
+
+    //首页引导插件
+    implementation 'com.github.apl-devs:appintro:v4.2.3'
+
+    //KChartView
+    implementation project(':kchartlib')
+    implementation files('libs/BASE64Encoder.jar')
+
+    //tangram (基于vlayout的布局方案)
+    compile 'com.alibaba.android:tangram:2.0.5@aar'
+
+    //vlayout
+    compile('com.alibaba.android:vlayout:1.2.8@aar') {
+        transitive = true
+    }
+
+    //模拟dialog
+    implementation 'com.knowledge.mnlin:sdialog:1.0.1'
+
+    //flutter - module
+    //implementation project(':flutter')
+
+    implementation 'skin.support:skin-support:3.1.1'                   // skin-support
+    implementation 'skin.support:skin-support-design:3.1.1'
+    // skin-support-design material design 控件支持[可选]
+    implementation 'skin.support:skin-support-cardview:3.1.1'
+    // skin-support-cardview CardView 控件支持[可选]
+    implementation 'skin.support:skin-support-constraint-layout:3.1.1'
+    // skin-support-constraint-layout ConstraintLayout 控件支持[可选]
+
+    //手势解锁库
+    implementation 'com.wangnan:gesturelockview:1.0.2'
+
+    //ws
+    implementation 'com.neovisionaries:nv-websocket-client:2.8'
+
+    implementation 'com.gavin.com.library:stickyDecoration:1.4.13'
+
+    // 微信登录功能
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.0.2'
+}

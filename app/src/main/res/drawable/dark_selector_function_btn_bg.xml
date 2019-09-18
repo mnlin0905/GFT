@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--不可点击状态-->
+    <item android:state_enabled="false">
+        <ripple android:color="@color/skin_button_splash_color">
+            <item>
+                <shape>
+                    <solid android:color="@color/skin_button_disabled_color"/>
+                    <corners
+                        android:radius="@dimen/drawable_shape_normal_radius_5dp"/>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+
+    <!--特殊/默认绿色状态-->
+    <item>
+        <ripple android:color="@color/skin_button_splash_color">
+            <item>
+                <shape>
+                    <solid android:color="@color/skin_button_background_color"/>
+                    <corners
+                        android:radius="@dimen/drawable_shape_normal_radius_5dp"/>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</selector>

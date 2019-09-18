@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_test_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_272a3f_ffffff"
+        android:orientation="vertical">
+
+        <!--滑動佈局(放置Fragment)-->
+        <com.linktech.gft.view.DisableScrollViewPager
+            android:id="@+id/vp_fragments"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_color_454860_e8eef6" />
+
+
+        <!--底部導航欄-->
+        <com.linktech.gft.skin.MyBottomNavigationViewEx
+            android:id="@+id/bnve_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:minHeight="@dimen/prefer_view_height_48dp"
+            app:itemTextColor="@color/dark_selector_financing_color"
+            app:menu="@menu/menu_financing_navigation" />
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?><!--自選模組 佈局詳情-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--可刷新部分-->
+    <FrameLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark_color_272a3f_ffffff"
+            android:orientation="vertical">
+            <!--立即開戶-->
+            <LinearLayout
+                android:id="@+id/ll_fix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    android:id="@+id/lmv_register"
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_padding_margin_48dp"
+                    android:background="@color/dark_color_272a3f_ffffff"
+                    app:LineMenuView_brief="@string/fragment_market_item_custom_at_once"
+                    app:LineMenuView_brief_text_color="@color/dark_main_text_7c7fa2"
+                    app:LineMenuView_brief_text_size="@dimen/text_size_13sp"
+                    app:LineMenuView_menu="@string/fragment_market_item_custom_label_login"
+                    app:LineMenuView_menu_text_color="@color/dark_color_ffffff_1d2037"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_13sp"
+                    app:LineMenuView_navigation="@drawable/dark_icon_arrow_right"
+                    app:LineMenuView_plugin="text" />
+
+                <!--排序方式-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_padding_margin_48dp"
+                    android:background="@color/dark_color_8c1d2037_8cebe8ef">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16dp"
+                        android:text="@string/fragment_market_item_custom_name"
+                        android:textColor="@color/dark_main_text_666986"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <!--價格-->
+                    <TextView
+                        android:id="@+id/tv_sort_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/dark_icon_sort_default"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/fragment_market_item_custom_price"
+                        android:textColor="@color/dark_main_text_666986"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <!--漲跌幅-->
+                    <TextView
+                        android:id="@+id/tv_sort_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/dark_icon_sort_default"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/fragment_market_item_custom_rate"
+                        android:textColor="@color/dark_main_text_666986"
+                        android:textSize="@dimen/text_size_13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--列表-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.linktech.gft.view.RecyclerViewWithEmptyView
+                    android:id="@+id/xrv_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never" />
+
+                <LinearLayout
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dark_icon_empty_view" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                        android:text="@string/fragment_market_item_custom_add_label"
+                        android:textColor="@color/dark_main_text_7c7fa2"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_add_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_padding_margin_32dp"
+                        android:background="@color/dark_main_text_8144e5"
+                        android:padding="@dimen/divider_line_width_1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/dark_color_272a3f_ffffff"
+                            android:drawableStart="@drawable/dark_icon_add"
+                            android:drawablePadding="@dimen/view_padding_margin_8dp"
+                            android:paddingStart="@dimen/view_padding_margin_48dp"
+                            android:paddingTop="@dimen/view_padding_margin_10dp"
+                            android:paddingEnd="@dimen/view_padding_margin_48dp"
+                            android:paddingBottom="@dimen/view_padding_margin_10dp"
+                            android:text="@string/fragment_market_item_custom_add"
+                            android:textColor="@color/dark_main_text_8144e5" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--添加股票-->
+    <FrameLayout
+        android:id="@+id/fl_add_share_control"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_color_272a3f_ffffff"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_add_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/dark_icon_add"
+            android:drawablePadding="@dimen/view_padding_margin_8dp"
+            android:text="@string/fragment_market_item_custom_add"
+            android:textColor="@color/dark_main_text_8144e5" />
+    </FrameLayout>
+</LinearLayout>
+

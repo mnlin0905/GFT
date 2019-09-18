@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?><!--dark 模式颜色值使用-->
+<resources>
+    <color name="dark_transparent_mask">#7d000000</color>
+
+    <color name="dark_main_text_7c7fa2">#7c7fa2</color>
+    <color name="dark_main_text_72758c">#72758c</color>
+    <color name="dark_main_text_666986">#666986</color>
+    <color name="dark_main_text_b8b9c1">#b8b9c1</color>
+    <color name="dark_color_20bf7c">#20bf7c</color>
+    <color name="dark_color_f85d5a">#f85d5a</color>
+    <color name="dark_divider_454860">#454860</color>
+    <color name="dark_main_text_8144e5">#8144e5</color>
+    <color name="dark_main_color_338144e5">#338144e5</color>
+    <color name="dark_color_33364c">#33364c</color>
+    <color name="dark_color_8c33364c">#8c33364c</color>
+    <color name="dark_dv_color_697296">#697296</color>
+    <color name="dark_dv_color_13151f">#13151f</color>
+    <color name="dark_color_454860">#454860</color>
+    <color name="dark_color_2e3146">#2e3146</color>
+    <color name="dark_main_color_a9acbf">#a9acbf</color>
+    <color name="dark_half_color_454860">#72454860</color>
+    <color name="dark_color_8c9fad">#8c9fad</color>
+    <color name="dark_color_a9acbf">#a9acbf</color>
+    <color name="dark_color_13151f">#13151f</color>
+    <color name="dark_color_3d415a">#3d415a</color>
+    <color name="dark_color_2b2e43">#2b2e43</color>
+    <color name="dark_color_765ed4">#765ed4</color>
+    <color name="dark_color_998144e5">#998144e5</color>
+    <color name="dark_color_2d3146">#2d3146</color>
+
+    <color name="dark_close_text_color">#ffffff</color>
+    <color name="dark_radio_bg">#1d2037</color>
+    <color name="dark_action_more_fill">#1d2037</color>
+    <color name="dark_action_more_border">#454860</color>
+    <color name="dark_register_lmv_menu">#ffffff</color>
+    <color name="dark_index_bg">#22253b</color>
+    <color name="dark_fragment_exchange_text">#ffffff</color>
+    <color name="dark_color_exchange_register">#ffffff</color>
+    <color name="dark_color_index_name">#ffffff</color>
+    <color name="dark_window_bg_person">#272a3f</color>
+    <color name="dark_color_1d2037_f4f4f4">#1d2037</color>
+    <color name="dark_color_cc1d2037_f4f4f4">#cc1d2037</color>
+    <color name="dark_color_ffffff_1d2037">#ffffff</color>
+    <color name="dark_color_1d2037_ffffff">#1d2037</color>
+    <color name="dark_color_272a3f_ffffff">#272a3f</color>
+    <color name="dark_color_272a3f_f4f4f4">#272a3f</color>
+    <color name="dark_color_a9acbf_666986">#a9acbf</color>
+    <color name="dark_color_454860_afb2c4">#454860</color>
+    <color name="dark_color_454860_e5e5e5">#454860</color>
+    <color name="dark_color_8c1d2037_8cebe8ef">#8c1d2037</color>
+    <color name="dark_color_666986_b8b9c1">#666986</color>
+    <color name="dark_color_666986_3a4254">#666986</color>
+    <color name="dark_color_ffffff_333333">#ffffff</color>
+    <color name="dark_color_13151f_e9ecf6">#13151f</color>
+    <color name="dark_color_1d2037_f0f0f0">#1d2037</color>
+    <color name="dark_color_454860_e8eef6">#454860</color>
+    <color name="dark_color_33364c_ffffff">#33364c</color>
+    <color name="dark_color_7c7fa2_b8b9c1">#7c7fa2</color>
+    <color name="dark_color_b0b3cd_272a3f">#b0b3cd</color>
+    <color name="dark_color_8c33364c_ffffff">#8c33364c</color>
+    <color name="dark_color_33364c_f4f2f6">#33364c</color>
+    <color name="dark_color_33364c_d8dcdf">#33364c</color>
+    <color name="dark_color_7c7fa2_666986">#7c7fa2</color>
+    <color name="dark_color_2e3146_ebe8ef">#2e3146</color>
+    <color name="dark_color_2b2e43_ffffff">#2b2e43</color>
+    <color name="dark_color_a9acbf_2b2e43">#a9acbf</color>
+    <color name="dark_color_2b2e43_f5f5f8">#2b2e43</color>
+    <color name="dark_color_454860_d8dcdf">#454860</color>
+    <color name="dark_color_33364c_2b2e43">#33364c</color>
+    <color name="dark_color_3d415a_d5d7e0">#3d415a</color>
+    <color name="dark_color_13151f_d5d7e0">#13151f</color>
+    <color name="dark_color_197cce">#197cce</color>
+    <color name="dark_color_e9b529">#e9b529</color>
+    <color name="dark_color_2d3146_f4f2f6">#2d3146</color>
+    <color name="dark_color_ffffff_666986">#ffffff</color>
+    <color name="dark_color_ffffff_272a3f">#ffffff</color>
+
+    <!--*********************************************************************-->
+    <!--统一颜色部分:需要换肤部分,多种颜色-->
+    <!--*********************************************************************-->
+    <!--透明色-->
+    <color name="transparent">@android:color/transparent</color>
+
+    <!--标题颜色值-->
+    <color name="skin_title_color">#FFFFFFFF</color>
+
+    <!--基础文本默认颜色值-->
+    <color name="skin_body1_color">#FFFFFFFF</color>
+
+    <!--label等作为低一级标签类颜色-->
+    <color name="skin_display1_color">#FF666986</color>
+
+    <!--额外字体颜色之一-->
+    <color name="skin_display2_color">#FF44BB39</color>
+    <color name="skin_display3_color">#FF4478F1</color>
+    <color name="skin_display4_color">#FFF85D5A</color>
+
+    <!--锁屏解开解开时界面主色-->
+    <color name="skin_display5_color">#FFB2B6CB</color>
+
+    <!--hint 颜色值-->
+    <color name="skin_hint_color">#FF6D778B</color>
+
+    <!--accent文本color,按钮switch等打开模式颜色-->
+    <color name="skin_accent_color">#FF8144E5</color>
+
+    <!--indicator 标记颜色(tab-layout下划线等)-->
+    <color name="skin_indicator_color">#FF8144E5</color>
+
+    <!--界面整体背景色(模拟scaffold脚手架)-->
+    <color name="skin_scaffold_background_color">#FF272A3F</color>
+
+    <!--深色背景色(另一中背景色)-->
+    <color name="skin_scaffold_deep_background_color">#FF1D2037</color>
+
+    <!--toolbar颜色-->
+    <color name="skin_primary_color">#00000000</color>
+
+    <!--statusBar 颜色-->
+    <color name="skin_primary_color_dark">#00000000</color>
+
+    <!--divider-color-->
+    <color name="skin_divider_color">#FF2E3546</color>
+
+    <!--dialog-background-color dialog 背景颜色值-->
+    <color name="skin_dialog_background_color">#FF32364C</color>
+
+    <!--splash-color:用于menu,button等ripple-->
+    <color name="skin_splash_color">#FF1d2037</color>
+
+    <!--button颜色:splash,正常,禁用-->
+    <color name="skin_button_splash_color">#FF808e95</color>
+    <color name="skin_button_background_color">#FF8144E5</color>
+    <color name="skin_button_disabled_color">#FF696969</color>
+    <color name="skin_button_text_color">#FFFFFFFF</color>
+
+</resources>

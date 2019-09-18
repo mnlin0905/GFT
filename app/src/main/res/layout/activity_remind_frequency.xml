@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/dark_color_272a3f_ffffff"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            app:LineMenuView_menu="@string/activity_remind_frequency_onece"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="15sp"
+            app:LineMenuView_plugin="select" />
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_272a3f_ffffff"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            app:LineMenuView_menu="@string/activity_remind_frequency_day_one"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="15sp"
+            app:LineMenuView_plugin="select" />
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dark_half_color_454860" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_always"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_272a3f_ffffff"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            app:LineMenuView_menu="@string/activity_remind_frequency_always"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="15sp"
+            app:LineMenuView_plugin="select" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/activity_remind_frequency_label"
+            android:textColor="@color/dark_color_666986_b8b9c1"
+            android:textSize="@dimen/text_size_title_15sp" />
+
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

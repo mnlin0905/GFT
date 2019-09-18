@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!--K线界面 选择区间-->
+    <string-array name="array_k_line_tab">
+        <item>分時</item>
+        <item>日K</item>
+        <item>周K</item>
+        <item>月K</item>
+    </string-array>
+
+	<!--K线界面 新闻消息-->
+    <string-array name="array_k_line_news">
+        <item>新聞</item>
+        <item>F10</item>
+    </string-array>
+
+	<!--委托查询,时间过滤-->
+    <string-array name="entrust_search_time_block">
+        <item>今日</item>
+        <item>一周內</item>
+        <item>一月內</item>
+        <item>更多</item>
+    </string-array>
+
+    <!--委托查询,成功列表头-->
+    <string-array name="entrust_search_time_success_header">
+        <item>買賣標誌</item>
+        <item>成交價格</item>
+        <item>成交數量</item>
+        <item>成交金額</item>
+        <item>成交編號</item>
+        <item>成交時間</item>
+    </string-array>
+
+    <!--委托查询,委托列表头-->
+    <string-array name="entrust_search_time_wait_header">
+        <item>買賣標誌</item>
+        <item>委託價格</item>
+        <item>委託數量</item>
+        <item>成交價格</item>
+        <item>成交數量</item>
+        <item>狀態說明</item>
+        <item>委託時間</item>
+        <item>委託編號</item>
+        <item>報價方式</item>
+    </string-array>
+
+	<!--资讯界面-->
+    <string-array name="information_type">
+        <item>要聞</item>
+        <item>港股</item>
+        <item>美股</item>
+        <item>7*24小時</item>
+    </string-array>
+</resources>

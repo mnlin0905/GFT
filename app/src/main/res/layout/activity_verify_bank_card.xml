@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/view_padding_margin_48dp">
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/skin_scaffold_deep_background_color"
+                    android:minHeight="@dimen/view_height_36dp"
+                    app:LineMenuView_for_calculation="off"
+                    app:LineMenuView_menu="銀行卡驗證（僅用於驗證用戶的真實身份）"
+                    app:LineMenuView_menu_text_color="@color/skin_display1_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp" />
+
+                <!--學歷-->
+                <com.linktech.gft.skin.MyLineMenuView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:background="@drawable/dark_layer_trans_bottom_divider_1dp"
+                    android:minHeight="@dimen/view_height_36dp"
+                    android:paddingTop="@dimen/view_padding_margin_10dp"
+                    android:paddingBottom="@dimen/view_padding_margin_10dp"
+                    app:LineMenuView_brief="未選擇"
+                    app:LineMenuView_brief_text_color="@color/skin_body1_color"
+                    app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+                    app:LineMenuView_menu="銀行"
+                    app:LineMenuView_menu_text_color="@color/skin_body1_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+                    app:LineMenuView_navigation="@drawable/icon_arrow_right"
+                    app:LineMenuView_plugin="text" />
+
+                <!--卡號-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:background="@drawable/dark_layer_trans_bottom_divider_1dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/view_padding_margin_10dp"
+                        android:paddingBottom="@dimen/view_padding_margin_10dp"
+                        android:singleLine="true"
+                        android:text="卡號"
+                        android:textColor="@color/skin_body1_color"
+                        android:textSize="@dimen/text_size_normal_14sp" />
+
+                    <com.linktech.gft.view.WatchInputEditText
+                        android:id="@+id/wiet_card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                        android:background="@color/transparent"
+                        android:gravity="end"
+                        android:hint="請輸入您的卡號"
+                        android:singleLine="true"
+                        android:textColorHint="@color/skin_hint_color"
+                        android:textSize="@dimen/text_size_normal_14sp" />
+                </LinearLayout>
+
+                <!--提醒信息-->
+                <TextView
+                    android:layout_marginBottom="@dimen/view_padding_margin_48dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:text="1.根據相關監管法規要求，港股開戶需要驗證用戶真實身份，請填寫您本人銀行卡信息。\n\n2.銀行卡僅用於本人實名認證，與出入金無關。\n\n3.港付通對您的信息會嚴格保密，請您放心填寫。"
+                    android:textSize="@dimen/text_size_small_12sp"
+                    android:textColor="@color/skin_display1_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!---->
+                <include layout="@layout/layout_common_dark_function_button" />
+
+                <!---->
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:drawableStart="@drawable/ic_establish_phone"
+                    android:drawablePadding="@dimen/view_padding_margin_10dp"
+                    android:textColor="@color/skin_accent_color"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:text="@string/establish_server_phone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_finance"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_color_272a3f_ffffff"
+    android:orientation="vertical">
+
+    <!--主要指标-->
+    <LinearLayout
+        android:id="@+id/ll_finance_main"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dark_color_2d3146_f4f2f6"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_main_text_8144e5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/dark_arrow_bottom"
+            android:gravity="center_vertical"
+            android:paddingRight="16dp"
+            android:text="主要指标"
+            android:textColor="@color/dark_main_text_666986"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="市盈率"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_report_date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_finance_pe_type"
+            android:layout_width="88dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_8144e5_radiu_3dp"
+            android:drawableRight="@drawable/dark_arrow_bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="报告期"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_report_date" />
+    </android.support.constraint.ConstraintLayout>
+
+    <com.linktech.gft.view.PeView
+        android:id="@+id/peView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="市盈率"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_pe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="每股收益"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_per"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="每股净资产"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_per_asset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="净资产收益率"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_roe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="资产负债率"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_lev"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!--利润表-->
+    <LinearLayout
+        android:id="@+id/ll_finance_profit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/dark_color_2d3146_f4f2f6"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_main_text_8144e5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/dark_arrow_bottom"
+            android:gravity="center_vertical"
+            android:paddingRight="16dp"
+            android:text="利润表"
+            android:textColor="@color/dark_main_text_666986"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="营业收入"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_revenue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="营业支出"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_opex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="销售成本"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_sell_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="毛利"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="营运利润"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_operate_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="应占共同实控实体溢利"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_long"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="除税前盈利"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_before_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="股东应占盈利"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_mrmb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="每股基本盈利"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_basic_earn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="每股摊薄盈利"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_per_earn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!--资产负债表-->
+    <LinearLayout
+        android:id="@+id/ll_finance_balance_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/dark_color_2d3146_f4f2f6"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_main_text_8144e5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/dark_arrow_bottom"
+            android:gravity="center_vertical"
+            android:paddingRight="16dp"
+            android:text="资产负债表"
+            android:textColor="@color/dark_main_text_666986"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="层总资产"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_layer_assets"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="总负债"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_total_liability"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="股东权益"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_equity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="总权益"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_total_equity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="层总权益及负债"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_layer_equity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!--现金流量表-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/dark_color_2d3146_f4f2f6"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_main_text_8144e5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/dark_arrow_bottom"
+            android:gravity="center_vertical"
+            android:paddingRight="16dp"
+            android:text="现金流量表"
+            android:textColor="@color/dark_main_text_666986"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="经营业务现金净额"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_net_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        
+        <View
+            android:id="@+id/v"
+            android:layout_width="18dp"
+            android:layout_height="15dp"
+            android:background="#53a8e2"
+            app:layout_constraintTop_toTopOf="@id/tv_finance_crash_type"
+            app:layout_constraintBottom_toBottomOf="@id/tv_finance_crash_type"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            />
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="经营业务现金净额"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            app:layout_constraintTop_toTopOf="@id/tv_finance_crash_type"
+            app:layout_constraintBottom_toBottomOf="@id/tv_finance_crash_type"
+            app:layout_constraintLeft_toRightOf="@id/v"
+            android:textSize="11sp"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:gravity="center_vertical"
+            android:text="同比增长率"
+            android:drawableLeft="@drawable/icon_rate"
+            android:drawablePadding="8dp"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            app:layout_constraintTop_toTopOf="@id/tv_finance_crash_type"
+            app:layout_constraintBottom_toBottomOf="@id/tv_finance_crash_type"
+            app:layout_constraintLeft_toRightOf="@id/t"
+            android:textSize="11sp"
+            />
+        <TextView
+            android:id="@+id/tv_finance_crash_type"
+            android:layout_width="88dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_8144e5_radiu_3dp"
+            android:drawableRight="@drawable/dark_arrow_bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="报告期"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_net_cash" />
+    </android.support.constraint.ConstraintLayout>
+
+    <com.linktech.gft.view.CrashView
+        android:id="@+id/crashView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="投资业务现金净额"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_one_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dark_color_454860_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="融资业务现金净额"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_finance_two_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="--"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/dark_color_272a3f_f4f4f4" />
+</LinearLayout>

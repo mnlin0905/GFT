@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin_scaffold_background_color"
+    android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_24dp"
+        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+        android:text="为了您的账户安全，请先绑定手机号"
+        android:textColor="@color/skin_display1_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_24dp"
+        android:layout_marginTop="@dimen/view_padding_margin_20dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+        android:text="手机号"
+        android:textColor="@color/skin_body1_color"
+        android:textSize="@dimen/text_size_normal_14sp"
+        android:textStyle="bold" />
+
+    <com.linktech.gft.view.WatchInputEditText
+        android:id="@+id/et_phone"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|start"
+        android:hint="请输入您的手机号"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="16"
+        android:paddingStart="@dimen/view_padding_margin_24dp"
+        android:paddingEnd="@dimen/view_padding_margin_24dp"
+        android:singleLine="true"
+        android:textColor="@color/skin_body1_color"
+        android:textColorHint="@color/skin_hint_color"
+        android:textSize="@dimen/text_size_normal_14sp" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:layout_marginStart="@dimen/view_padding_margin_24dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+        tools:background="#FFFFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_24dp"
+        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+        android:text="验证码"
+        android:textColor="@color/skin_body1_color"
+        android:textSize="@dimen/text_size_normal_14sp"
+        android:textStyle="bold" />
+
+    <!--手机验证码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+        android:background="@android:color/transparent">
+
+        <com.linktech.gft.view.WatchInputEditText
+            android:id="@+id/et_verify_code"
+            style="@style/TextViewStandard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingStart="@dimen/view_padding_margin_24dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:textColor="@color/skin_body1_color"
+            android:textColorHint="@color/skin_hint_color"
+            android:textSize="@dimen/text_size_normal_14sp" />
+
+        <com.linktech.gft.view.RandomCodeTextView
+            android:id="@+id/rctv_random_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+            android:textSize="@dimen/text_size_normal_14sp" />
+    </LinearLayout>
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:layout_marginStart="@dimen/view_padding_margin_24dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+        android:layout_marginBottom="@dimen/view_padding_margin_48dp"
+        tools:background="#FFFFFFFF" />
+
+    <!--按钮-->
+    <include layout="@layout/layout_common_dark_function_button" />
+
+</LinearLayout>
+

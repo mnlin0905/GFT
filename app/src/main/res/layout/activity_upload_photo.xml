@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/view_padding_margin_48dp">
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/skin_scaffold_deep_background_color"
+                    android:minHeight="@dimen/view_height_36dp"
+                    app:LineMenuView_for_calculation="off"
+                    app:LineMenuView_menu="請拍攝并上傳您的手持身份證照片"
+                    app:LineMenuView_menu_text_color="@color/skin_display1_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp" />
+
+                <!---->
+                <com.linktech.gft.view.FitFirstChildFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_28dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_28dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_rect_divider_color_dash"
+                        android:padding="@dimen/view_padding_margin_4dp"
+                        android:src="@drawable/bg_establish_upload_photo" />
+
+                    <!--真正图片位置-->
+                    <ImageView
+                        android:id="@+id/iv_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+                </com.linktech.gft.view.FitFirstChildFrameLayout>
+
+                <!---->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:singleLine="true"
+                    android:text="點擊拍攝手持身份證照片"
+                    android:textColor="@color/skin_display1_color" />
+
+                <!--样例-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_rect_divider_color_dash"
+                            android:padding="@dimen/divider_line_width_1dp"
+                            android:src="@drawable/ic_upload_photo_right_one" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                            android:drawableStart="@drawable/ic_upload_photo_right"
+                            android:drawablePadding="@dimen/view_padding_margin_8dp"
+                            android:singleLine="true"
+                            android:text="標準樣式"
+                            android:textColor="@color/skin_display1_color"
+                            android:textSize="@dimen/text_size_small_12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_rect_divider_color_dash"
+                            android:padding="@dimen/divider_line_width_1dp"
+                            android:src="@drawable/ic_upload_photo_error_two" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                            android:drawableStart="@drawable/ic_upload_photo_error"
+                            android:drawablePadding="@dimen/view_padding_margin_8dp"
+                            android:singleLine="true"
+                            android:text="照片模糊"
+                            android:textColor="@color/skin_display1_color"
+                            android:textSize="@dimen/text_size_small_12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_rect_divider_color_dash"
+                            android:padding="@dimen/divider_line_width_1dp"
+                            android:src="@drawable/ic_upload_photo_error_three" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                            android:drawableStart="@drawable/ic_upload_photo_error"
+                            android:drawablePadding="@dimen/view_padding_margin_8dp"
+                            android:singleLine="true"
+                            android:text="遮擋面部"
+                            android:textColor="@color/skin_display1_color"
+                            android:textSize="@dimen/text_size_small_12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_rect_divider_color_dash"
+                            android:padding="@dimen/divider_line_width_1dp"
+                            android:src="@drawable/ic_upload_photo_error_four" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                            android:drawableStart="@drawable/ic_upload_photo_error"
+                            android:drawablePadding="@dimen/view_padding_margin_8dp"
+                            android:singleLine="true"
+                            android:text="不是本人"
+                            android:textColor="@color/skin_display1_color"
+                            android:textSize="@dimen/text_size_small_12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--拍攝要求-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_16dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:text="拍攝要求"
+                    android:textColor="@color/skin_display1_color"
+                    android:textSize="@dimen/text_size_small_12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:layout_marginBottom="@dimen/view_padding_margin_48dp"
+                    android:text="1.請勿讓證件遮擋住您的面部；\n\n2.是否佩戴眼鏡請與身份證保持一致；\n\n3.請確保照片是您本人，並且您本人與身份證上的信息清晰可見。"
+                    android:textColor="@color/skin_display1_color"
+                    android:textSize="@dimen/text_size_small_12sp" />
+
+                <!---->
+                <include layout="@layout/layout_common_dark_function_button" />
+
+                <!---->
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:drawableStart="@drawable/ic_establish_phone"
+                    android:drawablePadding="@dimen/view_padding_margin_10dp"
+                    android:textColor="@color/skin_accent_color"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:text="@string/establish_server_phone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

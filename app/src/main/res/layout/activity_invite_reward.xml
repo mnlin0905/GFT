@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_invite_reward"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_invite_white"
+                    android:paddingBottom="@dimen/view_padding_margin_48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="@dimen/view_padding_margin_48dp">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/view_padding_margin_24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:id="@+id/iv_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                            android:text="@string/activity_invite_reward_1"
+                            android:textColor="@color/black_text_5b667e"
+                            android:textSize="@dimen/text_size_normal_14sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/view_padding_margin_4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:id="@+id/iv_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                            android:text="@string/activity_invite_reward_2"
+                            android:textColor="@color/black_text_5b667e"
+                            android:textSize="@dimen/text_size_normal_14sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/view_padding_margin_4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:id="@+id/iv_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                            android:text="@string/activity_invite_reward_3"
+                            android:textColor="@color/black_text_5b667e"
+                            android:textSize="@dimen/text_size_normal_14sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/view_padding_margin_4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:id="@+id/iv_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                            android:text="@string/activity_invite_reward_4"
+                            android:textColor="@color/black_text_5b667e"
+                            android:textSize="@dimen/text_size_normal_14sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/view_padding_margin_4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:id="@+id/iv_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                            android:text="@string/activity_invite_reward_5"
+                            android:textColor="@color/black_text_5b667e"
+                            android:textSize="@dimen/text_size_normal_14sp"/>
+                    </LinearLayout>
+
+                    <!--邀请-->
+                    <TextView
+                        android:id="@+id/tv_invite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_padding_margin_40dp"
+                        android:background="@drawable/bg_invite_reward_button"
+                        android:gravity="center"
+                        android:text="@string/function_invite_friend"
+                        android:textColor="@color/main_color_white"
+                        android:textSize="@dimen/text_size_large_18sp"/>
+                </LinearLayout>
+        </LinearLayout>
+
+    <include layout="@layout/dark_layout_top_bar"/>
+</FrameLayout>

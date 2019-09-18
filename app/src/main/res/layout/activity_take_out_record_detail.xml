@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar"/>
+
+    <!--创建时间-->
+    <com.linktech.gft.skin.MyLineMenuView
+        android:id="@+id/lmv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        app:LineMenuView_brief_text_color="@color/black_text_444"
+        app:LineMenuView_brief_text_size="@dimen/text_size_13sp"
+        app:LineMenuView_menu="@string/activity_take_out_record_detail_time"
+        app:LineMenuView_menu_text_color="@color/black_text_444"
+        app:LineMenuView_menu_text_size="@dimen/text_size_13sp"
+        app:LineMenuView_plugin="text"
+        tools:LineMenuView_brief="时间"/>
+
+    <!--提现IDlabel-->
+    <com.linktech.gft.skin.MyLineMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/view_height_40dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        app:LineMenuView_menu="@string/activity_take_out_record_detail_reward_id"
+        app:LineMenuView_menu_text_color="@color/black_text_663a4254"
+        app:LineMenuView_menu_text_size="@dimen/text_size_13sp"/>
+
+    <!--提现ID-->
+    <TextView
+        android:id="@+id/tv_reward_id"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingBottom="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingTop="@dimen/view_padding_margin_16dp"
+        tools:text="fjskljfsklfjsklfjkl\nsjfskf"
+        android:textColor="@color/black_text_444"
+        android:textSize="@dimen/text_size_13sp"/>
+
+    <!--转出钱包地址label-->
+    <com.linktech.gft.skin.MyLineMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/view_height_40dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        app:LineMenuView_menu="@string/activity_take_out_record_detail_address"
+        app:LineMenuView_menu_text_color="@color/black_text_663a4254"
+        app:LineMenuView_menu_text_size="@dimen/text_size_13sp"/>
+
+    <!--转出钱包地址-->
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingBottom="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingTop="@dimen/view_padding_margin_16dp"
+        android:text="fjskljfsklfjs\nklfjklsjfskf"
+        android:textColor="@color/black_text_444"
+        android:textSize="@dimen/text_size_13sp"/>
+
+    <!--记录详细内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:orientation="vertical">
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_line_width_1dp"/>
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_out_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            app:LineMenuView_menu="@string/activity_take_out_record_detail_amount"
+            app:LineMenuView_menu_text_color="@color/black_text_444"
+            app:LineMenuView_menu_text_size="@dimen/text_size_13sp"
+            app:LineMenuView_brief_text_color="@color/black_text_444"
+            app:LineMenuView_brief_text_size="@dimen/text_size_13sp"
+            app:LineMenuView_plugin="text"
+            tools:LineMenuView_brief="2000"/>
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_line_width_1dp"/>
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_arrive_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            app:LineMenuView_menu_text_color="@color/black_text_444"
+            app:LineMenuView_menu_text_size="@dimen/text_size_13sp"
+            app:LineMenuView_brief_text_color="@color/black_text_444"
+            app:LineMenuView_brief_text_size="@dimen/text_size_13sp"
+            app:LineMenuView_menu="@string/activity_take_out_record_detail_arrive"
+            app:LineMenuView_plugin="text"
+            tools:LineMenuView_brief="2000"/>
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_line_width_1dp"/>
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_status"
+            android:layout_width="match_parent"
+            app:LineMenuView_menu_text_color="@color/black_text_444"
+            app:LineMenuView_menu_text_size="@dimen/text_size_13sp"
+            app:LineMenuView_brief_text_color="@color/black_text_444"
+            app:LineMenuView_brief_text_size="@dimen/text_size_13sp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            app:LineMenuView_menu="@string/activity_take_out_record_detail_status"
+            app:LineMenuView_plugin="text"
+            tools:LineMenuView_brief="成功"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!--menus菜单信息action-->
+    <string name="action_financing_information">資訊</string>
+    <string name="action_financing_exchange">交易</string>
+    <string name="action_financing_assets">理財</string>
+    <string name="action_financing_person">我的</string>
+    <string name="action_financing_market">行情</string>
+
+	<!--activity-title-->
+    <string name="label_choose_trade">選擇券商</string>
+    <string name="label_login_trade">券商登錄</string>
+    <string name="label_money_center">理財中心</string>
+    <string name="label_order_chat">線上客服</string>
+    <string name="label_trade">券商</string>
+    <string name="label_buy_and_sell">買賣盤</string>
+    <string name="label_about_inner">關於</string>
+    <string name="label_message_alert">推送設置</string>
+    <string name="label_refresh_rate">刷新頻率</string>
+    <string name="label_remind_frequency">提醒頻率</string>
+    <string name="label_safety_lock">交易功能安全鎖</string>
+    <string name="label_setting">設置</string>
+    <string name="label_stock_warn">股價預警</string>
+    <string name="label_stock_warn_record">股價預警</string>
+    <string name="label_switch_color">漲跌顏色</string>
+    <string name="label_switch_locale_inner">切換語言</string>
+    <string name="label_switch_mode">切換模式</string>
+    <string name="label_news">消息</string>
+    <string name="label_feedback">意見回饋</string>
+    <string name="label_my_collection">我的收藏</string>
+    <string name="label_register_success">注册成功</string>
+    <string name="label_fingerprint_lock">指紋登錄</string>
+    <string name="label_face_lock">刷臉登錄</string>
+    <string name="label_gesture_lock">手勢密碼</string>
+    <string name="label_gesture_setting">設置手勢密碼</string>
+
+    <!--activity_choose_trade-->
+    <string name="activity_choose_trade_hint">支持線上開戶/轉戶的券商</string>
+    <string name="activity_choose_trade_search">搜索</string>
+    <string name="activity_choose_trade_register">註冊</string>
+    <string name="activity_choose_trade_first">尊嘉證券</string>
+    <string name="activity_choose_trade_second">德邦證券</string>
+    <string name="activity_choose_trade_third">華盛證券</string>
+    <string name="activity_choose_trade_fourth">方德證券</string>
+    <string name="activity_choose_trade_desp">持有香港證監會1/2/4/9,3分鐘開戶</string>
+
+	<!--activity_login_trade-->
+    <string name="activity_login_trade_title">尊嘉證券</string>
+    <string name="activity_login_trade_type">(港股)</string>
+    <string name="activity_login_trade_hint_account">請輸入資金帳號</string>
+    <string name="activity_login_trade_hint_pwd">請輸入交易密碼</string>
+
+    <!--activity_login-->
+    <string name="activity_login_phone_num">手機號碼</string>
+    <string name="activity_login_random_num">驗證碼</string>
+    <string name="activity_login_phone_email">手機號/郵箱</string>
+    <string name="activity_login_pwd">密碼</string>
+
+	<!--activity_money_center-->
+    <string name="activity_money_center_title">理財進階有高招</string>
+    <string name="activity_money_center_sub">安心理財 穩定回報高收益</string>
+    <string name="activity_money_center_first">財經板塊</string>
+    <string name="activity_money_center_first_desp">積累財富經驗值 玩轉數字金融</string>
+    <string name="activity_money_center_second">固定收益</string>
+    <string name="activity_money_center_second_desp">持幣穩健賺收益 佈局投資藍圖</string>
+    <string name="activity_money_center_third">港股認購</string>
+    <string name="activity_money_center_third_desp">關注熱門港股 挖掘投資奧義</string>
+
+	<!--activity_trade-->
+    <string name="activity_trade_hint">未找到您的開戶券商？</string>
+    <string name="activity_trade_toast_one">轉戶</string>
+
+	<!--activity_add_shares-->
+    <string name="activity_add_shares_hint">股票名稱/代碼/拼音簡稱全稱</string>
+    <string name="activity_add_shares_label">搜索結果</string>
+    <string name="activity_add_shares_alert">當股票多次達到或超過目標價時，每次達到均會提醒</string>
+    <string name="activity_add_shares_remove">已移除自選</string>
+    <string name="activity_add_shares_add">已添加自選</string>
+
+	<!--activity_k_line-->
+    <string name="activity_k_line_label_max">最高</string>
+    <string name="activity_k_line_label_open">今開</string>
+    <string name="activity_k_line_label_success_amount">成交額</string>
+    <string name="activity_k_line_label_min">最低</string>
+    <string name="activity_k_line_label_close">昨收</string>
+    <string name="activity_k_line_label_circulate">換手率</string>
+    <string name="activity_k_line_label_five">五檔</string>
+    <string name="activity_k_line_label_detail">明細</string>
+    <string name="activity_k_line_label_alert">提醒</string>
+    <string name="activity_k_line_label_share">分享</string>
+    <string name="activity_k_line_label_custom_add">加自選</string>
+    <string name="activity_k_line_label_exchange">交易</string>
+    <string name="activity_k_line_label_custom_remove">移自選</string>
+    <string name="activity_k_line_label_custom_add_success">添加自選成功</string>
+    <string name="activity_k_line_label_custom_remove_success">移除自選成功</string>
+    <string name="activity_k_line_dialog_title">行情數據</string>
+    <string name="activity_k_line_dialog_open">今開</string>
+    <string name="activity_k_line_dialog_max">最高</string>
+    <string name="activity_k_line_dialog_close">昨收</string>
+    <string name="activity_k_line_dialog_min">最低</string>
+    <string name="activity_k_line_dialog_52_max">52周最高</string>
+    <string name="activity_k_line_dialog_amount_rate">量比</string>
+    <string name="activity_k_line_dialog_52_min">52周最低</string>
+    <string name="activity_k_line_dialog_circulate">換手</string>
+    <string name="activity_k_line_dialog_inner">內盤</string>
+    <string name="activity_k_line_dialog_tail_ratio">委比</string>
+    <string name="activity_k_line_dialog_outer">外盤</string>
+    <string name="activity_k_line_dialog_swing">振幅</string>
+    <string name="activity_k_line_dialog_success_count">成交量</string>
+    <string name="activity_k_line_dialog_total_count">總市值</string>
+    <string name="activity_k_line_dialog_success_amount">成交額</string>
+    <string name="activity_k_line_dialog_per_amount">每手</string>
+    <string name="activity_k_line_dialog_pe_ratio">市盈率</string>
+    <string name="activity_k_line_dialog_floating">流通股</string>
+    <string name="activity_k_line_dialog_pb_ratio">市淨率</string>
+    <string name="activity_k_line_dialog_circulation_value">流通值</string>
+
+	<!--activity_about_inner-->
+    <string name="activity_about_inner_service">服務協議</string>
+    <string name="activity_about_inner_secret">隱私政策</string>
+    <string name="activity_about_inner_message">消息提醒</string>
+    <string name="activity_about_inner_news">新聞推送</string>
+    <string name="activity_about_inner_play">活動推送</string>
+    <string name="activity_about_inner_stock_alert">股價異動提醒</string>
+    <string name="activity_about_inner_success">成交提醒</string>
+    <string name="activity_about_inner_label_stock" formatted="false">自選股價漲跌幅達到5%時提醒</string>
+
+	<!--activity_news-->
+    <string name="activity_news_alert">提醒消息</string>
+    <string name="activity_news_play">活動消息</string>
+    <string name="activity_news_system">系統消息</string>
+    <string name="activity_news_online">線上客服</string>
+    <string name="activity_news_no_message">暫無消息</string>
+
+	<!--activity_refresh_rate-->
+    <string name="activity_refresh_rate_no_refresh">不刷新</string>
+    <string name="activity_refresh_rate_3">3秒</string>
+    <string name="activity_refresh_rate_5">5秒</string>
+    <string name="activity_refresh_rate_15">15秒</string>
+    <string name="activity_refresh_rate_30">30秒</string>
+    <string name="activity_refresh_rate_60">60秒</string>
+
+	<!--activity_remind_frequency-->
+    <string name="activity_remind_frequency_onece">提醒一次</string>
+    <string name="activity_remind_frequency_day_one">每日一次</string>
+    <string name="activity_remind_frequency_always">總是提醒</string>
+    <string name="activity_remind_frequency_label">當股票多次達到或超過目標價時，每次達到均會提醒</string>
+
+	<!--activity_safety_lock-->
+    <string name="activity_safety_lock_label">登錄券商後一段時間未操作交易功能鎖定</string>
+    <string name="activity_safety_lock_30">30分鐘</string>
+    <string name="activity_safety_lock_60">60分鐘</string>
+    <string name="activity_safety_lock_120">120分鐘</string>
+    <string name="activity_safety_lock_auto">手機鎖屏時自動鎖定</string>
+
+	<!--activity_setting-->
+    <string name="activity_setting_exit_success">退出成功</string>
+    <string name="activity_setting_day">白天模式</string>
+    <string name="activity_setting_night">夜间模式</string>
+    <string name="activity_setting_no_cache">當前無緩存數據</string>
+    <string name="activity_setting_message">消息提醒</string>
+    <string name="activity_setting_refresh_rate">行情刷新頻率</string>
+    <string name="activity_setting_safety">交易功能安全鎖</string>
+    <string name="activity_setting_clear">清除緩存</string>
+    <string name="activity_setting_switch_mode">切換模式</string>
+    <string name="activity_setting_switch_locale">切換語言</string>
+    <string name="activity_setting_color">漲跌顏色</string>
+    <string name="activity_setting_about">關於</string>
+    <string name="activity_setting_exit">退出登錄</string>
+
+	<!--activity_stock_warn-->
+    <string name="activity_stock_warn_hint">股價提醒服務依賴於行情更新系統和手機消息推送系統，可能會出現通知延時情況。</string>
+    <string name="activity_stock_warn_remind_rate">提醒頻率</string>
+    <string name="activity_stock_warn_day_down">日跌幅超</string>
+    <string name="activity_stock_warn_day_up">日漲幅超</string>
+    <string name="activity_stock_warn_down">股價跌到</string>
+    <string name="activity_stock_warn_up">股價漲到</string>
+    <string name="activity_stock_warn_hk_money">港元</string>
+    <string name="activity_stock_warn_us_money">美元</string>
+    <string name="activity_stock_warn_success">設置成功</string>
+    <string name="activity_stock_warn_test_two">時提醒</string>
+    <string name="activity_stock_warn_test_one">港元時提醒</string>
+
+	<!--activity_stock_warn_recode-->
+    <string name="activity_stock_warn_recode_rate_up">日漲幅超</string>
+    <string name="activity_stock_warn_recode_rate_down">日跌幅超</string>
+    <string name="activity_stock_warn_recode_test_zgyh">中國銀行</string>
+    <string name="activity_stock_warn_recode_test_zgrb">中國人保</string>
+
+	<!--activity_switch_color-->
+    <string name="activity_switch_color_red_green">紅漲綠跌</string>
+    <string name="activity_switch_color_green_red">綠漲紅跌</string>
+
+	<!--activity_switch_locale-->
+    <string name="activity_switch_locale_zh_cn">中文簡體</string>
+    <string name="activity_switch_locale_zh_hk">中文繁體</string>
+
+    <!--activity_common_agreement_inner-->
+    <string name="activity_common_agreement_inner_information_detail">詳情</string>
+    <string name="activity_common_agreement_inner_has_collect">已收藏</string>
+    <string name="activity_common_agreement_inner_not_collect">收藏</string>
+    <string name="activity_common_agreement_inner_collect_success">收藏成功!</string>
+    <string name="activity_common_agreement_inner_not_require">已取消收藏!</string>
+    <string name="activity_common_agreement_inner_agree_success">點贊成功!</string>
+    <string name="activity_common_agreement_inner_agree_not">已取消點贊!</string>
+    <string name="activity_common_agreement_inner_agree">贊</string>
+
+    <!--activity_my_collection-->
+    <string name="activity_my_collection_question">確認要刪除該收藏麼?</string>
+    <string name="activity_my_collection_success">刪除成功!</string>
+
+    <!--activity_feedback-->
+    <string name="activity_feedback_hint_message">您有任何意見、困擾、吐槽等等都可以寫在此處，發送給我們！</string>
+    <string name="activity_feedback_input">輸入</string>
+    <string name="activity_feedback_size">字</string>
+    <string name="activity_feedback_hint_phone">建議您留下手機號方便我們與您取得聯繫</string>
+    <string name="activity_feedback_serve">客服熱線：400x-x66-x88</string>
+    <string name="activity_feedback_phone_error">手機號格式錯誤</string>
+    <string name="activity_feedback_success">已提交回饋資訊</string>
+
+    <!--activity_register_success-->
+    <string name="activity_register_success_function">繼續進行實名認證</string>
+    <string name="activity_register_success_label">您已成功創建港付通帳號</string>
+    <string name="activity_register_success_dont">暫不認證</string>
+
+    <!--activity_register-->
+    <string name="activity_register_email_el">電子郵箱</string>
+    <string name="activity_register_login_pwd">登錄密碼</string>
+    <string name="activity_register_confirm_login_pwd">確認登錄密碼</string>
+
+    <!--activity_face_lock-->
+    <string name="activity_face_lock_label">開啟後可使用生物識別技術登錄帳戶</string>
+
+    <!--activity_fingerprint_lock-->
+    <string name="activity_fingerprint_lock_service">《港付通生態指紋相關協議》</string>
+    <string name="activity_fingerprint_lock_label">指紋密碼僅對本機有效</string>
+
+    <!--activity_safety_protect-->
+    <string name="activity_safety_protect_has_open">已啟用</string>
+    <string name="activity_safety_protect_not_open">未啟用</string>
+    <string name="activity_safety_protect_not_open_fingerprint">請前往系統設置添加指紋解鎖功能</string>
+
+    <!--activity_screen_lock-->
+    <string name="activity_screen_lock_has_cancel">已取消</string>
+    <string name="activity_screen_lock_title">應用解鎖</string>
+    <string name="activity_screen_lock_des">正在生物識別解鎖功能</string>
+    <string name="activity_screen_lock_fail_once">指紋解鎖失敗,請重試</string>
+    <string name="activity_screen_lock_hard_not">您的手機不支持指紋功能</string>
+    <string name="activity_screen_lock_no_screen">您還未設置鎖屏，請先設置鎖屏並添加一個指紋</string>
+    <string name="activity_screen_lock_require_has">您至少需要在系統設置中添加一個指紋</string>
+    <string name="activity_screen_lock_hint">請進行指紋登錄</string>
+    <string name="activity_screen_lock_gesture_hint">繪製解鎖圖案</string>
+    <string name="activity_screen_lock_switch">切換帳戶</string>
+    <string name="activity_screen_lock_face">刷臉登錄</string>
+    <string name="activity_screen_lock_gesture">手勢密碼</string>
+    <string name="activity_screen_lock_other">其他登錄方式</string>
+    <string name="activity_screen_lock_not_support">您的系統版本過低，不支持指紋功能</string>
+    <string name="activity_screen_lock_login_again">指紋庫資訊有變更,將前往登錄介面重新登錄</string>
+    <string name="activity_screen_lock_gesture_error">手勢錯誤</string>
+    <string name="activity_screen_lock_not_enable" formatted="false">您暫未開通%s，可登錄港付通後，前往“我的-安全防護”進行設置。</string>
+    <string name="activity_screen_lock_hardware_not_support">設備不支持</string>
+
+    <!--activity_gesture_lock-->
+    <string name="activity_gesture_lock_switch">手勢密碼開關</string>
+    <string name="activity_gesture_lock_travel">顯示手勢軌跡</string>
+    <string name="activity_gesture_lock_password">手勢密碼</string>
+
+    <!--activity_gesture_setting-->
+    <string name="activity_gesture_setting_not_set">暫不設置</string>
+    <string name="activity_gesture_setting_label_one">請設置手勢密碼</string>
+    <string name="activity_gesture_setting_label_two">請再次設置手勢密碼</string>
+    <string name="activity_gesture_setting_regex">手勢密碼需要連接4&#8211;9個不重複的點</string>
+    <string name="activity_gesture_setting_not_equal">兩次設置的手勢不同,請重新設置</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+	<!-- /////////////////////////////////////////// fragments /////////////////////////////////////////////////////////////////////////////-->
+
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+	<!--fragment_deal-->
+    <string name="fragment_deal_buy_sell_hint">請輸入買入價</string>
+    <string name="fragment_deal_min_unit">最小變動單位</string>
+    <string name="fragment_deal_stock_count">股票數量</string>
+    <string name="fragment_deal_total">全部</string>
+    <string name="fragment_deal_can_buy">可買</string>
+    <string name="fragment_deal_order_amount">訂單金額</string>
+    <string name="fragment_deal_first">證券/市值</string>
+    <string name="fragment_deal_second">數量/可用</string>
+    <string name="fragment_deal_third">現價/成本</string>
+    <string name="fragment_deal_fourth">盈虧</string>
+    <string name="fragment_deal_buy_in">買入</string>
+    <string name="fragment_deal_sell_out">賣出</string>
+    <string name="fragment_deal_buy_hint">請輸入買入價</string>
+    <string name="fragment_deal_sell_hint">請輸入賣出價</string>
+    <string name="fragment_deal_sell_" formatted="false">賣%d</string>
+    <string name="fragment_deal_buy_" formatted="false">買%d</string>
+    <string name="fragment_deal_can_sell">可賣</string>
+
+	<!--fragment_entrust_search-->
+    <string name="fragment_entrust_search_success">成交</string>
+    <string name="fragment_entrust_search_wait_success">委託</string>
+    <string name="fragment_entrust_search_to">至</string>
+    <string name="fragment_entrust_search_search">查詢</string>
+
+	<!--fragment_exchange-->
+    <string name="fragment_exchange_return">理財</string>
+    <string name="fragment_exchange_title">港美股實盤</string>
+    <string name="fragment_exchange_label_1">超低收費</string>
+    <string name="fragment_exchange_label_2">港股僅收1港元/成交,美股僅收1美元/成交</string>
+    <string name="fragment_exchange_label_3">安全可靠</string>
+    <string name="fragment_exchange_label_4">香港證監會監管,投資者賠償基金保障</string>
+    <string name="fragment_exchange_label_5">智能提醒</string>
+    <string name="fragment_exchange_label_6">自選諮詢即時推送,把握每一次操作良機</string>
+    <string name="fragment_exchange_login">已開戶 立即登錄</string>
+    <string name="fragment_exchange_register">立即開戶</string>
+
+	<!--fragment_kill_order-->
+    <string name="fragment_kill_order_item_price">委託價格</string>
+    <string name="fragment_kill_order_item_count">委託數量</string>
+    <string name="fragment_kill_order_title">委託管理</string>
+    <string name="fragment_kill_order_alert_cancel">确定要撤单吗？</string>
+
+	<!--fragment_market-->
+    <string name="fragment_market_custom">自選</string>
+    <string name="fragment_market_market">市場</string>
+    <string name="fragment_market_all">全部</string>
+    <string name="fragment_market_all_global">全球</string>
+    <string name="fragment_market_hk">港股</string>
+    <string name="fragment_market_us">美股</string>
+
+	<!--fragment_market_item-->
+    <string name="fragment_market_item_has_login">當前已登錄</string>
+    <string name="fragment_market_item_has_no_login">請登錄券商</string>
+    <string name="fragment_market_item_has_refresh">數據已刷新</string>
+    <string name="fragment_market_item_first_title">恒生指數</string>
+    <string name="fragment_market_item_second_one">牛熊證</string>
+    <string name="fragment_market_item_second_two">窩輪</string>
+    <string name="fragment_market_item_second_three">融資股票</string>
+    <string name="fragment_market_item_second_four">區間漲幅榜</string>
+    <string name="fragment_market_item_third_title_one">行業板塊</string>
+    <string name="fragment_market_item_third_title_two">概念板塊</string>
+    <string name="fragment_market_item_fourth_title">應用軟體</string>
+    <string name="fragment_market_item_fourth_sub">金蝶國際</string>
+    <string name="fragment_market_item_third_title_three">全部港股</string>
+    <string name="fragment_market_item_third_title_four">主板</string>
+    <string name="fragment_market_item_third_title_five">創業板</string>
+    <string name="fragment_market_item_custom">恒生指數</string>
+    <string name="fragment_market_item_custom_add">添加股票</string>
+    <string name="fragment_market_item_custom_add_label">暫無股票,請點擊添加</string>
+    <string name="fragment_market_item_custom_rate">漲跌幅</string>
+    <string name="fragment_market_item_custom_price">價格</string>
+    <string name="fragment_market_item_custom_name">名稱代碼</string>
+    <string name="fragment_market_item_custom_at_once">立即開戶</string>
+    <string name="fragment_market_item_custom_label_login">港股美股我選港付通</string>
+
+	<!--fragment_person-->
+    <string name="fragment_person_my_collection">我的收藏</string>
+    <string name="fragment_person_title">歡迎使用港付通</string>
+    <string name="fragment_person_login_register">登錄/註冊</string>
+    <string name="fragment_person_stock_remind">股價提醒</string>
+    <string name="fragment_person_my_message">我的消息</string>
+    <string name="fragment_person_safe">安全防護</string>
+    <string name="fragment_person_online">意見回饋</string>
+    <string name="fragment_person_setting">設置</string>
+
+	<!--fragment_trade_detail-->
+    <string name="fragment_trade_detail_name">尊嘉證券</string>
+    <string name="fragment_trade_detail_value">資產淨值（港幣）</string>
+    <string name="fragment_trade_detail_change">今日盈虧</string>
+    <string name="fragment_trade_detail_market_value">證券市值</string>
+    <string name="fragment_trade_detail_freeze">IPO凍結</string>
+    <string name="fragment_trade_detail_max">最大購買力</string>
+    <string name="fragment_trade_detail_entrust_freeze">委託凍結</string>
+    <string name="fragment_trade_detail_available">可用資金</string>
+    <string name="fragment_trade_detail_withdraw_money">可提現資金</string>
+    <string name="fragment_trade_detail_exchange">交易</string>
+    <string name="fragment_trade_detail_new_stock">新股認購</string>
+    <string name="fragment_trade_detail_in_money">入金</string>
+    <string name="fragment_trade_detail_withdraw">提現</string>
+    <string name="fragment_trade_detail_search">查詢</string>
+    <string name="fragment_trade_detail_hold_stock">持倉股票</string>
+    <string name="fragment_trade_detail_rate">盈虧比例</string>
+    <string name="fragment_trade_detail_cost">現價/成本</string>
+    <string name="fragment_trade_detail_num">數量/可用</string>
+    <string name="fragment_trade_detail_all">全部</string>
+    <string name="fragment_trade_detail_time">委託時間</string>
+    <string name="fragment_trade_detail_volume">數量/成交量</string>
+    <string name="fragment_trade_detail_average_price">委託/均價</string>
+    <string name="fragment_trade_detail_title">尊嘉</string>
+    <string name="fragment_trade_detail_hold_stock_" formatted="false">持倉(%d)</string>
+    <string name="fragment_trade_detail_day_entrust_" formatted="false">當日委託(%d)</string>
+
+    <!--fragment_assets-->
+    <string name="fragment_assets_seven">七日年化收益</string>
+    <string name="fragment_assets_one_day">存入1萬元，1日可收益</string>
+    <string name="fragment_assets_one_day_money">元</string>
+    <string name="fragment_assets_function">快速存入</string>
+    <string name="fragment_assets_function_two">10元起投</string>
+    <string name="fragment_assets_label">該基金規模較大，每日存取額度較高，不常出現無法存入取出的情況</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- /////////////////////////////////////////// view/dialog /////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--dialog_action_more_close-->
+    <string name="dialog_action_more_close_label">功能直達</string>
+    <string name="dialog_action_more_close_news">消息</string>
+    <string name="dialog_action_more_close_search">搜索</string>
+    <string name="dialog_action_more_close_finacing">首頁</string>
+    <string name="dialog_action_more_close_asset">資產</string>
+    <string name="dialog_action_more_close_ecology">益享</string>
+
+</resources>

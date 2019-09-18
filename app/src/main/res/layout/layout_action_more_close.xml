@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    tools:background="@color/dark_color_1d2037_f4f4f4">
+
+    <ImageView
+        android:id="@+id/iv_action_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/view_padding_margin_12dp"
+        android:paddingTop="@dimen/view_padding_margin_8dp"
+        android:paddingEnd="@dimen/view_padding_margin_12dp"
+        android:paddingBottom="@dimen/view_padding_margin_8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dark_action_more" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="@dimen/divider_line_width_1dp"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/view_padding_margin_8dp"
+        android:paddingBottom="@dimen/view_padding_margin_8dp"/>
+
+    <ImageView
+        android:id="@+id/iv_action_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/view_padding_margin_12dp"
+        android:paddingTop="@dimen/view_padding_margin_8dp"
+        android:paddingEnd="@dimen/view_padding_margin_12dp"
+        android:paddingBottom="@dimen/view_padding_margin_8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dark_action_close" />
+</merge>

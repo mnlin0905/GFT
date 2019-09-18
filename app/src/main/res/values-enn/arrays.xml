@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--证件类型-->
+    <string-array name="array_person_card_type">
+        <item>ID Card</item>
+        <item>Passport</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--实名认证状态说明-->
+    <string-array name="array_certification_label_status">
+        <item>Your ID verification is under processing</item>
+        <item>Your ID verification is approved.</item>
+        <item>Your ID verification failed to pass the review.</item>
+    </string-array>
+
+    <!--实名认证状态-->
+    <string-array name="array_certification_status">
+        <item>Not Verified</item>
+        <item>Verified</item>
+        <item>Verify Failed</item>
+        <item>Processing</item>
+    </string-array>
+
+    <!--转账状态-->
+    <string-array name="array_take_out_status">
+        <item>Processing</item>
+        <item>Processing</item>
+        <item>Rrocessing</item>
+        <item>Transfered</item>
+        <item>Approved</item>
+        <item>Failed</item>
+        <item>Revoked</item>
+    </string-array>
+
+    <!--导入钱包方式-->
+    <string-array name="array_import_wallet_types">
+        <item>Official Wallet</item>
+        <item>Private Key</item>
+    </string-array>
+
+    <!--导出keystore方式-->
+    <string-array name="array_export_keystore_types">
+        <item>Keystore</item>
+        <item>QRcode</item>
+    </string-array>
+
+    <!--实名认证状态:简要信息-->
+    <string-array name="array_certification_label_status_brief">
+        <item>Reviewing</item>
+        <item>Approved</item>
+        <item>Failed</item>
+        <item>Not Begin</item>
+    </string-array>
+
+    <!--用户需要的权限限定-->
+    <string-array name="array_arouter_permissions">
+        <item>Login</item>
+        <item>Under processing</item>
+        <item>Link mobile</item>
+        <item>Link email</item>
+        <item>Set Transaction Password</item>
+        <item>红色通道</item> <!--若目标此flag设定,则表示禁止跳转-->
+        <item>wifi</item>
+        <item>手机网络</item>
+        <item>栈单例模式</item>
+        <item>清除栈顶模式</item>
+        <item>实名认证已成功</item>
+    </string-array>
+
+    <!--系统默认的语言环境-->
+    <string-array name="array_locale_language">
+        <item>Auto</item>
+        <item>简体中文</item>
+        <item>繁體中文&#160;(臺灣)</item>
+        <item>繁體中文&#160;(香港)</item>
+        <item>English</item>
+    </string-array>
+</resources>

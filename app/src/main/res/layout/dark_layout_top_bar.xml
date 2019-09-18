@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    app:elevation="0dp">
+
+    <com.linktech.gft.skin.MyTitleCenterToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme_menu_text_white"
+        android:transitionName="@string/transition_name_toolbar"
+        app:contentInsetEnd="@dimen/view_padding_margin_16dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_scrollFlags="exitUntilCollapsed|scroll|snap"
+        app:navigationIcon="@drawable/dark_icon_arrow_back"
+        app:popupTheme="@style/PopupThemeLight"
+        app:titleMarginStart="0dp"
+        app:titleTextColor="@color/skin_title_color"
+        tools:title="标题">
+
+        <!--直达功能按钮-->
+        <com.linktech.gft.skin.MyActionMoreCloseView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:visibility="gone" />
+
+    </com.linktech.gft.skin.MyTitleCenterToolbar>
+
+</android.support.design.widget.AppBarLayout>

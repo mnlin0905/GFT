@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="@dimen/divider_line_width_1dp"
+        android:color="@color/skin_accent_color"
+        android:dashWidth="@dimen/divider_line_width_2dp"
+        android:dashGap="@dimen/divider_line_width_2dp" />
+    <corners android:radius="@dimen/drawable_shape_normal_radius_8dp" />
+</shape>

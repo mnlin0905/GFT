@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--搜索栏-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        style="@style/NoSpaceActionBarTheme"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color_primary"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme_menu_text_white"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="@drawable/ic_arrow_back_white">
+
+        <EditText
+            android:id="@+id/et_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar_hint_color_primary"
+            android:drawableStart="@drawable/icon_search_white"
+            android:drawablePadding="@dimen/view_padding_margin_12dp"
+            android:hint="@string/activity_search_filter_hint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingTop="@dimen/view_padding_margin_8dp"
+            android:textCursorDrawable="@drawable/shape_cursor_2dp_white"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:paddingBottom="@dimen/view_padding_margin_8dp"
+            android:textColor="@color/main_color_white"
+            android:textColorHint="@color/main_color_white_80ffffff"
+            android:textSize="@dimen/text_size_small_12sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <!--添加一条分割线-->
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"/>
+
+    <ListView
+        android:id="@+id/lv_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mc_window_background_gray_f5f5fb"
+        android:scrollbars="none"/>
+</LinearLayout>

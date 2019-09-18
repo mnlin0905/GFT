@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <!---->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/view_padding_margin_14dp"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_10dp"
+            android:text="我已閱讀全部文件，了解相關風險並自願在尊嘉證券開戶"
+            android:textColor="@color/skin_display1_color" />
+
+        <!---->
+        <com.linktech.gft.view.FitSrcImageView
+            android:id="@+id/iv_signature"
+            android:padding="@dimen/view_padding_margin_12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_24dp"
+            android:layout_marginTop="@dimen/view_padding_margin_24dp"
+            android:layout_marginEnd="@dimen/view_height_32dp"
+            android:layout_marginBottom="@dimen/view_padding_margin_64dp"
+            android:background="@drawable/shape_rect_divider_color_dash_radius"
+            tools:src="@drawable/bg_splash_one"
+            tools:layout_height="100dp" />
+
+        <!---->
+        <include layout="@layout/layout_common_dark_function_button" />
+
+        <!---->
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/view_padding_margin_20dp"
+            android:drawableStart="@drawable/ic_establish_phone"
+            android:drawablePadding="@dimen/view_padding_margin_10dp"
+            android:textColor="@color/skin_accent_color"
+            android:textSize="@dimen/text_size_normal_14sp"
+            android:text="@string/establish_server_phone" />
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

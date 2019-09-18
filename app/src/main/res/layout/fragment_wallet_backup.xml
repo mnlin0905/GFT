@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--信息展示区域-->
+    <!--android:stateListAnimator="@null"-->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar_second_color_primary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+            <!--卡片布局/兑换人民币-->
+            <LinearLayout
+                android:id="@+id/ll_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_fragment_wallet_header"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="1">
+                <!--显示/隐藏-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_40dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_wallet_total_balance"
+                        android:textColor="@color/main_color_white_f5f5fb"
+                        android:textSize="@dimen/text_size_13sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_eye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_6dp"
+                        android:paddingBottom="@dimen/view_padding_margin_16dp"
+                        android:paddingEnd="@dimen/view_padding_margin_16dp"
+                        android:paddingTop="@dimen/view_padding_margin_16dp"
+                        android:src="@drawable/selector_eye_open_close_white"/>
+                </LinearLayout>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/view_padding_margin_32dp"
+                    android:id="@+id/tv_convent_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:textColor="@color/main_color_white_f5f5fb"
+                    android:textSize="@dimen/text_size_32sp"
+                    tools:text="3323.06"/>
+            </LinearLayout>
+
+            <!--toolbar-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/NoSpaceActionBarTheme"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/toolbar_color_primary"
+                android:transitionName="@string/transition_name_toolbar"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/icon_wallet_agreement"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color_white"
+        android:overScrollMode="always"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/view_padding_margin_16dp">
+            <!--添加资产label-->
+            <TextView
+                android:id="@+id/tv_label_add"
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/view_padding_margin_20dp"
+                android:paddingStart="@dimen/view_padding_margin_20dp"
+                android:text="@string/fragment_wallet_back_up_add_asset"
+                android:textColor="@color/black_text_37416b"
+                android:textSize="@dimen/text_size_17sp"/>
+
+            <!--总资产:item 上部有横线-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_asset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="always"
+                android:scrollbars="none"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--浮标-->
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/view_height_36dp"
+        android:layout_height="@dimen/view_height_36dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_20dp"
+        android:elevation="@dimen/float_action_tab_elevation_9dp"
+        android:src="@drawable/icon_float_add_green"
+        android:transitionName="@string/transition_name_logo"
+        app:layout_anchor="@id/tv_label_add"
+        app:layout_anchorGravity="end|center_vertical"/>
+</android.support.design.widget.CoordinatorLayout>

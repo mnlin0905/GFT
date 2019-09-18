@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_color_1d2037_ffffff"
+    android:orientation="vertical">
+    <!--切換國家;tab-group;搜索;otc-多功能-->
+    <com.linktech.gft.skin.MyTitleCenterToolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarTheme_menu_text_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_color_272a3f_ffffff"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:transitionName="@string/transition_name_toolbar"
+        app:contentInsetEnd="@dimen/view_padding_margin_16dp"
+        app:contentInsetStart="@dimen/view_padding_margin_16dp"
+        app:layout_scrollFlags="exitUntilCollapsed|scroll"
+        app:navigationIcon="@drawable/dark_icon_arrow_back"
+        app:popupTheme="@style/PopupThemeLight"
+        app:titleMarginStart="0dp">
+
+        <!--tab-group-->
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center|center_vertical"
+            android:background="@drawable/skin_shape_bg_new_stock_tab_radius_3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_new_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_activity_new_stock"
+                android:button="@null"
+                android:checked="true"
+                android:ellipsize="start"
+                android:minHeight="@dimen/view_height_30dp"
+                android:paddingStart="@dimen/view_padding_margin_12dp"
+                android:paddingEnd="@dimen/view_padding_margin_12dp"
+                android:singleLine="true"
+                android:text="新股列表"
+                android:textColor="@color/selector_normal_checked_new_stock_activity"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <RadioButton
+                android:id="@+id/rb_ipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_activity_new_stock"
+                android:button="@null"
+                android:checked="false"
+                android:ellipsize="start"
+                android:minHeight="@dimen/view_height_30dp"
+                android:paddingStart="@dimen/view_padding_margin_12dp"
+                android:paddingEnd="@dimen/view_padding_margin_12dp"
+                android:singleLine="true"
+                android:text="已上市"
+                android:textColor="@color/selector_normal_checked_new_stock_activity"
+                android:textSize="@dimen/text_size_17sp" />
+        </RadioGroup>
+
+    </com.linktech.gft.skin.MyTitleCenterToolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewStub
+            android:id="@+id/vs_new_share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_new_stock" />
+
+        <ViewStub
+            android:id="@+id/vs_ipo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_iop" />
+        <!--空-->
+        <com.linktech.gft.view.RecyclerEmptyView
+            android:id="@+id/empty_view_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar"/>
+
+    <!--搜索-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mc_window_background_gray_f5f5fb"
+        android:paddingBottom="@dimen/view_padding_margin_8dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingTop="@dimen/view_padding_margin_8dp">
+
+        <TextView
+            android:id="@+id/tv_search"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_white_radius_10dp_border_d2d7e6"
+            android:drawablePadding="@dimen/view_padding_margin_16dp"
+            android:drawableStart="@drawable/icon_search_black"
+            android:hint="@string/activity_contact_list_search"
+            android:minHeight="@dimen/view_height_36dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/srl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            app:srlAccentColor="?attr/colorAccent"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+            app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+            app:srlPrimaryColor="?attr/colorPrimary">
+            <!--列表-->
+            <com.linktech.gft.view.RecyclerViewWithEmptyView
+                android:id="@+id/xrv_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_color_white"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <!--空-->
+        <com.linktech.gft.view.RecyclerEmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

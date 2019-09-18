@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_color_272a3f_ffffff"
+    android:paddingStart="@dimen/view_padding_margin_16dp"
+    android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+    <!--title-->
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:maxLines="2"
+        android:textColor="@color/dark_main_text_666986"
+        android:textSize="@dimen/text_size_13sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_global"
+        app:layout_constraintEnd_toStartOf="@id/iv_global"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_global"
+        tools:text="25分钟前" />
+
+    <!--线-->
+    <ImageView
+        android:layout_width="@dimen/divider_line_width_1dp"
+        android:layout_height="0dp"
+        android:src="@color/dark_main_text_8144e5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/iv_global"
+        app:layout_constraintStart_toStartOf="@id/iv_global"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--小球-->
+    <ImageView
+        android:id="@+id/iv_global"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/view_padding_margin_4dp"
+        android:layout_marginTop="@dimen/view_padding_margin_24dp"
+        android:src="@drawable/dark_icon_information_hot"
+        app:layout_constraintEnd_toStartOf="@id/tv_title"
+        app:layout_constraintStart_toEndOf="@id/tv_time"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--文本-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_8dp"
+        android:layout_marginTop="@dimen/view_padding_margin_16dp"
+        android:layout_marginBottom="@dimen/view_padding_margin_32dp"
+        android:minLines="3"
+        android:textColor="@color/skin_title_color"
+        android:textSize="@dimen/text_size_title_15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toEndOf="@id/iv_global"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="【交通产业协同创新共同体在蓉成立未来物流企业货物20小时可直达全国】近日，在蓉召开的第二届交通产业物流发展论坛上，来自全国的16个高速公路物流产业集团“联盟”成立交通产业幸诶痛创新共同体。近日，在蓉召开的第二届交通产业物流发展论坛上，来自全国的16个高速公路物流产业集团“联盟”成立交通产业幸诶痛创新共同体。" />
+</android.support.constraint.ConstraintLayout>

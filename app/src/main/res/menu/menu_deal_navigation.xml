@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/deal_navigation_buy"
+        android:icon="@drawable/dark_selector_deal_buy"
+        android:title="买入"/>
+
+    <item
+        android:id="@+id/deal_navigation_sale"
+        android:icon="@drawable/dark_selector_deal_sale"
+        android:title="卖出"/>
+
+    <item
+        android:id="@+id/deal_navigation_revoke"
+        android:icon="@drawable/dark_selector_deal_revoke"
+        android:title="撤单"/>
+
+    <item
+        android:id="@+id/deal_navigation_query"
+        android:icon="@drawable/dark_selector_deal_query"
+        android:title="查询"/>
+</menu>

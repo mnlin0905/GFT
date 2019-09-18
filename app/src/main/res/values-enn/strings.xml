@@ -1,0 +1,892 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">港付通</string>
+
+    <!--description-->
+    <string name="app_description">Paws Ecosystem</string>
+
+    <!--通用的功能:按钮,可点击的文本等-->
+    <string name="function_known">Acknowledge</string>
+    <string name="function_submit">Submit</string>
+    <string name="function_next_step">Next</string>
+    <string name="function_save">Save</string>
+    <string name="function_finish">Done</string>
+    <string name="function_set">Settings</string>
+    <string name="function_to_set">Settings</string>
+    <string name="function_change">Edit</string>
+    <string name="function_invite_friend">Invite Friends</string>
+    <string name="function_login">Login</string>
+    <string name="function_logout">Logout</string>
+    <string name="function_forget_pwd_">Forget Password?</string>
+    <string name="function_cancel">Cancel</string>
+    <string name="function_sure">Confirm</string>
+    <string name="function_load">Loading</string>
+    <string name="function_copy">Copy</string>
+    <string name="function_bind_new_email">Link Email</string>
+    <string name="function_reset">Reset</string>
+    <string name="function_bind_new_mobile">Link Mobile</string>
+    <string name="function_verify">Verification</string>
+    <string name="function_at_once_import">Import</string>
+    <string name="function_begin_import">Importing</string>
+    <string name="function_import">Import</string>
+    <string name="function_create_wallet">Create Wallet</string>
+    <string name="function_copy_secret_address">Copy Deposit Address</string>
+    <string name="function_share_to">Share to</string>
+    <string name="function_confirm">Confirm</string>
+    <string name="function_delete">Delete</string>
+    <string name="function_change_password">Change Password</string>
+    <string name="function_export_secret">Export Private Key</string>
+    <string name="function_export_keystore">Export keystore</string>
+    <string name="function_gathering">Receive</string>
+    <string name="function_transfer">Transfer</string>
+    <string name="function_confirm_transfer">Confirm Transfer</string>
+    <string name="function_revoke">Cancel</string>
+    <string name="function_wait">Wait</string>
+    <string name="function_abandon">Cancel</string>
+    <string name="function_go">Go to</string>
+    <string name="function_get_random_code">Get Code</string>
+    <string name="function_photo">Camera</string>
+    <string name="function_to_login">Login</string>
+    <string name="function_have_known">Got It</string>
+    <string name="function_turn_out">Withdraw</string>
+    <string name="function_at_once_backup">Backup</string>
+    <string name="function_show_qr_code">QRcode</string>
+    <string name="function_close">Close</string>
+    <string name="function_add">Add</string>
+    <string name="function_has_add">Added</string>
+    <string name="function_sure_exchange">Confirm Exchange</string>
+    <string name="function_sure_add">Confirm Add</string>
+    <string name="function_processing">Processing</string>
+    <string name="function_approved">Approved</string>
+    <string name="function_rejected">Rejected</string>
+    <string name="function_revoked">Revoked</string>
+    <string name="function_completed">Completed</string>
+    <string name="function_failed">Failed</string>
+
+    <!--action菜单功能,menu菜单-->
+    <string name="action_sign">Recode</string>
+    <string name="action_save">@string/function_save</string>
+    <string name="action_close">Close</string>
+    <string name="action_search">Search</string>
+    <string name="action_finish">@string/function_finish</string>
+    <string name="action_wallet">Wallet</string>
+    <string name="action_ecology">Ecosystem</string>
+    <string name="action_add">Add</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_qr_scan">Scan</string>
+    <string name="action_contact">Contacts</string>
+    <string name="action_wallet_manager">Manage Wallet</string>
+    <string name="action_asset_manage">Asset Management</string>
+    <string name="action_bank_card">Bank Card Management</string>
+    <string name="action_safety_center">Security Center</string>
+    <string name="action_recode">Record</string>
+    <string name="action_setting">@string/function_set</string>
+    <string name="action_about">About</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_browser">Open in Browser</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_switch_language">Switch Language</string>
+
+    <!--activity标题所在位置-->
+    <string name="label_take_out_platform" formatted="false">Withdraw&#160;%s</string>
+    <string name="label_take_out_currency_record" formatted="false">%s Withdraw History</string>
+    <string name="label_take_out_record_detail">Withdraw Detail</string>
+    <string name="label_soft_setting">@string/action_setting</string>
+    <string name="label_crowd_statistics">Crowdfunding</string>
+    <string name="label_person_information">My Account</string>
+    <string name="label_change_nick_name">Nick Name</string>
+    <string name="label_forget_password">Find Password</string>
+    <string name="label_find_password">@string/label_forget_password</string>
+    <string name="label_reset_password">Reset Password</string>
+    <string name="label_change_sex">Gender</string>
+    <string name="label_begin_certification">ID Verification</string>
+    <string name="label_upload_certification_photo">Upload ID Photo</string>
+    <string name="label_show_certification_result">@string/label_begin_certification</string>
+    <string name="label_change_password">Change Password</string>
+    <string name="label_select_change_trans_password_type">Choose Verification</string>
+    <string name="label_set_transaction_password">Set Transaction Password</string>
+    <string name="label_register">Register</string>
+    <string name="label_show_mobile">Phone Number</string>
+    <string name="label_bind_mobile">Link Mobile</string>
+    <string name="label_change_mobile">Change Mobile Number</string>
+    <string name="label_bind_email">Link Email</string>
+    <string name="label_show_email">Email</string>
+    <string name="label_change_email">Change Email</string>
+    <string name="label_about">@string/action_about</string>
+    <string name="label_sign">Login Gift</string>
+    <string name="label_sign_reward">Login Reward</string>
+    <string name="label_recommend_reward">Invitation Reward</string>
+    <string name="label_input_old_trans_password">Reset Transaction Password</string>
+    <string name="label_change_trans_password">Reset Transaction Password</string>
+    <string name="label_input_phone_trans_password">ID Verification</string>
+    <string name="label_change_trans_success">Setting Status</string>
+    <string name="label_search_filter">@string/action_search</string>
+    <string name="label_add_contact">New Contact</string>
+    <string name="label_none" />
+    <string name="label_currency_manager">currency manager</string>
+    <string name="label_wallet_manager">@string/action_wallet_manager</string>
+    <string name="label_wallet_record">Assets Detail</string>
+    <string name="label_wallet_take_out">@string/function_transfer</string>
+    <string name="label_recommend_record">Record</string>
+    <string name="label_show_address_qr">Receive QRcode</string>
+    <string name="label_export_secret">@string/function_export_secret</string>
+    <string name="label_create_wallet">@string/function_create_wallet</string>
+    <string name="label_contact_list">@string/action_contact</string>
+    <string name="label_change_wallet_name">Wallet Name</string>
+    <string name="label_import_wallet">Import Wallet</string>
+    <string name="label_export_keystore">@string/function_export_keystore</string>
+    <string name="label_change_wallet_password">@string/function_change_password</string>
+    <string name="label_show_trans_result">Transaction Password</string>
+    <string name="label_verify_card_num">@string/label_input_phone_trans_password</string>
+    <string name="label_ecology_service_agreement">GFT Service Agreement</string>
+    <string name="label_service_secret_agreement">Service and Privacy</string>
+    <string name="label_wallet_service_secret_agreement">Wallet Service and Privacy</string>
+    <string name="label_what_is_keystore_file">What is Keystore file?</string>
+    <string name="label_what_is_secret_file">What is cleartext private key?</string>
+    <string name="label_switch_locale">Language</string>
+    <string name="label_choose_country">Country/Area</string>
+    <string name="label_into" formatted="false">%s Deposit</string>
+    <string name="label_into_record" formatted="false">%s Deposit History</string>
+    <string name="label_into_detail" formatted="false">%s Deposit Detail</string>
+    <string name="label_exchange_usdp">USDP Exchange</string>
+    <string name="label_add_bank">Add Bank Cards</string>
+    <string name="label_bank_manager">Bank Card Management</string>
+    <string name="label_choose_bank">Select Bank Card</string>
+    <string name="label_exchange_recode">Exchange History</string>
+    <string name="label_exchange_detail">Exchange Detail</string>
+
+    <!--base模块文字提取-->
+    <string name="base_total_lifecycle" formatted="false">%sLife Cycle:%s</string>
+    <string name="base_total_cannot_support_method">This method is not supported at the moment.</string>
+    <string name="base_total_album_select">Choose from Album</string>
+    <string name="base_total_take_photo">Choose Camera</string>
+    <string name="base_total_qr_analyze_not_require">Data Analyse Failure</string>
+    <string name="base_total_qr_analyze_error">Picture Analyse Failure</string>
+    <string name="base_total_must_permission">You must grant the permission first to proceed.</string>
+    <string name="base_total_no_pmn_to_picture">No permission, cannot choose from album.</string>
+    <string name="base_total_has_forbid_pmn_camera_storage">Cannot access to camera and storage, please change the app permission.</string>
+    <string name="base_total_select_fail">Cannot Select</string>
+    <string name="base_total_picture_no_selected">No Picture Selected</string>
+    <string name="base_total_please_login_again">Please login again.</string>
+    <string name="base_total_no_permission">No Permission</string>
+    <string name="base_total_exist_known_error_code" formatted="false">Failure, our tech team are working on it, please be patient:%d</string>
+    <string name="base_total_json_syntax_exception">Json Error</string>
+    <string name="base_total_null_pointer_exception">String cannot be null</string>
+    <string name="base_total_io_exception">Network Error</string>
+    <string name="base_total_other_exception">Unknown Error</string>
+    <string name="base_total_upload_picture_error">Picture Upload Failure</string>
+    <string name="base_total_send_code_any_type" formatted="false">Verification code is sent %s</string>
+    <string name="base_total_not_get_user_info">Cannot find user info</string>
+
+    <!--通用字符串部分(ing:正在*,to:*中)-->
+    <string name="common_paws_ecology_service_agreement">@string/label_ecology_service_agreement</string>
+    <string name="common_version_agreement">Version Info</string>
+    <string name="common_list_no_data">no more data</string>
+    <string name="common_no_data">no data</string>
+    <string name="common_no_inner_data">no deep data</string>
+    <string name="common_list_error_data">data error, cannot load</string>
+    <string name="common_list_refresh_data">please wait ...</string>
+    <string name="common_no_require_params">no required parameters</string>
+    <string name="common_unknown_value">unknown</string>
+    <string name="common_unknown_error">unknown error</string>
+    <string name="common_cannot_create_qr">Cannot generate QRcode</string>
+    <string name="common_not_bind">unset</string>
+    <string name="common_not_login">not login</string>
+    <string name="common_not_set">unset</string>
+    <string name="common_has_set">already set</string>
+    <string name="common_not_develop">Coming Soon...</string>
+    <string name="common_delete_ing">Deleting</string>
+    <string name="common_delete_success">Deleted</string>
+    <string name="common_operate_ing">Processing</string>
+    <string name="common_mobile">Mobile</string>
+    <string name="common_mobile_number">Mobile Number</string>
+    <string name="common_email">Email</string>
+    <string name="common_wallet_address">Wallet Address</string>
+    <string name="common_have_revoked">Revoked</string>
+    <string name="common_take_out_success">Transfer Completed</string>
+    <string name="common_transfer_ing" tools:ignore="Typos">Transfering</string>
+    <string name="common_long_press_to_copy">Hold to Copy</string>
+    <string name="common_wallet_name">@string/label_change_wallet_name</string>
+    <string name="common_type">Type</string>
+    <string name="common_time">Date</string>
+    <string name="common_poundage">Handling Fee</string>
+    <string name="common_refresh_fail">Refresh Fail</string>
+    <string name="common_load_fail">Load Fail</string>
+    <string name="common_load_ing">Loading</string>
+    <string name="common_none">None</string>
+    <string name="common_operate_cancel">Cancel</string>
+    <string name="common_sex_man">Male</string>
+    <string name="common_sex_woman">Female</string>
+    <string name="common_sex_unknown">Security</string>
+    <string name="common_certification_">ID verification is under processing.</string>
+    <string name="common_change_ing">Changing</string>
+    <string name="common_deal_">Processing</string>
+    <string name="common_update_">Updating</string>
+    <string name="common_login_ing">Logging</string>
+    <string name="common_no_permission">@string/base_total_no_permission</string>
+    <string name="common_old_pwd_error">Wrong old password</string>
+    <string name="common_wallet_pwd_error">Wrong wallet password</string>
+    <string name="common_unknown_exception">unknown error, report is sent to service team</string>
+    <string name="common_cannot_create_file">cannot create file</string>
+    <string name="common_yes">Yes</string>
+    <string name="common_no">No</string>
+    <string name="common_unknown_user">Unknown User</string>
+    <string name="common_aggree">Agree</string>
+
+    <!--plugin插件提供的文本信息-->
+    <string name="plugins_cannot_jump_to_des">cannot jump</string>
+    <string name="plugins_no_any_permission" formatted="false">no %s permission</string>
+    <string name="plugins_no_email_permission">Email is not linked, would you like to link a email?</string>
+    <string name="plugins_no_verify_success_permission">ID verification failed to pass, would you like to re-apply?</string>
+    <string name="plugins_no_phone_question_permission">Mobile is not set, would you like to link a mobile number?</string>
+    <string name="plugins_no_trans_pwd_permission">Transaction password is not set, would you like to set a transaction password?</string>
+    <string name="plugins_dagger_no_register" formatted="false">%s class is not registered to dagger</string>
+    <string name="plugins_adac_error_code_minus_1">failure return</string>
+    <string name="plugins_adac_error_code_1">Account is not activated</string>
+    <string name="plugins_adac_error_code_2">custom currency is untrusted</string>
+    <string name="plugins_adac_error_code_3">custom currency is frozen</string>
+    <string name="plugins_adac_error_code_4">wrong private key</string>
+    <string name="plugins_adac_error_code_5">not enough balance</string>
+    <string name="plugins_adac_error_code_6">recipient account is not activated</string>
+    <string name="plugins_adac_error_code_7">custom currency of sender account is untrusted or frozen, or custom currency of recipient account is untrusted</string>
+    <string name="plugins_cannot_change_wallet_pwd">Cannot change wallet password, please contact our service team.</string>
+    <string name="plugins_cannot_judge_transfer_status">Cannot get transaction status, please contact our service team</string>
+    <string name="plugins_address_error_or_wallet_abnormal">wrong transfer address or wallet state exception</string>
+    <string name="plugins_abnormal_wallet_info" formatted="false">wallet state exception: %s</string>
+
+    <!--英文国际化-文档中字符串(源代码部分,未做统一处理部分)-->
+    <string name="please_input_password">Please enter password</string>
+    <string name="activity_login_new_register">Register</string>
+    <string name="nike_name_email_phone">Email/Mobile</string>
+    <string name="activity_login_please_input_code">Please enter verification code</string>
+
+    <string name="loginType1">Dynamic Login</string>
+    <string name="loginType2">Password Login</string>
+    <string name="activity_login_please_input_phoneNumber">Please enter mobile number</string>
+    <string name="activity_take_out_platform_info" formatted="false">1.For security reason, we will manually review your withdrawal and proceed ASAP.\n2.To speed up the transfer we will pay for the network fee each time. But due to the network uncertainty, some transactions may take longer, please be patient.\n3.The handling fee for withdrawal is the %s%% of each transaction.</string>
+    <string name="activity_sign_info" formatted="false">1、Login reward is based in one month cycle and %s USDP power for 1 day login. \n2、Login for 3 consecutive days to receive a additional reward of %s USDP power; \n3、Login for 7 consecutive days to receive a additional reward of %s USDP power; \n4、Login for 15 consecutive days to receive a additional reward of %s USDP power; \n5、Login for 28 consecutive days to receive a additional reward of %s USDP power; \n6、The rewarded USDP power can mine USDP tokens. With more USDP power, users can get more mining rewards.</string>
+    <string name="activity_take_out_platform_have">Available</string>
+    <string name="activity_take_out_platform_address_hint">Please enter wallet address or scan</string>
+    <string name="activity_take_out_platform_amount_hint">Please enter amount</string>
+    <string name="activity_take_out_platform_declare_label">Transfer Intro：</string>
+    <string name="activity_take_out_record_detail_time">Date</string>
+    <string name="activity_take_out_record_detail_reward_id">ID</string>
+    <string name="activity_take_out_record_detail_address">Wallet Address</string>
+    <string name="activity_take_out_record_detail_amount">Amount</string>
+    <string name="activity_take_out_record_detail_arrive">Received</string>
+    <string name="activity_take_out_record_detail_status">Status</string>
+    <string name="activity_take_out_currency_record_time">Date</string>
+    <string name="activity_take_out_currency_record_amount">Amount</string>
+    <string name="activity_take_out_currency_record_status">Status</string>
+    <string name="activity_take_out_currency_record_operate">Action</string>
+    <string name="activity_take_out_currency_record_alert_revoked">Confirm Revoke?</string>
+
+    <string name="activity_about_service">Terms of Service</string>
+    <string name="activity_about_copyright">@string/common_version_agreement</string>
+    <string name="activity_about_check_version">Check Update</string>
+    <string name="activity_begin_certification_location">Locations</string>
+    <string name="activity_begin_certification_name">Please enter legal name</string>
+    <string name="activity_begin_certification_card_type">Choose ID type</string>
+    <string name="activity_begin_certification_card_number">Please enter ID</string>
+    <string name="activity_begin_certification_upload_photo">Please upload ID photo</string>
+    <string name="activity_begin_certification_phone">Please enter mobile number</string>
+    <string name="activity_begin_certification_verity_code">Please enter verification code</string>
+    <string name="random_code_text_view_info" formatted="false">Send Again(%ds)</string>
+    <string name="activity_bind_email_activity_bind_email_label_email">You haven\'t link a email. Please link a email, you can recover the forgotten password through email.</string>
+    <string name="activity_bind_email_activity_bind_email_hint_email">Please enter the email</string>
+    <string name="activity_bind_email_activity_bind_mobile_label_mobile">You haven\'t link a mobile number. Please link a mobile number, you can recover the forgotten password through mobile.</string>
+    <string name="activity_bind_email_activity_bind_mobile_hint_phone">Please enter mobile number</string>
+    <string name="activity_bind_email_activity_bind_mobile_hint_card">Please enter your verified ID number</string>
+    <string name="activity_bind_email_activity_bind_mobile_picture_random_code">Please enter the pattern</string>
+    <string name="activity_change_password_hint_old_password">Please enter old password</string>
+    <string name="activity_change_password_hint_one">Please enter new password</string>
+    <string name="activity_change_password_hint_two">Please confirm new password</string>
+    <string name="activity_change_password_hint_three">Please enter login password</string>
+    <string name="activity_find_password_hint_account">Account</string>
+    <string name="activity_find_password_hint_random">Verify Code</string>
+    <string name="activity_find_password_declare">Please enter the correct verify code to reset password</string>
+    <string name="activity_forget_password_phone">Mobile</string>
+    <string name="activity_forget_password_email">Email</string>
+    <string name="activity_person_information_head">Portrait</string>
+    <string name="activity_person_information_nick_name">@string/label_change_nick_name</string>
+    <string name="activity_person_information_sex">@string/label_change_sex</string>
+    <string name="activity_reset_password_hint_one">Please enter new login password</string>
+    <string name="activity_reset_password_hint_two">Please confirm password</string>
+    <string name="activity_select_change_trans_password_type_label">For account safety, please choose a verification method.</string>
+    <string name="activity_select_change_trans_password_type_face_phone">Face Login</string>
+    <string name="activity_select_change_trans_password_type_menu_card_check">message code + ID number</string>
+    <string name="activity_set_transaction_password_hint_one">Please enter transaction password(6 digits)</string>
+    <string name="activity_set_transaction_password_hint_two">Please confirm transaction password</string>
+    <string name="activity_set_transaction_password_hint_random_code">Please enter mobile code</string>
+    <string name="activity_set_transaction_password_describe">Transaction password can be used for all applications within the ecosystem. If you have reset the transaction password in any eco-application the passwords will be different.</string>
+    <string name="activity_show_certification_result_menu_name">Legal Name</string>
+    <string name="activity_show_certification_result_type">ID Type</string>
+    <string name="activity_show_certification_result_number">ID Number</string>
+    <string name="activity_show_certification_result_info">ID Info</string>
+    <string name="activity_show_mobile_number">Linked Mobile</string>
+    <string name="activity_upload_certification_photo_info">1、The ID photo must be clear and the ID number is readable; \n2、Requires bareheaded photo without make up；\n3、Photo cannot be modified；\n4、Fingers cannot cover the information of the ID.</string>
+    <string name="layout_toast_success_text">Order Placed</string>
+    <string name="activity_select_change_trans_password_type_password">Password Verify</string>
+    <string name="activity_input_old_trans_password_label">Please enter the transaction password</string>
+    <string name="activity_change_trans_success_label">Transaction Password Reset Successful</string>
+    <string name="activity_input_phone_trans_password_label_phone">@string/common_mobile_number</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!-- /////////////////////////////////////////// recodeActivity /////////////////////////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--activity_candy_statistics-->
+    <!--activity_crowd_statistics-->
+    <string name="activity_crowd_statistics_regular">Rules of lock and release</string>
+    <string name="activity_crowd_statistics_time">Release Date</string>
+    <string name="activity_crowd_statistics_name">Project</string>
+    <string name="activity_crowd_statistics_amount">Amount</string>
+    <!--activity_mining_statistics-->
+    <!--activity_my_asset-->
+    <string name="activity_my_asset_available">Available (USDP)</string>
+    <string name="activity_my_asset_freeze">Frozen (USDP)</string>
+    <!--activity_main-->
+    <string name="activity_main_unknown_qr">Unknown QRcode</string>
+    <string name="activity_main_add_contact">Add to Contact</string>
+    <string name="activity_main_take_out_address">Transfer to</string>
+    <string name="activity_main_back_press">Press again to exit</string>
+    <!--activity_search_filter-->
+    <string name="activity_search_filter_hint">Please enter keyword</string>
+    <!--activity_splash-->
+    <string name="activity_splash_go">Enter</string>
+    <!--activity_about-->
+    <string name="activity_about_version" formatted="false">V%s Version</string>
+    <string name="activity_about_download">Download Update</string>
+    <string name="activity_about_progress" formatted="false">Current Version:%d.%d.%d\nUpdated on:%s</string>
+    <string name="activity_about_exit">App is closing</string>
+    <string name="activity_about_address_error">Wrong download address</string>
+    <string name="activity_about_latest_version">No updates available</string>
+    <string name="activity_about_get_version_error">Cannot get the latest update</string>
+    <string name="activity_about_has_download">Installation package is downloaded, task terminated</string>
+    <string name="activity_about_please_wait" tools:ignore="TypographyEllipsis">Updating, please wait...&#8230;</string>
+    <string name="activity_about_downloading">Downloading package, please wait</string>
+    <string name="activity_about_progress_is" formatted="false">Downloading..%s</string>
+    <string name="activity_about_download_fail">Sorry, the file cannot be cached. Please visit our website for download or change the storage permission and update again.</string>
+    <string name="activity_about_install_ing">Installing</string>
+    <string name="activity_about_down_install_finish">Installed &#8230;.</string>
+    <string name="activity_about_you_should_known">Must have storage permission to download the update</string>
+    <string name="activity_about_permission_fail">Permission Access Failed</string>
+    <string name="activity_about_cannot_get_permission">Cannot request permission, please go to settings to grant storage permission.</string>
+    <!--activity_begin_certification-->
+    <string name="activity_begin_certification_success">ID verification is under processing, please be patient.</string>
+    <string name="activity_begin_certification_upload_fail">Upload Failed</string>
+    <string name="activity_begin_certification_cannot_select_card">Sorry, cannot choose ID</string>
+    <string name="activity_begin_certification_toast_country">Please choose country/location</string>
+    <string name="activity_begin_certification_toast_name">Please enter name</string>
+    <string name="activity_begin_certification_toast_name_error">Format error</string>
+    <string name="activity_begin_certification_toast_card_type">@string/activity_begin_certification_card_type</string>
+    <string name="activity_begin_certification_toast_card_number">Please enter ID number</string>
+    <string name="activity_begin_certification_toast_id_error">ID format error</string>
+    <string name="activity_begin_certification_toast_hz_error">Passport format error</string>
+    <string name="activity_begin_certification_toast_jg_error">Certificate of officers format error</string>
+    <string name="activity_begin_certification_toast_hx_error">Reentry permit format error</string>
+    <string name="activity_begin_certification_toast_no_card">Please upload ID photo</string>
+    <string name="activity_begin_certification_toast_phone">Please enter mobile number</string>
+    <string name="activity_begin_certification_toast_phone_error">Phone format error</string>
+    <string name="activity_begin_certification_toast_verify_code">Please enter verify code</string>
+    <string name="activity_begin_certification_toast_verify_code_error">Wrong verify code</string>
+    <string name="activity_begin_certification_toast_has_select_card">ID is selected</string>
+    <string name="activity_begin_certification_toast_cannot_select_card">cannot choose id, please upload again</string>
+    <!--activity_bind_email-->
+    <string name="activity_bind_email_none_email">Please enter email</string>
+    <string name="activity_bind_email_picture_code">Please enter verify code</string>
+    <string name="activity_bind_email_error">wrong email format</string>
+    <string name="activity_bind_email_picture_code_error">wrong verify code</string>
+    <string name="activity_bind_mobile_country">Country/Area</string>
+    <string name="activity_bind_mobile_china">China</string>
+    <string name="activity_bind_mobile_no_mobile">Please enter mobile number</string>
+    <string name="activity_bind_mobile_picture_code">Please enter verify code</string>
+    <string name="activity_bind_mobile_error_mobile">wrong format</string>
+    <string name="activity_bind_mobile_error_picture">wrong format</string>
+    <!--activity_change_email-->
+    <string name="activity_change_email_none_email">Please enter email</string>
+    <string name="activity_change_email_no_card_code">Please enter ID number</string>
+    <string name="activity_change_email_no_login_pwd">Please enter login password</string>
+    <string name="activity_change_email_reg_error_email">wrong email format</string>
+    <string name="activity_change_email_card_error">wrong ID format</string>
+    <string name="activity_change_email_login_pwd_error">wrong password format</string>
+    <string name="activity_change_email_cannot_equal">Should enter a different email number</string>
+    <string name="activity_change_email_hint_address">Please enter email address</string>
+    <string name="activity_change_mobile_no_mobile">@string/activity_bind_mobile_no_mobile</string>
+    <string name="activity_change_mobile_no_card">Please enter ID number</string>
+    <string name="activity_change_mobile_no_pwd">Please enter login password</string>
+    <string name="activity_change_mobile_error_mobile">wrong mobile format</string>
+    <string name="activity_change_mobile_error_card">wrong ID format</string>
+    <string name="activity_change_mobile_error_pwd">wrong password format</string>
+    <string name="activity_change_mobile_cannot_equal">Should enter a different mobile number</string>
+    <string name="activity_change_mobile_country">country/location</string>
+    <!--activity_change_nick_name-->
+    <string name="activity_change_nick_name_success">Nick name changed</string>
+    <string name="activity_change_nick_name_tip">No emoji support</string>
+    <string name="activity_change_nick_name_no">Please enter nick name</string>
+    <string name="activity_change_nick_name_error">wrong nick name format</string>
+    <string name="activity_change_nick_name_hint">Please enter nick name</string>
+    <!--activity_change_password-->
+    <string name="activity_change_password_success">Password changed, please login again</string>
+    <string name="activity_change_password_no_old">Please enter old password</string>
+    <string name="activity_change_password_old_error">Wrong old password</string>
+    <string name="activity_change_password_no_new">Please enter login password</string>
+    <string name="activity_change_password_no_confirm">Please confirm login password</string>
+    <string name="activity_change_password_no_equal">The two passwords are not matched</string>
+    <string name="activity_change_password_pwd_reg_error">New password must be a combination of 8&#8211;16 digits and characters</string>
+    <string name="activity_change_password_no_equal_new_old">New password and old password cannot be the same</string>
+    <!--activity_change_sex-->
+    <string name="activity_change_sex_error_type">verify error</string>
+    <!--activity_change_trans_password-->
+    <string name="activity_change_trans_password_tip">Transaction password for %s \nPlease set a 6 digits</string>
+    <string name="activity_change_trans_password_regular">cannot be repeated or continuous digits</string>
+    <string name="activity_change_trans_password_error_pwd">Password should be 6 digits</string>
+    <string name="activity_change_trans_password_no_pwd">Please enter password</string>
+    <string name="activity_change_trans_password_cannot_equal">Password cannot be repeated or continuous digits</string>
+    <!--activity_common_agreement-->
+    <string name="activity_common_agreement_error">Cannot load, please try later</string>
+    <string name="activity_common_agreement_wait">Initializing, please wait&#8230;</string>
+    <string name="activity_common_agreement_plugin_error">Sorry, browser plugin stops working</string>
+    <!--activity_find_password-->
+    <string name="activity_find_password_no_verify_type">unknown verify method</string>
+    <string name="activity_find_password_label_mobile">Please enter your mobile number</string>
+    <string name="activity_find_password_label_email">Please enter your email</string>
+    <string name="activity_find_password_hint_mobile">Please enter mobile verify code</string>
+    <string name="activity_find_password_hint_email">Please enter email verify code</string>
+    <string name="activity_find_password_declare_mobile">Please enter the correct verify code to reset password</string>
+    <string name="activity_find_password_declare_email">Please click "Verify code" to receive the email. After the verification, you can reset the password</string>
+    <string name="activity_find_password_login_again">Password set, please login again.</string>
+    <string name="activity_find_password_cannot_get_code">Cannot get verify code</string>
+    <string name="activity_find_password_no_mobile">Please enter mobile number</string>
+    <string name="activity_find_password_mobile_error">wrong mobile number format</string>
+    <string name="activity_find_password_no_email">Please enter email</string>
+    <string name="activity_find_password_email_error">wrong email format</string>
+    <string name="activity_find_password_no_code">Please enter verify code</string>
+    <string name="activity_find_password_code_error">wrong verify code format</string>
+    <string name="activity_find_password_no_login_pwd">Please enter login password</string>
+    <string name="activity_find_password_no_confirm_pwd">Please confirm the password</string>
+    <string name="activity_find_password_pwd_not_equal">The two passwords cannot be the same.</string>
+    <string name="activity_find_password_pws_reg_error">The password must be a combination of 8&#8211;16 digits and characters</string>
+    <!--activity_input_code-->
+    <string name="activity_input_code_verify_code">Verify code is already sent to your mobile</string>
+    <string name="activity_input_code_no_sms">Send the code again</string>
+    <string name="activity_input_code_send_to_email">Already sent to your email</string>
+    <string name="activity_input_code_no_email">@string/activity_input_code_no_sms</string>
+    <string name="activity_input_code_bind_mobile_success">Mobile number linked</string>
+    <string name="activity_input_code_change_mobile_success">Mobile number changed</string>
+    <string name="activity_input_code_bind_email_success">Email linked</string>
+    <string name="activity_input_code_change_email_success">Email changed</string>
+    <!--activity_input_old_trans_password-->
+    <string name="activity_input_old_trans_password_no_pwd">Please enter password</string>
+    <string name="activity_input_old_trans_password_pwd_error">wrong password format</string>
+    <!--activity_input_phone_trans_password-->
+    <!--activity_invite_reward-->
+    <string name="activity_invite_reward_1">Only ID verified users can invite friends</string>
+    <string name="activity_invite_reward_2">The invited user must complete the registration and ID verification to claim the reward.</string>
+    <string name="activity_invite_reward_3">User get 5 PP reward for each successed invitation</string>
+    <string name="activity_invite_reward_4">Every user can only get 30 invitation rewards.</string>
+    <string name="activity_invite_reward_5">Invitation PP reward can mine USDP token. More PP, more USDP.</string>
+    <!--function_login-->
+    <string name="function_login_cannot_refresh">Cannot refresh account info</string>
+    <string name="function_login_no_mobile">Please enter mobile number</string>
+    <string name="function_login_error_mobile">wrong mobile number format</string>
+    <string name="function_login_no_code">Please enter verify code</string>
+    <string name="function_login_error_code">wrong verify code format</string>
+    <string name="function_login_no_account">Please enter account</string>
+    <string name="function_login_no_pwd">Please enter password</string>
+    <string name="function_login_error_pwd">wrong password format</string>
+    <!--activity_person_information-->
+    <string name="activity_person_information_restore">Portrait is set back to default</string>
+    <string name="activity_person_information_head_success">Portrait changed</string>
+    <string name="activity_person_information_sex_success">Gender changed</string>
+    <!--activity_recommend_reward-->
+    <string name="activity_recommend_record_username">Invited by</string>
+    <string name="activity_recommend_record_verify">ID Verified</string>
+    <string name="activity_recommend_record_time">Register on</string>
+    <!--activity_register-->
+    <string name="activity_register_service_agreement">GFT Ecosystem Terms of Service</string>
+    <string name="activity_register_to_read">Agree</string>
+    <string name="activity_register_register_success">Registration complete, please login again</string>
+    <string name="activity_register_phone_error">@string/activity_add_contact_error_mobile</string>
+    <string name="activity_register_email_error">@string/activity_add_contact_error_email</string>
+    <string name="activity_register_sms_code">Please enter message verify code</string>
+    <string name="activity_register_email_code">Please enter email verify code</string>
+    <string name="activity_register_error_sms_code">wrong message code format</string>
+    <string name="activity_register_error_email_code">wrong email code format</string>
+    <string name="activity_register_no_login_pwd">Please enter login password</string>
+    <string name="activity_register_no_confirm_pwd">Please confirm login password</string>
+    <string name="activity_register_no_equals_pwd">The two passwords are not matched</string>
+    <string name="activity_register_error_pwd">Password must be a combination of 8&#8211;16 digits and characters</string>
+    <string name="activity_register_no_select_protocol">Please agree GFT Ecosystem Terms of Service</string>
+    <string name="activity_register_cannot_auto_sms">Cannot autofill message verfiy code, please enter manually</string>
+    <string name="activity_register_hint_email">Please enter email</string>
+    <string name="activity_register_phone">Phone Register</string>
+    <string name="activity_register_email">Email Register</string>
+    <string name="activity_register_hint_verify_code">Please enter verify code</string>
+    <string name="activity_register_hint_pwd">Please set login password</string>
+    <string name="activity_register_hint_confirm_pwd">Please confirm password</string>
+    <!--activity_reset_transaction_password-->
+    <string name="activity_reset_transaction_password_not_equal">The two passwords entered are not matched</string>
+    <!--activity_select_change_trans_password_type-->
+    <string name="activity_select_change_trans_password_type_not_bind_mobile">No mobile is linked</string>
+    <string name="activity_select_change_trans_password_type_not_verify">You haven\'t complete the ID verification</string>
+    <!--activity_set_transaction_password-->
+    <string name="activity_set_transaction_password_success">Set transaction password successfully</string>
+    <string name="activity_set_transaction_password_no_pwd">Please enter transaction password</string>
+    <string name="activity_set_transaction_password_no_confirm">Please confirm transaction password</string>
+    <string name="activity_set_transaction_password_not_equal">The two passwords entered are not matched</string>
+    <string name="activity_set_transaction_password_error_pwd">Transaction password should be 6 digits</string>
+    <string name="activity_set_transaction_password_error_code">wrong verify code format</string>
+    <string name="activity_set_transaction_password_no_code">Please enter verify code</string>
+    <!--activity_show_certification_result-->
+    <string name="activity_show_certification_result_status_error">verify state exception</string>
+    <string name="activity_show_certification_result_card_error">ID type state exception</string>
+    <!--activity_show_certification_result-->
+    <string name="activity_show_certification_result_check_reason">Check Report</string>
+    <string name="activity_show_certification_result_verify_again">Re-apply</string>
+    <!--activity_show_email-->
+    <string name="activity_show_email_label">Your linked email is</string>
+    <!--activity_show_invite_code-->
+    <string name="activity_show_invite_code_your_code">Your invitation code</string>
+    <string name="activity_show_invite_code_copy_link">Copy Link</string>
+    <string name="activity_show_invite_code_label_scan">Scan QRcode\nFace to face sharing</string>
+    <string name="activity_show_invite_code_has_copy">Link Copied</string>
+    <string name="activity_show_invite_code_cannot_copy">Sorry, cannot copy the link</string>
+    <string name="activity_show_invite_code_upper_limit" formatted="false">Invitation Limit %d</string>
+    <string name="activity_show_invite_code_info" formatted="false">1、Only ID verified users can invite friends. \n2、The invited user must complete the registration and ID verification to claim the reward. \n3、User get 5 PP reward for each successed invitation. \n4、Every user can only get %d invitation rewards. \n5、Invitation PP reward can mine USDP token. More PP, more USDP.</string>
+    <!--activity_show_trans_result-->
+    <string name="activity_show_trans_result_label">You have already set the transaction password, do you want reset it?</string>
+    <!--activity_sign-->
+    <string name="activity_sign_has_sign">Signed</string>
+    <string name="activity_sign_to_sign">Sign in</string>
+    <string name="activity_sign_has_sign_month" formatted="false">%d days this month</string>
+    <string name="activity_sign_signs_in_month" formatted="false">Logged in %d days this month</string>
+    <string name="activity_sign_reward_zl" formatted="false">Extra USDP Power %.1f</string>
+    <string name="activity_sign_record">@string/action_sign</string>
+    <string name="activity_sign_label_introduce">Login Reward</string>
+    <string name="activity_sign_label_info">* Only registered and ID verified can get login reward</string>
+    <string name="activity_sign_total">Total USDP Power</string>
+    <string name="activity_sign_today">Today power</string>
+    <string name="activity_sign_go_to">Sign in</string>
+    <string name="activity_sign_total_month">Month power</string>
+    <string name="activity_sign_reward_time">Reward Date</string>
+    <string name="activity_sign_reward_amount">USDP Power</string>
+    <string name="activity_sign_total_day" formatted="false">Total sign %d days</string>
+    <string name="activity_sign_reward_total_day_month" formatted="false">Signed %d days</string>
+    <!--activity_soft_setting-->
+    <string name="activity_soft_setting_mobile">@string/activity_input_phone_trans_password_label_phone</string>
+    <string name="activity_soft_setting_email">@string/common_email</string>
+    <string name="activity_soft_setting_verify">@string/label_show_certification_result</string>
+    <string name="activity_soft_setting_safety">Safety</string>
+    <string name="activity_soft_setting_login_pwd">Login Password</string>
+    <string name="activity_soft_setting_trans_pwd">Transaction Password</string>
+    <string name="activity_soft_setting_hand">Pattern Lock</string>
+    <string name="activity_soft_setting_finger">Finger Print</string>
+    <string name="activity_soft_setting_language">Choose Language</string>
+    <string name="activity_soft_setting_error_status">Unknown</string>
+    <!--activity_upload_certification_photo-->
+    <string name="activity_upload_certification_photo_must_upload">Please upload required photo</string>
+    <string name="activity_upload_certification_photo_label">Photo upload intro:</string>
+    <!--activity_verify_card_num-->
+    <string name="activity_verify_card_num_text_name" formatted="false">%s ID number</string>
+    <string name="activity_verify_card_num_no_card">@string/activity_begin_certification_toast_card_number</string>
+    <string name="activity_verify_card_num_error_card">wrong ID format</string>
+
+    <!--activity_add_contact-->
+    <string name="activity_add_contact_hint_name">Name</string>
+    <string name="activity_add_contact_hint_address">Wallet Address</string>
+    <string name="activity_add_contact_hint_phone">Mobile(if available)</string>
+    <string name="activity_add_contact_hint_email">Email(if available)</string>
+    <string name="activity_add_contact_hint_remark">Note(if available)</string>
+    <string name="activity_add_contact_save_fail">Save Failed</string>
+    <string name="activity_add_contact_save">Contact Saved</string>
+    <string name="activity_add_contact_save_no_name">Must fill the Name</string>
+    <string name="activity_add_contact_save_no_address">Please enter wallet address</string>
+    <string name="activity_add_contact_save_error_address">wrong wallet address format</string>
+    <string name="activity_add_contact_error_mobile">wrong mobile format</string>
+    <string name="activity_add_contact_error_email">wrong email format</string>
+    <string name="activity_add_contact_error_backup">Maximum 20 chars for notes</string>
+    <string name="activity_add_contact_address_again">Wallet address already exists</string>
+    <!--activity_change_wallet_name-->
+    <string name="activity_change_wallet_name_success">Wallet name changed</string>
+    <string name="activity_change_wallet_name_no">Please enter wallet name</string>
+    <string name="activity_change_wallet_name_error">wrong format</string>
+    <string name="activity_change_wallet_name_hint">Please enter wallet name(2&#8211;16 chars)</string>
+    <!--activity_change_wallet_password-->
+    <string name="activity_change_wallet_password_success">Password changed</string>
+    <string name="activity_change_wallet_password_no_old">Please enter old password</string>
+    <string name="activity_change_wallet_password_old_error">Old password is wrong</string>
+    <string name="activity_change_wallet_password_no_new">@string/activity_change_mobile_no_pwd</string>
+    <string name="activity_change_wallet_password_no_confirm">@string/activity_reset_password_hint_two</string>
+    <string name="activity_change_wallet_password_not_equal">The two passwords are not matched</string>
+    <string name="activity_change_wallet_password_error_new">New password must be a combination of 8&#8211;16 digits and characters</string>
+    <string name="activity_change_wallet_password_old_equal_new">New password must be different from the old one</string>
+    <string name="activity_change_wallet_password_hint_alert">Password hint (optional)</string>
+    <string name="activity_change_wallet_password_label">Forget password? Private key can reset password</string>
+    <!--activity_contact_list-->
+    <string name="activity_contact_list_search">mobile/email/wallet address</string>
+    <string name="activity_contact_list_no_contact">no contacts</string>
+    <string name="activity_contact_list_loading">Loading&#8230;</string>
+    <!--activity_create_wallet-->
+    <string name="activity_create_wallet_label_one">Password must be strong to protect private key and transactions</string>
+    <string name="activity_create_wallet_label_two">GFT does not store password and cannot help you recover the password</string>
+    <string name="activity_create_wallet_hint_name">Wallet Name(2&#8211;16 chars)</string>
+    <string name="activity_create_wallet_hint_pwd">Password(8&#8211;16 digits and chars)</string>
+    <string name="activity_create_wallet_hint_confirm">Confirm Password</string>
+    <string name="activity_create_wallet_hint_alert">@string/activity_change_wallet_password_hint_alert</string>
+    <string name="activity_create_wallet_import">@string/label_import_wallet</string>
+    <string name="activity_create_wallet_protocol_one">@string/label_service_secret_agreement</string>
+    <string name="activity_create_wallet_has_read">I have read and understand agreement&#160;</string>
+    <string name="activity_create_wallet_create_ing">Creating Wallet</string>
+    <string name="activity_create_wallet_create_wait">It takes 10&#8211;20s to create wallet, please be patient</string>
+    <string name="activity_create_wallet_active_ing">Activating wallet</string>
+    <string name="activity_create_wallet_believe_ing" formatted="false">Authorizing wallet:%s</string>
+    <string name="activity_create_wallet_save">Saving Address</string>
+    <string name="activity_create_wallet_success">Wallet Created</string>
+    <string name="activity_create_wallet_cannot_save">Sorry, cannot save wallet address</string>
+    <string name="activity_create_wallet_create_fail">Wallet creation failed, please try again</string>
+    <string name="activity_create_wallet_no_name">Please enter wallet name</string>
+    <string name="activity_create_wallet_name_error">wrong wallet name format</string>
+    <string name="activity_create_wallet_no_pwd">@string/activity_change_wallet_password_no_new</string>
+    <string name="activity_create_wallet_no_confirm">@string/activity_change_wallet_password_no_confirm</string>
+    <string name="activity_create_wallet_not_equal">@string/activity_reset_transaction_password_not_equal</string>
+    <string name="activity_create_wallet_error_pwd">Password must be a combination of 8&#8211;16 digits and characters</string>
+    <string name="activity_create_wallet_please_agree">Please agree the service agreement.</string>
+    <!--activity_export_keystore-->
+    <string name="activity_export_keystore_must_permission">@string/base_total_must_permission</string>
+    <!--activity_export_secret-->
+    <string name="activity_export_secret_no_secret">Cannot access to private key, please contact our service team.</string>
+    <string name="activity_export_secret_unknown_error">Unknown error: cannot copy private key!!!</string>
+    <string name="activity_export_secret_secret_has_copy">Private Key Copied</string>
+    <string name="activity_export_secret_has_copy">Copied</string>
+    <string name="activity_export_secret_must_permission">@string/activity_export_keystore_must_permission</string>
+    <string name="activity_export_secret_label">Security Warnning: private key is not encrypted, export at your own risk. Please keep it safe. If lost the private, you may loose all assets.</string>
+    <string name="activity_export_secret_secret">Private Key</string>
+    <!--activity_import_wallet-->
+    <string name="activity_import_wallet_address_has_copy">Address Copied</string>
+    <string name="activity_import_wallet_cannot_save_qr">Cannot save QRcode</string>
+    <string name="activity_import_wallet_please_known" formatted="false">QRcode is saved locally, you can share it to your friends. The QRcode path is:\n%s</string>
+    <!--activity_show_address-->
+    <string name="activity_show_address_qr_hint">Default Receive Amount</string>
+    <!--activity_show_contact-->
+    <string name="activity_show_contact_cannot_copy">Cannot copy, please try again</string>
+    <string name="activity_show_contact_has_copy">@string/activity_import_wallet_address_has_copy</string>
+    <string name="activity_show_contact_alert_delete">Delete this contact?</string>
+    <string name="activity_show_contact_refresh">Refresh&#8230;</string>
+    <!--activity_take_out_platform-->
+    <string name="activity_take_out_platform_no_balance">No asset available</string>
+    <string name="activity_take_out_platform_greater_than_0">Amount should be more than 0</string>
+    <string name="activity_take_out_platform_scale_3">Accurate to 3 decimals</string>
+    <string name="activity_take_out_platform_no_enough">Should be less than your total asset</string>
+    <string name="activity_take_out_platform_correct_amount">Please enter a valid amount</string>
+    <string name="activity_take_out_platform_no_available">Cannot achieve available asset info</string>
+    <string name="activity_take_out_platform_no_address">@string/activity_add_contact_save_no_address</string>
+    <string name="activity_take_out_platform_no_pwd">Please enter transaction password</string>
+    <string name="activity_take_out_platform_freeze">Frozen</string>
+    <!--activity_take_out_record_detail-->
+    <string name="activity_take_out_record_detail_load_error">Details load failed</string>
+    <string name="activity_take_out_record_detail_has_copy">ID copied</string>
+    <!--activity_wallet_manager-->
+    <string name="activity_wallet_manager_query_error">failed to check balance</string>
+    <string name="activity_wallet_manager_input_pwd">Please enter wallet password</string>
+    <string name="activity_wallet_manager_abandon">Not Export</string>
+    <string name="activity_wallet_manager_verify">Verify</string>
+    <string name="activity_wallet_manager_error_pwd">@string/common_wallet_pwd_error</string>
+    <!--activity_wallet_record_detail-->
+    <string name="activity_wallet_record_detail_address">Recipient Address</string>
+    <string name="activity_wallet_record_detail_id">Transaction ID</string>
+    <string name="activity_wallet_record_detail_remark">Note</string>
+    <string name="activity_wallet_record_detail_address_copy">Address Copied</string>
+    <string name="activity_wallet_record_detail_has_copy">Transaction hash copied</string>
+    <string name="activity_wallet_record_detail_error_remark">wrong note info</string>
+    <string name="activity_wallet_record_detail_no_remark">no note info</string>
+    <string name="activity_wallet_record_detail_no_data">no data available</string>
+    <string name="activity_wallet_record_list_error_data">@string/common_list_error_data</string>
+    <!--activity_wallet_take_out-->
+    <string name="activity_wallet_take_out_no_pwd">Please enter password</string>
+    <string name="activity_wallet_take_out_no_info">Sorry, cannot get transaction info</string>
+    <string name="activity_wallet_take_out_error_balance">@string/activity_wallet_manager_query_error</string>
+    <string name="activity_wallet_take_out_no_balance">Cannot achieve assets, please log off and try again.</string>
+    <string name="activity_wallet_take_out_error_balance_close">Error occurred, ui is closing</string>
+    <string name="activity_wallet_take_out_no_address">Please enter transfer address</string>
+    <string name="activity_wallet_take_out_error_address">@string/activity_add_contact_save_error_address</string>
+    <string name="activity_wallet_take_out_error_amount">Please enter a valid amount</string>
+    <string name="activity_wallet_take_out_error_scale">Accurate to 6 decimals</string>
+    <string name="activity_wallet_take_out_cannot_0">Cannot be 0</string>
+    <string name="activity_wallet_take_out_not_enough">Not enough balance</string>
+    <string name="activity_wallet_take_out_hint_amount">Transfer Amount</string>
+    <string name="activity_wallet_take_out_hint_address">Recipient Address</string>
+    <string name="activity_wallet_take_out_label_balance">Balance</string>
+    <string name="activity_wallet_take_out_remark">Note(optional)</string>
+    <string name="activity_currency_manager_filter_hint">Searching token name or gateway address</string>
+
+    <!--activity_into-->
+    <string name="activity_into_can_not_to_qrcode">Unable to generate qr code:%s</string>
+    <string name="activity_into_can_not_save_address">Unable to save address</string>
+    <string name="activity_into_address_have_save">Address saved:%s</string>
+    <string name="activity_into_share_to">Share to</string>
+    <string name="activity_into_address_have_copy">Address copied</string>
+    <string name="activity_into_click_to_save">Save the qr code</string>
+    <string name="activity_into_copy_address">Copy address</string>
+    <string name="activity_into_describe">Warm Prompt</string>
+    <string name="activity_into_tip" formatted="false">1. The transfer is automatic. The transfer of %1$s needs to be confirmed by the whole %1$s network.\n2. This address is your only and exclusive transfer address, you can recharge multiple times at the same time, you can also use this address as your payment address in the mine pool.Item \n3. Recharge of assets other than %1$s is prohibited at this address. Any recharge of other assets will not be recovered</string>
+
+    <!--activity_into_detail-->
+
+    <!--activity_exchange_Usdp-->
+    <string name="activity_exchange_disclaimer">"Disclaimer\n1.You are aware of the exchange function we(USDP APP) provides and the consequence it may cause.You will take the full responsibility of using this function\n2.We (USDPAPP) do not take legal responsibility if you as users entered wrong account or amount when confirm the exchange.You as users will take all the responsibility of that consequence."</string>
+    <string name="activity_exchange_usdp_exchange_success">Exchange success</string>
+    <string name="activity_exchange_usdp_no_usable_currency">There is no convertible currency</string>
+    <string name="activity_exchange_usdp_rate_tip">1USDP=1USD, the amount of assets converted will fluctuate according to the exchange rate between USD and other legal currencies. Please refer to the final amount received.</string>
+    <string name="activity_exchange_usdp_please_add_bank">Please Choose a Bank Card</string>
+    <string name="activity_exchange_usdp_out_count_up_zero">The quantity issued should be greater than 0</string>
+    <string name="activity_exchange_usdp_please_control_two_double">To two decimal places, please</string>
+    <string name="activity_exchange_usdp_please_out_count">Please enter the amount to be transferred</string>
+    <string name="activity_exchange_usdp_not_usable">Shortage of available quantity</string>
+    <string name="activity_exchange_usdp_out_count">USDP Tokens</string>
+    <string name="activity_exchange_usdp_into_amount">Fiat Money</string>
+    <string name="activity_exchange_usdp_input_count">Enter Amount</string>
+    <string name="activity_exchange_usdp_into_bank">Account No.</string>
+    <string name="activity_exchange_usdp_rate">Ex. Rate</string>
+    <string name="activity_exchange_usdp_fee">Fee</string>
+    <string name="activity_exchange_usdp_usable_count">Available</string>
+    <string name="activity_exchange_usdp_disclaimer">Disclaimer</string>
+
+    <!--activity_add_bank-->
+    <string name="activity_add_bank_add_success">Add success</string>
+    <string name="activity_add_bank_please_name">Please enter your name</string>
+    <string name="activity_add_bank_please_bank_name">Please enter the bank name</string>
+    <string name="activity_add_bank_please_branch_name">Please enter the branch bank</string>
+    <string name="activity_add_bank_please_bank_number">Please enter your bank card number</string>
+    <string name="activity_add_bank_please_bank_number_again">Please enter your confirmation number</string>
+    <string name="activity_add_bank_not_same">The input of card number is not consistent</string>
+    <string name="activity_add_bank_name">Name</string>
+    <string name="activity_add_bank_open_bank">Bank Name</string>
+    <string name="activity_add_bank_open_branch_bank">Branch Name</string>
+    <string name="activity_add_bank_bank_number">Card No.</string>
+    <string name="activity_add_bank_sure_number">Confirm Card</string>
+
+    <!--activity_choose_bank-->
+    <string name="activity_choose_bank_no_bank_please_add">Bank card has not been added yet, please add it</string>
+    <string name="activity_exchange_recode_into_asset">Net assets</string>
+    <string name="activity_exchange_recode_into_amount">Arrival amount</string>
+
+
+    <!--activity_my_asset-->
+    <string name="activity_my_asset_all_asset">Total Assets (USDP)</string>
+    <string name="activity_my_asset_roll_in">Deposit</string>
+    <string name="activity_my_asset_roll_out">Withdraw</string>
+    <string name="activity_my_asset_out_line_buy">Purchase USDP</string>
+    <string name="activity_my_asset_tip">Every Invest Would Worth More</string>
+    <string name="label_safe_center">Security center</string>
+    <string name="activity_take_in_please_loading">The address is being generated, please wait...</string>
+    <string name="activity_take_in_address">To address</string>
+    <string name="activity_take_in_create_time">Date</string>
+    <string name="activity_take_in_account_number">Amount</string>
+    <string name="activity_take_in_state">Status</string>
+    <string name="activity_take_in_deal_id">Transaction ID</string>
+    <string name="activity_take_in_roll_in_address">Transfer to wallet address</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!-- /////////////////////////////////////////// dialog_fragment /////////////////////////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <string name="dialog_fragment_change_head_album">Choose from ablum</string>
+    <string name="dialog_fragment_change_head_default">Reset default</string>
+    <string name="dialog_password_input_label_amount">Amount</string>
+    <string name="dialog_password_input_title">@string/activity_wallet_take_out_no_pwd</string>
+    <string name="dialog_fragment_change_sex_title">Choose Gender</string>
+    <string name="dialog_do_login_timeout">Login timed out, please login again</string>
+    <string name="dialog_do_login_again">@string/base_total_please_login_again</string>
+    <string name="dialog_export_alert_do_not">Please do not save print screen.</string>
+    <string name="dialog_export_alert_info">Make sure no one around and no camera nearby. Do not save the keystore by print screen or QRcode.</string>
+    <string name="dialog_fragment_first_secret_title">Please backup private key</string>
+    <string name="dialog_fragment_first_secret_info">Please keep your private key in a safe place. If you lost your private key, you may loose all your assets.</string>
+    <string name="dialog_password_input_no_pwd">@string/dialog_password_input_title</string>
+    <string name="dialog_password_input_pwd_error">Transaction password must be 6 digits</string>
+    <string name="dialog_fragment_sign_success_title">Signed in successfully today</string>
+    <string name="dialog_fragment_sign_success_add" formatted="false">USDP Power +%s</string>
+    <string name="dialog_fragment_sign_success_bottom">Sign in for more power,Please keep it</string>
+    <string name="dialog_wallet_password_input_no_pwd">@string/dialog_password_input_title</string>
+    <string name="dialog_wallet_password_input_error_pwd">@string/activity_wallet_manager_error_pwd</string>
+    <string name="dialog_wallet_password_input_hint_pwd">W-PWD(8&#8211;16 digits and chars)</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!-- /////////////////////////////////////////// layout /////////////////////////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <string name="layout_pickerview_options_bunkers_cannot_init_country">Cannot initialize country list, refreshing data</string>
+    <string name="layout_pickerview_options_bunkers_loading">Loading data, please try later</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!-- /////////////////////////////////////////// fragment /////////////////////////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <string name="fragment_ecology_backup_other_function">USDP Eco</string>
+    <string name="fragment_ecology_backup_to_login">Login</string>
+    <string name="fragment_ecology_backup_any_must_login" formatted="false">%s Must login first</string>
+    <string name="fragment_ecology_backup_has_sign">Signed</string>
+    <string name="fragment_ecology_backup_no_sign">Unsigned</string>
+    <string name="fragment_ecology_backup_cannot_get_banner">Cannot load banner</string>
+    <string name="fragment_export_keystore_qr_waiting_qr">Generating QRcode, please be patient</string>
+    <string name="fragment_export_keystore_cannot_create_qr" formatted="false">Sorry, cannot generate QRcode:%s</string>
+    <string name="fragment_export_keystore_qr_label_one">Scan only</string>
+    <string name="fragment_export_keystore_qr_info_one">Saving, printing screen, taking photo of the QRcode are forbidden. Only used to scan for importing wallet.</string>
+    <string name="fragment_export_keystore_qr_label_two">Please use in a safe environment.</string>
+    <string name="fragment_export_keystore_qr_info_two">Please make sure no one around and no camera nearby. If you lost QRcode, you may loose all your assets.</string>
+    <string name="fragment_export_keystore_qr_alert">I acknowledged that no one around and no camera nearby.</string>
+    <string name="fragment_export_keystore_text_has_copy">Keystore Copied</string>
+    <string name="fragment_export_keystore_text_label_one">Save offline</string>
+    <string name="fragment_export_keystore_text_info_one">Please copy and paste the keystore to a safe place offline. Do not save it to email, phone note, net disk or messenger, it\'s not safe.</string>
+    <string name="fragment_export_keystore_text_label_two">Please do not transfer online.</string>
+    <string name="fragment_export_keystore_text_info_two">Please do not transfer the keystore through internet. If the keystore is hacked, you may loose all your assets. </string>
+    <string name="fragment_export_keystore_text_label_three">Password Safe</string>
+    <string name="fragment_export_keystore_text_info_three">If saved online, please use a high security level online password safe such as 1Password to keep the keystore.</string>
+    <string name="fragment_import_wallet_keystore_label">Please copy and paste USDP wallet keystore into the input field or scan the generated QRcode.</string>
+    <string name="fragment_import_wallet_keystore_hint_keystore">Keystore Content</string>
+    <string name="fragment_import_wallet_keystore_hint_pwd">Password</string>
+    <string name="fragment_import_wallet_keystore_jump">What is keystore?</string>
+    <string name="fragment_import_wallet_keystore_service">@string/activity_create_wallet_protocol_one</string>
+    <string name="fragment_import_wallet_keystore_has_read">@string/activity_create_wallet_has_read</string>
+    <string name="fragment_import_wallet_keystore_wait">Importing keystore, please be patient</string>
+    <string name="fragment_import_wallet_keystore_is_import_ing">Importing wallet&#8230;</string>
+    <string name="fragment_import_wallet_keystore_success">Wallet imported successfully</string>
+    <string name="fragment_import_wallet_keystore_no_keystore">Please enter keystore</string>
+    <string name="fragment_import_wallet_keystore_error_keystore">wrong keystore format</string>
+    <string name="fragment_import_wallet_keystore_no_pwd">@string/activity_create_wallet_no_pwd</string>
+    <string name="fragment_import_wallet_keystore_error_pwd">@string/activity_create_wallet_error_pwd</string>
+    <string name="fragment_import_wallet_keystore_please_agree">@string/activity_create_wallet_please_agree</string>
+    <string name="fragment_import_wallet_secret_label">Please copy and paste private key into the input field or scan the generated QRcode.</string>
+    <string name="fragment_import_wallet_secret_hint_secret">Cleartext Private Key</string>
+    <string name="fragment_import_wallet_secret_hint_pwd">@string/fragment_import_wallet_keystore_hint_pwd</string>
+    <string name="fragment_import_wallet_secret_hint_confirm">Confirm Password</string>
+    <string name="fragment_import_wallet_secret_hint_alert">@string/activity_create_wallet_hint_alert</string>
+    <string name="fragment_import_wallet_secret_jump">What is private key?</string>
+    <string name="fragment_import_wallet_secret_service">@string/fragment_import_wallet_keystore_service</string>
+    <string name="fragment_import_wallet_secret_has_read">@string/fragment_import_wallet_keystore_has_read</string>
+    <string name="fragment_import_wallet_secret_wait">Importing wallet, please be patient</string>
+    <string name="fragment_import_wallet_secret_is_loading">@string/fragment_import_wallet_keystore_is_import_ing</string>
+    <string name="fragment_import_wallet_secret_success">@string/activity_create_wallet_success</string>
+    <string name="fragment_import_wallet_secret_no_secret">Please enter private key</string>
+    <string name="fragment_import_wallet_secret_error_secret">wrong private key format</string>
+    <string name="fragment_import_wallet_secret_no_pwd">@string/fragment_import_wallet_keystore_no_pwd</string>
+    <string name="fragment_import_wallet_secret_no_confirm">@string/activity_create_wallet_no_confirm</string>
+    <string name="fragment_import_wallet_secret_not_equal">@string/activity_create_wallet_not_equal</string>
+    <string name="fragment_import_wallet_secret_error_pwd">@string/fragment_import_wallet_keystore_error_pwd</string>
+    <string name="fragment_import_wallet_secret_agree">@string/fragment_import_wallet_keystore_please_agree</string>
+    <string name="fragment_wallet_no_balance">Cannot achieve wallet assets</string>
+    <string name="fragment_wallet_error_address">state exception for wallet address</string>
+    <string name="fragment_wallet_total_balance">Total Assets</string>
+    <string name="fragment_wallet_init_has_wallet">Already has wallet,&#160;</string>
+    <string name="fragment_wallet_init_tip">Stable Digital USD Ecosystem</string>
+    <string name="fragment_ecology_intelligence_services">VIP Privileges</string>
+    <string name="fragment_ecology_exchange_center">Currency Exchange</string>
+    <string name="fragment_ecology_tip">Safe, Easy, Efficient, Confidential \nUSDP Digital asset exchange tool</string>
+    <string name="fragment_wallet_back_up_add_asset">Add Assets</string>
+    <string name="fragment_wallet_back_up_wallet">Backup Purse</string>
+    <string name="activity_wallet_record_near_deal_record">Recent Transaction Record</string>
+    <string name="activity_wallet_record_is_query_loading">Looking up the record, please wait...</string>
+    <string name="activity_set_pay_pwd_can_not_repeat">Payment password cannot be repeated, continuous number</string>
+    <string name="plugins_no_bank_card">No bank card, do you want to add your bank card?</string>
+    <string name="activity_upload_picture_front">ID Front Photo</string>
+    <string name="activity_upload_picture_back">ID Back Photo</string>
+    <string name="activity_upload_picture_hold">Holding ID Photo</string>
+
+</resources>

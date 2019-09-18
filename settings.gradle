@@ -1,0 +1,9 @@
+include ':app'
+include ':kchartlib'
+include ':skin_white'
+
+//setBinding(new Binding([gradle: this]))
+//evaluate(new File(
+//        settingsDir.parentFile,
+//        'gft_flutter_module/.android/include_flutter.groovy'
+//))

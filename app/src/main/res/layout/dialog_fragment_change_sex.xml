@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/view_padding_margin_10dp"
+    android:paddingStart="@dimen/view_padding_margin_10dp">
+
+    <!--上部按钮-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/main_color_white"
+        app:cardCornerRadius="@dimen/drawable_shape_normal_radius_12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.linktech.gft.view.FormatDoubleTextView
+                android:id="@+id/tv_take_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/view_padding_margin_10dp"
+                android:paddingTop="@dimen/view_padding_margin_10dp"
+                android:text="@string/dialog_fragment_change_sex_title"
+                android:textColor="@color/black_text_663a4254"
+                android:textSize="@dimen/text_size_13sp"/>
+
+            <com.linktech.gft.view.DividerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_width_1dp"/>
+
+            <com.linktech.gft.view.FormatDoubleTextView
+                android:id="@+id/tv_man"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/view_padding_margin_16dp"
+                android:paddingTop="@dimen/view_padding_margin_16dp"
+                android:text="@string/common_sex_man"
+                android:textColor="@color/black_text_171a3f"
+                android:textSize="@dimen/text_size_large_19sp"/>
+
+            <com.linktech.gft.view.DividerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_width_1dp"/>
+
+            <com.linktech.gft.view.FormatDoubleTextView
+                android:id="@+id/tv_woman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/view_padding_margin_16dp"
+                android:paddingTop="@dimen/view_padding_margin_16dp"
+                android:text="@string/common_sex_woman"
+                android:textColor="@color/black_text_171a3f"
+                android:textSize="@dimen/text_size_large_19sp"/>
+            <com.linktech.gft.view.DividerView
+                android:id="@+id/dv_secret"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_width_1dp"/>
+
+            <com.linktech.gft.view.FormatDoubleTextView
+                android:id="@+id/tv_secret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/view_padding_margin_16dp"
+                android:paddingTop="@dimen/view_padding_margin_16dp"
+                android:text="@string/common_sex_unknown"
+                android:textColor="@color/black_text_171a3f"
+                android:textSize="@dimen/text_size_large_19sp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--取消-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_8dp"
+        app:cardBackgroundColor="@color/main_color_white"
+        app:cardCornerRadius="@dimen/drawable_shape_normal_radius_12dp">
+
+        <com.linktech.gft.view.FormatDoubleTextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/view_padding_margin_16dp"
+            android:paddingTop="@dimen/view_padding_margin_16dp"
+            android:text="@string/function_cancel"
+            android:textColor="@color/black_text_171a3f"
+            android:textSize="@dimen/text_size_large_19sp"/>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

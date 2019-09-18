@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin_scaffold_background_color"
+    android:orientation="vertical">
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <!--头像,二维码,Ecology号,昵称,性别,地区,实名认证-->
+    <com.linktech.gft.skin.MyLineMenuView
+        android:id="@+id/lmv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        app:LineMenuView_badge="@drawable/default_head_img"
+        app:LineMenuView_brief=""
+        app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+        app:LineMenuView_menu="@string/activity_person_information_head"
+        app:LineMenuView_menu_text_color="@color/skin_body1_color"
+        app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+        app:LineMenuView_navigation="@drawable/icon_arrow_right"
+        app:LineMenuView_plugin="text" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+        tools:background="#FFFFFFFF" />
+
+    <com.linktech.gft.skin.MyLineMenuView
+        android:id="@+id/lmv_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        app:LineMenuView_brief_text_color="@color/skin_body1_color"
+        app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+        app:LineMenuView_menu="@string/activity_person_information_nick_name"
+        app:LineMenuView_menu_text_color="@color/skin_body1_color"
+        app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+        app:LineMenuView_navigation="@drawable/icon_arrow_right"
+        app:LineMenuView_plugin="text"
+        tools:LineMenuView_brief="Shrimy" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+        tools:background="#FFFFFFFF" />
+
+    <com.linktech.gft.skin.MyLineMenuView
+        android:id="@+id/lmv_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        app:LineMenuView_brief_text_color="@color/skin_body1_color"
+        app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+        app:LineMenuView_menu="@string/activity_person_information_sex"
+        app:LineMenuView_menu_text_color="@color/skin_body1_color"
+        app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+        app:LineMenuView_navigation="@drawable/icon_arrow_right"
+        app:LineMenuView_plugin="text"
+        tools:LineMenuView_brief="男" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+        tools:background="#FFFFFFFF" />
+</LinearLayout>

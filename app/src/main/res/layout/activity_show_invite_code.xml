@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_invite_reward"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!--卡片内容-->
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_32dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_32dp"
+                android:background="@drawable/bg_show_invite_card"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/view_padding_margin_32dp"
+                android:paddingBottom="@dimen/view_padding_margin_16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_show_invite_code_your_code"
+                    android:textColor="@color/toolbar_second_color_primary"
+                    android:textSize="@dimen/text_size_small_12sp"/>
+
+                <!--邀请码-->
+                <com.linktech.gft.view.MarqueeTextView
+                    android:id="@+id/tv_invite_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_minus_8dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:textColor="@color/toolbar_second_color_primary"
+                    android:textSize="@dimen/text_size_54sp"
+                    tools:text="BJOW"/>
+
+                <!--复制-->
+                <TextView
+                    android:id="@+id/tv_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_blue_832ef3_6940ef_radius_4dp"
+                    android:paddingStart="@dimen/view_padding_margin_24dp"
+                    android:paddingTop="@dimen/view_padding_margin_4dp"
+                    android:paddingEnd="@dimen/view_padding_margin_24dp"
+                    android:paddingBottom="@dimen/view_padding_margin_4dp"
+                    android:text="@string/activity_show_invite_code_copy_link"
+                    android:textColor="@color/main_color_white"
+                    android:textSize="@dimen/text_size_small_12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_upper_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_16dp"
+                    android:textColor="@color/black_text_817F99"
+                    android:textSize="@dimen/text_size_small_12sp"
+                    tools:text="邀请好友上限:30人"/>
+
+                <!--二维码-->
+                <com.linktech.gft.view.RectImageView
+                    android:id="@+id/iv_qr"
+                    android:layout_width="@dimen/view_height_100dp"
+                    android:layout_height="@dimen/view_height_100dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_48dp"
+                    tools:src="@color/transparent_mask"/>
+
+                <!---->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                    android:gravity="center"
+                    android:text="@string/activity_show_invite_code_label_scan"
+                    android:textColor="@color/black_text_817F99"
+                    android:textSize="@dimen/text_size_small_12sp"/>
+            </LinearLayout>
+
+            <!--规则说明-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_padding_margin_16dp"
+                android:src="@drawable/icon_invite_code_introduce"/>
+
+            <!--内容-->
+            <TextView
+                android:id="@+id/tv_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_48dp"
+                android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                android:layout_marginEnd="@dimen/view_padding_margin_48dp"
+                android:background="@drawable/bg_invite_code_introduce"
+                android:padding="@dimen/view_padding_margin_16dp"
+                android:textColor="@color/black_text_CFCAFE"
+                android:textSize="@dimen/text_size_smallest_11sp"
+                tools:text="1、注册且已实名认证的用户才能邀请好友。\n2、被邀请者需在平台注册且已实名认证，才算推荐成功。\n3、每成功推荐一位好友，可获得爪力5。\n4、每位用户最多只能推荐30位好友。\n5、推荐奖励爪力可以挖矿获得PAWS，爪力值越高，挖矿收益越高"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/dark_layout_top_bar"/>
+</FrameLayout>

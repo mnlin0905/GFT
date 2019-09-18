@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <!--内容-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_48dp"
+        android:src="@drawable/icon_trans_change_success" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/view_padding_margin_24dp"
+        android:layout_marginTop="@dimen/view_padding_margin_24dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/activity_show_trans_result_label"
+        android:textColor="@color/black_text_663a4254"
+        android:textSize="@dimen/text_size_13sp" />
+
+    <!--按钮-->
+    <include layout="@layout/layout_common_dark_function_button" />
+</LinearLayout>

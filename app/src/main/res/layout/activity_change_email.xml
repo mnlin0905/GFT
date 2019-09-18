@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <!--内容-->
+
+
+    <com.linktech.gft.view.WatchInputEditText
+        android:id="@+id/et_email"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/main_color_white"
+        android:backgroundTint="@color/main_color_white"
+        android:hint="@string/activity_change_email_hint_address"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColorHint="@color/black_text_663a4254"
+        android:textSize="@dimen/text_size_title_15sp" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <com.linktech.gft.view.WatchInputEditText
+        android:id="@+id/et_card_number"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:hint="@string/activity_bind_email_activity_bind_mobile_hint_card"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:textColorHint="@color/black_text_663a4254"
+        android:textSize="@dimen/text_size_title_15sp" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <com.linktech.gft.view.WatchInputEditText
+        android:id="@+id/et_login_password"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@color/main_color_white"
+        android:hint="@string/activity_change_password_hint_three"
+        android:inputType="textPassword"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:textColorHint="@color/black_text_663a4254"
+        android:textSize="@dimen/text_size_title_15sp" />
+
+    <!--按钮-->
+    <include layout="@layout/layout_common_dark_function_button" />
+</LinearLayout>

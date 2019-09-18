@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        app:cardBackgroundColor="@color/main_color_white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <TextView
+                android:id="@+id/tv_usdp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="94dp"
+                android:background="#f6f7f9"
+                android:drawableTop="@drawable/icon_usdp_coin"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/application_main_currency"
+                android:textColor="@color/black_text_37416b"
+                android:textSize="17sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/gl"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.linktech.gft.view.DividerView
+                android:id="@+id/dv1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_width_1dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_usdp" />
+
+            <TextView
+                android:id="@+id/tv_other"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="94dp"
+                android:background="#f6f7f9"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/black_text_37416b"
+                android:textSize="17sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/gl"
+                app:layout_constraintTop_toBottomOf="@id/dv1"
+                tools:drawableTop="@drawable/icon_cny"
+                tools:text="CNY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/arrow_lower"
+                android:padding="16dp"
+                app:layout_constraintRight_toLeftOf="@id/gl"
+                app:layout_constraintTop_toBottomOf="@id/dv1" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/activity_exchange_usdp_out_count"
+                android:textColor="@color/black_text_37416b"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/gl"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/activity_exchange_usdp_into_amount"
+                android:textColor="@color/black_text_37416b"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/gl"
+                app:layout_constraintTop_toBottomOf="@id/dv1" />
+
+            <EditText
+                android:id="@+id/et_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:hint="@string/activity_exchange_usdp_input_count"
+                android:inputType="numberDecimal"
+                android:minHeight="40dp"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toRightOf="@id/gl"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:inputType="number"
+                android:hint="@string/activity_exchange_usdp_input_count"
+                android:minHeight="40dp"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toRightOf="@id/gl"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_change"
+                app:layout_constraintBottom_toBottomOf="@id/dv1"
+                app:layout_constraintLeft_toLeftOf="@id/gl"
+                app:layout_constraintRight_toRightOf="@id/gl"
+                app:layout_constraintTop_toTopOf="@id/dv1" />
+
+            <com.linktech.gft.view.DividerView
+                android:id="@+id/dv2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                app:layout_constraintTop_toBottomOf="@id/tv_other" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/activity_exchange_usdp_into_bank"
+                android:textColor="#9ba0b5"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/gl"
+                app:layout_constraintTop_toBottomOf="@id/dv2" />
+
+            <com.linktech.gft.view.DividerView
+                android:id="@+id/dv3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+            <com.linktech.gft.view.DividerView
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="@id/tv3"
+                app:layout_constraintRight_toLeftOf="@id/gl"
+                app:layout_constraintTop_toTopOf="@id/tv3" />
+
+            <TextView
+                android:id="@+id/tv_bank_card"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:drawableRight="@drawable/arrow_lower"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="@dimen/fab_margin_16dp"
+                app:layout_constraintLeft_toRightOf="@id/gl"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dv2"
+                tools:text="622622006215487" />
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="16dp"
+                android:textColor="#9aa0b5"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dv3"
+                android:text="@string/activity_exchange_usdp_rate" />
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:drawableRight="@drawable/help"
+                android:drawablePadding="12dp"
+                android:textColor="#37416b"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/tv_one"
+                app:layout_constraintTop_toBottomOf="@id/dv3"
+                tools:text="1 USDP = 0.1 CNY" />
+
+            <TextView
+                android:id="@+id/tv_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#9aa0b5"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv_one"
+                app:layout_constraintTop_toBottomOf="@id/tv_one"
+                android:text="@string/activity_exchange_usdp_fee" />
+
+            <TextView
+                android:id="@+id/tv_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#37416b"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/tv_two"
+                app:layout_constraintTop_toBottomOf="@id/tv_rate"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#9aa0b5"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/tv_two"
+                app:layout_constraintTop_toBottomOf="@id/tv_two"
+                android:text="@string/activity_exchange_usdp_usable_count" />
+
+            <TextView
+                android:id="@+id/tv_usable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#37416b"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tv_three"
+                app:layout_constraintTop_toBottomOf="@id/tv_fee"
+                tools:text="0.00 USDP" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <include layout="@layout/layout_common_dark_function_button" />
+
+    <TextView
+        android:id="@+id/tv_duty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/guanyu"
+        android:drawablePadding="6dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/activity_exchange_usdp_disclaimer"
+        android:textColor="#9094c2"
+        android:textSize="12sp" />
+
+</LinearLayout>

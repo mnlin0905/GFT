@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/dark_color_33364c_ffffff"
+    app:cardCornerRadius="@dimen/drawable_shape_normal_radius_6dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_24dp"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:text="未找到開戶券商，可能有如下原因"
+            android:textColor="@color/skin_title_color"
+            android:textSize="@dimen/text_size_normal_14sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:text="·券商列表並非最新版本，請嘗試下下拉刷新並重新查找\n·您的券商可能已經合併，如上海遠東與新時代已經合併"
+            android:textColor="@color/dark_main_text_7c7fa2"
+            android:textSize="@dimen/text_size_normal_14sp"
+            app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp"
+            android:text="如果以上情況都未查找到，則可能是由於您的券商尚未授權港付通，建議你選擇其他方式進行交易。"
+            android:textColor="@color/skin_title_color"
+            android:textSize="@dimen/text_size_normal_14sp"
+            app:layout_constraintTop_toBottomOf="@id/tv2" />
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="12dp"
+            android:background="@color/dark_color_13151f_e9ecf6"
+            app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/v">
+
+            <TextView
+                android:id="@+id/tv_left"
+                style="@style/TextViewStandard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我知道了"
+                android:textColor="@color/dark_main_text_8144e5"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/dark_color_13151f_e9ecf6" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                style="@style/TextViewStandard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我要轉戶"
+                android:textColor="@color/dark_main_text_8144e5"
+                android:textSize="@dimen/text_size_17sp" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

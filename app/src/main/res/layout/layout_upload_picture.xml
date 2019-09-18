@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/skin_scaffold_background_color">
+
+    <!---->
+    <FrameLayout
+        android:id="@+id/fl_positive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+        android:background="@drawable/skin_shape_bg_radius_8dp_border_accent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/view_padding_margin_16dp"
+            android:drawableTop="@drawable/skin_icon_upload_photo"
+            android:drawablePadding="@dimen/view_padding_margin_16dp"
+            android:gravity="center"
+            android:text="@string/activity_upload_picture_front"
+            android:textColor="@color/skin_display1_color"
+            android:textSize="13sp" />
+
+        <com.linktech.gft.view.FitSrcImageView
+            android:id="@+id/iv_positive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <!---->
+    <FrameLayout
+        android:id="@+id/fl_negative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+        android:layout_marginBottom="@dimen/view_padding_margin_12dp"
+        android:background="@drawable/skin_shape_bg_radius_8dp_border_accent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/view_padding_margin_16dp"
+            android:drawableTop="@drawable/skin_icon_upload_photo"
+            android:drawablePadding="@dimen/view_padding_margin_16dp"
+            android:gravity="center"
+            android:text="@string/activity_upload_picture_back"
+            android:textColor="@color/skin_display1_color"
+            android:textSize="13sp" />
+
+        <com.linktech.gft.view.FitSrcImageView
+            android:id="@+id/iv_negative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <!---->
+    <FrameLayout
+        android:id="@+id/fl_multi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+        android:background="@drawable/skin_shape_bg_radius_8dp_border_accent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/view_padding_margin_16dp"
+            android:drawableTop="@drawable/skin_icon_upload_photo"
+            android:drawablePadding="@dimen/view_padding_margin_16dp"
+            android:gravity="center"
+            android:text="@string/activity_upload_picture_hold"
+            android:textColor="@color/skin_display1_color"
+            android:textSize="13sp" />
+
+        <com.linktech.gft.view.FitSrcImageView
+            android:id="@+id/iv_multi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+</LinearLayout>

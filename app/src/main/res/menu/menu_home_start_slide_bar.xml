@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_asset_manage"
+        android:icon="@drawable/icon_action_asset_manage"
+        android:title="@string/action_asset_manage"/>
+
+    <item
+        android:id="@+id/action_bank_card"
+        android:icon="@drawable/icon_action_bank_card"
+        android:title="@string/action_bank_card"/>
+
+    <item
+        android:id="@+id/action_safety_center"
+        android:icon="@drawable/icon_action_safety_center"
+        android:title="@string/action_safety_center"/>
+
+    <item
+        android:id="@+id/action_setting"
+        android:icon="@drawable/icon_action_setting"
+        android:title="@string/action_setting"/>
+
+    <item
+        android:id="@+id/action_about"
+        android:icon="@drawable/icon_action_about"
+        android:title="@string/action_about"/>
+</menu>

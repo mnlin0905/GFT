@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/view_padding_margin_48dp">
+
+                <!---->
+                <ImageView
+                    android:id="@+id/iv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/view_padding_margin_30dp"
+                    android:padding="@dimen/view_padding_margin_4dp"
+                    tools:src="@drawable/ic_establish_finish_wait" />
+
+                <!---->
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:singleLine="true"
+                    tools:text="開戶資料已提交，請耐心等待審核預計時間1-2天！" />
+
+                <TextView
+                    android:id="@+id/tv_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/skin_accent_color"
+                    android:visibility="gone"
+                    android:text="登錄券商賬戶"
+                    tools:visibility="visible" />
+
+                <com.linktech.gft.view.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_line_width_1dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp" />
+
+                <!--样例-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_20dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_30dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/divider_line_width_1dp"
+                                android:src="@drawable/ic_establish_finish_one" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/divider_line_width_2dp"
+                                android:background="@color/skin_accent_color" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                            android:singleLine="true"
+                            android:text="完善資料" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <View
+                                android:id="@+id/dv_one"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/divider_line_width_2dp"
+                                android:layout_weight="1"
+                                android:background="@color/skin_divider_color" />
+
+                            <ImageView
+                                android:id="@+id/iv_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/divider_line_width_1dp"
+                                android:src="@drawable/ic_establish_finish_two" />
+
+                            <View
+                                android:id="@+id/dv_two"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/divider_line_width_2dp"
+                                android:layout_weight="1"
+                                android:background="@color/skin_divider_color" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                            android:singleLine="true"
+                            android:text="開通賬戶" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <View
+                                android:id="@+id/dv_three"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/divider_line_width_2dp"
+                                android:layout_weight="1"
+                                android:background="@color/skin_divider_color" />
+
+                            <ImageView
+                                android:id="@+id/iv_three"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/divider_line_width_1dp"
+                                android:src="@drawable/ic_establish_finish_three" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                            android:singleLine="true"
+                            android:text="開戶完成" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.linktech.gft.view.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_line_width_1dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp" />
+
+                <!--溫馨提示-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_30dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:text="溫馨提示"
+                    android:textColor="@color/skin_display1_color"
+                    android:textSize="@dimen/text_size_small_12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:text="1.賬戶預計在1-2個工作日內開通\n\n2.開戶後即可存入資金，體驗T+0交易"
+                    android:textColor="@color/skin_display1_color"
+                    android:textSize="@dimen/text_size_small_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_alert_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:layout_marginBottom="@dimen/view_padding_margin_48dp"
+                    tools:text="3.如有需要，請查看《開戶申請表》"
+                    android:textColor="@color/skin_display1_color"
+                    android:textSize="@dimen/text_size_small_12sp" />
+
+                <!---->
+                <include layout="@layout/layout_common_dark_function_button" />
+
+                <!---->
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:drawableStart="@drawable/ic_establish_phone"
+                    android:drawablePadding="@dimen/view_padding_margin_10dp"
+                    android:text="@string/establish_server_phone"
+                    android:textColor="@color/skin_accent_color"
+                    android:textSize="@dimen/text_size_normal_14sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

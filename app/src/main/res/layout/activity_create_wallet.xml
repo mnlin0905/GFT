@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar"/>
+
+    <!--提示说明-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_bg_red_ffece2"
+        android:checked="true"
+        android:drawableStart="@drawable/icon_small_circle_red"
+        android:drawablePadding="@dimen/view_padding_margin_8dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingTop="@dimen/view_padding_margin_16dp"
+        android:text="@string/activity_create_wallet_label_one"
+        android:textColor="@color/main_color_red_ed652b"
+        android:textSize="@dimen/text_size_normal_14sp"/>
+
+    <TextView
+        android:drawableStart="@drawable/icon_small_circle_red"
+        android:drawablePadding="@dimen/view_padding_margin_8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_bg_red_ffece2"
+        android:checked="true"
+        android:paddingBottom="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingTop="@dimen/view_padding_margin_8dp"
+        android:text="@string/activity_create_wallet_label_two"
+        android:textColor="@color/main_color_red_ed652b"
+        android:textSize="@dimen/text_size_normal_14sp"/>
+
+    <!--钱包名称,密码,确认密码,密码提示-->
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_10dp"
+        android:background="@color/main_color_white"
+        android:hint="@string/activity_create_wallet_hint_name"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_title_15sp"/>
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"/>
+
+    <EditText
+        android:id="@+id/et_password_one"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:hint="@string/activity_create_wallet_hint_pwd"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_title_15sp"/>
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"/>
+
+    <EditText
+        android:id="@+id/et_password_two"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:hint="@string/activity_create_wallet_hint_confirm"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_title_15sp"/>
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"/>
+
+    <EditText
+        android:id="@+id/et_alert"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        android:hint="@string/activity_create_wallet_hint_alert"
+        android:imeOptions="actionGo"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_title_15sp"/>
+
+    <!--协议-->
+    <CheckBox
+        android:id="@+id/cb_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_padding_margin_24dp"
+        android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+        android:layout_marginTop="@dimen/view_padding_margin_16dp"
+        android:textColor="@color/black_text_663a4254"
+        android:textSize="@dimen/text_size_small_12sp"
+        tools:checked="true"
+        tools:text="我已仔细阅读并同意服务及隐私条款"/>
+
+    <!---->
+    <include layout="@layout/layout_common_dark_function_button"/>
+
+    <TextView
+        android:id="@+id/tv_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/view_padding_margin_48dp"
+        android:text="@string/activity_create_wallet_import"
+        android:textSize="@dimen/text_size_normal_14sp"
+        android:textColor="@color/toolbar_second_color_primary"/>
+</LinearLayout>

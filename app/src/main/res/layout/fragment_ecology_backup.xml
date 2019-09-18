@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--toolbar-->
+    <!--app:elevation="0dp"-->
+    <!--android:stateListAnimator="@null"-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:elevation="0dp">
+
+        <!--app:statusBarScrim="@color/blue" 折叠时状态栏的颜色:一般不起作用-->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <!--会对中心-->
+            <include
+                android:id="@+id/cl_conversion"
+                layout="@layout/layout_fragment_ecology_conversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:layout_collapseMode="pin"/>
+
+            <!--banner-->
+            <com.linktech.gft.view.StaticConvenientBanner
+                android:id="@+id/scb_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_banner_test"
+                android:minHeight="@dimen/view_height_90dp"
+                app:canLoop="true"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="center_vertical"
+                android:theme="@style/ToolbarTheme_menu_text_white"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:titleTextColor="@color/black_text_171a3f"/>
+
+            <ImageView
+                android:layout_marginEnd="@dimen/view_padding_margin_24dp"
+                android:layout_marginBottom="@dimen/view_padding_margin_40dp"
+                android:layout_gravity="end|bottom"
+                android:src="@drawable/icon_ecology_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <!--信息展示区域-->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                android:layout_marginTop="@dimen/view_padding_margin_24dp"
+                android:text="@string/fragment_ecology_intelligence_services"
+                android:textColor="@color/black_text_37416b"
+                android:textSize="@dimen/text_size_17sp"
+                android:textStyle="normal"/>
+
+            <!--其他功能块:item ,margin-bottom:12dp,margin-horizontal:16dp-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_other_module"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:paddingTop="@dimen/view_padding_margin_10dp"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--描点头像-->
+    <ImageView
+        android:id="@+id/iv_head_image"
+        android:layout_width="@dimen/view_height_36dp"
+        android:layout_height="@dimen/view_height_36dp"
+        android:layout_marginStart="@dimen/view_height_16dp"
+        android:elevation="@dimen/float_action_tab_elevation_9dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/default_head_img"
+        app:layout_anchor="@id/toolbar"
+        app:layout_anchorGravity="start"
+        tools:src="@drawable/default_head_img"/>
+</android.support.design.widget.CoordinatorLayout>

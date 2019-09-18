@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/view_padding_margin_48dp">
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/skin_scaffold_deep_background_color"
+                    android:minHeight="@dimen/view_height_36dp"
+                    app:LineMenuView_for_calculation="off"
+                    app:LineMenuView_menu="請了解風險披露并確認"
+                    app:LineMenuView_menu_text_color="@color/skin_display1_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp" />
+
+                <!--播放音频信息-->
+                <android.support.constraint.ConstraintLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:background="@color/skin_scaffold_deep_background_color"
+                    android:padding="@dimen/view_padding_margin_16dp">
+
+                    <com.linktech.gft.view.FitSrcImageView
+                        android:id="@+id/iv_photo"
+                        android:layout_width="@dimen/view_height_64dp"
+                        android:layout_height="@dimen/view_height_90dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_height="92dp"
+                        tools:scaleType="fitXY"
+                        tools:src="@drawable/bg_splash_one" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_12dp"
+                        android:singleLine="true"
+                        android:text="持牌代表："
+                        android:textSize="@dimen/text_size_13sp"
+                        app:layout_constraintStart_toEndOf="@id/iv_photo" />
+
+                    <TextView
+                        android:id="@+id/tv_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                        android:singleLine="true"
+                        android:text="中央編號："
+                        android:textSize="@dimen/text_size_13sp"
+                        app:layout_constraintStart_toStartOf="@id/tv_name"
+                        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+                    <!---->
+                    <ImageView
+                        android:id="@+id/iv_control_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_voice_control"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_code"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_control_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_voice_control"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/tv_code" />
+
+                    <!--控制进度-->
+                    <skin.support.widget.SkinCompatSeekBar
+                        android:id="@+id/sb_jump"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_4dp"
+                        android:thumb="@drawable/icon_radio_check_true"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_control_two"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/iv_control_two"
+                        app:layout_constraintTop_toTopOf="@id/iv_control_two"
+                        tools:progress="0" />
+                </android.support.constraint.ConstraintLayout>
+
+                <!--提醒信息-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:layout_marginBottom="@dimen/view_padding_margin_48dp"
+                    android:text="1.投资涉及风险，证券价格可升可跌，甚至在极端情况下可能变成毫无价值。\n\n2.我已了解证券投资的潜在风险，并确认自身具备相应的风险承受能力。\n\n3.我已详细阅读并了解《开户说明》、《证券现金买卖协议》、《电子交易协议》、《证券保证金买卖协议》、《风险披露说明及风险声明》、《个人资料（隐私）附件》和《客户声明》等协议。"
+                    android:textColor="@color/skin_display1_color"
+                    android:textSize="@dimen/text_size_small_12sp" />
+
+                <!---->
+                <include layout="@layout/layout_common_dark_function_button" />
+
+                <!---->
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:drawableStart="@drawable/ic_establish_phone"
+                    android:drawablePadding="@dimen/view_padding_margin_10dp"
+                    android:text="@string/establish_server_phone"
+                    android:textColor="@color/skin_accent_color"
+                    android:textSize="@dimen/text_size_normal_14sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

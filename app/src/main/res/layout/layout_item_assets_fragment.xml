@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/view_padding_margin_10dp"
+    android:paddingTop="@dimen/view_padding_margin_12dp"
+    android:paddingBottom="@dimen/view_padding_margin_12dp"
+    android:background="@color/skin_scaffold_background_color">
+
+    <!---->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:singleLine="true"
+        android:text="添富快线 32454"
+        android:textColor="@color/skin_body1_color"
+        android:textSize="@dimen/text_size_normal_14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/view_padding_margin_10dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:singleLine="true"
+        android:text="1.919%"
+        android:textColor="@color/skin_accent_color"
+        android:textSize="45sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/view_padding_margin_4dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:singleLine="true"
+        android:text="@string/fragment_assets_seven"
+        android:textColor="@color/skin_display1_color"
+        android:textSize="@dimen/text_size_small_12sp" />
+
+    <TextView
+        android:id="@+id/tv_one_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:singleLine="true"
+        android:text="@string/fragment_assets_one_day"
+        android:textColor="@color/skin_body1_color"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <View
+        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+        android:layout_marginBottom="@dimen/view_padding_margin_20dp"
+        android:layout_width="match_parent"
+        android:background="@color/dark_color_454860_d8dcdf"
+        android:layout_height="1px" />
+
+    <include layout="@layout/layout_common_dark_function_button"/>
+
+    <!---->
+    <LinearLayout
+        android:layout_marginTop="@dimen/view_padding_margin_10dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="top|start"
+            android:src="@drawable/dark_fragment_assets_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginStart="@dimen/view_padding_margin_4dp"
+            android:text="@string/fragment_assets_label"
+            android:textSize="@dimen/text_size_small_12sp"
+            android:textColor="@color/skin_display1_color"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

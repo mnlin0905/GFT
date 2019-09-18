@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+    tools:background="@color/dark_color_272a3f_ffffff"
+    android:paddingTop="@dimen/view_padding_margin_10dp"
+    android:paddingBottom="@dimen/view_padding_margin_16dp">
+
+    <!--類型-->
+    <ImageView
+        android:id="@+id/iv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/dark_icon_buy_triangle" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_16dp"
+        android:layout_marginTop="@dimen/view_padding_margin_16dp"
+        android:gravity="start|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/skin_title_color"
+        android:textSize="@dimen/text_size_title_15sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_time"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="騰訊控股 00700" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/dark_main_text_7c7fa2"
+        android:textSize="@dimen/text_size_small_12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+        app:layout_constraintEnd_toStartOf="@id/iv_delete"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/tv_name"
+        tools:text="14:34:15" />
+
+    <!--刪除-->
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_padding_margin_16dp"
+        android:src="@drawable/icon_delete"
+        app:layout_constraintBottom_toBottomOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_time"
+        app:layout_constraintTop_toTopOf="@id/tv_name" />
+
+    <!--委託內容-->
+    <TextView
+        android:id="@+id/tv_label_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_8dp"
+        android:drawablePadding="@dimen/view_padding_margin_4dp"
+        android:gravity="start|center_vertical"
+        android:singleLine="true"
+        android:text="@string/fragment_kill_order_item_price"
+        android:textColor="@color/dark_main_text_7c7fa2"
+        android:textSize="@dimen/text_size_small_12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        tools:drawableStart="@drawable/dark_icon_market_hk" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_8dp"
+        android:gravity="start|center_vertical"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_small_12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_label_price"
+        app:layout_constraintStart_toEndOf="@id/tv_label_price"
+        tools:text="156.23"
+        tools:textColor="@color/dark_color_20bf7c" />
+
+    <!---->
+    <TextView
+        android:id="@+id/tv_label_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_8dp"
+        android:gravity="start|center_vertical"
+        android:singleLine="true"
+        android:text="@string/fragment_kill_order_item_count"
+        android:textColor="@color/dark_main_text_7c7fa2"
+        android:textSize="@dimen/text_size_small_12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_price"
+        app:layout_constraintStart_toStartOf="@id/tv_time" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_8dp"
+        android:gravity="start|center_vertical"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_small_12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_label_count"
+        app:layout_constraintStart_toEndOf="@id/tv_label_count"
+        tools:text="156"
+        tools:textColor="@color/dark_color_20bf7c" />
+
+</android.support.constraint.ConstraintLayout>

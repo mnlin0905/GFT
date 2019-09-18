@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin_scaffold_background_color"
+    android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <!---->
+    <TextView
+        android:id="@+id/tv_message_at_once"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/skin_scaffold_deep_background_color"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingTop="@dimen/view_padding_margin_4dp"
+        android:paddingBottom="@dimen/view_padding_margin_4dp"
+        android:text="港股行情至少延时15分钟"
+        android:textColor="@color/skin_display1_color"
+        android:textSize="@dimen/text_size_small_12sp" />
+
+    <!---->
+    <LinearLayout
+        android:background="@color/skin_scaffold_background_color"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="start|center_vertical"
+            android:text="名称代码"
+            android:textColor="@color/skin_display1_color"
+            android:textSize="@dimen/text_size_normal_14sp" />
+
+        <TextView
+            android:id="@+id/tv_sort_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical"
+            android:text="价格"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/dark_icon_sort_default"
+            android:paddingLeft="24dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/skin_display1_color"
+            android:textSize="@dimen/text_size_normal_14sp" />
+
+        <TextView
+            android:id="@+id/tv_sort_rate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical"
+            android:text="涨跌幅"
+            android:drawableRight="@drawable/dark_icon_sort_default"
+            android:drawablePadding="8dp"
+            android:paddingLeft="24dp"
+            android:textColor="@color/skin_display1_color"
+            android:textSize="@dimen/text_size_normal_14sp" />
+    </LinearLayout>
+
+    <!--列表-->
+    <FrameLayout
+        android:background="@color/skin_scaffold_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/srl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="?attr/colorAccent"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+            app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+            app:srlPrimaryColor="?attr/colorPrimary">
+            <!--列表-->
+            <com.linktech.gft.view.RecyclerViewWithEmptyView
+                android:id="@+id/xrv_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/prefer_view_height_48dp" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <com.linktech.gft.view.RecyclerEmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

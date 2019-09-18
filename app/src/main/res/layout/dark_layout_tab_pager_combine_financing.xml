@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/dark_color_272a3f_ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_layer_trans_bottom_divider_1dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+        <com.linktech.gft.view.DisallowClickTabLayout
+            android:id="@+id/tl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/dark_main_text_8144e5"
+            app:tabIndicatorHeight="@dimen/tab_layout_indicator_height_2dp"
+            app:tabMode="scrollable"
+            app:tabPaddingBottom="@dimen/view_padding_margin_8dp"
+            app:tabPaddingEnd="@dimen/view_padding_margin_16dp"
+            app:tabPaddingStart="@dimen/view_padding_margin_16dp"
+            app:tabPaddingTop="@dimen/view_padding_margin_8dp"
+            app:tabSelectedTextColor="@color/dark_main_text_8144e5"
+            app:tabTextAppearance="@style/TextViewTabLayout"
+            app:tabTextColor="@color/dark_main_text_7c7fa2" />
+    </FrameLayout>
+
+    <com.linktech.gft.view.DisableScrollViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin_scaffold_background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="根據香港證監會的有關規定，客戶資金的提取，需經由本人同名香港銀行賬戶入金不少於等值10000港元的款項存入尊嘉證券客戶專用賬戶，進行銀行賬戶的綁定。詳情可見香港證監會網站（www.sfc.hk）2018年7月12日有關《通函》"
+        android:textColor="@color/dark_color_ffffff_1d2037"
+        android:textSize="14sp" />
+    <!--按钮-->
+    <include layout="@layout/layout_common_dark_function_button" />
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark_color_272a3f_ffffff">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        tools:src="@drawable/bank_zhong_logo"
+        android:layout_width="@dimen/view_height_30dp"
+        android:layout_height="@dimen/view_height_30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_stock_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        tools:text="德邦證券"
+        android:textColor="@color/skin_title_color"
+        android:textSize="@dimen/text_size_title_15sp"
+        app:layout_constraintLeft_toRightOf="@id/iv_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_commission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        tools:text="萬2.5傭金"
+        android:textColor="@color/dark_color_f85d5a"
+        android:textSize="@dimen/text_size_small_12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_stock_name"
+        app:layout_constraintLeft_toRightOf="@id/tv_stock_name" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/activity_choose_trade_desp"
+        android:textColor="@color/dark_main_text_666986"
+        android:textSize="@dimen/text_size_small_12sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_stock_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_stock_name" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/icon_arrow_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skin_scaffold_background_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <!--列表組-->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srlAccentColor="?attr/colorAccent"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+        app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+        app:srlPrimaryColor="?attr/colorPrimary">
+        <!--列表-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!---->
+            <TextView
+                android:id="@+id/tv_message_at_once"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/skin_scaffold_deep_background_color"
+                android:gravity="center"
+                android:paddingTop="@dimen/view_padding_margin_4dp"
+                android:paddingBottom="@dimen/view_padding_margin_4dp"
+                android:text="港股行情至少延时15分钟"
+                android:textColor="@color/skin_display1_color"
+                android:textSize="@dimen/text_size_small_12sp"
+                android:visibility="gone" />
+
+            <!--区间切换-->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_padding_margin_12dp">
+
+                <TextView
+                    android:id="@+id/tv_5_min"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/view_height_36dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dark_bull_bear_syndrome_button"
+                    android:gravity="center"
+                    android:text="5分钟"
+                    android:textColor="@color/dark_selector_section_change_rate"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_5_day"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/view_height_36dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dark_bull_bear_syndrome_button"
+                    android:gravity="center"
+                    android:text="5日"
+                    android:textColor="@color/dark_selector_section_change_rate"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_10_day"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/view_height_36dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dark_bull_bear_syndrome_button"
+                    android:gravity="center"
+                    android:text="10日"
+                    android:textColor="@color/dark_selector_section_change_rate"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_20_day"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/view_height_36dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dark_bull_bear_syndrome_button"
+                    android:gravity="center"
+                    android:text="20日"
+                    android:textColor="@color/dark_selector_section_change_rate"
+                    android:textSize="@dimen/text_size_13sp" />
+            </LinearLayout>
+
+            <!---->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_padding_margin_8dp">
+
+                <TextView
+                    android:id="@+id/tv_60_day"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/view_height_36dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dark_bull_bear_syndrome_button"
+                    android:gravity="center"
+                    android:text="60日"
+                    android:textColor="@color/dark_selector_section_change_rate"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_120_day"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/view_height_36dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dark_bull_bear_syndrome_button"
+                    android:gravity="center"
+                    android:text="120日"
+                    android:textColor="@color/dark_selector_section_change_rate"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_250_day"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/view_height_36dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dark_bull_bear_syndrome_button"
+                    android:gravity="center"
+                    android:text="250日"
+                    android:textColor="@color/dark_selector_section_change_rate"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_1_year"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/view_height_36dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dark_bull_bear_syndrome_button"
+                    android:gravity="center"
+                    android:text="年"
+                    android:textColor="@color/dark_selector_section_change_rate"
+                    android:textSize="@dimen/text_size_13sp" />
+            </LinearLayout>
+
+            <!--包含两列数据-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--左侧固定不变-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/prefer_view_height_48dp"
+                            android:background="@color/dark_color_2e3146_ebe8ef"
+                            android:gravity="center"
+                            android:text="股票名称"
+                            android:textColor="@color/skin_body1_color"
+                            android:textSize="@dimen/text_size_normal_14sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_left"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false" />
+                    </LinearLayout>
+
+                    <!--右侧可滑动-->
+                    <HorizontalScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <!--表頭-->
+                            <LinearLayout
+                                android:id="@+id/ll_header"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/dark_color_2e3146_ebe8ef"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <!--TODO 代碼主動添加不同佈局,控制單個長度為1/4-->
+                            </LinearLayout>
+
+                            <!--資料項目-->
+                            <com.linktech.gft.view.RecyclerViewWithEmptyView
+                                android:id="@+id/xrv_record"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:nestedScrollingEnabled="false" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <com.linktech.gft.view.RecyclerEmptyView
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!---->
+    <LinearLayout
+        android:id="@+id/ll_alert"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prefer_view_height_48dp"
+        android:background="@color/skin_scaffold_deep_background_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_jump"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="牛熊证风险较大，点此了解如何正确投资牛熊证"
+            android:textColor="@color/skin_body1_color"
+            android:textSize="@dimen/text_size_normal_14sp" />
+
+        <com.linktech.gft.view.RectImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/view_height_20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_turbine_close" />
+    </LinearLayout>
+</LinearLayout>

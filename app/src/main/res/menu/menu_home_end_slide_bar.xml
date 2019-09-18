@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_qr"
+        android:icon="@drawable/icon_scan_qr_gray"
+        android:title="@string/action_qr_scan"/>
+
+    <item
+        android:id="@+id/action_contact"
+        android:icon="@drawable/icon_contact_gray"
+        android:title="@string/action_contact"/>
+
+    <item
+        android:id="@+id/action_wallet"
+        android:icon="@drawable/icon_wallet_gray"
+        android:title="@string/action_wallet_manager"/>
+</menu>

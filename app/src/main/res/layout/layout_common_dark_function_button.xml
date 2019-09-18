@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bt_common_function"
+    style="?android:attr/borderlessButtonStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+    android:background="@drawable/dark_selector_function_btn_bg"
+    android:textAllCaps="false"
+    android:textColor="@color/skin_button_text_color"
+    android:textSize="@dimen/text_size_large_18sp"
+    tools:text="Confirm"/>

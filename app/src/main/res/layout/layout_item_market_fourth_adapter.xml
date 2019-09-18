@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dark_layer_bg_end_divider_1dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/view_padding_margin_8dp"
+    android:paddingTop="@dimen/view_padding_margin_16dp"
+    android:paddingEnd="@dimen/view_padding_margin_8dp"
+    android:paddingBottom="@dimen/view_padding_margin_16dp">
+
+    <com.linktech.gft.view.MarqueeTextView
+        android:id="@+id/tv_industry_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="---"
+        android:textColor="@color/skin_title_color"
+        android:textSize="@dimen/text_size_title_15sp" />
+
+    <com.linktech.gft.skin.MyStockColorTextView
+        android:id="@+id/tv_industry_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_6dp"
+        android:singleLine="true"
+        android:text="--%"
+        android:textColor="@color/dark_color_f85d5a"
+        android:textSize="@dimen/text_size_20sp" />
+
+    <TextView
+        android:id="@+id/tv_industry_name_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_6dp"
+        android:singleLine="true"
+        android:text="---"
+        android:textColor="@color/dark_main_text_666986"
+        android:textSize="@dimen/text_size_small_12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_6dp">
+
+        <com.linktech.gft.skin.MyStockColorTextView
+            android:id="@+id/tv_industry_change_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="--"
+            android:textColor="@color/dark_color_f85d5a"
+            android:textSize="@dimen/text_size_small_12sp" />
+
+        <com.linktech.gft.skin.MyStockColorTextView
+            android:id="@+id/tv_industry_change_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_12dp"
+            android:singleLine="true"
+            android:text="--%"
+            android:textColor="@color/dark_color_f85d5a"
+            android:textSize="@dimen/text_size_small_12sp" />
+    </LinearLayout>
+</LinearLayout>

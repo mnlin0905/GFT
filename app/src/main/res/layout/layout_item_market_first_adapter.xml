@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/dark_layer_bg_end_padding_24dp_divider_1dp"
+    android:paddingTop="@dimen/view_padding_margin_16dp"
+    android:paddingBottom="@dimen/view_padding_margin_16dp">
+
+    <TextView
+        android:id="@+id/tv_exponent_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="---"
+        android:textColor="@color/skin_title_color"
+        android:textSize="@dimen/text_size_title_15sp" />
+
+    <com.linktech.gft.skin.MyStockColorTextView
+        android:id="@+id/tv_exponent_amount"
+        android:layout_marginTop="@dimen/view_padding_margin_6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        tools:text="367.000"
+        tools:textColor="@color/dark_color_f85d5a"
+        android:textSize="@dimen/text_size_20sp" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/view_padding_margin_6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.linktech.gft.skin.MyStockColorTextView
+            android:id="@+id/tv_exponent_change_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            tools:text="+160.87"
+            tools:textColor="@color/dark_color_f85d5a"
+            android:textSize="@dimen/text_size_small_12sp" />
+        <com.linktech.gft.skin.MyStockColorTextView
+            android:id="@+id/tv_exponent_change_percent"
+            android:layout_marginStart="@dimen/view_padding_margin_12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            tools:text="+0.56%"
+            tools:textColor="@color/dark_color_f85d5a"
+            android:textSize="@dimen/text_size_small_12sp" />
+    </LinearLayout>
+</LinearLayout>

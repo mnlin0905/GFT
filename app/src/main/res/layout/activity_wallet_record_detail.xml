@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar"/>
+
+    <!--可滑动部分-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/view_padding_margin_32dp">
+            <!--头部-->
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:transitionName="@string/transition_name_logo"
+                android:layout_width="@dimen/view_height_50dp"
+                android:layout_height="@dimen/view_height_50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                tools:src="@drawable/icon_usdp"/>
+
+            <!--资产-->
+            <com.linktech.gft.view.MarqueeTextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:transitionName="@string/transition_name_amount"
+                android:layout_marginEnd="@dimen/view_padding_margin_32dp"
+                android:layout_marginStart="@dimen/view_padding_margin_32dp"
+                android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                android:textColor="@color/toolbar_second_color_primary"
+                android:textSize="@dimen/text_size_large_18sp"
+                tools:text="+100.5349457905835038530583583940500 PAWS"/>
+
+            <!--类型-->
+            <com.linktech.gft.skin.MyLineMenuView
+                android:id="@+id/lmv_type"
+                android:transitionName="@string/transition_name_type"
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_padding_margin_24dp"
+                app:LineMenuView_brief_text_color="@color/black_text_171a3f"
+                app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+                app:LineMenuView_menu="@string/common_type"
+                app:LineMenuView_menu_text_color="@color/black_text_cc3a4254"
+                app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                app:LineMenuView_plugin="text"
+                tools:LineMenuView_brief="收款"/>
+
+            <com.linktech.gft.view.DividerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_width_1dp"/>
+
+            <com.linktech.gft.skin.MyLineMenuView
+                android:id="@+id/lmv_time"
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:transitionName="@string/transition_name_time"
+                app:LineMenuView_brief_text_color="@color/black_text_171a3f"
+                app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+                app:LineMenuView_menu="@string/common_time"
+                app:LineMenuView_menu_text_color="@color/black_text_cc3a4254"
+                app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                app:LineMenuView_plugin="text"
+                tools:LineMenuView_brief="2018-07-21 15:21:30"/>
+
+            <com.linktech.gft.view.DividerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_line_width_1dp"/>
+
+            <com.linktech.gft.skin.MyLineMenuView
+                android:id="@+id/lmv_fee"
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:LineMenuView_brief_text_color="@color/black_text_171a3f"
+                app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+                app:LineMenuView_menu="@string/common_poundage"
+                app:LineMenuView_menu_text_color="@color/black_text_cc3a4254"
+                app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                app:LineMenuView_plugin="text"
+                tools:LineMenuView_brief="0"/>
+
+            <!--收款人地址-->
+            <TextView
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_background_edf0f4"
+                android:gravity="start"
+                android:minHeight="@dimen/view_height_40dp"
+                android:text="@string/activity_wallet_record_detail_address"
+                android:textColor="@color/black_text_803a4254"
+                android:textSize="@dimen/text_size_title_15sp"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:minHeight="@dimen/view_height_40dp"
+                android:padding="@dimen/view_padding_margin_16dp"
+                android:text="zGep454354i659i76576675676W5zD258207686kjf12QoUpY"
+                android:textSize="@dimen/text_size_normal_14sp"/>
+
+            <!--交易ID-->
+            <TextView
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_background_edf0f4"
+                android:gravity="start"
+                android:minHeight="@dimen/view_height_40dp"
+                android:text="@string/activity_wallet_record_detail_id"
+                android:textColor="@color/black_text_803a4254"
+                android:textSize="@dimen/text_size_title_15sp"/>
+
+            <TextView
+                android:id="@+id/tv_hash"
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:minHeight="@dimen/view_height_40dp"
+                android:padding="@dimen/view_padding_margin_16dp"
+                android:text="zGep454354i659i76576675676W5zD258207686kjf12QoUpY"
+                android:textSize="@dimen/text_size_normal_14sp"/>
+
+            <!--备注-->
+            <TextView
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_background_edf0f4"
+                android:gravity="start"
+                android:minHeight="@dimen/view_height_40dp"
+                android:text="@string/activity_wallet_record_detail_remark"
+                android:textColor="@color/black_text_803a4254"
+                android:textSize="@dimen/text_size_title_15sp"/>
+
+            <TextView
+                android:id="@+id/tv_remark"
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:minHeight="@dimen/view_height_40dp"
+                android:textSize="@dimen/text_size_normal_14sp"
+                tools:text="无"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

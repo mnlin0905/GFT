@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_refresh_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        app:srlAccentColor="?attr/colorAccent"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlFooterHeight="@dimen/view_height_36dp"
+        app:srlHeaderHeight="@dimen/view_height_36dp"
+        app:srlPrimaryColor="?attr/colorPrimary">
+        <!--列表-->
+        <com.linktech.gft.view.RecyclerViewWithEmptyView
+            android:id="@+id/xrv_record_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_white" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</FrameLayout>

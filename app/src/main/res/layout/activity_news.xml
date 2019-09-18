@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <!--消息資訊-->
+        <com.linktech.gft.skin.MyNewsConstraintLayout
+            android:id="@+id/nll_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+            app:NewsLinearLayout_icon="@drawable/dark_icon_news_alert"
+            app:NewsLinearLayout_subtitle="@string/activity_news_no_message"
+            app:NewsLinearLayout_title="@string/activity_news_alert"
+            tools:NewsLinearLayout_time="2017-12-12" />
+
+        <com.linktech.gft.skin.MyNewsConstraintLayout
+            android:id="@+id/nll_logistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+            app:NewsLinearLayout_icon="@drawable/dark_icon_news_play"
+            app:NewsLinearLayout_subtitle="@string/activity_news_no_message"
+            app:NewsLinearLayout_title="@string/activity_news_play"
+            tools:NewsLinearLayout_time="2017-12-12" />
+
+
+        <com.linktech.gft.skin.MyNewsConstraintLayout
+            android:id="@+id/nll_online_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_272a3f_ffffff"
+            app:NewsLinearLayout_icon="@drawable/dark_icon_news_system"
+            app:NewsLinearLayout_subtitle="@string/activity_news_no_message"
+            app:NewsLinearLayout_title="@string/activity_news_system"
+            tools:NewsLinearLayout_time="2017-12-12" />
+
+        <!--線上客服-->
+        <com.linktech.gft.skin.MyNewsConstraintLayout
+            android:id="@+id/nll_online_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_10dp"
+            android:background="@color/dark_color_272a3f_ffffff"
+            app:NewsLinearLayout_icon="@drawable/dark_icon_news_custom"
+            app:NewsLinearLayout_subtitle="@string/activity_news_no_message"
+            app:NewsLinearLayout_title="@string/activity_news_online" />
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

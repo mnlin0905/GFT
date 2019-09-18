@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar"/>
+
+    <com.linktech.gft.skin.MyLineMenuView
+        android:id="@+id/lmv_create_time"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        app:LineMenuView_brief_text_color="@color/black_text_3a4254"
+        app:LineMenuView_brief_text_size="@dimen/text_size_13sp"
+        app:LineMenuView_menu="@string/activity_take_in_create_time"
+        app:LineMenuView_menu_text_color="@color/black_text_3a4254"
+        app:LineMenuView_menu_text_size="@dimen/text_size_13sp"
+        app:LineMenuView_plugin="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/prefer_view_height_48dp"
+        android:padding="@dimen/view_padding_margin_16dp"
+        android:text="@string/activity_take_in_deal_id"
+        android:textColor="@color/black_text_cc3a4254"
+        android:textSize="@dimen/text_size_13sp"/>
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.5"
+        android:padding="@dimen/view_padding_margin_16dp"
+        android:textColor="@color/black_text_3a4254"
+        android:textSize="@dimen/text_size_13sp"
+        tools:text="bfec5640248cff9ba7d5e1b9d7fcadboca544138c009afboe09e89cd5f566c49"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/prefer_view_height_48dp"
+        android:padding="@dimen/view_padding_margin_16dp"
+        android:text="@string/activity_take_in_roll_in_address"
+        android:textColor="@color/black_text_cc3a4254"
+        android:textSize="@dimen/text_size_13sp"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.5"
+        android:padding="@dimen/view_padding_margin_16dp"
+        android:textColor="@color/black_text_3a4254"
+        android:textSize="@dimen/text_size_13sp"
+        tools:text="bfec5640248cff9ba7d5e1b9d7fcadboca544138c009afboe09e89cd5f566c49"/>
+
+    <!--到账数量-状态-->
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:background="@color/main_color_white"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"/>
+
+    <com.linktech.gft.skin.MyLineMenuView
+        android:id="@+id/lmv_arrive_payment"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        app:LineMenuView_brief_text_color="@color/black_text_3a4254"
+        app:LineMenuView_brief_text_size="@dimen/text_size_13sp"
+        app:LineMenuView_menu="@string/activity_take_in_account_number"
+        app:LineMenuView_menu_text_color="@color/black_text_3a4254"
+        app:LineMenuView_menu_text_size="@dimen/text_size_13sp"
+        app:LineMenuView_plugin="text"/>
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:background="@color/main_color_white"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"/>
+
+    <com.linktech.gft.skin.MyLineMenuView
+        android:id="@+id/lmv_status"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white"
+        app:LineMenuView_brief_text_color="@color/black_text_3a4254"
+        app:LineMenuView_brief_text_size="@dimen/text_size_13sp"
+        app:LineMenuView_menu="@string/activity_take_in_state"
+        app:LineMenuView_menu_text_color="@color/black_text_3a4254"
+        app:LineMenuView_menu_text_size="@dimen/text_size_13sp"
+        app:LineMenuView_plugin="text"/>
+
+</LinearLayout>

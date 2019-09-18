@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar"/>
+
+    <!--表头-->
+    <LinearLayout
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_white">
+
+        <com.linktech.gft.view.FormatDoubleTextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="start|center_vertical"
+            android:text="@string/activity_recommend_record_username"
+            android:textColor="@color/black_text_cc3a4254"
+            android:textSize="@dimen/text_size_normal_14sp"/>
+
+        <TextView
+            android:id="@+id/tv_boolean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/activity_recommend_record_verify"
+            android:textColor="@color/black_text_cc3a4254"
+            android:textSize="@dimen/text_size_normal_14sp"/>
+
+        <com.linktech.gft.view.FormatDoubleTextView
+            android:id="@+id/tv_register_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingStart="@dimen/view_padding_margin_8dp"
+            android:text="@string/activity_recommend_record_time"
+            android:textColor="@color/black_text_cc3a4254"
+            android:textSize="@dimen/text_size_normal_14sp"/>
+    </LinearLayout>
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_width_1dp"
+        android:background="@color/main_color_white"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:srlAccentColor="?attr/colorAccent"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+        app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+        app:srlPrimaryColor="?attr/colorPrimary">
+        <!--列表-->
+        <com.linktech.gft.view.RecyclerViewWithEmptyView
+            android:id="@+id/xrv_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_white"
+            android:minHeight="@dimen/view_padding_margin_48dp"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!--空-->
+    <com.linktech.gft.view.RecyclerEmptyView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

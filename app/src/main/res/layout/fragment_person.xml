@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_color_272a3f_f4f4f4"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_person_top"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="18dp"
+                android:src="@drawable/default_head_img"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toRightOf="@id/iv_image"
+                app:layout_constraintTop_toTopOf="@id/iv_image"
+                tools:text="RainBow" />
+
+            <ImageView
+                android:id="@+id/iv_verify"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/selector_icon_person_verify"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="@id/tv_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+            <ImageView
+                android:id="@+id/iv_mobile"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/selector_icon_person_mobile"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toRightOf="@id/iv_verify"
+                app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+            <ImageView
+                android:id="@+id/iv_email"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/selector_icon_person_email"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toRightOf="@id/iv_mobile"
+                app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+            <TextView
+                android:id="@+id/tv_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/fragment_person_title"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_border_ac73f9"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/fragment_person_login_register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small_12sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <com.linktech.gft.view.TitleCenterToolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolbarTheme_menu_text_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            android:transitionName="@string/transition_name_toolbar"
+            app:contentInsetEnd="@dimen/view_padding_margin_16dp"
+            app:contentInsetStart="@dimen/view_padding_margin_16dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:popupTheme="@style/PopupThemeLight"
+            app:title=""
+            app:titleMarginStart="0dp"
+            app:titleTextColor="@color/skin_title_color">
+
+        </com.linktech.gft.view.TitleCenterToolbar>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#272a3f" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_mall"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_padding_margin_10dp"
+            android:background="@color/dark_color_33364c_ffffff"
+            app:LineMenuView_for_calculation="on"
+            app:LineMenuView_icon="@drawable/icon_mall"
+            app:LineMenuView_menu="积分商城"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="15sp"
+            app:LineMenuView_navigation="@drawable/icon_arrow_right"
+            app:LineMenuView_plugin="text" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_remind"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_33364c_ffffff"
+            android:visibility="gone"
+            app:LineMenuView_for_calculation="on"
+            app:LineMenuView_icon="@drawable/icon_remind"
+            app:LineMenuView_menu="@string/fragment_person_stock_remind"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="15sp"
+            app:LineMenuView_navigation="@drawable/icon_arrow_right"
+            app:LineMenuView_plugin="text" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_message"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/dark_color_33364c_ffffff"
+            android:visibility="gone"
+            app:LineMenuView_for_calculation="on"
+            app:LineMenuView_icon="@drawable/dark_icon_message"
+            app:LineMenuView_menu="@string/fragment_person_my_message"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="15sp"
+            app:LineMenuView_navigation="@drawable/icon_arrow_right"
+            app:LineMenuView_plugin="text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dark_color_454860_e8eef6" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_collect"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_33364c_ffffff"
+            app:LineMenuView_icon="@drawable/dark_icon_collect"
+            app:LineMenuView_menu="@string/fragment_person_my_collection"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="15sp"
+            app:LineMenuView_navigation="@drawable/icon_arrow_right"
+            app:LineMenuView_plugin="text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dark_color_454860_e8eef6" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_service"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_33364c_ffffff"
+            app:LineMenuView_icon="@drawable/dark_icon_feedback"
+            app:LineMenuView_menu="@string/fragment_person_online"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="15sp"
+            app:LineMenuView_navigation="@drawable/icon_arrow_right"
+            app:LineMenuView_plugin="text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dark_color_454860_e8eef6" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_setting"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_33364c_ffffff"
+            app:LineMenuView_icon="@drawable/dark_icon_setting"
+            app:LineMenuView_menu="@string/fragment_person_setting"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="15sp"
+            app:LineMenuView_navigation="@drawable/icon_arrow_right"
+            app:LineMenuView_plugin="text" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_safe"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_10dp"
+            android:background="@color/dark_color_33364c_ffffff"
+            app:LineMenuView_icon="@drawable/dark_icon_safety"
+            app:LineMenuView_menu="@string/fragment_person_safe"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="15sp"
+            app:LineMenuView_navigation="@drawable/icon_arrow_right"
+            app:LineMenuView_plugin="text" />
+    </LinearLayout>
+
+
+</LinearLayout>

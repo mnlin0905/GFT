@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="always"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--消息提醒-->
+                <com.linktech.gft.skin.MyLineMenuView
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                    android:background="@color/dark_color_272a3f_ffffff"
+                    app:LineMenuView_menu="@string/activity_about_inner_message"
+                    app:LineMenuView_menu_text_color="@color/skin_title_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                    app:LineMenuView_plugin="transition" />
+
+                <!---->
+                <com.linktech.gft.skin.MyLineMenuView
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                    android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+                    app:LineMenuView_menu="@string/activity_about_inner_news"
+                    app:LineMenuView_menu_text_color="@color/skin_title_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                    app:LineMenuView_plugin="transition" />
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_color_272a3f_ffffff"
+                    app:LineMenuView_menu="@string/activity_about_inner_play"
+                    app:LineMenuView_menu_text_color="@color/skin_title_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                    app:LineMenuView_plugin="transition" />
+
+                <!---->
+                <com.linktech.gft.skin.MyLineMenuView
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                    android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+                    app:LineMenuView_menu="@string/activity_about_inner_stock_alert"
+                    app:LineMenuView_menu_text_color="@color/skin_title_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                    app:LineMenuView_plugin="transition" />
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_color_272a3f_ffffff"
+                    app:LineMenuView_menu="@string/activity_about_inner_success"
+                    app:LineMenuView_menu_text_color="@color/skin_title_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+                    app:LineMenuView_plugin="transition" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/view_padding_margin_16dp"
+                    android:text="@string/activity_about_inner_label_stock"
+                    android:textColor="@color/dark_color_666986_b8b9c1"
+                    android:textSize="@dimen/text_size_13sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

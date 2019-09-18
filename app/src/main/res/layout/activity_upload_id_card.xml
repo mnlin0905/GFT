@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/skin_scaffold_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/view_padding_margin_48dp">
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/skin_scaffold_deep_background_color"
+                    android:minHeight="@dimen/view_height_36dp"
+                    app:LineMenuView_menu="請上傳身份證正反面照片"
+                    app:LineMenuView_menu_text_color="@color/skin_display1_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp"
+                    android:text="請參照如下圖掃描本人的有效二代身份證"
+                    android:textColor="@color/skin_body1_color"
+                    android:textSize="@dimen/text_size_normal_14sp" />
+
+                <!--正面-->
+                <com.linktech.gft.view.FitFirstChildFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/view_padding_margin_64dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_16dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_64dp"
+                    android:background="@drawable/shape_rect_divider_color_dash_radius">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bg_upload_id_card" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/view_padding_margin_10dp"
+                        android:layout_marginTop="@dimen/view_padding_margin_16dp"
+                        android:layout_marginEnd="@dimen/view_padding_margin_10dp"
+                        android:layout_marginBottom="@dimen/view_padding_margin_16dp">
+
+                        <ImageView
+                            android:id="@+id/iv_select_face"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bg_upload_id_card_face" />
+
+                        <!---->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="@dimen/view_padding_margin_10dp"
+                            android:text="點擊掃描身份證正面"
+                            android:textColor="@color/skin_display1_color"
+                            android:textSize="@dimen/text_size_small_12sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_face"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY" />
+                    </FrameLayout>
+                </com.linktech.gft.view.FitFirstChildFrameLayout>
+
+                <!--扫描/相册上传-->
+                <TextView
+                    android:id="@+id/tv_select_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:textColor="@color/skin_body1_color"
+                    android:textSize="@dimen/text_size_small_12sp"
+                    tools:text="掃描失敗？" />
+
+                <com.linktech.gft.view.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_line_width_1dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp" />
+
+                <!--反面-->
+                <com.linktech.gft.view.FitFirstChildFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/view_padding_margin_64dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_64dp"
+                    android:background="@drawable/shape_rect_divider_color_dash_radius">
+
+                    <ImageView
+                        android:id="@+id/iv_select_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bg_upload_id_card" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/view_padding_margin_10dp"
+                        android:layout_marginTop="@dimen/view_padding_margin_16dp"
+                        android:layout_marginEnd="@dimen/view_padding_margin_10dp"
+                        android:layout_marginBottom="@dimen/view_padding_margin_16dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bg_upload_id_card_back" />
+
+                        <!---->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="@dimen/view_padding_margin_10dp"
+                            android:text="點擊掃描身份證背面"
+                            android:textColor="@color/skin_display1_color"
+                            android:textSize="@dimen/text_size_small_12sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY" />
+                    </FrameLayout>
+                </com.linktech.gft.view.FitFirstChildFrameLayout>
+
+                <!--扫描/相册上传-->
+                <TextView
+                    android:id="@+id/tv_select_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginBottom="@dimen/view_padding_margin_40dp"
+                    android:textColor="@color/skin_body1_color"
+                    android:textSize="@dimen/text_size_small_12sp"
+                    tools:text="掃描失敗？" />
+
+                <!---->
+                <include layout="@layout/layout_common_dark_function_button" />
+
+                <!---->
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:drawableStart="@drawable/ic_establish_phone"
+                    android:drawablePadding="@dimen/view_padding_margin_10dp"
+                    android:textColor="@color/skin_accent_color"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:text="@string/establish_server_phone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

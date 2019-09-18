@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.linktech.gft">
+
+    <!-- 生物识别权限(解锁) -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <!-- Normal Permission -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission
+        android:name="android.permission.SET_TIME_ZONE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.TRANSMIT_IR" />
+    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <!-- Dangerous Permissions -->
+    <!-- group:android.permission-group.CONTACTS -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- group:android.permission-group.PHONE -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="com.android.voicemail.permission.ADD_VOICEMAIL" />
+    <!-- group:android.permission-group.CALENDAR -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <!-- group:android.permission-group.CAMERA -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- group:android.permission-group.SENSORS -->
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <!-- group:android.permission-group.LOCATION -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- group:android.permission-group.STORAGE -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- group:android.permission-group.MICROPHONE -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- group:android.permission-group.SMS -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CELL_BORADCASTS" />
+
+    <!-- 特殊权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <!-- android:isGame="false" -->
+    <!-- 启用vm安全模式,关闭即时编译 -->
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="false"
+        android:description="@string/app_description"
+        android:icon="@mipmap/launcher"
+        android:killAfterRestore="true"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:persistent="true"
+        android:roundIcon="@mipmap/launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:vmSafeMode="true"
+        tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode"
+        tools:replace="android:icon,android:allowBackup,android:supportsRtl">
+        <provider
+            android:name=".plugins.USDPFileProvider"
+            android:authorities="com.linktech.gft.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/gft_path_provider" />
+        </provider>
+
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5d26cb634ca357104e000492" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="OFFICIAL_WEBSITE" />
+
+        <!--微信第三方登录-->
+        <meta-data
+            android:name="WX_APP_ID"
+            android:value="wxd0754d78b3d26eeb" />
+
+        <activity
+            android:name=".activity.financing.common.FinancingActivity"
+            android:alwaysRetainTaskState="true"
+            android:clearTaskOnLaunch="false"
+            android:configChanges="orientation|screenSize|keyboard|locale|layoutDirection"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+
+        </activity>
+
+        <!-- 欢迎界面 -->
+        <activity
+            android:name=".activity.other.SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:finishOnTaskLaunch="true"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.login.RegisterActivity"
+            android:label="@string/label_register" />
+        <activity
+            android:name=".activity.person.SoftSettingActivity"
+            android:label="@string/label_soft_setting" />
+        <activity
+            android:name=".activity.person.PersonInformationActivity"
+            android:label="@string/label_person_information" />
+        <activity
+            android:name=".activity.person.ChangeNickNameActivity"
+            android:label="@string/label_change_nick_name" />
+        <activity
+            android:name=".activity.person.BeginCertificationActivity"
+            android:label="@string/label_begin_certification" />
+        <activity
+            android:name=".activity.person.UploadCertificationPhotoActivity"
+            android:label="@string/label_upload_certification_photo" />
+        <activity
+            android:name=".activity.person.ShowCertificationResultActivity"
+            android:label="@string/label_show_certification_result" />
+        <activity
+            android:name=".activity.login.ForgetPasswordActivity"
+            android:label="@string/label_forget_password" />
+        <activity
+            android:name=".activity.login.FindPasswordActivity"
+            android:label="@string/label_find_password" />
+        <activity
+            android:name=".activity.person.ChangePasswordActivity"
+            android:label="@string/label_change_password" />
+        <activity
+            android:name=".activity.person.SelectChangeTransPasswordTypeActivity"
+            android:label="@string/label_select_change_trans_password_type" />
+        <activity
+            android:name=".activity.person.SetTransactionPasswordActivity"
+            android:label="@string/label_set_transaction_password" />
+        <activity
+            android:name=".activity.person.SignActivity"
+            android:label="@string/label_sign" />
+        <activity
+            android:name=".activity.person.SignRewardActivity"
+            android:label="@string/label_sign_reward" />
+        <activity
+            android:name=".activity.person.BindEmailActivity"
+            android:label="@string/label_bind_email" />
+        <activity
+            android:name=".activity.person.ChangeEmailActivity"
+            android:label="@string/label_change_email" />
+        <activity
+            android:name=".activity.person.ChangeMobileActivity"
+            android:label="@string/label_change_mobile" />
+        <activity android:name=".activity.person.InputCodeActivity" />
+        <activity
+            android:name=".activity.person.VerifyCardNumActivity"
+            android:label="@string/label_verify_card_num" />
+        <activity
+            android:name=".activity.person.ShowEmailActivity"
+            android:label="@string/label_show_email" />
+        <activity
+            android:name=".activity.person.ShowMobileActivity"
+            android:label="@string/label_show_mobile" />
+        <activity
+            android:name=".activity.person.BindMobileActivity"
+            android:label="@string/label_bind_mobile" />
+        <activity
+            android:name=".activity.person.AboutActivity"
+            android:label="@string/label_about" />
+        <activity
+            android:name=".activity.person.InputOldTransPasswordActivity"
+            android:label="@string/label_input_old_trans_password" />
+        <activity
+            android:name=".activity.person.ChangeTransPasswordActivity"
+            android:label="@string/label_change_trans_password" />
+        <activity
+            android:name=".activity.person.ChangeTransSuccessActivity"
+            android:label="@string/label_change_trans_success" />
+        <activity
+            android:name=".activity.other.SearchFilterActivity"
+            android:label="@string/label_search_filter" />
+        <activity
+            android:name=".activity.person.RecommendRecordActivity"
+            android:label="@string/label_recommend_record" />
+        <activity
+            android:name=".activity.person.ShowTransResultActivity"
+            android:label="@string/label_show_trans_result" />
+        <activity
+            android:name=".activity.other.ChooseCountryActivity"
+            android:label="@string/label_choose_country" />
+        <activity android:name=".activity.other.CommonAgreementActivity" />
+        <activity android:name=".activity.person.ShowInviteCodeActivity" />
+        <activity android:name=".activity.person.InviteRewardActivity" />
+        <activity android:name=".activity.person.InvitePetGameActivity" />
+        <activity
+            android:name=".activity.other.SwitchLocaleActivity"
+            android:configChanges="keyboard|screenSize|orientation|locale|layoutDirection" />
+        <activity android:name=".activity.financing.person.StockWarnRecodeActivity" />
+        <activity android:name=".activity.financing.person.StockWarnActivity" />
+        <activity android:name=".activity.financing.person.RemindFrequencyActivity" />
+        <activity
+            android:name=".activity.financing.market.KLineActivity"
+            android:configChanges="keyboard|screenSize|orientation|locale|layoutDirection" />
+        <activity android:name=".activity.financing.common.DealActivity" />
+        <activity android:name=".activity.financing.common.NewStockActivity" />
+        <activity android:name=".activity.financing.market.BuySellActivity" />
+        <activity android:name=".activity.financing.common.TradeActivity" />
+        <activity android:name=".activity.financing.common.ChooseTradeActivity" />
+        <activity android:name=".activity.financing.common.LoginTradeActivity" />
+        <activity android:name=".activity.financing.person.NewsActivity" />
+        <activity android:name=".activity.financing.common.NoDataActivity" />
+        <activity android:name=".activity.financing.person.SettingActivity" />
+        <activity android:name=".activity.financing.person.MessageAlertActivity" />
+        <activity android:name=".activity.financing.person.SwitchLocaleInnerActivity" />
+        <activity android:name=".activity.financing.person.SwitchModeActivity" />
+        <activity android:name=".activity.financing.person.SwitchColorActivity" />
+        <activity android:name=".activity.financing.person.RefreshRateActivity" />
+        <activity android:name=".activity.financing.person.SafetyLockActivity" />
+        <activity android:name=".activity.financing.person.AboutInnerActivity" />
+        <activity
+            android:name=".activity.financing.market.AddSharesActivity"
+            android:noHistory="true" />
+        <activity android:name=".activity.financing.common.OrderChatActivity" />
+        <activity android:name=".activity.financing.common.MoneyCenterActivity" />
+        <activity android:name=".activity.financing.common.CommonAgreementInnerActivity" />
+        <activity android:name=".activity.financing.person.FeedbackActivity" />
+        <activity android:name=".activity.financing.person.MyCollectionActivity" />
+        <activity android:name=".activity.login.RegisterSuccessActivity" />
+        <activity android:name=".activity.login.ResetPasswordActivity" />
+        <activity android:name=".activity.safety.SafetyProtectActivity" />
+        <!--
+         <activity
+             android:name=".flutter.FlutterContainerActivity"
+             android:theme="@style/SlowLoadingTheme">
+             <meta-data
+                 android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
+                 android:value="true" />
+         </activity>
+        -->
+        <activity android:name=".activity.safety.FaceLockActivity" />
+        <activity
+            android:name=".activity.safety.ScreenLockActivity"
+            android:noHistory="true" />
+        <activity android:name=".activity.safety.FingerprintLockActivity" />
+        <activity android:name=".activity.safety.GestureLockActivity" />
+        <activity android:name=".activity.safety.GestureSettingActivity" />
+        <activity
+            android:name=".activity.financing.market.KLineLandActivity"
+            android:configChanges="keyboard|screenSize|orientation|locale|layoutDirection" />
+        <activity android:name=".activity.financing.market.KLineExponentActivity" />
+        <activity android:name=".activity.financing.market.TurbineActivity" />
+        <activity android:name=".activity.financing.market.BullBearSyndromeActivity" />
+        <activity android:name=".activity.financing.market.FinancableStockActivity" />
+        <activity android:name=".activity.financing.market.SectionChangeRateActivity" />
+        <activity android:name=".activity.financing.market.IndustrySectorActivity" />
+        <activity android:name=".activity.financing.market.IndustryPartActivity" />
+        <activity android:name=".activity.financing.market.ConceptualPlateActivity" />
+        <activity android:name=".activity.financing.market.AllMarketStocksActivity" />
+        <activity android:name=".activity.financing.market.KLineComponentActivity" />
+        <activity android:name=".activity.financing.market.KLineLandExponentActivity" />
+        <activity android:name=".activity.financing.market.GoldenActivity" />
+        <activity android:name=".activity.financing.market.WithdrawActivity" />
+        <activity android:name=".wxapi.WXEntryActivity" android:exported="true" android:theme="@style/DialogAppTheme"/>
+        <activity android:name=".activity.financing.establish.OpenPreparationActivity" />
+        <activity android:name=".activity.financing.establish.CommitInfoBasicActivity" />
+        <activity android:name=".activity.financing.establish.UploadIdCardActivity" />
+        <activity android:name=".activity.financing.establish.CommitInfoMoreActivity" />
+        <activity android:name=".activity.financing.establish.VerifyBankCardActivity" />
+        <activity android:name=".activity.financing.establish.AgreementDeclareActivity" />
+        <activity android:name=".activity.financing.establish.FinancialPositionActivity" />
+        <activity android:name=".activity.financing.establish.InvestmentExperienceActivity" />
+        <activity android:name=".activity.financing.establish.SelectAccountActivity" />
+        <activity android:name=".activity.financing.establish.VerifyPasswordActivity" />
+        <activity android:name=".activity.financing.establish.SignatureAgreementActivity" />
+        <activity android:name=".activity.financing.establish.RiskDisclosureActivity" />
+        <activity android:name=".activity.financing.establish.UploadPhotoActivity" />
+        <activity android:name=".activity.financing.establish.SignatureNameActivity"  />
+        <activity android:name=".activity.financing.establish.SignatureNameConfirmActivity" />
+        <activity android:name=".activity.financing.establish.EstablishFinishActivity" />
+        <activity android:name=".wxapi.BindWXRegisterActivity" />
+
+        <!--android:process=":child"-->
+        <service
+            android:name=".services.IpJudgeService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

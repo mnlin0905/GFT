@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/view_padding_margin_48dp">
+
+                <com.linktech.gft.skin.MyLineMenuView
+                    style="@style/TextViewStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/skin_scaffold_deep_background_color"
+                    android:minHeight="@dimen/view_height_36dp"
+                    app:LineMenuView_for_calculation="off"
+                    app:LineMenuView_menu="其他資料披露"
+                    app:LineMenuView_menu_text_color="@color/skin_display1_color"
+                    app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/view_padding_margin_8dp"
+                    android:text="本人是該證券賬戶的最終且唯一的最終權益擁有人" />
+
+                <CheckBox
+                    android:id="@+id/cb_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingStart="@dimen/view_padding_margin_8dp"
+                    android:text="本人不是且和尊嘉證券（香港）有限公司或其聯營公司的董事或僱員沒有任何關係" />
+
+                <CheckBox
+                    android:id="@+id/cb_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingStart="@dimen/view_padding_margin_8dp"
+                    android:text="本人不是任何持牌法團或註冊機構的董事/職員" />
+
+                <CheckBox
+                    android:id="@+id/cb_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingStart="@dimen/view_padding_margin_8dp"
+                    android:text="本人沒有單獨或與配偶共同持有我司其他孖展賬戶35%（或以上）投票權" />
+
+                <CheckBox
+                    android:id="@+id/cb_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingStart="@dimen/view_padding_margin_8dp"
+                    android:text="本人不是聯合交易所參與者或者證監會的吃派人或註冊人的董事、僱員或認可人士" />
+
+                <CheckBox
+                    android:id="@+id/cb_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+                    android:layout_marginBottom="@dimen/view_padding_margin_48dp"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingStart="@dimen/view_padding_margin_8dp"
+                    android:text="本人不是美國公民或就稅務而言的美國居民" />
+
+                <!---->
+                <include layout="@layout/layout_common_dark_function_button" />
+
+                <!---->
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/view_padding_margin_20dp"
+                    android:drawableStart="@drawable/ic_establish_phone"
+                    android:drawablePadding="@dimen/view_padding_margin_10dp"
+                    android:text="@string/establish_server_phone"
+                    android:textColor="@color/skin_accent_color"
+                    android:textSize="@dimen/text_size_normal_14sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

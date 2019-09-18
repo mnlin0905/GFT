@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/view_padding_margin_16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="@dimen/view_padding_margin_16dp"
+            android:background="@drawable/dark_shape_bg_33364c_radius_4dp"
+            android:drawableLeft="@drawable/dark_icon_search"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/activity_choose_trade_search"
+            android:textColor="@color/dark_color_666986_3a4254"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_padding_margin_16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/activity_choose_trade_hint"
+            android:textColor="@color/dark_main_text_666986"
+            android:textSize="13sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/srl_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                app:srlAccentColor="?attr/colorAccent"
+                app:srlEnablePreviewInEditMode="true"
+                app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+                app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+                app:srlPrimaryColor="?attr/colorPrimary">
+                <!--列表-->
+                <com.linktech.gft.view.RecyclerViewWithEmptyView
+                    android:id="@+id/xrv_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color_white" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+            <!--空-->
+            <com.linktech.gft.view.RecyclerEmptyView
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

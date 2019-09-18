@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TextViewStandard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dark_layer_trans_bottom_divider_1dp">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:singleLine="true"
+        android:textColor="@color/dark_main_color_a9acbf"
+        android:textSize="@dimen/text_size_normal_14sp"
+        tools:text="14:55" />
+
+    <ImageView
+        android:id="@+id/iv_deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/icon_direction_gray"
+        />
+
+    <com.linktech.gft.skin.MyStockColorTextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/dark_color_f85d5a"
+        android:textSize="@dimen/text_size_normal_14sp"
+        tools:text="367.000" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/dark_main_color_a9acbf"
+        android:textSize="@dimen/text_size_normal_14sp"
+        tools:text="367" />
+
+    <ImageView
+        android:id="@+id/iv_type"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/icon_direction_up_green" />
+</LinearLayout>

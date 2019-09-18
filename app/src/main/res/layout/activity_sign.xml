@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_blue_6a38ed_7348f0"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/shape_bg_blue_top_radius_15dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:drawableLeft="@drawable/icon_qiandao"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/main_color_white"
+                        android:textSize="15sp"
+                        tools:text="本月累计签到 0 天" />
+
+                    <TextView
+                        android:id="@+id/tv_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/shape_bg_radius_5dp_color_white"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        tools:text="立即签到"
+                        android:textColor="@color/toolbar_second_color_primary"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <android.support.constraint.ConstraintLayout
+
+                android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl"
+                    android:background="@color/main_color_white">
+
+
+                    <TextView
+                        android:id="@+id/tv_one_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/icon_sign_star"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="22dp"
+                        android:textColor="@color/main_color_white"
+                        android:textSize="17sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/tv_two_image"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginRight="12dp"
+                        tools:text="0.3" />
+
+                    <TextView
+                        android:id="@+id/tv_one_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/text_88879b"
+                        android:textSize="12sp"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_one_image"
+                        app:layout_constraintRight_toRightOf="@id/tv_one_image"
+                        app:layout_constraintTop_toBottomOf="@id/tv_one_image"
+                        tools:text="当月连续签到3天" />
+
+                    <TextView
+                        android:id="@+id/tv_one_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_88879b"
+                        android:textSize="12sp"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_one_image"
+                        app:layout_constraintRight_toRightOf="@id/tv_one_image"
+                        app:layout_constraintTop_toBottomOf="@id/tv_one_day"
+                        tools:text="可额外领取爪力0.3" />
+
+                    <TextView
+                        android:id="@+id/tv_two_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_sign_star"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="22dp"
+                        android:textColor="@color/main_color_white"
+                        android:textSize="17sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_one_image"
+                        app:layout_constraintLeft_toRightOf="@id/tv_one_image"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginLeft="12dp"
+                        tools:text="0.7" />
+
+                    <TextView
+                        android:id="@+id/tv_two_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/text_88879b"
+                        android:textSize="12sp"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_two_image"
+                        app:layout_constraintRight_toRightOf="@id/tv_two_image"
+                        app:layout_constraintTop_toBottomOf="@id/tv_two_image"
+                        tools:text="当月连续签到3天" />
+
+                    <TextView
+                        android:id="@+id/tv_two_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_88879b"
+                        android:textSize="12sp"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_two_image"
+                        app:layout_constraintRight_toRightOf="@id/tv_two_image"
+                        app:layout_constraintTop_toBottomOf="@id/tv_one_day"
+                        tools:text="可额外领取爪力0.3" />
+
+                    <TextView
+                        android:id="@+id/tv_three_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/icon_sign_star"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="22dp"
+                        android:textColor="@color/main_color_white"
+                        android:textSize="17sp"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_one_image"
+                        app:layout_constraintTop_toBottomOf="@id/tv_one_power"
+                        tools:text="0.7" />
+
+                    <TextView
+                        android:id="@+id/tv_three_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/text_88879b"
+                        android:textSize="12sp"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_three_image"
+                        app:layout_constraintRight_toRightOf="@id/tv_three_image"
+                        app:layout_constraintTop_toBottomOf="@id/tv_three_image"
+                        tools:text="当月连续签到3天" />
+
+                    <TextView
+                        android:id="@+id/tv_three_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:textColor="@color/text_88879b"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_three_image"
+                        app:layout_constraintRight_toRightOf="@id/tv_three_image"
+                        app:layout_constraintTop_toBottomOf="@id/tv_three_day"
+                        tools:text="可额外领取爪力0.3" />
+
+                    <TextView
+                        android:id="@+id/tv_four_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_sign_star"
+                        android:paddingBottom="22dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/main_color_white"
+                        android:textSize="17sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_three_image"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_two_image"
+                        tools:text="0.7" />
+
+                    <TextView
+                        android:id="@+id/tv_four_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/text_88879b"
+                        android:textSize="12sp"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_four_image"
+                        app:layout_constraintRight_toRightOf="@id/tv_four_image"
+                        app:layout_constraintTop_toBottomOf="@id/tv_four_image"
+                        tools:text="当月连续签到3天" />
+
+                    <TextView
+                        android:id="@+id/tv_four_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:textColor="@color/text_88879b"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_four_image"
+                        app:layout_constraintRight_toRightOf="@id/tv_four_image"
+                        app:layout_constraintTop_toBottomOf="@id/tv_four_day"
+                        tools:text="可额外领取爪力0.3" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yuan"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginLeft="40dp"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yuan"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginRight="40dp"
+                    />
+            </RelativeLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eaeff5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/icon_shuoming"
+                    android:drawablePadding="6dp"
+                    android:text="@string/activity_sign_label_introduce"
+                    android:textColor="@color/black_text_cc3a4254"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.linktech.gft.view.DividerView
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#d7d9e4"
+                    app:layout_constraintBottom_toBottomOf="@id/tv0"
+                    app:layout_constraintLeft_toRightOf="@id/tv0"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv0" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/activity_sign_label_info"
+                    android:textColor="@color/toolbar_second_color_primary"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv0" />
+
+                <TextView
+                    android:id="@+id/tv_rule"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="2dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="#cc88879b"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/tv1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv1"
+                    tools:text="@string/activity_sign_info" />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

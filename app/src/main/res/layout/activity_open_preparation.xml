@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/skin_scaffold_deep_background_color"
+            android:minHeight="@dimen/view_height_36dp"
+            app:LineMenuView_menu="開戶前準備如下材料"
+            app:LineMenuView_menu_text_color="@color/skin_display1_color"
+            app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp" />
+
+        <!--身份证-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_14dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_establish_id_card" />
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="身份證"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:textColor="@color/skin_body1_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="在有效期內的本人二代身份證"
+                    android:textSize="@dimen/text_size_small_12sp"
+                    android:textColor="@color/skin_display1_color"
+                    android:layout_marginTop="@dimen/divider_line_width_2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--銀行卡-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_20dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_establish_bank_card" />
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="銀行卡"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:textColor="@color/skin_body1_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="本人大陸的銀聯借記卡"
+                    android:textSize="@dimen/text_size_small_12sp"
+                    android:textColor="@color/skin_display1_color"
+                    android:layout_marginTop="@dimen/divider_line_width_2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--住址證明-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_20dp"
+            android:gravity="start"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+            <ImageView
+                android:layout_marginTop="@dimen/divider_line_width_2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_establish_address" />
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="住址證明"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:textColor="@color/skin_body1_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="實際居住地址和身份證地址不同時需要住址證明。住址證明是三個月內包含本人名字和地址信息的對賬單，比如稅費、電費、銀行賬單等。"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textSize="@dimen/text_size_small_12sp"
+                    android:textColor="@color/skin_display1_color"
+                    android:layout_marginTop="@dimen/divider_line_width_2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--身份证-->
+        <LinearLayout
+            android:layout_marginBottom="@dimen/view_padding_margin_48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_20dp"
+            android:gravity="start"
+            android:paddingStart="@dimen/view_padding_margin_16dp"
+            android:paddingEnd="@dimen/view_padding_margin_16dp">
+
+            <ImageView
+                android:layout_marginTop="@dimen/divider_line_width_2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_establish_net" />
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="無線網絡"
+                    android:textSize="@dimen/text_size_normal_14sp"
+                    android:textColor="@color/skin_body1_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="建議在WiFi或4G、3G網絡環境下操作"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textSize="@dimen/text_size_small_12sp"
+                    android:textColor="@color/skin_display1_color"
+                    android:layout_marginTop="@dimen/divider_line_width_2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!---->
+        <include layout="@layout/layout_common_dark_function_button"/>
+
+        <!---->
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/view_padding_margin_20dp"
+            android:drawableStart="@drawable/ic_establish_phone"
+            android:textSize="@dimen/text_size_normal_14sp"
+            android:textColor="@color/skin_accent_color"
+            android:text="@string/establish_server_phone"
+            android:drawablePadding="@dimen/view_padding_margin_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

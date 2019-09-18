@@ -1,0 +1,20 @@
+<resources>
+    <!--间隔线宽度或高度,一般用于listView或者划线等地方-->
+    <dimen name="divider_line_width_1dp">1dp</dimen>
+    <dimen name="divider_line_width_2dp">2dp</dimen>
+
+    <!--自定义shape角弧度-->
+    <dimen name="drawable_shape_normal_radius_3dp">3dp</dimen>
+    <dimen name="drawable_shape_normal_radius_4dp">4dp</dimen>
+    <dimen name="drawable_shape_normal_radius_5dp">5dp</dimen>
+    <dimen name="drawable_shape_normal_radius_6dp">6dp</dimen>
+    <dimen name="drawable_shape_normal_radius_8dp">8dp</dimen>
+    <dimen name="drawable_shape_normal_radius_10dp">10dp</dimen>
+    <dimen name="drawable_shape_normal_radius_12dp">12dp</dimen>
+    <dimen name="drawable_shape_normal_radius_16dp">16dp</dimen>
+
+    <!---->
+    <dimen name="view_padding_margin_12dp">12dp</dimen>
+    <dimen name="view_padding_margin_24dp">24dp</dimen>
+
+</resources>

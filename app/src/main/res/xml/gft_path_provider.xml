@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--文件下载-->
+    <external-path
+        name="gft_rx_downloads"
+        path="Download"/>
+
+    <!--takephoto-->
+    <root-path path="" name="camera_photos"/>
+</paths>

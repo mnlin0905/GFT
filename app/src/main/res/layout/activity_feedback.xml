@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <!--附加内容-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_272a3f_ffffff">
+
+            <com.linktech.gft.view.WatchInputEditText
+                android:id="@+id/wiet_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_padding_margin_10dp"
+                android:layout_marginBottom="@dimen/prefer_view_height_48dp"
+                android:background="@color/transparent"
+                android:gravity="start|top"
+                android:hint="@string/activity_feedback_hint_message"
+                android:inputType="textMultiLine"
+                android:lineSpacingMultiplier="1.5"
+                android:lines="6"
+                android:maxLength="500"
+                android:padding="@dimen/view_padding_margin_16dp"
+                android:textColor="@color/skin_title_color"
+                android:textColorHint="@color/dark_main_text_666986"
+                android:textSize="@dimen/text_size_title_15sp" />
+
+            <!--已输入-->
+            <LinearLayout
+                style="@style/TextViewStandard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_feedback_input"
+                    android:textColor="@color/dark_main_text_666986"
+                    android:textSize="@dimen/text_size_title_15sp" />
+
+                <TextView
+                    android:id="@+id/tv_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/view_padding_margin_4dp"
+                    android:paddingEnd="@dimen/view_padding_margin_4dp"
+                    android:textColor="@color/dark_main_text_8144e5"
+                    android:textSize="@dimen/text_size_title_15sp"
+                    tools:text="500" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_feedback_size"
+                    android:textColor="@color/dark_main_text_666986"
+                    android:textSize="@dimen/text_size_title_15sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!---->
+        <com.linktech.gft.view.WatchInputEditText
+            android:id="@+id/wiet_phone"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_10dp"
+            android:layout_marginBottom="@dimen/view_padding_margin_40dp"
+            android:background="@color/dark_color_272a3f_ffffff"
+            android:hint="@string/activity_feedback_hint_phone"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/skin_title_color"
+            android:textColorHint="@color/dark_main_text_666986"
+            android:textSize="@dimen/text_size_title_15sp" />
+
+        <!--按钮-->
+        <include layout="@layout/layout_common_dark_function_button" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_32dp"
+            android:layout_marginTop="@dimen/view_padding_margin_16dp"
+            android:layout_marginEnd="@dimen/view_padding_margin_32dp"
+            android:gravity="center"
+            android:text="@string/activity_feedback_serve"
+            android:textColor="@color/dark_main_text_666986"
+            android:textSize="@dimen/text_size_title_15sp" />
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

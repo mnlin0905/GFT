@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--信息展示区域-->
+    <!--android:stateListAnimator="@null"-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:titleEnabled="false">
+            <!--卡片布局/兑换人民币-->
+            <LinearLayout
+                android:id="@+id/ll_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_my_asset_header"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="1">
+
+                <ImageView
+                    android:transitionName="@string/transition_name_logo"
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/view_height_32dp"
+                    android:layout_height="@dimen/view_height_32dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_54dp"
+                    tools:src="@drawable/icon_usdp_circle"/>
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    tools:text="0"
+                    android:textColor="@color/main_color_white"
+                    android:textSize="@dimen/text_size_35sp"/>
+
+                <TextView
+                    android:id="@+id/tv_convent_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                    tools:text="≈$0"
+                    android:textColor="@color/main_color_white"
+                    android:textSize="@dimen/text_size_small_12sp"/>
+            </LinearLayout>
+
+            <!--toolbar-->
+            <com.linktech.gft.view.TitleCenterToolbar
+                android:background="@color/toolbar_color_primary"
+                android:id="@+id/toolbar"
+                style="@style/NoSpaceActionBarTheme"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:transitionName="@string/transition_name_toolbar"
+                app:layout_collapseMode="pin"
+                app:titleTextColor="@color/main_color_white"
+                app:navigationIcon="@drawable/ic_arrow_back_white"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color_white"
+        android:overScrollMode="always"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--添加资产label-->
+            <TextView
+                android:id="@+id/tv_label_add"
+                style="@style/TextViewStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_padding_margin_32dp"
+                android:paddingEnd="@dimen/view_padding_margin_20dp"
+                android:paddingStart="@dimen/view_padding_margin_24dp"
+                android:text="@string/activity_wallet_record_near_deal_record"
+                android:textColor="@color/black_text_9094c2"
+                android:textSize="@dimen/text_size_small_12sp"/>
+
+            <!--列表数据-->
+            <FrameLayout
+                android:paddingBottom="@dimen/view_padding_margin_32dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/srl_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    app:srlAccentColor="?attr/colorAccent"
+                    app:srlEnablePreviewInEditMode="true"
+                    app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+                    app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+                    app:srlPrimaryColor="?attr/colorPrimary">
+                    <!--列表-->
+                    <com.linktech.gft.view.RecyclerViewWithEmptyView
+                        android:id="@+id/xrv_record"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="wrap_content"
+                        android:background="@color/main_color_white"/>
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+                <!--空-->
+                <com.linktech.gft.view.RecyclerEmptyView
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/view_padding_margin_16dp"/>
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--转账-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_transfer"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_padding_margin_40dp"
+        app:cardBackgroundColor="@color/skin_title_color"
+        app:cardCornerRadius="@dimen/drawable_shape_normal_radius_5dp"
+        app:layout_anchor="@id/ll_content"
+        app:layout_anchorGravity="top|start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_transfer_white"
+            android:drawablePadding="@dimen/view_padding_margin_10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/view_padding_margin_12dp"
+            android:paddingTop="@dimen/view_padding_margin_12dp"
+            android:text="@string/function_transfer"
+            android:textColor="@color/black_text_34363d"
+            android:textSize="@dimen/text_size_title_15sp"/>
+    </android.support.v7.widget.CardView>
+
+    <!--收款-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_gathering"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/view_padding_margin_40dp"
+        app:cardBackgroundColor="@color/function_btn_actived"
+        app:cardCornerRadius="@dimen/drawable_shape_normal_radius_5dp"
+        app:layout_anchor="@id/ll_content"
+        app:layout_anchorGravity="top|end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_gathering_white"
+            android:drawablePadding="@dimen/view_padding_margin_10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/view_padding_margin_12dp"
+            android:paddingTop="@dimen/view_padding_margin_12dp"
+            android:text="@string/function_gathering"
+            android:textColor="@color/black_text_34363d"
+            android:textSize="@dimen/text_size_title_15sp"/>
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

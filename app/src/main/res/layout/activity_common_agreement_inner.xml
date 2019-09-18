@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <FrameLayout
+            android:id="@id/id_fl_webview_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_line_width_1dp" />
+
+        <!--功能键位-->
+        <LinearLayout
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_272a3f_ffffff"
+            android:orientation="horizontal">
+            <!--分享-->
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/dark_selector_share_active_not" />
+
+            <!--收藏-->
+            <ImageView
+                android:id="@+id/iv_collect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/dark_selector_collect_active_not" />
+
+            <!--点赞-->
+            <FrameLayout
+                android:id="@+id/fl_agree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/dark_selector_agree_active_not"
+                    android:drawablePadding="@dimen/view_padding_margin_4dp"
+                    android:gravity="center"
+                    android:text="@string/activity_common_agreement_inner_agree"
+                    android:textColor="@color/dark_color_a9acbf"
+                    android:textSize="@dimen/text_size_smallest_11sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

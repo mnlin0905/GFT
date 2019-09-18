@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar"/>
+
+    <!---->
+    <com.linktech.gft.view.ClearEditText
+        android:id="@+id/et_wallet_name"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_10dp"
+        android:background="@color/main_color_white"
+        android:drawablePadding="@dimen/view_padding_margin_16dp"
+        android:hint="@string/activity_change_wallet_name_hint"
+        android:inputType="text"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/view_padding_margin_16dp"
+        android:paddingStart="@dimen/view_padding_margin_16dp"
+        android:textSize="@dimen/text_size_title_15sp"/>
+</LinearLayout>

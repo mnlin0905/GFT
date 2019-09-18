@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/srl_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srlAccentColor="?attr/colorAccent"
+                app:srlEnablePreviewInEditMode="true"
+                app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+                app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+                app:srlPrimaryColor="?attr/colorPrimary">
+                <!--列表-->
+                <com.linktech.gft.view.RecyclerViewWithEmptyView
+                    android:id="@+id/xrv_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="@dimen/prefer_view_height_48dp" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+            <com.linktech.gft.view.RecyclerEmptyView
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

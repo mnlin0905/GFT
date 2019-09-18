@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mc_window_background_gray_f5f5fb"
+    android:clickable="true"
+    android:focusable="true"
+    tools:openDrawer="start"
+    tools:ignore="UnusedIds">
+
+    <!--主内容区域-->
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--滑动布局(放置Fragment)-->
+        <com.linktech.gft.view.DisableScrollViewPager
+            android:id="@+id/vp_fragments"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <!--底部导航栏-->
+        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+            android:id="@+id/bnve_navigation"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_white"
+            android:minHeight="@dimen/prefer_view_height_48dp"
+            app:itemTextColor="@color/selector_main_color"
+            app:menu="@menu/menu_main_navigation"/>
+    </LinearLayout>
+
+    <!--左侧滑栏-->
+    <FrameLayout
+        android:id="@+id/fl_start_slide_bar"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/main_color_white">
+        <!--头部和菜单-->
+        <com.linktech.gft.view.DisMoveNavigationView
+            android:id="@+id/nv_start_slide_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|top|end"
+            android:background="@color/main_color_white"
+            app:elevation="0dp"
+            app:headerLayout="@layout/layout_slide_header_start"
+            app:itemTextColor="@color/black_text_454553"
+            app:menu="@menu/menu_home_start_slide_bar"/>
+
+        <!--尾部-->
+        <TextView
+            android:id="@+id/tv_exit"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start|end"
+            android:gravity="center"
+            tools:text="重新登录"
+            android:textColor="@color/main_color_red_fe2126"
+            android:textSize="@dimen/text_size_title_15sp"/>
+    </FrameLayout>
+
+    <!--右侧滑栏-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nv_end_slide_bar"
+        android:layout_width="@dimen/view_height_200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/main_color_white"
+        app:elevation="0dp"
+        app:headerLayout="@layout/layout_slide_header_end"
+        app:itemTextColor="@color/selector_main_end_slide_menu"
+        app:menu="@menu/menu_home_end_slide_bar"/>
+</android.support.v4.widget.DrawerLayout>

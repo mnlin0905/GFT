@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:orientation="vertical">
+
+        <!--股票類型名字時間-->
+        <com.linktech.gft.skin.MyTitleCenterToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ToolbarTheme_menu_text_white"
+            android:transitionName="@string/transition_name_toolbar"
+            app:contentInsetEnd="@dimen/view_padding_margin_16dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll|snap"
+            app:navigationIcon="@drawable/dark_icon_arrow_back"
+            app:popupTheme="@style/PopupThemeLight"
+            app:titleMarginStart="0dp"
+            app:titleTextColor="@color/transparent">
+
+            <!--股票名字 代碼時間-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+                <!--股票名字-->
+                <TextView
+                    android:id="@+id/tv_shares_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="@color/skin_title_color"
+                    android:textSize="@dimen/text_size_17sp" />
+
+                <!--交易時間-->
+                <TextView
+                    android:id="@+id/tv_share_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_4dp"
+                    android:text="--"
+                    android:textColor="@color/dark_color_a9acbf_666986"
+                    android:textSize="@dimen/text_size_small_12sp" />
+            </LinearLayout>
+
+
+        </com.linktech.gft.skin.MyTitleCenterToolbar>
+
+        <!--可滾動內容-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/dark_color_1d2037_f4f4f4"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--股票交易資訊總覽-->
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_color_272a3f_ffffff"
+                    android:padding="@dimen/view_padding_margin_16dp">
+
+                    <!---->
+                    <com.linktech.gft.skin.MyStockColorTextView
+                        android:id="@+id/tv_current_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/dark_color_f85d5a"
+                        android:textSize="@dimen/text_size_20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!---->
+                    <com.linktech.gft.skin.MyStockColorTextView
+                        android:id="@+id/tv_change_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_12dp"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/dark_color_f85d5a"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_current_price"
+                        app:layout_constraintStart_toEndOf="@id/tv_current_price" />
+
+                    <com.linktech.gft.skin.MyStockColorTextView
+                        android:id="@+id/tv_change_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_12dp"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/dark_color_f85d5a"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_change_price"
+                        app:layout_constraintStart_toEndOf="@id/tv_change_price" />
+
+                    <!--圖示組-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|end"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_current_price"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_change_rate"
+                        app:layout_constraintTop_toTopOf="@id/tv_current_price">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/view_padding_margin_4dp"
+                            android:src="@drawable/dark_icon_k_first" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/view_padding_margin_4dp"
+                            android:src="@drawable/dark_icon_k_second" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/view_padding_margin_4dp"
+                            android:src="@drawable/dark_icon_k_third" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/dark_icon_k_four" />
+                    </LinearLayout>
+
+                    <!--最高,最低,今開,昨收,成交額,換手率-->
+                    <TextView
+                        android:id="@+id/tv_label_max_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                        android:singleLine="true"
+                        android:text="@string/activity_k_line_label_max"
+                        android:textColor="@color/dark_main_text_666986"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintStart_toStartOf="@id/tv_current_price"
+                        app:layout_constraintTop_toBottomOf="@id/tv_current_price" />
+
+                    <com.linktech.gft.skin.MyStockColorTextView
+                        android:id="@+id/tv_max_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_4dp"
+                        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/dark_color_f85d5a"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_label_max_price"
+                        app:layout_constraintStart_toEndOf="@id/tv_label_max_price" />
+
+                    <TextView
+                        android:id="@+id/tv_label_open_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                        android:singleLine="true"
+                        android:text="@string/activity_k_line_label_open"
+                        android:textColor="@color/dark_main_text_666986"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_max_price"
+                        app:layout_constraintStart_toEndOf="@id/tv_max_price" />
+
+                    <com.linktech.gft.skin.MyStockColorTextView
+                        android:id="@+id/tv_open_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_4dp"
+                        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/dark_color_f85d5a"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_label_open_price"
+                        app:layout_constraintStart_toEndOf="@id/tv_label_open_price" />
+
+                    <TextView
+                        android:id="@+id/tv_label_success_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_24dp"
+                        android:singleLine="true"
+                        android:text="@string/activity_k_line_label_success_amount"
+                        android:textColor="@color/dark_main_text_666986"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_open_price"
+                        app:layout_constraintStart_toEndOf="@id/tv_open_price" />
+
+                    <TextView
+                        android:id="@+id/tv_success_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_4dp"
+                        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/dark_color_b0b3cd_272a3f"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_label_success_amount"
+                        app:layout_constraintStart_toEndOf="@id/tv_label_success_amount" />
+
+                    <!--詳細資訊-->
+                    <ImageView
+                        android:id="@+id/iv_more_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/view_padding_margin_16dp"
+                        android:paddingTop="@dimen/view_padding_margin_8dp"
+                        android:paddingEnd="@dimen/view_padding_margin_16dp"
+                        android:paddingBottom="@dimen/view_padding_margin_8dp"
+                        android:src="@drawable/dark_icon_more_vertical"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_circulate_rate"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/tv_success_amount" />
+
+                    <!--底部三部分-->
+                    <TextView
+                        android:id="@+id/tv_label_min_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_padding_margin_6dp"
+                        android:singleLine="true"
+                        android:text="@string/activity_k_line_label_min"
+                        android:textColor="@color/dark_main_text_666986"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintStart_toStartOf="@id/tv_label_max_price"
+                        app:layout_constraintTop_toBottomOf="@id/tv_label_max_price" />
+
+                    <TextView
+                        android:id="@+id/tv_min_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_4dp"
+                        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/dark_color_b0b3cd_272a3f"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_label_min_price"
+                        app:layout_constraintStart_toEndOf="@id/tv_label_min_price" />
+
+                    <TextView
+                        android:id="@+id/tv_label_close_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/activity_k_line_label_close"
+                        android:textColor="@color/dark_main_text_666986"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_min_price"
+                        app:layout_constraintStart_toStartOf="@id/tv_label_open_price" />
+
+                    <com.linktech.gft.skin.MyStockColorTextView
+                        android:id="@+id/tv_close_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_4dp"
+                        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/dark_color_f85d5a"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_label_close_price"
+                        app:layout_constraintStart_toEndOf="@id/tv_label_close_price" />
+
+                    <TextView
+                        android:id="@+id/tv_label_circulate_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/activity_k_line_label_circulate"
+                        android:textColor="@color/dark_main_text_666986"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_close_price"
+                        app:layout_constraintStart_toStartOf="@id/tv_label_success_amount" />
+
+                    <TextView
+                        android:id="@+id/tv_circulate_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_padding_margin_4dp"
+                        android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/dark_color_b0b3cd_272a3f"
+                        android:textSize="@dimen/text_size_small_12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_label_circulate_rate"
+                        app:layout_constraintStart_toEndOf="@id/tv_label_circulate_rate" />
+                </android.support.constraint.ConstraintLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                    android:background="@color/dark_color_8c33364c_ffffff">
+                    <!--切換間隔-->
+                    <com.linktech.gft.view.DisallowClickTabLayout
+                        android:id="@+id/tl_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/prefer_view_height_48dp"
+                        app:tabBackground="@drawable/dark_ripple_click_borderless_deep"
+                        app:tabGravity="fill"
+                        app:tabIndicatorColor="@color/dark_main_text_8144e5"
+                        app:tabIndicatorHeight="@dimen/tab_layout_indicator_height_2dp"
+                        app:tabMode="fixed"
+                        app:tabPaddingBottom="@dimen/view_padding_margin_8dp"
+                        app:tabPaddingTop="@dimen/view_padding_margin_8dp"
+                        app:tabSelectedTextColor="@color/dark_main_text_8144e5"
+                        app:tabTextAppearance="@style/TextViewTabLayout"
+                        app:tabTextColor="@color/dark_main_text_7c7fa2" />
+                </FrameLayout>
+
+                <!--圖表/深度圖-->
+                <FrameLayout
+                    android:transitionName="@string/transition_name_kline"
+                    android:id="@+id/fl_chart_multiply"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:background="@color/dark_color_272a3f_ffffff">
+                    <!--一般的k圖-->
+                    <com.linktech.gft.skin.MyKChartView
+                        android:id="@+id/kcv_chart_view"
+                        app:kc_background_color="@color/skin_scaffold_background_color"
+                        app:kc_selected_line_color="@color/skin_accent_color"
+                        app:kc_grid_line_color="@color/skin_divider_color"
+                        app:kc_text_color="@color/skin_body1_color"
+                        app:kc_tab_background_color="@color/skin_scaffold_deep_background_color"
+                        app:kc_selector_background_color="@color/skin_scaffold_deep_background_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" />
+
+                    <!--分時圖-->
+                    <LinearLayout
+                        android:id="@+id/ll_minute_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/view_padding_margin_8dp"
+                        android:paddingBottom="@dimen/view_padding_margin_8dp"
+                        android:visibility="visible">
+
+                        <com.linktech.gft.skin.MyMinuteChartView
+                            android:id="@+id/mcv_minute_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <!--底部新聞類型消息-->
+                <com.linktech.gft.view.TabPagerCombineLayout
+                    android:id="@+id/tpcl_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                    app:layout="@layout/dark_layout_tab_pager_combine_k_line_exponent" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

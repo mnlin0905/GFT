@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TextViewStandard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+    android:paddingTop="@dimen/view_padding_margin_12dp"
+    android:paddingBottom="@dimen/view_padding_margin_12dp">
+
+    <!---->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/skin_title_color"
+        android:textSize="@dimen/text_size_normal_14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="---" />
+
+    <!--bottom-->
+    <TextView
+        android:id="@+id/tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_4dp"
+        android:drawablePadding="@dimen/view_padding_margin_4dp"
+        android:singleLine="true"
+        android:textColor="@color/dark_main_text_666986"
+        android:textSize="@dimen/text_size_small_12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        android:drawableStart="@drawable/dark_icon_market_hk"
+        android:text="---" />
+
+    <!--right-->
+    <com.linktech.gft.skin.MyStockColorTextView
+        android:id="@+id/tv_change_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/view_padding_margin_4dp"
+        android:singleLine="true"
+        android:text="--"
+        android:textSize="@dimen/text_size_normal_14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--center-->
+    <com.linktech.gft.skin.MyStockColorTextView
+        android:id="@+id/tv_change_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/view_padding_margin_48dp"
+        android:singleLine="true"
+        android:text="--"
+        android:textSize="@dimen/text_size_normal_14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_change_amount"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

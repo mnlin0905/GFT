@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--头部-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar_second_color_primary"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.linktech.gft.view.TitleCenterToolbar
+                android:id="@+id/toolbar"
+                style="@style/ToolbarTheme_menu_text_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ToolbarTheme_menu_text_white"
+                android:transitionName="@string/transition_name_toolbar"
+                app:layout_scrollFlags="exitUntilCollapsed|scroll|snap"
+                app:navigationIcon="@drawable/ic_arrow_back_white"
+                app:popupTheme="@style/PopupThemeLight"
+                app:titleMarginStart="0dp"
+                app:titleTextColor="@color/transparent"/>
+
+            <!--显示/隐藏-->
+            <LinearLayout
+                android:paddingStart="@dimen/view_padding_margin_16dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_my_asset_all_asset"
+                    android:textColor="@color/main_color_white"
+                    android:textSize="@dimen/text_size_13sp"/>
+
+                <ImageView
+                    android:paddingStart="@dimen/view_padding_margin_8dp"
+                    android:id="@+id/iv_eye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/view_padding_margin_8dp"
+                    android:paddingEnd="@dimen/view_padding_margin_16dp"
+                    android:paddingTop="@dimen/view_padding_margin_8dp"
+                    android:src="@drawable/selector_eye_open_close_white"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_total_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                android:textColor="@color/main_color_white"
+                android:textSize="34sp"
+                tools:text="123.2378"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/view_padding_margin_8dp"
+                android:id="@+id/tv_convent_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_color_white"
+                android:textSize="@dimen/text_size_13sp"
+                tools:text="≈ $0.00"/>
+
+            <!--占位-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_padding_margin_20dp"
+                android:layout_weight="1"
+                android:visibility="invisible"/>
+
+            <!---->
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/toolbar_some_bg">
+
+                <!--label-可用-->
+                <TextView
+                    android:id="@+id/tv_label_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:text="@string/activity_my_asset_available"
+                    android:textColor="@color/main_color_white_80ffffff"
+                    android:textSize="@dimen/text_size_13sp"
+                    app:layout_constraintEnd_toEndOf="@id/v"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_available_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_padding_margin_12dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_4dp"
+                    android:textColor="@color/main_color_white"
+                    android:textSize="@dimen/text_size_13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/tv_label_available"
+                    app:layout_constraintStart_toStartOf="@id/tv_label_available"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_available"
+                    tools:text="48.2213"/>
+
+                <View
+                    android:id="@+id/v"
+                    android:layout_width="@dimen/divider_line_width_1dp"
+                    android:layout_height="@dimen/view_height_40dp"
+                    android:background="@drawable/shape_bg_dash_line"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_label_frozen"
+                    app:layout_constraintStart_toEndOf="@id/tv_label_available"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <!--label-冻结-->
+                <TextView
+                    android:id="@+id/tv_label_frozen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding_margin_12dp"
+                    android:text="@string/activity_my_asset_freeze"
+                    android:textColor="@color/main_color_white_80ffffff"
+                    android:textSize="@dimen/text_size_13sp"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tv_label_available"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/v"/>
+
+                <TextView
+                    android:id="@+id/tv_frozen_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_padding_margin_12dp"
+                    android:layout_marginTop="@dimen/view_padding_margin_4dp"
+                    android:textColor="@color/main_color_white"
+                    android:textSize="@dimen/text_size_13sp"
+                    app:layout_constraintBaseline_toBaselineOf="@id/tv_available_quantity"
+                    app:layout_constraintEnd_toEndOf="@id/tv_label_frozen"
+                    app:layout_constraintStart_toStartOf="@id/tv_label_frozen"
+                    tools:text="48.2213"/>
+
+                <!--规则标志-->
+                <ImageView
+                    android:id="@+id/tv_rule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/view_padding_margin_8dp"
+                    android:paddingEnd="@dimen/view_padding_margin_4dp"
+                    android:paddingStart="@dimen/view_padding_margin_16dp"
+                    android:paddingTop="@dimen/view_padding_margin_8dp"
+                    android:src="@drawable/icon_crowd_regular"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_label_frozen"
+                    app:layout_constraintEnd_toStartOf="@id/tv_label_frozen"
+                    app:layout_constraintTop_toTopOf="@id/tv_label_frozen"/>
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eaeff5"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/prefer_view_height_48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/activity_crowd_statistics_time"
+                android:textColor="@color/black_text_cc3a4254"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/activity_crowd_statistics_name"
+                android:textColor="@color/black_text_cc3a4254"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/activity_crowd_statistics_amount"
+                android:textColor="@color/black_text_cc3a4254"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.linktech.gft.view.RecyclerEmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</FrameLayout>

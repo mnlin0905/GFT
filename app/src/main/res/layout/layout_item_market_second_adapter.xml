@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/skin_scaffold_background_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/view_padding_margin_16dp"
+    android:paddingBottom="@dimen/view_padding_margin_12dp">
+
+    <ImageView
+        android:id="@+id/iv_second_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        tools:src="@drawable/dark_icon_market_item_second_one"/>
+
+    <TextView
+        android:id="@+id/iv_second_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding_margin_10dp"
+        android:paddingStart="@dimen/view_padding_margin_8dp"
+        android:paddingEnd="@dimen/view_padding_margin_8dp"
+        android:singleLine="true"
+        tools:text="新股日曆"
+        android:textColor="@color/dark_color_a9acbf"
+        android:textSize="@dimen/text_size_normal_14sp" />
+</LinearLayout>

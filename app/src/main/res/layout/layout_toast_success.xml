@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:background="@drawable/big_toast_success"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingLeft="100dp"
+              android:paddingTop="16dp"
+              android:paddingRight="100dp"
+              android:paddingBottom="16dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/toast_success"/>
+
+    <com.linktech.gft.view.FormatDoubleTextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:shadowColor="#BB000000"
+        android:shadowRadius="2.75"
+        tools:text="@string/layout_toast_success_text"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

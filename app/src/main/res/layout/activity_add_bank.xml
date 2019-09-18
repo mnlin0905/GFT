@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/dark_layout_top_bar"/>
+
+    <com.linktech.gft.skin.MyLineMenuView
+        android:id="@+id/lmv_currency"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:LineMenuView_menu_text_color="#0d022b"
+        app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+        app:LineMenuView_plugin="text"
+        tools:LineMenuView_menu="CNY"
+        tools:LineMenuView_navigation="@drawable/icon_arrow_tip_right_white"/>
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <com.linktech.gft.skin.MyLineMenuView
+        android:id="@+id/lmv_country"
+        style="@style/TextViewStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        app:LineMenuView_brief="@string/activity_bind_mobile_china"
+        app:LineMenuView_brief_text_color="#0d022b"
+        app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+        app:LineMenuView_menu="@string/activity_bind_mobile_country"
+        app:LineMenuView_menu_text_color="#0d022b"
+        app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+        app:LineMenuView_navigation="@drawable/icon_arrow_right"
+        app:LineMenuView_plugin="text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/activity_add_bank_name"
+            android:textColor="#565d6e"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/activity_add_bank_please_name"
+            android:inputType="text"
+            android:paddingLeft="4dp"
+            android:textColor="#0d202b"/>
+    </LinearLayout>
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/activity_add_bank_open_bank"
+            android:textColor="#565d6e"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_bank_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/activity_add_bank_please_bank_name"
+            android:inputType="text"
+            android:paddingLeft="4dp"
+            android:textColor="#0d202b"/>
+    </LinearLayout>
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/activity_add_bank_open_branch_bank"
+            android:textColor="#565d6e"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_branch_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/activity_add_bank_please_branch_name"
+            android:inputType="text"
+            android:paddingLeft="4dp"
+            android:textColor="#0d202b"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/activity_add_bank_bank_number"
+            android:textColor="#565d6e"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_bank_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/activity_add_bank_please_bank_number"
+            android:inputType="number"
+            android:paddingLeft="4dp"
+            android:textColor="#0d202b"/>
+    </LinearLayout>
+
+    <com.linktech.gft.view.DividerView
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/activity_add_bank_sure_number"
+            android:textColor="#565d6e"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_bank_confirm_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/activity_add_bank_please_bank_number_again"
+            android:inputType="number"
+            android:paddingLeft="4dp"
+            android:textColor="#0d202b"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_common_dark_function_button"/>
+
+</LinearLayout>

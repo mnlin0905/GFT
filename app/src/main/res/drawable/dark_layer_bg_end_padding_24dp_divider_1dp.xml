@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/skin_scaffold_background_color" />
+
+    <item
+        android:bottom="@dimen/view_padding_margin_24dp"
+        android:gravity="end"
+        android:top="@dimen/view_padding_margin_24dp">
+        <shape>
+            <size android:width="@dimen/divider_line_width_1dp" />
+            <solid android:color="@color/skin_divider_color" />
+        </shape>
+    </item>
+</layer-list>

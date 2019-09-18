@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_color_272a3f_ffffff"
+    android:orientation="vertical">
+
+    <!---->
+    <include layout="@layout/dark_layout_top_bar" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_stock_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="00700"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_stock_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="腾讯控股"
+            android:textColor="@color/dark_color_ffffff_272a3f"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_stock_code"
+            app:layout_constraintLeft_toRightOf="@id/tv_stock_code" />
+        <!---->
+        <com.linktech.gft.skin.MyStockColorTextView
+            android:id="@+id/tv_current_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:text="123.321"
+            android:textColor="@color/dark_color_f85d5a"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_stock_code"
+            app:layout_constraintTop_toBottomOf="@id/tv_stock_code" />
+
+        <!---->
+        <com.linktech.gft.skin.MyStockColorTextView
+            android:id="@+id/tv_change_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_12dp"
+            android:singleLine="true"
+            android:text="-0.434"
+            android:textColor="@color/dark_color_f85d5a"
+            android:textSize="@dimen/text_size_small_12sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_current_price"
+            app:layout_constraintStart_toEndOf="@id/tv_current_price" />
+
+        <com.linktech.gft.skin.MyStockColorTextView
+            android:id="@+id/tv_change_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_padding_margin_12dp"
+            android:singleLine="true"
+            android:text="-1.236%"
+            android:textColor="@color/dark_color_f85d5a"
+            android:textSize="@dimen/text_size_small_12sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_change_price"
+            app:layout_constraintStart_toEndOf="@id/tv_change_price" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dark_color_33364c_f4f2f6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="时间"
+            android:textColor="@color/dark_main_text_666986"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="成交价"
+            android:textColor="@color/dark_main_text_666986"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="成交量"
+            android:textColor="@color/dark_main_text_666986"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="方向"
+            android:textColor="@color/dark_main_text_666986"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+    <!--列表-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/srl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlAccentColor="?attr/colorAccent"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlFooterHeight="@dimen/prefer_view_height_48dp"
+            app:srlHeaderHeight="@dimen/prefer_view_height_48dp"
+            app:srlPrimaryColor="?attr/colorPrimary">
+            <!--列表-->
+            <com.linktech.gft.view.RecyclerViewWithEmptyView
+                android:id="@+id/xrv_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/prefer_view_height_48dp" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <com.linktech.gft.view.RecyclerEmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

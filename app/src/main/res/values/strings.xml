@@ -1,0 +1,894 @@
+<resources>
+    <string name="app_name">港付通</string>
+
+    <!--description-->
+    <string name="app_description">Ecology生态,包含paws各种应用结合</string>
+
+    <!--通用的功能:按钮,可点击的文本等-->
+    <string name="function_known">明白</string>
+    <string name="function_submit">提交</string>
+    <string name="function_next_step">下一步</string>
+    <string name="function_save">保存</string>
+    <string name="function_finish">完成</string>
+    <string name="function_set">设置</string>
+    <string name="function_to_set">去设置</string>
+    <string name="function_change">修改</string>
+    <string name="function_invite_friend">邀请好友</string>
+    <string name="function_login">登录</string>
+    <string name="function_logout">退出</string>
+    <string name="function_forget_pwd_">忘记密码?</string>
+    <string name="function_cancel">取消</string>
+    <string name="function_sure">确定</string>
+    <string name="function_load">加载</string>
+    <string name="function_copy">复制</string>
+    <string name="function_bind_new_email">绑定新邮箱</string>
+    <string name="function_reset">重置</string>
+    <string name="function_bind_new_mobile">绑定新手机号</string>
+    <string name="function_verify">验证</string>
+    <string name="function_at_once_import">马上导入</string>
+    <string name="function_begin_import">开始导入</string>
+    <string name="function_import">导入</string>
+    <string name="function_create_wallet">创建钱包</string>
+    <string name="function_copy_secret_address">复制收款地址</string>
+    <string name="function_share_to">分享到</string>
+    <string name="function_confirm">确认</string>
+    <string name="function_delete">删除</string>
+    <string name="function_change_password">修改密码</string>
+    <string name="function_export_secret">导出私钥</string>
+    <string name="function_export_keystore">导出keystore</string>
+    <string name="function_gathering">收款</string>
+    <string name="function_transfer">转账</string>
+    <string name="function_confirm_transfer">确认转账</string>
+    <string name="function_revoke">撤销</string>
+    <string name="function_wait">等待</string>
+    <string name="function_abandon">放弃</string>
+    <string name="function_go">前往</string>
+    <string name="function_get_random_code">获取验证码</string>
+    <string name="function_photo">拍照</string>
+    <string name="function_to_login">去登录</string>
+    <string name="function_have_known">知道了</string>
+    <string name="function_turn_out">转出</string>
+    <string name="function_at_once_backup">立即备份</string>
+    <string name="function_show_qr_code">显示二维码</string>
+    <string name="function_close">关闭</string>
+    <string name="function_add">添加</string>
+    <string name="function_has_add">已添加</string>
+    <string name="function_processing">待审核</string>
+    <string name="function_approved">已通过</string>
+    <string name="function_rejected">拒绝</string>
+    <string name="function_revoked">已撤销</string>
+    <string name="function_completed">完成</string>
+    <string name="function_failed">未通过</string>
+
+    <!--action菜单功能,menu菜单-->
+    <string name="action_sign">奖励记录</string>
+    <string name="action_save">@string/function_save</string>
+    <string name="action_close">关闭</string>
+    <string name="action_search">搜索</string>
+    <string name="action_finish">@string/function_finish</string>
+    <string name="action_wallet">资产</string>
+    <string name="action_ecology">益享</string>
+    <string name="action_add">新增</string>
+    <string name="action_menu">菜单</string>
+    <string name="action_qr_scan">扫一扫</string>
+    <string name="action_contact">联系人</string>
+    <string name="action_wallet_manager">钱包管理</string>
+    <string name="action_asset_manage">资产管理</string>
+    <string name="action_bank_card">银行卡管理</string>
+    <string name="action_safety_center">安全中心</string>
+    <string name="action_recode">记录</string>
+    <string name="action_setting">@string/function_set</string>
+    <string name="action_about">关于</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_browser">在浏览器打开</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_switch_language">切换语言</string>
+
+    <!--activity标题所在位置-->
+    <string name="label_take_out_platform" formatted="false">转出&#160;%s</string>
+    <string name="label_take_out_currency_record" formatted="false">转出%s记录</string>
+    <string name="label_take_out_record_detail">转出详情</string>
+    <string name="label_soft_setting">@string/action_setting</string>
+    <string name="label_crowd_statistics">众筹统计</string>
+    <string name="label_person_information">个人资料</string>
+    <string name="label_change_nick_name">昵称</string>
+    <string name="label_forget_password">找回密码</string>
+    <string name="label_find_password">@string/label_forget_password</string>
+    <string name="label_reset_password">重置密码</string>
+    <string name="label_change_sex">性别</string>
+    <string name="label_begin_certification">实名认证</string>
+    <string name="label_upload_certification_photo">上传证件照片</string>
+    <string name="label_show_certification_result">@string/label_begin_certification</string>
+    <string name="label_change_password">修改登录密码</string>
+    <string name="label_select_change_trans_password_type">选择验证方式</string>
+    <string name="label_set_transaction_password">设置交易密码</string>
+    <string name="label_register">注册</string>
+    <string name="label_show_mobile">设置手机号</string>
+    <string name="label_bind_mobile">绑定手机号</string>
+    <string name="label_change_mobile">更换手机号码</string>
+    <string name="label_bind_email">绑定邮箱</string>
+    <string name="label_show_email">设置邮箱</string>
+    <string name="label_change_email">更换邮箱</string>
+    <string name="label_about">@string/action_about</string>
+    <string name="label_sign">签到有礼</string>
+    <string name="label_sign_reward">签到奖励</string>
+    <string name="label_recommend_reward">推荐奖励</string>
+    <string name="label_input_old_trans_password">重置支付密码</string>
+    <string name="label_change_trans_password">重置交易密码</string>
+    <string name="label_input_phone_trans_password">身份校验</string>
+    <string name="label_change_trans_success">设置结果</string>
+    <string name="label_search_filter">@string/action_search</string>
+    <string name="label_add_contact">新建联系人</string>
+    <string name="label_none" />
+    <string name="label_currency_manager">添加新资产</string>
+    <string name="label_wallet_manager">@string/action_wallet_manager</string>
+    <string name="label_wallet_record">资产详情</string>
+    <string name="label_wallet_take_out">@string/function_transfer</string>
+    <string name="label_recommend_record">推荐记录</string>
+    <string name="label_show_address_qr">收款码</string>
+    <string name="label_export_secret">@string/function_export_secret</string>
+    <string name="label_create_wallet">@string/function_create_wallet</string>
+    <string name="label_contact_list">@string/action_contact</string>
+    <string name="label_change_wallet_name">钱包名</string>
+    <string name="label_import_wallet">导入钱包</string>
+    <string name="label_export_keystore">@string/function_export_keystore</string>
+    <string name="label_change_wallet_password">@string/function_change_password</string>
+    <string name="label_show_trans_result">支付密码</string>
+    <string name="label_verify_card_num">@string/label_input_phone_trans_password</string>
+    <string name="label_ecology_service_agreement">港付通服务协议</string>
+    <string name="label_service_secret_agreement">服务及隐私条款</string>
+    <string name="label_wallet_service_secret_agreement">钱包服务及隐私条款</string>
+    <string name="label_what_is_keystore_file">什么是&#160;Keystore&#160;文件?</string>
+    <string name="label_what_is_secret_file">什么是明文私钥?</string>
+    <string name="label_switch_locale">语言选择</string>
+    <string name="label_choose_country">国家/地区</string>
+    <string name="label_into" formatted="false">%s转入</string>
+    <string name="label_into_record" formatted="false">%s转入记录</string>
+    <string name="label_into_detail" formatted="false">%s转入详情</string>
+    <string name="label_exchange_usdp">兑换GFT</string>
+    <string name="label_add_bank">添加银行卡</string>
+    <string name="label_bank_manager">银行卡管理</string>
+    <string name="label_choose_bank">选择银行卡</string>
+    <string name="label_exchange_recode">兑换记录</string>
+    <string name="label_exchange_detail">兑换详情</string>
+
+    <!--base模块文字提取-->
+    <string name="base_total_lifecycle" formatted="false">%s生命周期:%s</string>
+    <string name="base_total_cannot_support_method">当前不支持此方法</string>
+    <string name="base_total_album_select">相册选择</string>
+    <string name="base_total_take_photo">相机扫描</string>
+    <string name="base_total_qr_analyze_not_require">解析数据异常</string>
+    <string name="base_total_qr_analyze_error">图片解析失败</string>
+    <string name="base_total_must_permission">您必须开启权限,才能进行之后的操作</string>
+    <string name="base_total_no_pmn_to_picture">权限被禁止,无法选择图片</string>
+    <string name="base_total_has_forbid_pmn_camera_storage">相机&#160;和&#160;存储&#160;权限已被禁止,请前往软件权限管理界面手动打开</string>
+    <string name="base_total_select_fail">选取失败</string>
+    <string name="base_total_picture_no_selected">图片未选中</string>
+    <string name="base_total_please_login_again">请重新登录</string>
+    <string name="base_total_no_permission">没有权限</string>
+    <string name="base_total_exist_known_error_code" formatted="false">操作失败，已通知工作人员进行处理，请耐心等待:%d</string>
+    <string name="base_total_json_syntax_exception">网络返回数据错误</string>
+    <string name="base_total_null_pointer_exception">必须字段不能为null</string>
+    <string name="base_total_io_exception">网络异常</string>
+    <string name="base_total_other_exception">未知异常</string>
+    <string name="base_total_upload_picture_error">上传图片失败</string>
+    <string name="base_total_send_code_any_type" formatted="false">验证码已发送到%s,请注意查收</string>
+    <string name="base_total_not_get_user_info">未获取到个人信息</string>
+
+    <!--通用字符串部分(ing:正在*,to:*中)-->
+    <string name="common_paws_ecology_service_agreement">@string/label_ecology_service_agreement</string>
+    <string name="common_version_agreement">版权信息</string>
+    <string name="common_list_no_data">没有更多数据了</string>
+    <string name="common_no_data">暂无数据</string>
+    <string name="common_no_inner_data">未获取到深层数据</string>
+    <string name="common_list_error_data">数据异常,加载失败</string>
+    <string name="common_list_refresh_data">please wait ...</string>
+    <string name="common_no_require_params">缺少必传参数</string>
+    <string name="common_unknown_value">未知</string>
+    <string name="common_unknown_error">dark_color_2d3146_f4f6f2</string>
+    <string name="common_cannot_create_qr">无法生成二维码</string>
+    <string name="common_not_bind">未绑定</string>
+    <string name="common_not_login">未登录</string>
+    <string name="common_not_set">未设置</string>
+    <string name="common_has_set">已设置</string>
+    <string name="common_not_develop">敬请期待...</string>
+    <string name="common_delete_ing">正在删除</string>
+    <string name="common_delete_success">删除成功</string>
+    <string name="common_operate_ing">正在操作</string>
+    <string name="common_mobile">手机</string>
+    <string name="common_mobile_number">手机号</string>
+    <string name="common_email">邮箱</string>
+    <string name="common_wallet_address">钱包地址</string>
+    <string name="common_have_revoked">已撤销</string>
+    <string name="common_take_out_success">转出成功</string>
+    <string name="common_transfer_ing">转账中</string>
+    <string name="common_long_press_to_copy">长按可复制</string>
+    <string name="common_wallet_name">@string/label_change_wallet_name</string>
+    <string name="common_type">类型</string>
+    <string name="common_time">时间</string>
+    <string name="common_poundage">手续费</string>
+    <string name="common_refresh_fail">刷新失败</string>
+    <string name="common_load_fail">加载失败</string>
+    <string name="common_load_ing">加载中</string>
+    <string name="common_none">无</string>
+    <string name="common_operate_cancel">操作取消</string>
+    <string name="common_sex_man">男</string>
+    <string name="common_sex_woman">女</string>
+    <string name="common_sex_unknown">保密</string>
+    <string name="common_certification_">实名认证中</string>
+    <string name="common_change_ing">正在修改</string>
+    <string name="common_deal_">处理中</string>
+    <string name="common_update_">更新中</string>
+    <string name="common_login_ing">正在登录</string>
+    <string name="common_no_permission">@string/base_total_no_permission</string>
+    <string name="common_old_pwd_error">原密码错误</string>
+    <string name="common_wallet_pwd_error">钱包密码错误</string>
+    <string name="common_unknown_exception">出现未知异常,已上报客服处理</string>
+    <string name="common_cannot_create_file">无法创建文件</string>
+    <string name="common_yes">是</string>
+    <string name="common_no">否</string>
+    <string name="common_unknown_user">未知用户</string>
+    <string name="common_aggree">同意</string>
+
+    <!--plugin插件提供的文本信息-->
+    <string name="plugins_cannot_jump_to_des">界面无法跳转</string>
+    <string name="plugins_no_any_permission" formatted="false">没有&#160;%s&#160;权限</string>
+    <string name="plugins_no_email_permission">未绑定邮箱,是否前往进行绑定?</string>
+    <string name="plugins_no_verify_success_permission">实名认证未通过,是否前往实名认证界面?</string>
+    <string name="plugins_no_phone_question_permission">未设置手机号,是否前往进行绑定?</string>
+    <string name="plugins_no_trans_pwd_permission">未设置交易密码,是否前往设置?</string>
+    <string name="plugins_dagger_no_register" formatted="false">%s&#160;类未注册到dagger</string>
+    <string name="plugins_adac_error_code_minus_1">失败返回</string>
+    <string name="plugins_adac_error_code_1">账户未激活</string>
+    <string name="plugins_adac_error_code_2">账户未信任自定义货币</string>
+    <string name="plugins_adac_error_code_3">账户自定义货币被冻结</string>
+    <string name="plugins_adac_error_code_4">账户私钥错误</string>
+    <string name="plugins_adac_error_code_5">账户余额不足</string>
+    <string name="plugins_adac_error_code_6">接收方账户未激活</string>
+    <string name="plugins_adac_error_code_7">发送方账户未信任货币或信任的货币被冻结或接收方未信任货币</string>
+    <string name="plugins_cannot_change_wallet_pwd">无法修改钱包密码,请联系客服人员</string>
+    <string name="plugins_cannot_judge_transfer_status">无法判断转账状态,请联系客服</string>
+    <string name="plugins_address_error_or_wallet_abnormal">转账地址有误或钱包状态异常</string>
+    <string name="plugins_abnormal_wallet_info" formatted="false">异常的钱包信息:&#160;%s</string>
+
+    <!--英文国际化-文档中字符串(源代码部分,未做统一处理部分)-->
+    <string name="please_input_password">请输入密码</string>
+    <string name="activity_login_new_register">新用户注册</string>
+    <string name="nike_name_email_phone">邮箱/手机号</string>
+    <string name="activity_login_please_input_code">请输入验证码</string>
+
+    <string name="loginType1">动态登录</string>
+    <string name="loginType2">密码登录</string>
+    <string name="activity_login_please_input_phoneNumber">请输入手机号码</string>
+    <string name="activity_take_out_platform_info" formatted="false">1.为了安全，转出是由人工处理，您提交后我们会在短时间为您处理。\n2.为了加快转币的速度，我们会为每次转币支付网络费用，但由于网络的不确定性，部分转币仍会较慢，请耐心等待。\n3.转出的服务费为每次转出总额的%s%%。</string>
+    <string name="activity_sign_info" formatted="false">1、签到以一个月为周期，每天签到可获得%s算力，连续签到可获得额外算力奖励。\n2、连续签到3天，在当日算力1基础上，额外+%s算力。\n3、连续签到7天，在当日算力1基础上，额外+%s算力。\n4、连续签到15天，在当日算力1基础上，额外+%s算力。\n5、连续签到28天，在当日算力1基础上，额外+%s算力。\n6、签到算力可以挖矿获得GFT，算力值越高，挖矿收益越高。</string>
+    <string name="activity_take_out_platform_have">可用 GFT</string>
+    <string name="activity_take_out_platform_address_hint">请手动输入或扫码获取钱包地址</string>
+    <string name="activity_take_out_platform_amount_hint">请输入转出数量</string>
+    <string name="activity_take_out_platform_declare_label">转出说明：</string>
+    <string name="activity_take_out_record_detail_time">创建时间</string>
+    <string name="activity_take_out_record_detail_reward_id">提现ID</string>
+    <string name="activity_take_out_record_detail_address">转出钱包地址</string>
+    <string name="activity_take_out_record_detail_amount">转出数量</string>
+    <string name="activity_take_out_record_detail_arrive">到账数量</string>
+    <string name="activity_take_out_record_detail_status">状态</string>
+    <string name="activity_take_out_currency_record_time">创建时间</string>
+    <string name="activity_take_out_currency_record_amount">转出数量</string>
+    <string name="activity_take_out_currency_record_status">状态</string>
+    <string name="activity_take_out_currency_record_operate">操作</string>
+    <string name="activity_take_out_currency_record_alert_revoked">确定要撤销吗?</string>
+
+    <string name="activity_about_service">服务协议</string>
+    <string name="activity_about_copyright">@string/common_version_agreement</string>
+    <string name="activity_about_check_version">检查更新</string>
+    <string name="activity_begin_certification_location">请选择国家/地区</string>
+    <string name="activity_begin_certification_name">请输入真实姓名</string>
+    <string name="activity_begin_certification_card_type">请选择证件类型</string>
+    <string name="activity_begin_certification_card_number">请输入证件号码</string>
+    <string name="activity_begin_certification_upload_photo">请上传证件照片</string>
+    <string name="activity_begin_certification_phone">请输入手机号码</string>
+    <string name="activity_begin_certification_verity_code">请输入手机验证码</string>
+    <string name="random_code_text_view_info" formatted="false">%d秒后可重发</string>
+    <string name="activity_bind_email_activity_bind_email_label_email">您还没有绑定邮箱哦！设置邮箱，丢失账号密码后可以通过邮箱找回</string>
+    <string name="activity_bind_email_activity_bind_email_hint_email">请输入您要绑定的邮箱</string>
+    <string name="activity_bind_email_activity_bind_mobile_label_mobile">您还没有绑定手机哦！设置手机号码，丢失账号秘密后可以通过手机找回!</string>
+    <string name="activity_bind_email_activity_bind_mobile_hint_phone">请输入您的手机号码</string>
+    <string name="activity_bind_email_activity_bind_mobile_hint_card">请输入您已经通过实名认证的证件号码</string>
+    <string name="activity_bind_email_activity_bind_mobile_picture_random_code">请输入图形验证码</string>
+    <string name="activity_change_password_hint_old_password">请输入旧密码</string>
+    <string name="activity_change_password_hint_one">请输入新的登录密码</string>
+    <string name="activity_change_password_hint_two">请确认登录密码</string>
+    <string name="activity_change_password_hint_three">请输入您的登录密码</string>
+    <string name="activity_find_password_hint_account">帐号</string>
+    <string name="activity_find_password_hint_random">验证码</string>
+    <string name="activity_find_password_declare">输入验证码，验证成功后即可重置密码</string>
+    <string name="activity_forget_password_phone">通过手机</string>
+    <string name="activity_forget_password_email">通过邮箱</string>
+    <string name="activity_person_information_head">头像</string>
+    <string name="activity_person_information_nick_name">@string/label_change_nick_name</string>
+    <string name="activity_person_information_sex">@string/label_change_sex</string>
+    <string name="activity_reset_password_hint_one">请输入新的登录密码</string>
+    <string name="activity_reset_password_hint_two">请确认登录密码</string>
+    <string name="activity_select_change_trans_password_type_label">为了账户安全，请选择一种方式核实身份</string>
+    <string name="activity_select_change_trans_password_type_face_phone">刷脸</string>
+    <string name="activity_select_change_trans_password_type_menu_card_check">短信验证码+证件号码</string>
+    <string name="activity_set_transaction_password_hint_one">请输入交易密码（6位数字）</string>
+    <string name="activity_set_transaction_password_hint_two">请确认交易密码</string>
+    <string name="activity_set_transaction_password_hint_random_code">请输入手机验证码</string>
+    <string name="activity_set_transaction_password_describe">交易密码可用于GFT生态下所有应用的交易确认，若在某个生态应用中您重置了交易密码将不能统一使用。</string>
+    <string name="activity_show_certification_result_menu_name">真实姓名</string>
+    <string name="activity_show_certification_result_type">证件类型</string>
+    <string name="activity_show_certification_result_number">证件号码</string>
+    <string name="activity_show_certification_result_info">证件信息</string>
+    <string name="activity_show_mobile_number">您当前绑定的手机号码是</string>
+    <string name="activity_upload_certification_photo_info">1、证件上的所有信息清晰可见，必须能看清楚证件号；\n2、照片内容真实有效，不得做任何修改；\n3、照片免冠，建议未化妆，手持证件者的五官清晰可见；\n4、手指不可以遮挡证件信息。</string>
+    <string name="layout_toast_success_text">挂单成功</string>
+    <string name="activity_select_change_trans_password_type_password">密码校验</string>
+    <string name="activity_input_old_trans_password_label">请输入您之前设置的交易密码</string>
+    <string name="activity_change_trans_success_label">交易密码重置成功</string>
+    <string name="activity_input_phone_trans_password_label_phone">@string/common_mobile_number</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!-- /////////////////////////////////////////// recodeActivity /////////////////////////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--activity_candy_statistics-->
+    <!--activity_crowd_statistics-->
+    <string name="activity_crowd_statistics_regular">锁定与释放规则</string>
+    <string name="activity_crowd_statistics_time">释放时间</string>
+    <string name="activity_crowd_statistics_name">项目名称</string>
+    <string name="activity_crowd_statistics_amount">数量</string>
+    <!--activity_mining_statistics-->
+    <!--activity_my_asset-->
+    <string name="activity_my_asset_available">可用数量(GFT)</string>
+    <string name="activity_my_asset_freeze">冻结数量(GFT)</string>
+    <!--activity_main-->
+    <string name="activity_main_unknown_qr">不可识别的二维码</string>
+    <string name="activity_main_add_contact">使用该地址添加联系人</string>
+    <string name="activity_main_take_out_address">向该钱包地址转账</string>
+    <string name="activity_main_back_press">再按一次退出程序</string>
+    <!--activity_search_filter-->
+    <string name="activity_search_filter_hint">请输入关键字</string>
+    <!--activity_splash-->
+    <string name="activity_splash_go">立即进入</string>
+    <!--activity_about-->
+    <string name="activity_about_version" formatted="false">V%s&#160;版本</string>
+    <string name="activity_about_download">下载更新</string>
+    <string name="activity_about_progress" formatted="false">当前最新版本为:%d.%d.%d\n更新时间:%s</string>
+    <string name="activity_about_exit">应用即将退出</string>
+    <string name="activity_about_address_error">应用下载地址错误</string>
+    <string name="activity_about_latest_version">已是最新版本</string>
+    <string name="activity_about_get_version_error">无法核对最新版本</string>
+    <string name="activity_about_has_download">安装包已下载,任务终止</string>
+    <string name="activity_about_please_wait">正在更新,请等待&#8230;</string>
+    <string name="activity_about_downloading">正在下载安装包,请勿操作</string>
+    <string name="activity_about_progress_is" formatted="false">下载进度..%s</string>
+    <string name="activity_about_download_fail">抱歉,该手机无法缓存文件,请到官网进行下载,或者手动打开存储权限后再次更新</string>
+    <string name="activity_about_install_ing">正在安装</string>
+    <string name="activity_about_down_install_finish">包下载安装完成&#8230;.</string>
+    <string name="activity_about_you_should_known">必须开启存储权限才能进行下载更新</string>
+    <string name="activity_about_permission_fail">授权失败</string>
+    <string name="activity_about_cannot_get_permission">无法请求权限,请前往设置中心自行开启存储权限</string>
+    <!--activity_begin_certification-->
+    <string name="activity_begin_certification_success">实名认证申请成功,请耐心等待</string>
+    <string name="activity_begin_certification_upload_fail">图片上传失败</string>
+    <string name="activity_begin_certification_cannot_select_card">抱歉!无法选择证件</string>
+    <string name="activity_begin_certification_toast_country">请选择国家或地区</string>
+    <string name="activity_begin_certification_toast_name">请输入姓名</string>
+    <string name="activity_begin_certification_toast_name_error">姓名格式错误</string>
+    <string name="activity_begin_certification_toast_card_type">@string/activity_begin_certification_card_type</string>
+    <string name="activity_begin_certification_toast_card_number">请输入证件号码</string>
+    <string name="activity_begin_certification_toast_id_error">身份证号码格式错误</string>
+    <string name="activity_begin_certification_toast_hz_error">护照号码格式错误</string>
+    <string name="activity_begin_certification_toast_jg_error">军官证号码格式错误</string>
+    <string name="activity_begin_certification_toast_hx_error">回乡证号码格式错误</string>
+    <string name="activity_begin_certification_toast_no_card">请上传必须的证件照片</string>
+    <string name="activity_begin_certification_toast_phone">请输入手机号</string>
+    <string name="activity_begin_certification_toast_phone_error">手机号格式错误</string>
+    <string name="activity_begin_certification_toast_verify_code">请输入验证码</string>
+    <string name="activity_begin_certification_toast_verify_code_error">验证码输入错误</string>
+    <string name="activity_begin_certification_toast_has_select_card">证件已选择</string>
+    <string name="activity_begin_certification_toast_cannot_select_card">无法选择证件,请重新上传</string>
+    <!--activity_bind_email-->
+    <string name="activity_bind_email_none_email">请输入要绑定的邮箱</string>
+    <string name="activity_bind_email_picture_code">请输入图形验证码</string>
+    <string name="activity_bind_email_error">邮箱格式错误</string>
+    <string name="activity_bind_email_picture_code_error">图形验证码格式错误</string>
+    <string name="activity_bind_mobile_country">国家/地区</string>
+    <string name="activity_bind_mobile_china">中国大陆</string>
+    <string name="activity_bind_mobile_no_mobile">请输入要绑定的手机号</string>
+    <string name="activity_bind_mobile_picture_code">请输入图形验证码</string>
+    <string name="activity_bind_mobile_error_mobile">手机号格式错误</string>
+    <string name="activity_bind_mobile_error_picture">图形验证码格式错误</string>
+    <!--activity_change_email-->
+    <string name="activity_change_email_none_email">请输入要绑定的邮箱</string>
+    <string name="activity_change_email_no_card_code">请输入证件号码</string>
+    <string name="activity_change_email_no_login_pwd">请输入登录密码</string>
+    <string name="activity_change_email_reg_error_email">邮箱格式错误</string>
+    <string name="activity_change_email_card_error">证件号码格式错误</string>
+    <string name="activity_change_email_login_pwd_error">登录密码格式错误</string>
+    <string name="activity_change_email_cannot_equal">更换邮箱不能与原邮箱相同</string>
+    <string name="activity_change_email_hint_address">请输入您的邮箱地址</string>
+    <string name="activity_change_mobile_no_mobile">@string/activity_bind_mobile_no_mobile</string>
+    <string name="activity_change_mobile_no_card">请输入证件号码</string>
+    <string name="activity_change_mobile_no_pwd">请输入登录密码</string>
+    <string name="activity_change_mobile_error_mobile">手机号格式错误</string>
+    <string name="activity_change_mobile_error_card">证件号码格式错误</string>
+    <string name="activity_change_mobile_error_pwd">登录密码格式错误</string>
+    <string name="activity_change_mobile_cannot_equal">更换手机号不能与原手机号相同</string>
+    <string name="activity_change_mobile_country">国家/地区</string>
+    <!--activity_change_nick_name-->
+    <string name="activity_change_nick_name_success">昵称修改成功</string>
+    <string name="activity_change_nick_name_tip">不支持表情符号</string>
+    <string name="activity_change_nick_name_no">请输入昵称</string>
+    <string name="activity_change_nick_name_error">昵称格式错误</string>
+    <string name="activity_change_nick_name_hint">请输入昵称</string>
+    <!--activity_change_password-->
+    <string name="activity_change_password_success">密码修改成功,请重新登陆</string>
+    <string name="activity_change_password_no_old">请输入原密码</string>
+    <string name="activity_change_password_old_error">旧密码错误</string>
+    <string name="activity_change_password_no_new">请输入登录密码</string>
+    <string name="activity_change_password_no_confirm">请确认登录密码</string>
+    <string name="activity_change_password_no_equal">两次输入的新密码不同</string>
+    <string name="activity_change_password_pwd_reg_error">新密码须为8&#8211;16位字母数字组合</string>
+    <string name="activity_change_password_no_equal_new_old">新密码和旧密码不能相同</string>
+    <!--activity_change_sex-->
+    <string name="activity_change_sex_error_type">错误的校验方式</string>
+    <!--activity_change_trans_password-->
+    <string name="activity_change_trans_password_tip">请为账号&#160;%s\n设置6位数字支付密码</string>
+    <string name="activity_change_trans_password_regular">支付密码不能是重复、连续得数字</string>
+    <string name="activity_change_trans_password_error_pwd">交易密码应为6位数字</string>
+    <string name="activity_change_trans_password_no_pwd">请输入密码</string>
+    <string name="activity_change_trans_password_cannot_equal">支付密码不能是重复、连续得数字</string>
+    <!--activity_common_agreement-->
+    <string name="activity_common_agreement_error">无法加载内容,请稍后重试</string>
+    <string name="activity_common_agreement_wait">正在初始化数据,请等待&#8230;</string>
+    <string name="activity_common_agreement_plugin_error">抱歉,浏览器插件异常</string>
+    <!--activity_find_password-->
+    <string name="activity_find_password_no_verify_type">未知的验证方式</string>
+    <string name="activity_find_password_label_mobile">请输入您已绑定的手机号码</string>
+    <string name="activity_find_password_label_email">请输入您已绑定的邮箱号码</string>
+    <string name="activity_find_password_hint_mobile">请输入手机验证码</string>
+    <string name="activity_find_password_hint_email">请输入邮箱验证码</string>
+    <string name="activity_find_password_declare_mobile">输入验证码，验证成功后即可重置密码</string>
+    <string name="activity_find_password_declare_email">点击“获取验证码”系统会发送邮件到您的邮箱，验证成功后即可重置密码</string>
+    <string name="activity_find_password_login_again">密码设置成功,请重新登录</string>
+    <string name="activity_find_password_cannot_get_code">无法获取校验码</string>
+    <string name="activity_find_password_no_mobile">请输入手机号</string>
+    <string name="activity_find_password_mobile_error">手机号格式错误</string>
+    <string name="activity_find_password_no_email">请输入邮箱</string>
+    <string name="activity_find_password_email_error">邮箱格式错误</string>
+    <string name="activity_find_password_no_code">请输入验证码</string>
+    <string name="activity_find_password_code_error">验证码格式错误</string>
+    <string name="activity_find_password_no_login_pwd">请输入登录密码</string>
+    <string name="activity_find_password_no_confirm_pwd">请确认登录密码</string>
+    <string name="activity_find_password_pwd_not_equal">两次输入的密码不同</string>
+    <string name="activity_find_password_pws_reg_error">密码须为8&#8211;16位字母数字组合</string>
+    <!--activity_input_code-->
+    <string name="activity_input_code_verify_code">已发送验证码到您的手机</string>
+    <string name="activity_input_code_no_sms">收不到验证码短信?&#160;重新获取</string>
+    <string name="activity_input_code_send_to_email">已发送验证码到您的邮箱</string>
+    <string name="activity_input_code_no_email">没有收到邮件?&#160;重新发送</string>
+    <string name="activity_input_code_bind_mobile_success">绑定手机号成功</string>
+    <string name="activity_input_code_change_mobile_success">更换手机号成功</string>
+    <string name="activity_input_code_bind_email_success">绑定邮箱成功</string>
+    <string name="activity_input_code_change_email_success">更换邮箱成功</string>
+    <!--activity_input_old_trans_password-->
+    <string name="activity_input_old_trans_password_no_pwd">请输入密码</string>
+    <string name="activity_input_old_trans_password_pwd_error">密码格式错误</string>
+    <!--activity_input_phone_trans_password-->
+    <!--activity_invite_reward-->
+    <string name="activity_invite_reward_1">注册且已实名认证的用户才能邀请好友。</string>
+    <string name="activity_invite_reward_2">被邀请者需在平台注册且已实名认证，才算推荐成功。</string>
+    <string name="activity_invite_reward_3">每成功推荐一位好友，可获得算力5。</string>
+    <string name="activity_invite_reward_4">每位用户最多只能推荐30位好友。</string>
+    <string name="activity_invite_reward_5">推荐奖励算力可以挖矿获得GFT，算力值越高，挖矿收益越高</string>
+    <!--function_login-->
+    <string name="function_login_cannot_refresh">无法刷新账户信息</string>
+    <string name="function_login_no_mobile">请输入手机号码</string>
+    <string name="function_login_error_mobile">手机号格式错误</string>
+    <string name="function_login_no_code">请输入验证码</string>
+    <string name="function_login_error_code">验证码格式错误</string>
+    <string name="function_login_no_account">请输入帐号</string>
+    <string name="function_login_no_pwd">请输入密码</string>
+    <string name="function_login_error_pwd">密码格式错误</string>
+    <string name="function_sure_exchange">确认汇兑</string>
+    <string name="function_sure_add">确认添加</string>
+
+    <!--activity_person_information-->
+    <string name="activity_person_information_restore">已还原为默认头像</string>
+    <string name="activity_person_information_head_success">头像修改成功</string>
+    <string name="activity_person_information_sex_success">性别已修改</string>
+    <!--activity_recommend_reward-->
+    <string name="activity_recommend_record_username">推荐用户名</string>
+    <string name="activity_recommend_record_verify">是否实名</string>
+    <string name="activity_recommend_record_time">注册时间</string>
+    <!--activity_register-->
+    <string name="activity_register_service_agreement">港付通服务协议</string>
+    <string name="activity_register_to_read">我已仔细阅读并同意</string>
+    <string name="activity_register_register_success">注册成功,请重新登录</string>
+    <string name="activity_register_phone_error">@string/activity_add_contact_error_mobile</string>
+    <string name="activity_register_email_error">@string/activity_add_contact_error_email</string>
+    <string name="activity_register_sms_code">请输入短信验证码</string>
+    <string name="activity_register_email_code">请输入邮箱验证码</string>
+    <string name="activity_register_error_sms_code">短信验证码格式错误</string>
+    <string name="activity_register_error_email_code">邮箱验证码格式错误</string>
+    <string name="activity_register_no_login_pwd">请输入登录密码</string>
+    <string name="activity_register_no_confirm_pwd">请确认登录密码</string>
+    <string name="activity_register_no_equals_pwd">两次输入的密码不同</string>
+    <string name="activity_register_error_pwd">密码须为8&#8211;16位字母数字组合</string>
+    <string name="activity_register_no_select_protocol">请同意港付通生态服务协议</string>
+    <string name="activity_register_cannot_auto_sms">无法自动填入短信验证码,请手动输入</string>
+    <string name="activity_register_hint_email">请输入邮箱地址</string>
+    <string name="activity_register_phone">手机注册</string>
+    <string name="activity_register_email">邮箱注册</string>
+    <string name="activity_register_hint_verify_code">请输入验证码</string>
+    <string name="activity_register_hint_pwd">请设置登录密码(8&#8211;18位字母数字组合)</string>
+    <string name="activity_register_hint_confirm_pwd">请确认登录密码</string>
+    <!--activity_reset_transaction_password-->
+    <string name="activity_reset_transaction_password_not_equal">两次输入的密码不同</string>
+    <!--activity_select_change_trans_password_type-->
+    <string name="activity_select_change_trans_password_type_not_bind_mobile">您还未绑定手机号</string>
+    <string name="activity_select_change_trans_password_type_not_verify">您还未通过实名认证</string>
+    <!--activity_set_transaction_password-->
+    <string name="activity_set_transaction_password_success">交易密码设置成功</string>
+    <string name="activity_set_transaction_password_no_pwd">请输入交易密码</string>
+    <string name="activity_set_transaction_password_no_confirm">请确认交易密码</string>
+    <string name="activity_set_transaction_password_not_equal">两次输入的交易密码不同</string>
+    <string name="activity_set_transaction_password_error_pwd">交易密码应为6位数字</string>
+    <string name="activity_set_transaction_password_error_code">验证码格式错误</string>
+    <string name="activity_set_transaction_password_no_code">请输入验证码</string>
+    <!--activity_show_certification_result-->
+    <string name="activity_show_certification_result_status_error">异常认证状态</string>
+    <string name="activity_show_certification_result_card_error">证件类型异常</string>
+    <!--activity_show_certification_result-->
+    <string name="activity_show_certification_result_check_reason">查看原因</string>
+    <string name="activity_show_certification_result_verify_again">重新认证</string>
+    <!--activity_show_email-->
+    <string name="activity_show_email_label">您当前绑定的邮箱是</string>
+    <!--activity_show_invite_code-->
+    <string name="activity_show_invite_code_your_code">您的邀请码</string>
+    <string name="activity_show_invite_code_copy_link">复制链接</string>
+    <string name="activity_show_invite_code_label_scan">扫一扫二维码\n面对面分享给您的好友吧</string>
+    <string name="activity_show_invite_code_has_copy">链接已复制</string>
+    <string name="activity_show_invite_code_cannot_copy">抱歉,无法复制链接</string>
+    <string name="activity_show_invite_code_upper_limit" formatted="false">邀请好友上限:%d人</string>
+    <string name="activity_show_invite_code_info" formatted="false">1、注册且已实名认证的用户才能邀请好友。\n2、被邀请者需在平台注册且已实名认证，才算推荐成功。\n3、每成功推荐一位好友，可获得算力5。\n4、每位用户最多只能推荐%d位好友。\n5、推荐奖励算力可以挖矿获得GFT，算力值越高，挖矿收益越高</string>
+    <!--activity_show_trans_result-->
+    <string name="activity_show_trans_result_label">您已设置交易密码，是否需要重置?</string>
+    <!--activity_sign-->
+    <string name="activity_sign_has_sign">已签到</string>
+    <string name="activity_sign_to_sign">立即签到</string>
+    <string name="activity_sign_has_sign_month" formatted="false">本月累计签到&#160;%d&#160;天</string>
+    <string name="activity_sign_signs_in_month" formatted="false">当月连续签到%d天</string>
+    <string name="activity_sign_reward_zl" formatted="false">可额外领取算力%.1f</string>
+    <string name="activity_sign_record">@string/action_sign</string>
+    <string name="activity_sign_label_introduce">签到说明</string>
+    <string name="activity_sign_label_info">*注册且已实名认证用户才能签到</string>
+    <string name="activity_sign_total">累计获取算力</string>
+    <string name="activity_sign_today">今日获取算力</string>
+    <string name="activity_sign_go_to">去签到</string>
+    <string name="activity_sign_total_month">本月累计获取算力</string>
+    <string name="activity_sign_reward_time">奖励时间</string>
+    <string name="activity_sign_reward_amount">获取算力</string>
+    <string name="activity_sign_total_day" formatted="false">累计签到%d天</string>
+    <string name="activity_sign_reward_total_day_month" formatted="false">签到%d天</string>
+    <!--activity_soft_setting-->
+    <string name="activity_soft_setting_mobile">@string/activity_input_phone_trans_password_label_phone</string>
+    <string name="activity_soft_setting_email">@string/common_email</string>
+    <string name="activity_soft_setting_verify">@string/label_show_certification_result</string>
+    <string name="activity_soft_setting_safety">安全管理</string>
+    <string name="activity_soft_setting_login_pwd">登录密码</string>
+    <string name="activity_soft_setting_trans_pwd">交易密码</string>
+    <string name="activity_soft_setting_hand">手势</string>
+    <string name="activity_soft_setting_finger">指纹</string>
+    <string name="activity_soft_setting_language">语言切换</string>
+    <string name="activity_soft_setting_error_status">未知状态</string>
+    <!--activity_upload_certification_photo-->
+    <string name="activity_upload_certification_photo_must_upload">请先上传必须的图片</string>
+    <string name="activity_upload_certification_photo_label">证件照上传说明:</string>
+    <!--activity_verify_card_num-->
+    <string name="activity_verify_card_num_text_name" formatted="false">填写%s的证件号码验证身份</string>
+    <string name="activity_verify_card_num_no_card">@string/activity_begin_certification_toast_card_number</string>
+    <string name="activity_verify_card_num_error_card">证件号码格式错误</string>
+
+    <!--activity_add_contact-->
+    <string name="activity_add_contact_hint_name">姓名</string>
+    <string name="activity_add_contact_hint_address">钱包地址</string>
+    <string name="activity_add_contact_hint_phone">手机号(可为空)</string>
+    <string name="activity_add_contact_hint_email">邮箱(可为空)</string>
+    <string name="activity_add_contact_hint_remark">备注(可为空)</string>
+    <string name="activity_add_contact_save_fail">保存失败</string>
+    <string name="activity_add_contact_save">联系人已保存</string>
+    <string name="activity_add_contact_save_no_name">姓名不能为空</string>
+    <string name="activity_add_contact_save_no_address">请输入钱包地址</string>
+    <string name="activity_add_contact_save_error_address">钱包地址格式错误</string>
+    <string name="activity_add_contact_error_mobile">手机号格式错误</string>
+    <string name="activity_add_contact_error_email">邮箱格式有误</string>
+    <string name="activity_add_contact_error_backup">备注信息最多20个字</string>
+    <string name="activity_add_contact_address_again">钱包地址已存在</string>
+    <!--activity_change_wallet_name-->
+    <string name="activity_change_wallet_name_success">钱包名修改成功</string>
+    <string name="activity_change_wallet_name_no">请输入钱包名</string>
+    <string name="activity_change_wallet_name_error">钱包名格式错误</string>
+    <string name="activity_change_wallet_name_hint">请输入钱包名称(2&#8211;16位可见字符)</string>
+    <!--activity_change_wallet_password-->
+    <string name="activity_change_wallet_password_success">密码修改成功</string>
+    <string name="activity_change_wallet_password_no_old">请输入原密码</string>
+    <string name="activity_change_wallet_password_old_error">旧密码格式错误</string>
+    <string name="activity_change_wallet_password_no_new">@string/activity_change_mobile_no_pwd</string>
+    <string name="activity_change_wallet_password_no_confirm">@string/activity_reset_password_hint_two</string>
+    <string name="activity_change_wallet_password_not_equal">两次输入的新密码不同</string>
+    <string name="activity_change_wallet_password_error_new">新密码须为8&#8211;16位字母数字组合</string>
+    <string name="activity_change_wallet_password_old_equal_new">新密码和旧密码不能相同</string>
+    <string name="activity_change_wallet_password_hint_alert">密码提示信息(可不填)</string>
+    <string name="activity_change_wallet_password_label">忘记密码?私钥可重置密码。</string>
+    <!--activity_contact_list-->
+    <string name="activity_contact_list_search">手机号/邮箱/钱包地址</string>
+    <string name="activity_contact_list_no_contact">暂无联系人</string>
+    <string name="activity_contact_list_loading">加载数据中&#8230;</string>
+    <!--activity_create_wallet-->
+    <string name="activity_create_wallet_label_one">密码用于保护私钥和交易授权，强度非常重要</string>
+    <string name="activity_create_wallet_label_two">港付通不存储密码，也无法帮您找回，请务必牢记</string>
+    <string name="activity_create_wallet_hint_name">钱包名称(2&#8211;16位可见字符)</string>
+    <string name="activity_create_wallet_hint_pwd">密码(8&#8211;16位字母数字组合)</string>
+    <string name="activity_create_wallet_hint_confirm">确认密码(需与密码相同)</string>
+    <string name="activity_create_wallet_hint_alert">@string/activity_change_wallet_password_hint_alert</string>
+    <string name="activity_create_wallet_import">@string/label_import_wallet</string>
+    <string name="activity_create_wallet_protocol_one">@string/label_service_secret_agreement</string>
+    <string name="activity_create_wallet_has_read">我已仔细阅读并同意</string>
+    <string name="activity_create_wallet_create_ing">正在创建钱包</string>
+    <string name="activity_create_wallet_create_wait">创建钱包时需要10&#8211;20s时间,请耐心等待</string>
+    <string name="activity_create_wallet_active_ing">正在激活钱包</string>
+    <string name="activity_create_wallet_believe_ing" formatted="false">正在信任钱包:%s</string>
+    <string name="activity_create_wallet_save">正在保存地址</string>
+    <string name="activity_create_wallet_success">钱包已生成</string>
+    <string name="activity_create_wallet_cannot_save">抱歉,无法存储钱包地址</string>
+    <string name="activity_create_wallet_create_fail">钱包创建失败,请重试</string>
+    <string name="activity_create_wallet_no_name">请输入钱包名称</string>
+    <string name="activity_create_wallet_name_error">钱包名称格式错误</string>
+    <string name="activity_create_wallet_no_pwd">@string/activity_change_wallet_password_no_new</string>
+    <string name="activity_create_wallet_no_confirm">@string/activity_change_wallet_password_no_confirm</string>
+    <string name="activity_create_wallet_not_equal">@string/activity_reset_transaction_password_not_equal</string>
+    <string name="activity_create_wallet_error_pwd">密码须为8&#8211;16位字母数字组合</string>
+    <string name="activity_create_wallet_please_agree">请同意服务及隐私条款</string>
+    <!--activity_export_keystore-->
+    <string name="activity_export_keystore_must_permission">@string/base_total_must_permission</string>
+    <!--activity_export_secret-->
+    <string name="activity_export_secret_no_secret">无法获取私钥,请联系客服人员</string>
+    <string name="activity_export_secret_unknown_error">未知错误:私钥无法复制!!!</string>
+    <string name="activity_export_secret_secret_has_copy">私钥已复制</string>
+    <string name="activity_export_secret_has_copy">已复制</string>
+    <string name="activity_export_secret_must_permission">@string/activity_export_keystore_must_permission</string>
+    <string name="activity_export_secret_label">安全警告：私钥一旦泄露，有钱包资产丢失风险，请妥善保管。</string>
+    <string name="activity_export_secret_secret">私钥</string>
+    <!--activity_import_wallet-->
+    <string name="activity_import_wallet_address_has_copy">地址已复制</string>
+    <string name="activity_import_wallet_cannot_save_qr">无法保存二维码</string>
+    <string name="activity_import_wallet_please_known" formatted="false">二维码已保存到本地,可通过第三方通讯软件发送给好友,二维码路径为:\n%s</string>
+    <!--activity_show_address-->
+    <string name="activity_show_address_qr_hint">默认收款金额</string>
+    <!--activity_show_contact-->
+    <string name="activity_show_contact_cannot_copy">无法复制到粘贴板,请重试</string>
+    <string name="activity_show_contact_has_copy">@string/activity_import_wallet_address_has_copy</string>
+    <string name="activity_show_contact_alert_delete">确定删除该联系人?</string>
+    <string name="activity_show_contact_refresh">刷新联系人&#8230;</string>
+    <!--activity_take_out_platform-->
+    <string name="activity_take_out_platform_no_balance">无可用资产</string>
+    <string name="activity_take_out_platform_greater_than_0">转账数目应大于0</string>
+    <string name="activity_take_out_platform_scale_3">转账时最小精度为小数点后3位</string>
+    <string name="activity_take_out_platform_no_enough">转账数目不能超过可用资产</string>
+    <string name="activity_take_out_platform_correct_amount">请输入正确的转账数目</string>
+    <string name="activity_take_out_platform_no_available">未获取到可用资产信息</string>
+    <string name="activity_take_out_platform_no_address">@string/activity_add_contact_save_no_address</string>
+    <string name="activity_take_out_platform_no_pwd">请输入交易密码</string>
+    <string name="activity_take_out_platform_freeze">冻结</string>
+    <!--activity_take_out_record_detail-->
+    <string name="activity_take_out_record_detail_load_error">详情加载失败</string>
+    <string name="activity_take_out_record_detail_has_copy">提现ID已复制</string>
+    <!--activity_wallet_manager-->
+    <string name="activity_wallet_manager_query_error">余额查询失败</string>
+    <string name="activity_wallet_manager_input_pwd">请输入钱包密码</string>
+    <string name="activity_wallet_manager_abandon">放弃导出</string>
+    <string name="activity_wallet_manager_verify">验证密码</string>
+    <string name="activity_wallet_manager_error_pwd">@string/common_wallet_pwd_error</string>
+    <!--activity_wallet_record_detail-->
+    <string name="activity_wallet_record_detail_address">对方地址</string>
+    <string name="activity_wallet_record_detail_id">交易ID</string>
+    <string name="activity_wallet_record_detail_remark">备注</string>
+    <string name="activity_wallet_record_detail_address_copy">收款人地址已复制</string>
+    <string name="activity_wallet_record_detail_has_copy">交易hash已复制</string>
+    <string name="activity_wallet_record_detail_error_remark">备注信息有误</string>
+    <string name="activity_wallet_record_detail_no_remark">无备注信息</string>
+    <string name="activity_wallet_record_detail_no_data">无可展示数据</string>
+    <string name="activity_wallet_record_list_error_data">@string/common_list_error_data</string>
+    <!--activity_wallet_take_out-->
+    <string name="activity_wallet_take_out_no_pwd">请输入密码</string>
+    <string name="activity_wallet_take_out_no_info">抱歉,无法获取转账信息</string>
+    <string name="activity_wallet_take_out_error_balance">@string/activity_wallet_manager_query_error</string>
+    <string name="activity_wallet_take_out_no_balance">无法获取可用资产,请退出重试</string>
+    <string name="activity_wallet_take_out_error_balance_close">可用资产异常,界面即将关闭</string>
+    <string name="activity_wallet_take_out_no_address">请输入转账地址</string>
+    <string name="activity_wallet_take_out_error_address">@string/activity_add_contact_save_error_address</string>
+    <string name="activity_wallet_take_out_error_amount">请输入正确的转账金额</string>
+    <string name="activity_wallet_take_out_error_scale">转账时最小精度为小数点后6位</string>
+    <string name="activity_wallet_take_out_cannot_0">转出数量不可为0</string>
+    <string name="activity_wallet_take_out_not_enough">可用余额不足</string>
+    <string name="activity_wallet_take_out_hint_amount">转账金额</string>
+    <string name="activity_wallet_take_out_hint_address">收款人钱包地址</string>
+    <string name="activity_wallet_take_out_label_balance">可用余额</string>
+    <string name="activity_wallet_take_out_remark">备注(可不填)</string>
+    <string name="activity_currency_manager_filter_hint">搜索Token名称或网关地址</string>
+
+    <!--activity_into-->
+    <string name="activity_into_can_not_to_qrcode">无法生成二维码:%s</string>
+    <string name="activity_into_can_not_save_address">无法保存地址</string>
+    <string name="activity_into_address_have_save">地址已保存:%s</string>
+    <string name="activity_into_share_to">分享到</string>
+    <string name="activity_into_address_have_copy">地址已复制</string>
+    <string name="activity_into_click_to_save">保存二维码</string>
+    <string name="activity_into_copy_address">复制地址</string>
+    <string name="activity_into_describe">温馨提示</string>
+    <string name="activity_into_tip" formatted="false">1、转入是自动的，%1$s转账需要整个%1$s网络进行确认，达到6个确认后您的%1$s会自动充值到您的账户中。\n2、此地址是您唯一且独自使用的转账地址，您可以同时进行多次充值，也可将此地址做为您在矿池的付款地址。\n3、本地址禁止充值除%1$s之外的其他资产,任何其他资产充值将不可找回。</string>
+
+    <!--activity_into_detail-->
+
+    <!--activity_exchange_Usdp-->
+    <string name="activity_exchange_disclaimer">"免责声明：\n1、您确定使用港付通 APP所提供的汇兑功能，即表示您已完全了解并同意使用该功能，因使用该功能产生的所有行为及后果均自主承担。\n2、一旦您点击确认汇兑，因此产生的包括但不限于转账地址、汇兑数量等问题，您需自行承担风险，我们不做任何形式的保证, 且不承担任何法律责任。 "</string>
+    <string name="activity_exchange_usdp_exchange_success">汇兑成功</string>
+    <string name="activity_exchange_usdp_no_usable_currency">没有可兑换币种</string>
+    <string name="activity_exchange_usdp_rate_tip">1GFT=1USD，兑换所得资产数量将根据USD与其他法币的汇兑汇率有所波动，请以最终收到的数额为准。</string>
+    <string name="activity_exchange_usdp_please_add_bank">请选择银行卡</string>
+    <string name="activity_exchange_usdp_out_count_up_zero">发出数量应大于0</string>
+    <string name="activity_exchange_usdp_please_control_two_double">请精确到两位小数</string>
+    <string name="activity_exchange_usdp_please_out_count">请输入转入数量</string>
+    <string name="activity_exchange_usdp_not_usable">可用数量不足</string>
+    <string name="activity_exchange_usdp_out_count">发出数量</string>
+    <string name="activity_exchange_usdp_into_amount">发出资金</string>
+    <string name="activity_exchange_usdp_input_count">输入资金</string>
+    <string name="activity_exchange_usdp_into_bank">入账卡号</string>
+    <string name="activity_exchange_usdp_rate">汇率</string>
+    <string name="activity_exchange_usdp_fee">手续费</string>
+    <string name="activity_exchange_usdp_usable_count">可用数量</string>
+    <string name="activity_exchange_usdp_disclaimer">免责声明</string>
+
+    <!--activity_add_bank-->
+    <string name="activity_add_bank_add_success">添加成功</string>
+    <string name="activity_add_bank_please_name">请输入姓名</string>
+    <string name="activity_add_bank_please_bank_name">请输入银行名称</string>
+    <string name="activity_add_bank_please_branch_name">请输入开户支行</string>
+    <string name="activity_add_bank_please_bank_number">请输入银行卡号</string>
+    <string name="activity_add_bank_please_bank_number_again">请输入确认银行卡号</string>
+    <string name="activity_add_bank_not_same">两次卡号输入不一致</string>
+    <string name="activity_add_bank_name">姓名</string>
+    <string name="activity_add_bank_open_bank">开户银行</string>
+    <string name="activity_add_bank_open_branch_bank">开户支行</string>
+    <string name="activity_add_bank_bank_number">银行卡号</string>
+    <string name="activity_add_bank_sure_number">确认卡号</string>
+
+    <!--activity_choose_bank-->
+    <string name="activity_choose_bank_no_bank_please_add">暂未添加银行卡，请添加</string>
+    <string name="activity_exchange_recode_into_asset">入账资产</string>
+    <string name="activity_exchange_recode_into_amount">到账金额</string>
+
+
+    <!--activity_my_asset-->
+    <string name="activity_my_asset_all_asset">总资产(GFT)</string>
+    <string name="activity_my_asset_roll_in">转入</string>
+    <string name="activity_my_asset_roll_out">转出</string>
+    <string name="activity_my_asset_out_line_buy">线下认购</string>
+    <string name="activity_my_asset_tip">每一分投入都更加值得</string>
+    <string name="label_safe_center">安全中心</string>
+    <string name="activity_take_in_please_loading">地址正在生成,请稍后...</string>
+    <string name="activity_take_in_address">转入地址</string>
+    <string name="activity_take_in_create_time">创建时间</string>
+    <string name="activity_take_in_account_number">到账数量</string>
+    <string name="activity_take_in_state">状态</string>
+    <string name="activity_take_in_deal_id">交易ID</string>
+    <string name="activity_take_in_roll_in_address">转入钱包地址</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!-- /////////////////////////////////////////// dialog_fragment /////////////////////////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <string name="dialog_fragment_change_head_album">从相册选择</string>
+    <string name="dialog_fragment_change_head_default">恢复默认</string>
+    <string name="dialog_password_input_label_amount">支付金额</string>
+    <string name="dialog_password_input_title">@string/activity_wallet_take_out_no_pwd</string>
+    <string name="dialog_fragment_change_sex_title">选择性别</string>
+    <string name="dialog_do_login_timeout">登录超时,请重新登录</string>
+    <string name="dialog_do_login_again">@string/base_total_please_login_again</string>
+    <string name="dialog_export_alert_do_not">请勿截图</string>
+    <string name="dialog_export_alert_info">请确保四周无人及任何摄像头！勿用截图或拍照方式保存Keystore文件或对应二维码。</string>
+    <string name="dialog_fragment_first_secret_title">请备份私钥</string>
+    <string name="dialog_fragment_first_secret_info">请妥善保管私钥，一旦私钥泄露,有钱包资产丢失风险</string>
+    <string name="dialog_password_input_no_pwd">@string/dialog_password_input_title</string>
+    <string name="dialog_password_input_pwd_error">交易密码为6位数字</string>
+    <string name="dialog_fragment_sign_success_title">恭喜您今日签到成功</string>
+    <string name="dialog_fragment_sign_success_add" formatted="false">算力&#160;+%s</string>
+    <string name="dialog_fragment_sign_success_bottom">连续签到获得更多算力&#160;请继续保持哦</string>
+    <string name="dialog_wallet_password_input_no_pwd">@string/dialog_password_input_title</string>
+    <string name="dialog_wallet_password_input_error_pwd">@string/activity_wallet_manager_error_pwd</string>
+    <string name="dialog_wallet_password_input_hint_pwd">钱包密码(8&#8211;16位字母数字组合)</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!-- /////////////////////////////////////////// layout /////////////////////////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <string name="layout_pickerview_options_bunkers_cannot_init_country">无法初始化国家列表,即将刷新数据</string>
+    <string name="layout_pickerview_options_bunkers_loading">数据正在加载,请稍后操作</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!-- /////////////////////////////////////////// fragment /////////////////////////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <string name="fragment_ecology_backup_other_function">第三方功能</string>
+    <string name="fragment_ecology_backup_to_login">前往登录</string>
+    <string name="fragment_ecology_backup_any_must_login" formatted="false">%s&#160;必须登录方可进入</string>
+    <string name="fragment_ecology_backup_has_sign">已签到</string>
+    <string name="fragment_ecology_backup_no_sign">未签到</string>
+    <string name="fragment_ecology_backup_cannot_get_banner">无法获取banner</string>
+    <string name="fragment_export_keystore_qr_waiting_qr">正在生成二维码,请耐心等待</string>
+    <string name="fragment_export_keystore_cannot_create_qr" formatted="false">抱歉!无法生成二维码:%s</string>
+    <string name="fragment_export_keystore_qr_label_one">仅供直接扫描</string>
+    <string name="fragment_export_keystore_qr_info_one">二维码禁止保存、截图、拍照。仅供用户在安全环境下直接扫描来方便导入钱包。</string>
+    <string name="fragment_export_keystore_qr_label_two">在安全环境下使用</string>
+    <string name="fragment_export_keystore_qr_info_two">请在确保四周无人及摄像头的情况下使用。二维码一旦被他人获取将造成不可挽回的资产损失。</string>
+    <string name="fragment_export_keystore_qr_alert">已确认周围无人及摄像头</string>
+    <string name="fragment_export_keystore_text_has_copy">keystore已复制</string>
+    <string name="fragment_export_keystore_text_label_one">离线保存</string>
+    <string name="fragment_export_keystore_text_info_one">请复制粘贴Keystore文件到安全、离线的地方保存。切勿保存至邮箱、记事本、网盘、聊天工具等，非常危险。</string>
+    <string name="fragment_export_keystore_text_label_two">请勿使用网络传输</string>
+    <string name="fragment_export_keystore_text_info_two">请勿使用网络工具传输Keystore文件，一旦被黑客获取将造成不可挽回的资产损失。建议离线设备通过扫描二维码方式传输。</string>
+    <string name="fragment_export_keystore_text_label_three">密码保险箱保存</string>
+    <string name="fragment_export_keystore_text_info_three">如需在线保存，则建议使用安全等级更高的1Password等密码保管软件保存Keystore。</string>
+    <string name="fragment_import_wallet_keystore_label">直接复制粘贴GFT官方钱包Keystore内容至输入框。或者通过生成Keystore内容的二维码，扫描录入。</string>
+    <string name="fragment_import_wallet_keystore_hint_keystore">Keystore文本内容</string>
+    <string name="fragment_import_wallet_keystore_hint_pwd">密码</string>
+    <string name="fragment_import_wallet_keystore_jump">什么是Keystore?</string>
+    <string name="fragment_import_wallet_keystore_service">@string/activity_create_wallet_protocol_one</string>
+    <string name="fragment_import_wallet_keystore_has_read">@string/activity_create_wallet_has_read</string>
+    <string name="fragment_import_wallet_keystore_wait">正在导入keystore,请耐心等待</string>
+    <string name="fragment_import_wallet_keystore_is_import_ing">正在导入钱包&#8230;</string>
+    <string name="fragment_import_wallet_keystore_success">钱包导入成功</string>
+    <string name="fragment_import_wallet_keystore_no_keystore">请输入keystore</string>
+    <string name="fragment_import_wallet_keystore_error_keystore">钱包keystore格式有误</string>
+    <string name="fragment_import_wallet_keystore_no_pwd">@string/activity_create_wallet_no_pwd</string>
+    <string name="fragment_import_wallet_keystore_error_pwd">@string/activity_create_wallet_error_pwd</string>
+    <string name="fragment_import_wallet_keystore_please_agree">@string/activity_create_wallet_please_agree</string>
+    <string name="fragment_import_wallet_secret_label">直接复制粘贴私钥内容至输入框。或者通过生成私钥内容的二维码，扫描录入。</string>
+    <string name="fragment_import_wallet_secret_hint_secret">明文私钥</string>
+    <string name="fragment_import_wallet_secret_hint_pwd">@string/fragment_import_wallet_keystore_hint_pwd</string>
+    <string name="fragment_import_wallet_secret_hint_confirm">确认密码</string>
+    <string name="fragment_import_wallet_secret_hint_alert">@string/activity_create_wallet_hint_alert</string>
+    <string name="fragment_import_wallet_secret_jump">什么是私钥?</string>
+    <string name="fragment_import_wallet_secret_service">@string/fragment_import_wallet_keystore_service</string>
+    <string name="fragment_import_wallet_secret_has_read">@string/fragment_import_wallet_keystore_has_read</string>
+    <string name="fragment_import_wallet_secret_wait">正在导入钱包,请耐心等待</string>
+    <string name="fragment_import_wallet_secret_is_loading">@string/fragment_import_wallet_keystore_is_import_ing</string>
+    <string name="fragment_import_wallet_secret_success">@string/activity_create_wallet_success</string>
+    <string name="fragment_import_wallet_secret_no_secret">请输入私钥</string>
+    <string name="fragment_import_wallet_secret_error_secret">钱包私钥格式错误</string>
+    <string name="fragment_import_wallet_secret_no_pwd">@string/fragment_import_wallet_keystore_no_pwd</string>
+    <string name="fragment_import_wallet_secret_no_confirm">@string/activity_create_wallet_no_confirm</string>
+    <string name="fragment_import_wallet_secret_not_equal">@string/activity_create_wallet_not_equal</string>
+    <string name="fragment_import_wallet_secret_error_pwd">@string/fragment_import_wallet_keystore_error_pwd</string>
+    <string name="fragment_import_wallet_secret_agree">@string/fragment_import_wallet_keystore_please_agree</string>
+    <string name="fragment_wallet_no_balance">未获取到钱包资产</string>
+    <string name="fragment_wallet_error_address">钱包地址异常</string>
+    <string name="fragment_wallet_total_balance">总资产</string>
+    <string name="fragment_wallet_init_has_wallet">已有钱包,立即</string>
+    <string name="fragment_wallet_init_tip">稳定数字美元生态系统</string>
+    <string name="fragment_ecology_intelligence_services">智享服务</string>
+    <string name="fragment_ecology_exchange_center">汇兑中心</string>
+    <string name="fragment_ecology_tip">安全，简易，高效，机密 \nGFT 数字资产汇兑工具</string>
+    <string name="fragment_wallet_back_up_add_asset">添加资产</string>
+    <string name="fragment_wallet_back_up_wallet">备份钱包</string>
+    <string name="activity_wallet_record_near_deal_record">最近交易记录</string>
+    <string name="activity_wallet_record_is_query_loading">正在查询记录,请稍后...</string>
+    <string name="activity_set_pay_pwd_can_not_repeat">支付密码不能是重复、连续得数字</string>
+    <string name="plugins_no_bank_card">没有银行卡,是否前往添加银行卡?</string>
+    <string name="activity_upload_picture_front">证件正面照片</string>
+    <string name="activity_upload_picture_back">证件背面照片</string>
+    <string name="activity_upload_picture_hold">手持证件照片</string>
+    <!---->
+
+</resources>

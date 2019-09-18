@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/skin_scaffold_background_color"
+        android:orientation="vertical">
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_lock"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_8dp"
+            app:LineMenuView_for_calculation="on"
+            app:LineMenuView_menu="@string/activity_gesture_lock_switch"
+            app:LineMenuView_menu_text_color="@color/skin_body1_color"
+            app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+            app:LineMenuView_plugin="transition"
+            app:LineMenuView_transition="off" />
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_line_width_1dp"
+            android:layout_marginStart="@dimen/view_padding_margin_16dp"
+            android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+            tools:background="@android:color/white" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_appear"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_8dp"
+            app:LineMenuView_for_calculation="on"
+            app:LineMenuView_menu="@string/activity_gesture_lock_travel"
+            app:LineMenuView_menu_text_color="@color/skin_body1_color"
+            app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+            app:LineMenuView_plugin="transition"
+            app:LineMenuView_transition="off" />
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_line_width_1dp"
+            android:layout_marginStart="@dimen/view_padding_margin_16dp"
+            android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+            tools:background="@android:color/white" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            android:id="@+id/lmv_change"
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_8dp"
+            android:visibility="gone"
+            app:LineMenuView_brief="@string/function_change"
+            app:LineMenuView_brief_text_color="@color/skin_body1_color"
+            app:LineMenuView_brief_text_size="@dimen/text_size_normal_14sp"
+            app:LineMenuView_for_calculation="on"
+            app:LineMenuView_menu="@string/activity_gesture_lock_password"
+            app:LineMenuView_menu_text_color="@color/skin_body1_color"
+            app:LineMenuView_menu_text_size="@dimen/text_size_normal_14sp"
+            app:LineMenuView_navigation="@drawable/icon_arrow_right"
+            app:LineMenuView_plugin="text" />
+
+        <com.linktech.gft.view.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_line_width_1dp"
+            android:layout_marginStart="@dimen/view_padding_margin_16dp"
+            android:layout_marginEnd="@dimen/view_padding_margin_16dp"
+            android:visibility="gone"
+            tools:background="@android:color/white" />
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

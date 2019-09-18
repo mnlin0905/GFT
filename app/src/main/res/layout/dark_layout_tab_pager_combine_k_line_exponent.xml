@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_color_8c33364c_ffffff">
+
+    <com.linktech.gft.view.DisallowClickTabLayout
+        android:id="@+id/tl_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/dark_main_text_8144e5"
+        app:tabIndicatorHeight="@dimen/tab_layout_indicator_height_2dp"
+        app:tabMode="scrollable"
+        app:tabBackground="@drawable/dark_ripple_click_borderless_deep"
+        app:tabPaddingBottom="@dimen/view_padding_margin_8dp"
+        app:tabPaddingTop="@dimen/view_padding_margin_8dp"
+        app:tabSelectedTextColor="@color/dark_main_text_8144e5"
+        app:tabTextAppearance="@style/TextViewTabLayout"
+        app:tabTextColor="@color/dark_main_text_7c7fa2" />
+
+    <com.linktech.gft.view.DisableScrollViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_color_272a3f_ffffff" />
+</LinearLayout>

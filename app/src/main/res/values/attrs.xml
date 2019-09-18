@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <!--菜单栏-->
+    <declare-styleable name="MenuTitleSubTitleView">
+        <attr name="MenuTitleSubTitleView_navigation" format="reference" />
+        <attr name="MenuTitleSubTitleView_icon" format="reference" />
+        <attr name="MenuTitleSubTitleView_title" format="string" />
+        <attr name="MenuTitleSubTitleView_subtitle" format="string" />
+    </declare-styleable>
+
+    <!--消息列表view-->
+    <declare-styleable name="NewsConstraintLayout">
+        <attr name="NewsLinearLayout_icon" format="reference" />
+        <attr name="NewsLinearLayout_title" format="string" />
+        <attr name="NewsLinearLayout_time" format="string" />
+        <attr name="NewsLinearLayout_subtitle" format="string" />
+    </declare-styleable>
+
+    <!--单行输入框对应的参数：hint文字、menu文本、icon图标-->
+    <declare-styleable name="LineInputView">
+        <attr name="LineInputView_hint" format="string" />
+        <attr name="LineInputView_menu" format="string" />
+        <attr name="LineInputView_icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="HeaderImageBehavior">
+        <attr name="HeaderImageBehavior_finalHeight" format="dimension" />
+    </declare-styleable>
+
+    <!--timeView-->
+    <declare-styleable name="TimeView">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="time" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="AmountView">
+        <!--用哪一种类型-->
+        <attr name="type" format="enum">
+            <enum name="white_small" value="0" />
+            <enum name="blue_small" value="1" />
+            <enum name="blue_big" value="2" />
+        </attr>
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="etWidth" format="dimension" />
+        <attr name="etColor" format="color" />
+        <attr name="etSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer" />
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RecyclerEmptyView">
+        <attr name="empty_type">
+            <enum name="white" value="0" />
+            <enum name="black" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--RoundRectBorderTextView-->
+    <declare-styleable name="RoundRectBorderTextView">
+        <attr name="RoundRectBorderTextView_border_color" format="color" />
+    </declare-styleable>
+
+    <!--WatchInputEditText:检测文本变化-->
+    <declare-styleable name="WatchInputEditText">
+        <attr name="WatchInputEditText_monitoring" format="boolean" />
+    </declare-styleable>
+
+    <!--TabPagerCombineLayout-->
+    <declare-styleable name="TabPagerCombineLayout">
+        <attr name="layout" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="DefaultSimulateFragmentImpl">
+        <attr name="DefaultSimulateFragmentImpl_layout" format="reference"/>
+    </declare-styleable>
+</resources>

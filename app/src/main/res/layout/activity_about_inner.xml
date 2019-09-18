@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:orientation="vertical">
+
+        <!---->
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <!---->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/view_padding_margin_54dp"
+            android:src="@drawable/bg_splash_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/view_padding_margin_24dp"
+            android:textColor="@color/skin_title_color"
+            android:textSize="@dimen/text_size_13sp"
+            android:text="@string/app_name" />
+
+        <!---->
+        <com.linktech.gft.skin.MyLineMenuView
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_margin_40dp"
+            android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+            app:LineMenuView_for_calculation="on"
+            app:LineMenuView_menu="@string/activity_about_inner_service"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+            app:LineMenuView_navigation="@drawable/dark_icon_arrow_right"
+            app:LineMenuView_plugin="text" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dark_layer_bg_bottom_divider_1dp"
+            app:LineMenuView_for_calculation="on"
+            app:LineMenuView_menu="@string/activity_about_inner_secret"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+            app:LineMenuView_navigation="@drawable/dark_icon_arrow_right"
+            app:LineMenuView_plugin="text" />
+
+        <com.linktech.gft.skin.MyLineMenuView
+            style="@style/TextViewStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_color_272a3f_ffffff"
+            app:LineMenuView_for_calculation="on"
+            app:LineMenuView_menu="@string/activity_about_check_version"
+            app:LineMenuView_menu_text_color="@color/skin_title_color"
+            app:LineMenuView_menu_text_size="@dimen/text_size_title_15sp"
+            app:LineMenuView_navigation="@drawable/dark_icon_arrow_right"
+            app:LineMenuView_plugin="text" />
+    </LinearLayout>
+
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

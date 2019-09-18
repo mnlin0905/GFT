@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/skin_scaffold_background_color"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--切換間隔-->
+        <com.linktech.gft.view.DisallowClickTabLayout
+            android:id="@+id/tl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prefer_view_height_48dp"
+            android:background="@color/dark_color_8c33364c"
+            app:tabBackground="@drawable/dark_ripple_click_borderless_deep"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/dark_main_text_8144e5"
+            app:tabIndicatorHeight="@dimen/tab_layout_indicator_height_2dp"
+            app:tabMode="fixed"
+            app:tabPaddingBottom="@dimen/view_padding_margin_8dp"
+            app:tabPaddingTop="@dimen/view_padding_margin_8dp"
+            app:tabSelectedTextColor="@color/dark_main_text_8144e5"
+            app:tabTextAppearance="@style/TextViewTabLayout"
+            app:tabTextColor="@color/dark_main_text_7c7fa2" />
+
+        <!--圖表/深度圖-->
+        <FrameLayout
+            android:transitionName="@string/transition_name_kline"
+            android:id="@+id/fl_chart_multiply"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <!--一般的k圖-->
+            <com.linktech.gft.skin.MyKChartView
+                android:id="@+id/kcv_chart_view"
+                app:kc_background_color="@color/skin_scaffold_background_color"
+                app:kc_selected_line_color="@color/skin_accent_color"
+                app:kc_grid_line_color="@color/skin_divider_color"
+                app:kc_text_color="@color/skin_body1_color"
+                app:kc_tab_background_color="@color/skin_scaffold_deep_background_color"
+                app:kc_selector_background_color="@color/skin_scaffold_deep_background_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <!--分時圖-->
+            <LinearLayout
+                android:id="@+id/ll_minute_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.linktech.gft.skin.MyMinuteChartView
+                    android:id="@+id/mcv_minute_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

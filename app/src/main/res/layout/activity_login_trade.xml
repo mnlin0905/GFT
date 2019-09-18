@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_color_1d2037_f4f4f4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/dark_layout_top_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/dark_color_272a3f_ffffff"
+                android:orientation="horizontal">
+
+                <com.linktech.gft.view.FitSrcImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/view_height_36dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/view_padding_margin_16dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/skin_title_color"
+                    android:textSize="@dimen/text_size_title_15sp"
+                    tools:src="@drawable/bank_zhong_logo" />
+
+                <TextView
+                    android:id="@+id/tv_trade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="@dimen/view_padding_margin_8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_login_trade_title"
+                    android:textColor="@color/skin_title_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_login_trade_type"
+                    android:textColor="@color/dark_main_text_666986"
+                    android:textSize="@dimen/text_size_small_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                android:background="@color/dark_color_272a3f_ffffff"
+                android:orientation="vertical">
+
+                <com.linktech.gft.view.WatchInputEditText
+                    android:id="@+id/et_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/dark_icon_account"
+                    android:drawablePadding="16dp"
+                    android:hint="@string/activity_login_trade_hint_account"
+                    android:inputType="text"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/skin_title_color"
+                    android:textColorHint="@color/dark_color_666986_b8b9c1"
+                    android:textSize="15sp" />
+
+                <com.linktech.gft.view.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.linktech.gft.view.WatchInputEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/dark_icon_password"
+                    android:drawablePadding="16dp"
+                    android:hint="@string/activity_login_trade_hint_pwd"
+                    android:inputType="textPassword"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/skin_title_color"
+                    android:textColorHint="@color/dark_color_666986_b8b9c1"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_common_dark_function_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.knowledge.mnlin.sdialog.widgets.IncludeDialogViewGroup>

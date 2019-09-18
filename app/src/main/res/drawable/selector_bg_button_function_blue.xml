@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--不可点击状态-->
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/white_background_b0b3bb"/>
+            <corners
+                android:radius="@dimen/drawable_shape_normal_radius_8dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="@color/toolbar_second_color_primary"/>
+            <corners
+                android:radius="@dimen/drawable_shape_normal_radius_8dp"/>
+        </shape>
+    </item>
+</selector>
